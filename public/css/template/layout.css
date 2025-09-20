@@ -1,0 +1,200 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans Thai', sans-serif;
+
+}
+
+.header-section {
+    background-color: #00a79d;
+    padding: 25px 30px;
+    height: 230px;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    justify-content: space-between;
+}
+
+.header-logo {
+    width: 130px;
+    /* height: 70px; */
+    margin-right: 15px;
+}
+
+.header-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.header-title-th {
+    font-size: 55px;
+    font-weight: bold;
+}
+
+.header-title-en {
+    font-size: 27px;
+    font-weight: normal;
+    margin-top: -12px;
+}
+
+.header-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    text-align: right;
+}
+
+.header-contact-item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 14px;
+}
+
+.header-box-contact {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background: #00a79d;
+    /* padding: 8px 15px; */
+    border-radius: 25px;
+    color: #fff;
+    font-size: 14px;
+    margin-left: -15px;
+}
+
+.header-box-contact-title,
+.box-Language {
+    display: inline-block;
+    background-color: #ffffff;
+    color: #00a79d;
+    padding: 0px 6px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: default;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    white-space: nowrap;
+}
+
+.header-box-contact-tel {
+    background-color: #fff;
+    padding: 3px 6px;
+    border-radius: 20px;
+}
+
+svg.bi.bi-telephone-fill {
+    fill: #00a79d;
+}
+
+.header-text-left {
+    display: flex;
+    align-items: center;
+}
+
+.header-login-title,
+.header-register-title {
+    display: inline-block;
+    background-color: #ffffff;
+    color: #000000;
+    padding: 3px 17px;
+    border-radius: 32px;
+    font-size: 22px;
+    font-weight: bold;
+    cursor: default;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    white-space: nowrap;
+}
+
+.header-text-right {
+    margin-top: -15px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.header-box-flag {
+    width: 330px;
+    height: 40px;
+    background: #ffffff;
+    margin: 10px;
+    color: #000;
+    border-radius: 8px;
+}
+
+section.slide-top {
+    margin-top: -45px;
+}
+
+.search-bar-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #8CC63E;
+    /* Adjusted background color to match the image */
+    padding: 10px;
+    border-radius: 5px;
+    /* Added slight border-radius for the container */
+    gap: 10px;
+}
+
+.search-button {
+    background-color: #f7f9fc;
+    border: 2px solid #000;
+    border-radius: 30px;
+    padding: 8px 18px;
+    font-weight: bold;
+    font-size: 16px;
+    color: #000;
+    white-space: nowrap;
+    cursor: pointer;
+    text-align: center;
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    background-color: #f7f9fc;
+    border: 2px solid #000;
+    border-radius: 30px;
+    padding: 5px 15px;
+    max-width: 250px;
+    margin-left: auto;
+}
+
+.search-input {
+    border: none;
+    background: transparent;
+    outline: none;
+    font-size: 16px;
+    flex-grow: 1;
+    padding: 5px 0;
+}
+
+.search-icon {
+    display: flex;
+    /* Centers the SVG */
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    fill: #000;
+    cursor: pointer;
+}
+
+.search-button.intercity-port {
+    height: 44px;
+    width: 500px;
+    overflow: hidden;
+    position: relative;
+}
+
+.scroll-text {
+    left: 50%;
+}

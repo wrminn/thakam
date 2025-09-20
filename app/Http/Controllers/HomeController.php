@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Slide;
 
 class HomeController extends Controller
 {
@@ -11,7 +12,7 @@ class HomeController extends Controller
      *
      * @return void
      */
-    
+
     // public function __construct()
     // {
     //     $this->middleware('auth');
@@ -24,6 +25,12 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+
+        $video = Slide::active()
+            ->where('slide_menu', 69)
+           ->where('slide_display', "A")
+            ->first();
+
+        return view('home', compact('video'));
     }
 }
