@@ -159,23 +159,27 @@
         </div>
 
         <div class="video-view">
-            @if ($video->slide_type == 'L')
-                @php
+            @if (isNotEmpty($video))
+                @if ($video->slide_type == 'L')
+                    @php
 
-                    $query = parse_url($video->slide_link, PHP_URL_QUERY);
-                    parse_str($query, $params);
-                    $video_id = $params['v'];
-                @endphp
-                <iframe width="900" height="500"
-                    src="https://www.youtube.com/embed/{{ $video_id }}?si=2nJqA0yQzUPwTWvj&amp;start=206"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        $query = parse_url($video->slide_link, PHP_URL_QUERY);
+                        parse_str($query, $params);
+                        $video_id = $params['v'];
+                    @endphp
+                    <iframe width="900" height="500"
+                        src="https://www.youtube.com/embed/{{ $video_id }}?si=2nJqA0yQzUPwTWvj&amp;start=206"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                @else
+                    <video controls width="600">
+                        <source src="{{ asset('storage/' . $video->slide_path) }}" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                @endif
             @else
-                <video controls width="600">
-                    <source src="{{ asset('storage/' . $video->slide_path) }}" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
+            <div class="">ไม่พบข้อมูล</div>
             @endif
         </div>
 
@@ -264,7 +268,7 @@
                         class="bg-ons-button-public"></a>
             </div>
         </div>
-        <img src="/img/OneStopService/oss.png" alt="" class="bg-ons">
+        <img src="/img/OneStopService/OSS.png" alt="" class="bg-ons">
         <div class="box-slide-menu">
 
             <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade" data-bs-ride="carousel"
@@ -277,18 +281,7 @@
                                 style="width: 1586px!important; height:625px">
                         </div>
                     @empty
-                        <div class="carousel-item active">
-                            <img src="https://www.w3schools.com/howto/img_snow_wide.jpg" class="d-block w-100"
-                                alt="...">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="https://www.w3schools.com/howto/img_woods_wide.jpg" class="d-block w-100"
-                                alt="...">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="https://www.w3schools.com/howto/img_lights_wide.jpg" class="d-block w-100"
-                                alt="...">
-                        </div>
+                        <div class="">ไม่พบข้อมูล</div>
                     @endforelse
                 </div>
             </div>
