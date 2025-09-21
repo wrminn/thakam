@@ -159,7 +159,7 @@
         </div>
 
         <div class="video-view">
-            @if (isNotEmpty($video))
+            @if (!empty($video))
                 @if ($video->slide_type == 'L')
                     @php
 
