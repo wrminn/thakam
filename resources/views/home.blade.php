@@ -235,4 +235,64 @@
 
         </div>
     </section>
+    <section class="banner-one-stop-service">
+        <div class="box-one-stop-service">
+
+            <div class="ons-box-one">
+                <span style="font-size: 70px;"><b>O</b>ne <b>S</b>top <b>S</b>ervice <img
+                        src="/img/OneStopService/Ready.png" alt="" style="width:25%"
+                        class="ons-button-Ready"></span>
+                <span style="font-size: 75px;margin-top: -29px;"><b>ระบบยื่นคำร้องออนไลน์</b></span>
+                <span style="font-size: 33px;margin-top: -30px;">Online Application Submission Service</span>
+
+                <div class="ons-box-button-one">
+                    <a href=""> <img src="/img/OneStopService/Banner-1.png" alt=""
+                            class="bg-ons-button"></a>
+                    <a href=""> <img src="/img/OneStopService/Banner-2.png" alt=""
+                            class="bg-ons-button"></a>
+                    <a href=""> <img src="/img/OneStopService/Banner-3.png" alt=""
+                            class="bg-ons-button"></a>
+                    <a href=""> <img src="/img/OneStopService/Banner-4.png" alt=""
+                            class="bg-ons-button"></a>
+                </div>
+
+            </div>
+            <div class="ons-box-button-two">
+                <a href=""> <img src="/img/OneStopService/Banner-4.png" alt=""
+                        class="bg-ons-button-member" style="float: right;"></a>
+                <a href=""> <img src="/img/OneStopService/Banner-4.png" alt=""
+                        class="bg-ons-button-public"></a>
+            </div>
+        </div>
+        <img src="/img/OneStopService/oss.png" alt="" class="bg-ons">
+        <div class="box-slide-menu">
+
+            <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade" data-bs-ride="carousel"
+                data-bs-interval="2500">
+                <!-- สไลด์ -->
+                <div class="carousel-inner">
+                    @forelse($SlideMenu70 as $slide)
+                        <div class="carousel-item active">
+                            <img src="{{ asset('storage/' . $slide->slide_path) }}" class="d-block w-100" alt="..."
+                                style="width: 1586px!important; height:625px">
+                        </div>
+                    @empty
+                        <div class="carousel-item active">
+                            <img src="https://www.w3schools.com/howto/img_snow_wide.jpg" class="d-block w-100"
+                                alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://www.w3schools.com/howto/img_woods_wide.jpg" class="d-block w-100"
+                                alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://www.w3schools.com/howto/img_lights_wide.jpg" class="d-block w-100"
+                                alt="...">
+                        </div>
+                    @endforelse
+                </div>
+            </div>
+
+        </div>
+    </section>
 @endsection

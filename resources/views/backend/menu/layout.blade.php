@@ -120,7 +120,7 @@
         ?>
         <div class="menu">
             <div class="menu-item has-submenu">
-                ข้อมูลพื้นฐานตำบล
+                ข้อมูลพื้นฐาน
                 <i class='bx bx-chevron-right chevron'></i>
             </div>
             <div class="submenu level-1">
@@ -140,6 +140,21 @@
                 <a href="/backend/directory/menu/8">สถานที่สำคัญ</a>
             </div>
             <div class="menu-item has-submenu">
+                อำนาจหน้าที่
+                <i class='bx bx-chevron-right chevron'></i>
+            </div>
+            <div class="submenu level-1">
+                <a href="/backend/articles/menu/29">เทศบาลตำบล</a>
+                <a href="/backend/articles/menu/30">สำนักปลัด</a>
+                <a href="/backend/articles/menu/31">กองยุทธศาสตร์</a>
+                <a href="/backend/articles/menu/32">กองคลัง</a>
+                <a href="/backend/articles/menu/33">กองช่าง</a>
+                <a href="/backend/articles/menu/34">กองสาธารณสุขและสิ่งแวดล้อม</a>
+                <a href="/backend/articles/menu/35">กองการศึกษา</a>
+                <a href="/backend/articles/menu/36">กองสวัสดิการสังคม</a>
+                <a href="/backend/articles/menu/37">หน่วยตรวจสอบภายใน</a>
+            </div>
+            <div class="menu-item has-submenu">
                 บุคลากร
                 <i class='bx bx-chevron-right chevron'></i>
             </div>
@@ -157,6 +172,9 @@
                 <a href="/backend/personnel/menu/19">กองสวัสดิการสังคม</a>
                 <a href="/backend/personnel/menu/20">หน่วยตรวจสอบภายใน</a>
             </div>
+            <a href="/backend/directory/menu/38/cate/0">
+                <div class="menu-item">แผนงานและงบประมาณ</div>
+            </a>
             <div class="menu-item has-submenu">
                 ผลการดำเนินงาน
                 <i class='bx bx-chevron-right chevron'></i>
@@ -171,24 +189,8 @@
                 <a href="/backend/directory/menu/27/cate/0">มาตรการส่งเสริมความโปร่งใสและป้องกันการทุจริต</a>
                 <a href="/backend/directory/menu/28/cate/0">ประมวลจริยธรรมและการขับเคลื่อนจริยธรรม</a>
             </div>
-            <div class="menu-item has-submenu">
-                อำนาจหน้าที่
-                <i class='bx bx-chevron-right chevron'></i>
-            </div>
-            <div class="submenu level-1">
-                <a href="/backend/articles/menu/29">เทศบาลตำบล</a>
-                <a href="/backend/articles/menu/30">สำนักปลัด</a>
-                <a href="/backend/articles/menu/31">กองยุทธศาสตร์</a>
-                <a href="/backend/articles/menu/32">กองคลัง</a>
-                <a href="/backend/articles/menu/33">กองช่าง</a>
-                <a href="/backend/articles/menu/34">กองสาธารณสุขและสิ่งแวดล้อม</a>
-                <a href="/backend/articles/menu/35">กองการศึกษา</a>
-                <a href="/backend/articles/menu/36">กองสวัสดิการสังคม</a>
-                <a href="/backend/articles/menu/37">หน่วยตรวจสอบภายใน</a>
-            </div>
-            <a href="/backend/directory/menu/38/cate/0">
-                <div class="menu-item">แผนพัฒนาท้องถิ่น</div>
-            </a>
+
+
             <div class="menu-item has-submenu">
                 กฎหมายเเละระเบียบ
                 <i class='bx bx-chevron-right chevron'></i>
@@ -198,7 +200,7 @@
                 <a href="/backend/directory/menu/40">กฎหมายที่เกี่ยวข้อง</a>
             </div>
             <div class="menu-item has-submenu">
-                เมนูสำหรับประชาชน
+                บริการประชาชน
                 <i class='bx bx-chevron-right chevron'></i>
             </div>
             <div class="submenu level-1">
@@ -209,7 +211,7 @@
                 <a href="/backend/directory/menu/45/cate/0">คู่มือการทำงานของหน่วยงาน</a>
                 <a href="/backend/directory/menu/46">ดาวน์โหลดแบบฟอร์ม</a>
                 <a href="/backend/eservice/menu/47">ยื่นคำร้องออนไลน์ E-service</a>
-                
+
             </div>
             <div class="menu-item has-submenu">
                 ประกาศความเคลื่อนไหว

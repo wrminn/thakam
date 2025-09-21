@@ -6,7 +6,8 @@
 }
 .box-personnel::before,
 .box-video::before,
-.banner-box-one::before {
+.banner-box-one::before,
+.banner-one-stop-service::before {
     content: "";
     position: absolute;
     inset: 0;
@@ -24,6 +25,9 @@
 .banner-box-one::before {
     background-image: url("/img/background/BG-banner-one.webp");
 }
+.banner-one-stop-service::before {
+    background-image: url("/img/background/BG-onestopservice.png");
+}
 .box-video{
     min-height: 900px;
     margin-top: -35px;
@@ -35,6 +39,10 @@
 .banner-box-one {
     min-height: 2050px;
     margin-top: -23px;
+}
+.banner-one-stop-service {
+    min-height: 1600px;
+    position: absolute;
 }
 
 .no-underline {
@@ -227,7 +235,11 @@ img.banner-top-img:hover {
     margin: 50px 25px 0 25px;
 }
 img.banner-smartcity:hover ,
-.banner-box-sbt-one:hover{
+.banner-box-sbt-one:hover,
+img.bg-ons-button:hover,
+img.bg-ons-button-member:hover,
+img.bg-ons-button-public:hover, 
+img.ons-button-Ready:hover {
     transform: scale(1.02);
 }
 .banner-smartcity-body-two {
@@ -249,4 +261,46 @@ img.banner-smartcity:hover ,
     display: flex;
     justify-content: space-between;
     flex-wrap: nowrap;
+}
+img.bg-ons {
+    width: 100%;
+    margin-top: 40px;
+}
+.box-one-stop-service {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: absolute;
+    align-items: flex-end;
+}
+.ons-box-one {
+    /* position: absolute; */
+    display: flex;
+    flex-direction: column;
+    margin: 40px 0 0 156px;
+    font-size: 50px;
+}
+.ons-box-button-one {
+    display: flex;
+    flex-direction: column;
+    margin-left: 80px;
+}
+img.bg-ons-button {
+    width: 56%;
+}
+
+.ons-box-button-two {
+    display: flex;
+    justify-content: center;
+}
+img.bg-ons-button-member,
+img.bg-ons-button-public {
+    width: 60%;
+}
+
+.box-slide-menu {
+    margin-top: 45px;
+    display: flex;
+    justify-content: center;
+
 }

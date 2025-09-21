@@ -31,6 +31,13 @@ class HomeController extends Controller
            ->where('slide_display', "A")
             ->first();
 
-        return view('home', compact('video'));
+        $SlideMenu70 = Slide::active()
+            ->where('slide_menu', 70)
+            ->where('slide_display', "A")
+             ->orderBy('slide_id', 'desc')
+            ->limit(3)
+            ->get();
+
+        return view('home', compact('video','SlideMenu70'));
     }
 }
