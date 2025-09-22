@@ -179,7 +179,7 @@
                     </video>
                 @endif
             @else
-            <div class="">ไม่พบข้อมูล</div>
+                <div class="">ไม่พบข้อมูล</div>
             @endif
         </div>
 
@@ -287,5 +287,197 @@
             </div>
 
         </div>
+    </section>
+    <section class="box-public-service">
+        <div class="public-service">
+            <span style="font-size: 35px;font-weight: 500;">PUBLIC SERVICE</span>
+            <span style="font-size: 80px;font-weight: 800;">บริการประชาชน</span>
+        </div>
+
+        <div class="public-body">
+            <div class="button-public-service-top">
+                <a href="#" class="public-link-one">
+                    <img src="/img/publicservice/1.png" class="public-service-img">
+                    <span style="margin-top: -30px;">เบี้ยยังชีพผู้สูงอายุ</span>
+                    <span>Elderly allowance</span>
+                </a>
+                <a href="#" class="public-link-one">
+                    <img src="/img/publicservice/6.png" class="public-service-img">
+                    <span style="margin-top: -30px;">เบี้ยยังชีพผู้พิการ</span>
+                    <span>Disability living allowance</span>
+                </a>
+            </div>
+            <div class="button-public-service-center">
+                <a href="#" class="public-link-two">
+                    <img src="/img/publicservice/2.png" class="public-service-img">
+                    <span style="margin-top: -30px;">ถาม-ตอบ</span>
+                    <span>Q & A</span>
+                </a>
+                <a href="#" class="public-link-center">
+                    <img src="/img/publicservice/7.png" class="public-service-img">
+                    <span style="margin-top: -30px;">แบบสอบถามความพึงพอใจ</span>
+                    <span>Satisfaction Survey</span>
+                </a>
+                <a href="#" class="public-link-two">
+                    <img src="/img/publicservice/5.png" class="public-service-img">
+                    <span style="margin-top: -30px;">คู่มือประชาชน</span>
+                    <span>Public Guide</span>
+                </a>
+            </div>
+            <div class="button-public-service-button">
+                <a href="#" class="public-link-three">
+                    <img src="/img/publicservice/3.png" class="public-service-img">
+                    <span style="margin-top: -30px;">คู่มือปฏิบัติงาน</span>
+                    <span>Work Manual</span>
+                </a>
+                <a href="#" class="public-link-three">
+                    <img src="/img/publicservice/4.png" class="public-service-img">
+                    <span style="margin-top: -30px;">ดาวน์โหลดแบบฟอร์ม</span>
+                    <span>Download from</span>
+                </a>
+            </div>
+        </div>
+    </section>
+    <section class="box-activity-relations">
+        <div class="box-activity">
+            <div class="title-activity">
+                <div class="text-activity">
+                    <span class="title-activity-top">ข่าวกิจกรรม</span>
+                    <span class="title-activity-button"><b>Activity</b> news</span>
+                </div>
+                <img src="/img/activity-loma.png" style="height: 182px;">
+            </div>
+            <div class="activity-directory">
+
+                @forelse($activity as $list)
+                    <div class="card-activity">
+                        <a href="" class="no-underline">
+                            <div class="card-activity-body">
+
+                                <div class="activity-img">
+                                    @if ($list->texteditor_topic_picture)
+                                        <img src="{{ asset('storage/' . $list->texteditor_topic_picture) }}"
+                                            alt="topic picture" width="420" style="border-radius: 20px">
+                                    @else
+                                        <img src="{{ asset('img/logo.png') }}" alt="default logo" width="420">
+                                    @endif
+
+                                </div>
+                                @php
+                                    $date = \Carbon\Carbon::parse($list->texteditor_date_show);
+                                    $months = [
+                                        1 => 'มกราคม',
+                                        2 => 'กุมภาพันธ์',
+                                        3 => 'มีนาคม',
+                                        4 => 'เมษายน',
+                                        5 => 'พฤษภาคม',
+                                        6 => 'มิถุนายน',
+                                        7 => 'กรกฎาคม',
+                                        8 => 'สิงหาคม',
+                                        9 => 'กันยายน',
+                                        10 => 'ตุลาคม',
+                                        11 => 'พฤศจิกายน',
+                                        12 => 'ธันวาคม',
+                                    ];
+                                    $day = $date->day;
+                                    $month = $months[$date->month];
+                                    $year = $date->year + 543;
+                                @endphp
+                                <div class="activity-date">{{ $day }} {{ $month }} {{ $year }}
+                                </div>
+                                <div class="activity-title">{{ $list->texteditor_title }}</div>
+                                <div class="activity-detail">{{ trim(strip_tags($list->texteditor_detail)) }}</div>
+
+                            </div>
+                        </a>
+                        <a href="http://" class="no-underline button-activity">อ่านเพิ่มเติม</a>
+                    </div>
+                @empty
+                    <div class="">ไม่พบข้อมูล</div>
+                @endforelse
+
+            </div>
+            @if (!empty($activity))
+                <div class="box-all-activity">
+
+                    <a href="http://" class="no-underline button-activity-all">ดูข่าวกิจกรรมทั้งหมด</a>
+                </div>
+            @endif
+
+        </div>
+        <div class="box-news">
+            <div class="title-news">
+                <div class="text-news">
+                    <div class="box-bg-title">
+                        <span class="title-news-top">ข่าวประชาสัมพันธ์</span>
+                        <span class="title-news-button">เทศบาลตำบลท่าข้าม</span>
+                    </div>
+
+                </div>
+            </div>
+            <div class="news-directory">
+
+                @forelse($activity as $list)
+                    <div class="card-news">
+                        <a href="" class="no-underline">
+                            <div class="card-news-body">
+
+                                <div class="news-img">
+                                    @if ($list->texteditor_topic_picture)
+                                        <img src="{{ asset('storage/' . $list->texteditor_topic_picture) }}"
+                                            alt="topic picture" width="150" height="150"
+                                            style="border-radius: 30px">
+                                    @else
+                                        <img src="{{ asset('img/logo.png') }}" alt="default logo" width="150"
+                                            height="150">
+                                    @endif
+
+                                </div>
+                                @php
+                                    $date = \Carbon\Carbon::parse($list->texteditor_date_show);
+                                    $months = [
+                                        1 => 'มกราคม',
+                                        2 => 'กุมภาพันธ์',
+                                        3 => 'มีนาคม',
+                                        4 => 'เมษายน',
+                                        5 => 'พฤษภาคม',
+                                        6 => 'มิถุนายน',
+                                        7 => 'กรกฎาคม',
+                                        8 => 'สิงหาคม',
+                                        9 => 'กันยายน',
+                                        10 => 'ตุลาคม',
+                                        11 => 'พฤศจิกายน',
+                                        12 => 'ธันวาคม',
+                                    ];
+                                    $day = $date->day;
+                                    $month = $months[$date->month];
+                                    $year = $date->year + 543;
+                                @endphp
+                                <div class="box-news-id">
+                                    <div class="news-title"><b>{{ $list->texteditor_title }}</b></div>
+                                    <div class="news-detail">{{ trim(strip_tags($list->texteditor_detail)) }}</div>
+                                    <div class="news-date">{{ $day }} {{ $month }} {{ $year }}
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                @empty
+                    <div class="">ไม่พบข้อมูล</div>
+                @endforelse
+
+            </div>
+            @if (!empty($activity))
+                <div class="box-all-news">
+
+                    <a href="http://" class="no-underline button-news-all">ดูข่าวประชาสัมพันธ์ทั้งหมด</a>
+                </div>
+            @endif
+
+        </div>
+
+    </section>
+    <section class="box-here">
+        <img src="/img/here/1.png" alt=""  style="margin-top: 130px;">
     </section>
 @endsection

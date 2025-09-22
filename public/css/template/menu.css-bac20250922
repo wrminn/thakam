@@ -1,4 +1,3 @@
-/* Base Styles (สำหรับหน้าจอทั่วไป) */
 .nav-strip {
     display: flex;
     gap: 12px;
@@ -37,6 +36,7 @@
     display: none;
     position: absolute;
     top: 100%;
+    /* ติดกับปุ่ม ไม่ให้หายตอนเลื่อน */
     left: 0;
     min-width: 220px;
     background: #fff;
@@ -77,6 +77,7 @@
     position: absolute;
     top: 0;
     left: 100%;
+    /* ให้เลื่อนออกไปทางขวา */
     min-width: 200px;
     background: #fff;
     border-radius: 12px;
@@ -88,6 +89,7 @@
     display: block;
 }
 
+
 .carousel-brand {
     position: absolute;
     top: 20px;
@@ -95,6 +97,7 @@
     z-index: 10;
     display: flex;
     align-items: center;
+    /* background: rgba(255, 255, 255, 0.6); */
     padding: 5px 10px;
     border-radius: 8px;
 }
@@ -113,11 +116,15 @@
 }
 
 a.link-index {
+
     color: #000;
     text-decoration: unset;
+
 }
 
 .box-container {
+    /* padding-right: 10%;
+    padding-left: 10%; */
     margin-right: auto;
     margin-left: auto;
 }
@@ -196,91 +203,4 @@ span.chip {
     box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
     width: 100%;
     max-width: 1000px;
-}
-
-
-/* สำหรับหน้าจอขนาดกลางและเล็ก (Tablet, Mobile) */
-@media (max-width: 768px) {
-    .nav-strip {
-        flex-wrap: wrap; /* เมนูขึ้นบรรทัดใหม่ */
-        gap: 8px;
-        padding: 10px;
-        margin-top: -20px; /* ปรับระยะห่าง */
-    }
-
-    .nav-pill {
-        padding: 8px 20px;
-        font-size: 18px; /* ลดขนาดฟอนต์ */
-    }
-
-    .submenu {
-        position: static; /* สำหรับ Mobile Submenu จะเป็น block ธรรมดา */
-    }
-
-    .sub-submenu {
-        position: static;
-        left: 0;
-    }
-    
-    .carousel-brand {
-        top: 10px;
-        left: 50%;
-        transform: translateX(-50%); /* จัดให้อยู่กึ่งกลาง */
-        padding: 3px 6px;
-        flex-direction: column; /* ไอคอนและข้อความเรียงลงมา */
-        text-align: center;
-        background: none; /* ไม่มีพื้นหลัง */
-    }
-
-    .carousel-brand img {
-        width: 100px;
-        margin-right: 0;
-        margin-bottom: 5px;
-    }
-    
-    .carousel-brand span {
-        font-size: 20px;
-    }
-
-    .b-vision {
-        flex-direction: column; /* เรียงจากบนลงล่าง */
-        padding: 10px;
-    }
-
-    .text-vission {
-        width: 100%; /* ให้เต็มความกว้าง */
-        padding: 12px;
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    span.chip {
-        white-space: normal;
-    }
-
-    .b-detail {
-        padding: 20px 10px;
-    }
-
-    .form-wrapper {
-        padding: 20px;
-    }
-}
-
-/* สำหรับหน้าจอขนาดเล็กมากๆ (Mobile) */
-@media (max-width: 480px) {
-    .nav-strip {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .nav-pill {
-        width: 100%;
-        text-align: center;
-        padding: 10px;
-    }
-
-    .text-vission {
-        font-size: 14px;
-    }
 }

@@ -189,8 +189,6 @@
                 <a href="/backend/directory/menu/27/cate/0">มาตรการส่งเสริมความโปร่งใสและป้องกันการทุจริต</a>
                 <a href="/backend/directory/menu/28/cate/0">ประมวลจริยธรรมและการขับเคลื่อนจริยธรรม</a>
             </div>
-
-
             <div class="menu-item has-submenu">
                 กฎหมายเเละระเบียบ
                 <i class='bx bx-chevron-right chevron'></i>

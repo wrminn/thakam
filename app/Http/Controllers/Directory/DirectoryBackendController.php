@@ -63,7 +63,7 @@ class DirectoryBackendController extends Controller
 
     function SelectDirectory($menuId)
     {
-        //$titles = $this->myService->getDataByKey($menuId);
+        $titles = $this->myService->getDataByKey($menuId);
 
         $title = $titles ?? 'ข้อมูลเมนู' . $menuId;
 
@@ -80,7 +80,7 @@ class DirectoryBackendController extends Controller
 
     function FormAdd($menuId, $cateID = null)
     {
-        //$titles = $this->myService->getDataByKey($menuId);
+        $titles = $this->myService->getDataByKey($menuId);
         $title = $titles ?? 'ข้อมูลเมนู' . $menuId;
 
         return view('backend.directory.add', compact('title', 'menuId', 'cateID'));
@@ -147,7 +147,7 @@ class DirectoryBackendController extends Controller
 
     function FormEdit($menuId, $id, $cateID = null)
     {
-        //$titles = $this->myService->getDataByKey($menuId);
+        $titles = $this->myService->getDataByKey($menuId);
         $title = $titles ?? 'ข้อมูลเมนู' . $menuId;
 
         $list = DB::table('texteditor')
@@ -286,7 +286,7 @@ class DirectoryBackendController extends Controller
     //category
     function SelectCategory($menuId, $cateID = null)
     {
-        //$titles = $this->myService->getDataByKey($menuId);
+        $titles = $this->myService->getDataByKey($menuId);
         $title = $titles ?? 'ข้อมูลเมนู' . $menuId;
 
         $cate = Category::active()
@@ -305,7 +305,7 @@ class DirectoryBackendController extends Controller
 
     function FormAddCategory($menuId)
     {
-        //$titles = $this->myService->getDataByKey($menuId);
+        $titles = $this->myService->getDataByKey($menuId);
         $title = $titles ?? 'ข้อมูลเมนู' . $menuId;
         return view('backend.directory.addcategory', compact('title', 'menuId'));
     }
@@ -324,7 +324,7 @@ class DirectoryBackendController extends Controller
 
     function SelectCategorylist($menuId)
     {
-        //$titles = $this->myService->getDataByKey($menuId);
+        $titles = $this->myService->getDataByKey($menuId);
         $title = $titles ?? 'ข้อมูลเมนู' . $menuId;
 
         $list = Category::active()
@@ -338,7 +338,7 @@ class DirectoryBackendController extends Controller
 
     function FormEditCategory($menuId, $id)
     {
-        //$titles = $this->myService->getDataByKey($menuId);
+        $titles = $this->myService->getDataByKey($menuId);
         $title = $titles ?? 'ข้อมูลเมนู' . $menuId;
         $list = DB::table('categories')
             ->where('categories_id', $id)
