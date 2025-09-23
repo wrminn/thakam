@@ -28,7 +28,7 @@
         <section class="header-section">
             <div class="header-container">
                 <div class="header-text-left">
-                    <img src="/img/logo.png" alt="โลโก้" class="header-logo">
+                    <a href="/home"><img src="/img/logo.png" alt="โลโก้" class="header-logo"></a>
                     <div class="heard-title-box">
                         <div class="header-title-th">เทศบาลตำบลท่าข้าม</div>
                         <div class="header-title-en">Thakam Subdistrict Municipality</div>
@@ -64,7 +64,7 @@
                         <div class="header-register-title"><a class="no-underline">สมัครสมาชิก</a></div>
                     </div>
                     <div class="header-box-flag">
-                        ธง
+                        <img src="/img/flag/TH.webp" alt="" width="30">
                     </div>
                     <div class="box-Language">
                         เปลี่ยนภาษา | Language
@@ -175,33 +175,68 @@
         </section>
 
         <section class="slide-top">
-            <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade" data-bs-ride="carousel"
-                data-bs-interval="2500">
-                <!-- สไลด์ -->
+            <img src="/img/ficslide.webp" alt="" class="box-img-slide-top">
+            <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade position-relative"
+                data-bs-ride="carousel" data-bs-interval="2500">
+
+                {{-- Slides --}}
                 <div class="carousel-inner">
-                    @forelse($SlideTop as $slide)
-                        <div class="carousel-item active">
+                    @forelse($SlideTop as $key => $slide)
+                        <div class="carousel-item {{ $key === 0 ? 'active' : '' }}">
                             <img src="{{ asset('storage/' . $slide->slide_path) }}" class="d-block w-100"
-                                alt="..." style="width: 1905px; height:600px">
+                                alt="slide {{ $key + 1 }}"
+                                style="width: 1905px; height:600px; object-fit: cover;">
                         </div>
                     @empty
                         <div class="carousel-item active">
                             <img src="https://www.w3schools.com/howto/img_snow_wide.jpg" class="d-block w-100"
                                 alt="...">
                         </div>
-                        <div class="carousel-item">
-                            <img src="https://www.w3schools.com/howto/img_woods_wide.jpg" class="d-block w-100"
-                                alt="...">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="https://www.w3schools.com/howto/img_lights_wide.jpg" class="d-block w-100"
-                                alt="...">
-                        </div>
                     @endforelse
                 </div>
-            </div>
-        </section>
 
+                {{-- Controls + Indicators (overlay) --}}
+                <div class="position-absolute bottom-0 start-0 end-0 d-flex justify-content-center align-items-center gap-3 mb-3"
+                    style="z-index: 10;">
+
+                    <button class="carousel-control-prev position-static" type="button"
+                        data-bs-target="#carouselExampleSlidesOnly" data-bs-slide="prev">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                            class="bi bi-caret-left-fill" viewBox="0 0 16 16">
+                            <path
+                                d="m3.86 8.753 5.482 4.796c.646.566 1.658.106 1.658-.753V3.204a1 1 0 0 0-1.659-.753l-5.48 4.796a1 1 0 0 0 0 1.506z" />
+                        </svg>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+
+                    <div class="carousel-indicators position-static m-0">
+                        @forelse($SlideTop as $key => $slide)
+                            <button type="button" data-bs-target="#carouselExampleSlidesOnly"
+                                data-bs-slide-to="{{ $key }}" class="{{ $key === 0 ? 'active' : '' }}"
+                                aria-current="{{ $key === 0 ? 'true' : 'false' }}"
+                                aria-label="Slide {{ $key + 1 }}">
+                            </button>
+                        @empty
+                            <button type="button" class="active" data-bs-target="#carouselExampleSlidesOnly"
+                                data-bs-slide-to="0"></button>
+                        @endforelse
+                    </div>
+
+                    <button class="carousel-control-next position-static" type="button"
+                        data-bs-target="#carouselExampleSlidesOnly" data-bs-slide="next">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                            class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                            <path
+                                d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />
+                        </svg>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+
+
+        </section>
+        <div class="br-top"></div>
         <section class="animation-top">
             <img src="https://www.w3schools.com/howto/img_snow_wide.jpg" class="d-block w-100" alt="..."
                 style="width: 1905px; height:650px">
@@ -211,7 +246,7 @@
             <div class="search-bar-container">
                 <div class="search-button vision">วิสัยทัศน์</div>
                 <div class="search-button intercity-port">
-                   <div class="scroll-text">ท่าข้ามเมืองน่าอยู่ พัฒนาสู่ EEC</div> 
+                    <div class="scroll-text">ท่าข้ามเมืองน่าอยู่ พัฒนาสู่ EEC</div>
                 </div>
                 <div class="search-box">
                     <input type="text" placeholder="" class="search-input">

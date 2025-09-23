@@ -277,8 +277,8 @@ img.banner-top-img:hover {
     margin-top: -45px;
 }
 
-.video-view {
-    margin-top: 70px;
+/* .video-view { */
+.video-show {
     width: 900px;
     height: 500px;
     display: flex;
@@ -290,7 +290,26 @@ img.banner-top-img:hover {
     overflow: hidden;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
 }
-
+.video-view {
+    display: flex;
+    margin-top: 70px;
+    gap: 20px;
+}
+.box-button {
+    text-align: right;
+    margin-top: 20px;
+}
+a.no-underline.b-video {
+    background: linear-gradient(182deg, #00565f, #019892);
+    padding: 4px 30px;
+    border-radius: 20px;
+    color: #fff;
+    display: inline-block;
+}
+a.b-video:hover {
+  background: linear-gradient(182deg, #019892, #00565f);
+  color: #fff;
+}
 .banner-smartcity-body-one {
     display: flex;
     margin: 50px 25px 0 25px;

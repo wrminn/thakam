@@ -159,28 +159,39 @@
         </div>
 
         <div class="video-view">
-            @if (!empty($video))
-                @if ($video->slide_type == 'L')
-                    @php
+            <div class="">
+                <div class="video-show">
+                    @if (!empty($video))
+                        @if ($video->slide_type == 'L')
+                            @php
 
-                        $query = parse_url($video->slide_link, PHP_URL_QUERY);
-                        parse_str($query, $params);
-                        $video_id = $params['v'];
-                    @endphp
-                    <iframe width="900" height="500"
-                        src="https://www.youtube.com/embed/{{ $video_id }}?si=2nJqA0yQzUPwTWvj&amp;start=206"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                @else
-                    <video controls width="600">
-                        <source src="{{ asset('storage/' . $video->slide_path) }}" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                @endif
-            @else
-                <div class="">ไม่พบข้อมูล</div>
-            @endif
+                                $query = parse_url($video->slide_link, PHP_URL_QUERY);
+                                parse_str($query, $params);
+                                $video_id = $params['v'];
+                            @endphp
+                            <iframe width="900" height="500"
+                                src="https://www.youtube.com/embed/{{ $video_id }}?si=2nJqA0yQzUPwTWvj&amp;start=206"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        @else
+                            <video controls width="600">
+                                <source src="{{ asset('storage/' . $video->slide_path) }}" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        @endif
+                    @else
+                        <div class="">ไม่พบข้อมูล</div>
+                    @endif
+                </div>
+                <div class="box-button">
+                    <a href="#" class="no-underline b-video">English Version</a>
+                    <a href="#" class="no-underline b-video">Thai Version</a>
+                </div>
+            </div>
+            <div class="slide-in-video">
+                <img src="/img/03/Popup.png" alt="" height="500">
+            </div>
         </div>
 
     </section>

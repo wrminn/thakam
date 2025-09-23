@@ -123,6 +123,9 @@ svg.bi.bi-telephone-fill {
     margin: 10px;
     color: #000;
     border-radius: 8px;
+    display: flex;
+    align-items: center;
+    padding: 5px;
 }
 
 section.slide-top {
@@ -302,4 +305,30 @@ section.slide-top {
         width: 100%;
         margin: 5px 0;
     }
+}
+
+img.box-img-slide-top {
+    position: absolute;
+    z-index: 5;
+    margin-top: 36px;
+}
+.carousel-indicators [data-bs-target] {
+    width: 12px !important;     
+    height: 12px !important;          
+    border-radius: 50%;    
+    background-color: #fff; /* สีปกติ */
+    border: 1px solid #000; /* ขอบ (ถ้าอยากให้เห็นชัด) */
+    opacity: 0.5;           /* ความโปร่งใสปกติ */
+    transition: opacity 0.3s, transform 0.3s;
+}
+
+.carousel-control-prev, 
+.carousel-control-next{
+    width: 5% !important;
+}
+.br-top {
+    width: 100%;
+    height: 20px;
+    display: block;
+    background: linear-gradient(360deg, #00968f, #004955);
 }

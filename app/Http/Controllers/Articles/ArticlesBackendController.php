@@ -121,7 +121,7 @@ class ArticlesBackendController extends Controller
             $timestamp = now()->format('Ymd_His');
 
             $folder = "content/{$menuId}"; // path ใน disk 'public'
-            $filename = "{$list_select->texteditor_id}_filetexteditor_{$timestamp}.{$ext}";
+            $filename = "{$list_select->texteditor_id}_Articles_{$timestamp}.{$ext}";
             $path = $file->storeAs($folder, $filename, 'public');
 
             $fullPath = storage_path('app/public/' . $path);

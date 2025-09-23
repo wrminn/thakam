@@ -201,3 +201,15 @@ Route::post('satisfaction/menu/{menu}', [PublicDataController::class, 'satisfact
 //calendar
 Route::get('/calendar/menu/{menu}', [PublicDataController::class, 'calendar'])->name('calendar');
 Route::get('/calendar/events', [PublicDataController::class, 'getEvents'])->name('calendar.events');
+
+//เมนูหน้าเดียว
+Route::get('/articles/menu/{menu}', [ArticlesDataController::class, 'SelectArticlesFront'])->name('articles.data');
+
+//เมนูlist
+Route::get('/directory/menu/{menu}', [DirectoryDataController::class, 'SelectDirectoryFront'])->name('directory.data');
+Route::get('/directoryDetail/menu/{menu}/id/{id}', [DirectoryDataController::class, 'SelectDirectoryFrontID'])->name('directory.detail');
+
+//หมวดหมู่
+Route::get('/categories/menu/{menu}', [DirectoryDataController::class, 'SelectCategoriesFront'])->name('categories.list');
+Route::get('/directory/menu/{menu}/cate/{cate}', [DirectoryDataController::class, 'SelectDirectoryCateFront'])->name('categories.data');
+Route::get('/directoryDetail/menu/{menu}/id/{id}/cate/{cate}', [DirectoryDataController::class, 'SelectDirectoryCateFrontID'])->name('categories.detail');
