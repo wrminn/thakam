@@ -1,4 +1,9 @@
-
+@font-face {
+  font-family: 'MyFont';
+  src: url('../../fonts/SOV_KhongMaan.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
 
 .box-personnel,
 .box-video,
@@ -79,7 +84,7 @@
 
 .box-public-service {
     min-height: 1170px;
-    margin-top: -23px;
+    /* margin-top: -23px; */
 }
 .box-activity-relations {
     min-height: 3261px;
@@ -297,8 +302,13 @@ img.bg-ons-button:hover,
 img.bg-ons-button-member:hover,
 img.bg-ons-button-public:hover,
 img.ons-button-Ready:hover,
-img.public-service-img:hover  {
+img.public-service-img:hover,  
+img.button-here:hover  {
     transform: scale(1.02);
+     transition-duration: 120ms;
+}
+.button-here:not(:hover) {
+  animation: none;
 }
 
 .banner-smartcity-body-two {
@@ -520,7 +530,8 @@ a.no-underline.button-activity:hover{
     justify-content: center;
     margin-top: 60px;
 }
-a.no-underline.button-activity-all {
+a.no-underline.button-activity-all, 
+a.no-underline.button-here-all {
     background-color: #fff;
     padding: 05px 30px;
     font-size: 30px;
@@ -590,4 +601,84 @@ a.no-underline.button-news-all {
 }
 .box-news {
     margin-top: 30px;
+}
+
+.box-slide-hrer {
+    display: flex;
+    margin-top: -75px;
+    flex-direction: column;
+    align-items: center;
+}
+img.slide-here{
+    width: 100%!important;
+    height: 625px;
+    border-radius: 75px;
+}
+div#carouselExampleSlidesOnly.carousel-slide-here {
+    width: 1420px;
+    height: 638px;
+    background: #fff;
+    border-radius: 75px;
+    /* overflow: hidden; */
+    padding: 6px;
+    box-shadow: 0px 0px 20px 4px #888888;
+}
+.here-text {
+    position: absolute;
+    margin-top: -50px;
+    background: #fff;
+    padding: 2px 20px;
+    font-size: 50px;
+}
+.position-static {
+    position: static !important;
+    display: flex !important;
+    justify-content: center;
+}
+.slide-text {
+     font-family: 'MyFont';
+    font-size: 80px;
+    /* font-weight: 600; */
+    background: linear-gradient(92deg, #ddf0ff, #f8fcff);
+    z-index: 5;
+    margin-top: -65px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px 4px #888888;
+    position: sticky;
+    width: 50%;
+    color: #000;
+}
+
+.box-all-here {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 150px;
+}
+
+.banner-service-one,
+.banner-service-two {
+    display: flex;
+    justify-content: center;
+}
+
+img.button-here-text {
+    width: 210px;
+}
+.card-here {
+  padding: 10px 45px;
+  border-radius: 90px;
+  border: 3px solid rgb(200 231 148);
+  box-shadow: 0 0 18px 5px rgb(200 231 148),
+              0 0 9px 5px rgba(0, 200, 120, 0.2) inset;
+}
+
+.button-here-text:hover {
+  animation: pulseText 1.2s infinite ease-in-out;
+}
+
+@keyframes pulseText {
+  0%   { transform: scale(1); }
+  50%  { transform: scale(1.12); }
+  100% { transform: scale(1); }
 }

@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <link rel="shortcut icon" type="image/png" href="/spa/assets/LOGO.png">
     <link rel="icon" type="image/svg+xml" href="/spa/assets/LOGO.png">
-    <meta name="description" content="เทศบาลตำบลบ้านโพธิ์">
-    <title>เทศบาลตำบลบ้านโพธิ์</title>
+    <meta name="description" content="เทศบาลตำบลท่าข้าม">
+    <title>เทศบาลตำบลท่าข้าม</title>
 
     <style>
         body {

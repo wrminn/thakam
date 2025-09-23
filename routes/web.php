@@ -70,7 +70,7 @@ Route::middleware(['auth'])->group(function () {
     Route::post('backend/addDirectoryCategory/menu/{menu}', [DirectoryBackendController::class, 'InsertCategory'])->name('directory.category.insert');
     Route::get('backend/updateDirectoryCategory/menu/{menu}/id/{id}', [DirectoryBackendController::class, 'FormEditCategory'])->name('directory.category.edit');
     Route::put('backend/updateDirectoryCategory/menu/{menu}/id/{id}', [DirectoryBackendController::class, 'EditCategory'])->name('directory.category.update');
-    Route::get('backend/deletecategoryid/menu/{menu}/id/{id}', [DirectoryBackendController::class, 'DeleteCategoryid'])->name('directory.delete');
+    Route::get('backend/deletecategoryid/menu/{menu}/id/{id}', [DirectoryBackendController::class, 'DeleteCategoryid'])->name('directory.delete.cate');
     Route::get('backend/deleteDirectoryfile/menu/{menu}/id/{id}/idfile/{idfile}/cate/{cate}', [DirectoryBackendController::class, 'DeleteOneFile'])->name('directory.deleteOnefile.category');
 
     //Texteditor

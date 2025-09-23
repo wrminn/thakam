@@ -98,7 +98,7 @@
                                             </button>
                                         </a>
                                         <button type="button" class="btn btn-outline-danger"
-                                            onclick="deleteItem('{{ route('directory.delete', ['menu' => $menuId, 'id' => $item->categories_id]) }}')">
+                                            onclick="deleteItem('{{ route('directory.delete.cate', ['menu' => $menuId, 'id' => $item->categories_id]) }}')">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
                                                 fill="currentColor" class="bi bi-trash3" viewBox="0 0 16 16">
                                                 <path

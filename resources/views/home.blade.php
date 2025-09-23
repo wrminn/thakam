@@ -469,7 +469,6 @@
             </div>
             @if (!empty($activity))
                 <div class="box-all-news">
-
                     <a href="http://" class="no-underline button-news-all">ดูข่าวประชาสัมพันธ์ทั้งหมด</a>
                 </div>
             @endif
@@ -478,6 +477,69 @@
 
     </section>
     <section class="box-here">
-        <img src="/img/here/1.png" alt=""  style="margin-top: 130px;">
+        <img src="/img/here/1.png" alt="" style="margin-top: 130px;">
+        <div class="box-slide-hrer">
+            <div class="slide-img">
+                <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade carousel-slide-here"
+                    data-bs-ride="carousel" data-bs-interval="2500">
+                    <!-- สไลด์ -->
+                    <div class="carousel-inner">
+
+                        @forelse($SlideMenu8 as $slide)
+                            <a href="">
+                                <div class="carousel-item active">
+                                    <img src="{{ asset('storage/' . $slide->texteditor_topic_picture) }}"
+                                        class="d-block w-100 slide-here" alt="...">
+                                    <div class="carousel-caption  position-static">
+                                        <div class="slide-text">
+                                            {{ $slide->texteditor_title }}
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        @empty
+                            <div class="">ไม่พบข้อมูล</div>
+                        @endforelse
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+            <div class="box-all-here">
+                <a href="http://" class="no-underline button-here-all">ดูสถานที่ทั้งหมด</a>
+            </div>
+        </div>
+        <div class="banner-service-one">
+            <a href=""> <img src="/img/here/Banner-1.png" class="button-here" alt=""></a>
+            <a href=""> <img src="/img/here/Banner-2.png" class="button-here" alt=""></a>
+            <a href=""> <img src="/img/here/Banner-3.png" class="button-here" alt=""></a>
+        </div>
+        <div class="banner-service-two">
+            <div class="card-here">
+                <a href=""> <img src="/img/here/BannerText/Banner-Down-1-text.png" class="button-here-text"
+                        alt=""></a>
+                <a href=""> <img src="/img/here/BannerText/Banner-Down-2-text.png" class="button-here-text"
+                        alt=""></a>
+                <a href=""> <img src="/img/here/BannerText/Banner-Down-3-text.png" class="button-here-text"
+                        alt=""></a>
+                <a href=""> <img src="/img/here/BannerText/Banner-Down-4-text.png" class="button-here-text"
+                        alt=""></a>
+                <a href=""> <img src="/img/here/BannerText/Banner-Down-5-text.png" class="button-here-text"
+                        alt=""></a>
+                <a href=""> <img src="/img/here/BannerText/Banner-Down-6-text.png" class="button-here-text"
+                        alt=""></a>
+                <a href=""> <img src="/img/here/BannerText/Banner-Down-7-text.png" class="button-here-text"
+                        alt=""></a>
+            </div>
+
+        </div>
     </section>
 @endsection

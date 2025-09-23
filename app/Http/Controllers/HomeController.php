@@ -50,6 +50,18 @@ class HomeController extends Controller
             ->limit(6)
             ->get();
 
-        return view('home', compact('video', 'SlideMenu70', 'activity'));
+        $SlideMenu8 = DB::table('texteditor')
+            ->where('texteditor_menu', 8)
+            ->where('texteditor_display', "A")
+            ->orderBy('texteditor_date_show', 'desc')
+            ->orderBy('texteditor_id', 'desc')
+            ->limit(6)
+            ->get();
+            // echo "<pre>";
+            // print_r($SlideMenu8 );
+            // exit();
+
+
+        return view('home', compact('video', 'SlideMenu70', 'activity','SlideMenu8'));
     }
 }
