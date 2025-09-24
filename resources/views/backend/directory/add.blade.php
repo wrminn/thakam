@@ -29,20 +29,23 @@
                 @endif
 
                 @csrf
-                <div class="row">
-                    <div class="col">
-                        <div class="mb-3">
-                            <label class="form-label">วันที่</label>
-                            <input type="date" name="date" class="form-control" required>
+                @if (empty($cateID))
+                    <div class="row">
+
+                        <div class="col">
+                            <div class="mb-3">
+                                <label class="form-label">วันที่</label>
+                                <input type="date" name="date" class="form-control" required>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="mb-3">
+                                <label for="slot" class="form-label">รูปหัวข้อ</label>
+                                <input type="file" class="form-control" name="topic_picture" accept="image/*">
+                            </div>
                         </div>
                     </div>
-                    <div class="col">
-                        <div class="mb-3">
-                            <label for="slot" class="form-label">รูปหัวข้อ</label>
-                            <input type="file" class="form-control" name="topic_picture" accept="image/*">
-                        </div>
-                    </div>
-                </div>
+                @endif
                 <div class="mb-3">
                     <label for="floor" class="form-label">หัวข้อ</label>
                     <input type="text" class="form-control" name="topic" required>

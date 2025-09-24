@@ -195,7 +195,8 @@
             </div>
             <div class="submenu level-1">
                 <a href="/backend/directory/menu/39">เทศบัญญัติและคำสั่ง</a>
-                <a href="/backend/directory/menu/40">กฎหมายที่เกี่ยวข้อง</a>
+                <a href="/backend/directory/menu/40/cate/0">กฎหมายที่เกี่ยวข้อง</a>
+                <a href="/backend/directory/menu/76">แผนพัฒนาเศรษฐกิจและสังคมแห่งชาติ</a>
             </div>
             <div class="menu-item has-submenu">
                 บริการประชาชน

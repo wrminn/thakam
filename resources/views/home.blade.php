@@ -164,11 +164,18 @@
                     @if (!empty($video))
                         @if ($video->slide_type == 'L')
                             @php
+                                $videoUrl = $video->slide_link;
+                                $videoId = null;
 
-                                $query = parse_url($video->slide_link, PHP_URL_QUERY);
-                                parse_str($query, $params);
-                                $video_id = $params['v'];
+                                if (strpos($videoUrl, 'youtube.com/watch') !== false) {
+                                    $query = parse_url($videoUrl, PHP_URL_QUERY);
+                                    parse_str($query, $params);
+                                    $videoId = $params['v'] ?? null;
+                                } elseif (strpos($videoUrl, 'youtu.be/') !== false) {
+                                    $videoId = basename(parse_url($videoUrl, PHP_URL_PATH));
+                                }
                             @endphp
+
                             <iframe width="900" height="500"
                                 src="https://www.youtube.com/embed/{{ $video_id }}?si=2nJqA0yQzUPwTWvj&amp;start=206"
                                 title="YouTube video player" frameborder="0"

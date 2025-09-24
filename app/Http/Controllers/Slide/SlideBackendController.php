@@ -30,6 +30,7 @@ class SlideBackendController extends Controller
 
         $list = Slide::active()
             ->where('slide_menu', $menuId)
+            ->orderBy('slide_id', 'desc')
             ->paginate(20);
         $startIndex = ($list->currentPage() - 1) * $list->perPage() + 1;
 

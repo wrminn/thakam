@@ -36,6 +36,7 @@ class ArticlesBackendController extends Controller
         $list = DB::table('texteditor')
             ->leftJoin('texteditor_detail', 'texteditor.texteditor_id', '=', 'texteditor_detail.texteditor_id')
             ->where('texteditor.texteditor_menu', $menuId)
+            ->where('texteditor_detail.texteditor_display', "A")
             ->select(
                 'texteditor.*',
                 'texteditor_detail.texteditor_detail_id',
@@ -66,6 +67,7 @@ class ArticlesBackendController extends Controller
             ->orderBy('texteditor_id', 'desc')
             ->first();
 
+
         if (!empty($list)) {
             $filename = null;
 
@@ -76,21 +78,31 @@ class ArticlesBackendController extends Controller
 
             $list_texteditor = DB::table('texteditor_detail')
                 ->where('texteditor_id', $list->texteditor_id)
+                ->where('texteditor_display', "A")
                 ->first();
 
-            if (!empty($list_texteditor->texteditor_id)) {
-          
+            if (trim(strip_tags($request->detail)) === '') {
+
                 DB::table('texteditor_detail')->where('texteditor_id', $list_texteditor->texteditor_id)
                     ->update([
-                        'texteditor_detail' => $request->detail
+                        'texteditor_display' => "D"
                     ]);
             } else {
-                $data_texteditor_detail = [
-                    'texteditor_detail' => $request->detail,
-                    'texteditor_id' => $list->texteditor_id,
-                    'texteditor_detail_seq' => '1',
-                ];
-                DB::table('texteditor_detail')->insert($data_texteditor_detail);
+             
+                if (!empty($list_texteditor->texteditor_id)) {
+
+                    DB::table('texteditor_detail')->where('texteditor_id', $list_texteditor->texteditor_id)
+                        ->update([
+                            'texteditor_detail' => $request->detail
+                        ]);
+                } else {
+                    $data_texteditor_detail = [
+                        'texteditor_detail' => $request->detail,
+                        'texteditor_id' => $list->texteditor_id,
+                        'texteditor_detail_seq' => '1',
+                    ];
+                    DB::table('texteditor_detail')->insert($data_texteditor_detail);
+                }
             }
         } else {
 
