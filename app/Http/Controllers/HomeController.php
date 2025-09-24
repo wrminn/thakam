@@ -32,6 +32,7 @@ class HomeController extends Controller
         $video = Slide::active()
             ->where('slide_menu', 69)
             ->where('slide_display', "A")
+            ->orderBy('slide_id', 'desc')
             ->first();
 
         $SlideMenu70 = Slide::active()
