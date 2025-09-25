@@ -107,6 +107,14 @@ Route::middleware(['auth'])->group(function () {
     Route::post('backend/addslidevideo/menu/{menu}', [SlideBackendController::class, 'insertslidevideo'])->name('slide.insert.video');
     Route::post('backend/editslidevideo/menu/{menu}/id/{id}', [SlideBackendController::class, 'editslidevideo'])->name('editslideone.video');
 
+    //elibrary
+    Route::get('backend/elibrary/menu/{menu}', [ArticlesBackendController::class, 'selectslide'])->name('selectelibrary');
+    Route::get('backend/addelibrary/menu/{menu}', [ArticlesBackendController::class, 'addslide'])->name('addelibrary');
+    Route::post('backend/addelibrary/menu/{menu}', [ArticlesBackendController::class, 'insertslide'])->name('elibrary.insert');
+    Route::get('backend/editelibrary/menu/{menu}/id/{id}', [ArticlesBackendController::class, 'selectslideone'])->name('elibraryone');
+    Route::post('backend/editelibrary/menu/{menu}/id/{id}', [ArticlesBackendController::class, 'editslide'])->name('editelibraryone');
+    Route::get('backend/deleteelibrary/menu/{menu}/id/{id}', [ArticlesBackendController::class, 'deleteslide'])->name('deleteelibraryid');
+
     // complaint
     Route::get('backend/complaint/menu/{menu}', [ServiceBackendController::class, 'SelectComplaint'])->name('list.complaint');
     Route::get('backend/complaintdetail/menu/{menu}/id/{id}', [ServiceBackendController::class, 'ComplaintDetail'])->name('complaintdetail');

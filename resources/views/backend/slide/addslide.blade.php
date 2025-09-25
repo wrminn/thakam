@@ -17,7 +17,7 @@
                     เพิ่มข้อมูล {{ $title }}
                 </div>
             </caption>
-            @if ($menuId == '48')
+            @if ($menuId == '69')
                 <div class="card-body">
                     <form id="uploadForm" action="{{ route('slide.insert.video', ['menu' => $menuId]) }}" method="post"
                         enctype="multipart/form-data">

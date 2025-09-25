@@ -242,10 +242,12 @@
                 <div class="submenu level-2">
                     <a href="/backend/directory/menu/56">รางวัลแห่งความภูมิใจ</a>
                     <a href="/backend/event-calendar/menu/57">ปฏิทินกิจกรรม</a>
+                    <a href="/backend/elibrary/menu/78">E-Library</a>
                     <a href="/backend/directory/menu/58">การประเมินคุณธรรมและความโปร่งใส (ITA)</a>
                     <a href="/backend/directory/menu/59">การประเมินประสิทธิภาพภายใน (LPA)</a>
                     <a href="/backend/directory/menu/60">การจัดการองค์ความรู้ (KM)</a>
                     <a href="/backend/directory/menu/61/cate/0">ศูนย์ข้อมูลข่าสาร</a>
+                    <a href="/backend/directory/menu/77/cate/0">ศูนย์ดำรงธรรม</a>
                     <a href="/backend/directory/menu/62">ข้อมูลอาเซียน</a>
                     <a href="/backend/articles/menu/63">ประชาสัมพันธ์การเลือกตั้ง</a>
                     <a href="/backend/directory/menu/64/cate/0">รายงานกิจการสภา</a>

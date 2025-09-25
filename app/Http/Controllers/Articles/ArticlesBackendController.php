@@ -88,7 +88,7 @@ class ArticlesBackendController extends Controller
                         'texteditor_display' => "D"
                     ]);
             } else {
-             
+
                 if (!empty($list_texteditor->texteditor_id)) {
 
                     DB::table('texteditor_detail')->where('texteditor_id', $list_texteditor->texteditor_id)
@@ -167,5 +167,131 @@ class ArticlesBackendController extends Controller
                 'texteditor_display' => 'D',
             ]);
         return redirect('backend/articles/menu/' . $menuId);
+    }
+
+    function selectslide($menuId)
+    {
+        $titles = $this->myService->getDataByKey($menuId);
+        $title = $titles ?? 'ข้อมูลเมนู' . $menuId;
+
+        $list = DB::table('elibrary')
+            ->where('elibrary_menu', $menuId)
+            ->orderBy('elibrary_id', 'desc')
+            ->paginate(20);
+        $startIndex = ($list->currentPage() - 1) * $list->perPage() + 1;
+
+        return view('backend.elibrary.elibrary', compact('title', 'list', 'menuId', 'startIndex'));
+    }
+
+    function addslide($menuId)
+    {
+        $titles = $this->myService->getDataByKey($menuId);
+        $title = $titles ?? 'ข้อมูลเมนู' . $menuId;
+        return view('backend.elibrary.addelibrary', compact('title', 'menuId'));
+    }
+
+    function insertslide(Request $request, $menuId, $category = "")
+    {
+
+        $id = DB::table('elibrary')->insertGetId([
+            'elibrary_title' => $request->topic,
+            'elibrary_menu' => $menuId,
+            'elibrary_date_insert' => now(),
+        ]);
+
+
+        if ($request->hasFile('topic_picture')) {
+            $file = $request->file('topic_picture');
+            $ext = $file->getClientOriginalExtension();
+            $timestamp = now()->format('Ymd_His');
+
+            $folder = "content/{$menuId}"; // path ใน disk 'public'
+            $filename = "{$id}_elibrary_{$timestamp}.{$ext}";
+            $path = $file->storeAs($folder, $filename, 'public');
+
+            $fullPath = storage_path('app/public/' . $path);
+            if (file_exists($fullPath)) {
+                chmod($fullPath, 0644);
+            }
+
+            $publicStoragePath = public_path('storage/' . $path);
+            if (!file_exists(dirname($publicStoragePath))) {
+                mkdir(dirname($publicStoragePath), 0775, true);
+            }
+            copy($fullPath, $publicStoragePath);
+            chmod($publicStoragePath, 0644);
+
+            DB::table('elibrary')->where('elibrary_id', $id)
+                ->update([
+                    'elibrary_path' => $path,
+                    'elibrary_name_file' => $file->getClientOriginalName()
+                ]);
+        }
+
+        return redirect('backend/elibrary/menu/' . $menuId);
+    }
+
+    function selectslideone($menuId, $id)
+    {
+        $titles = $this->myService->getDataByKey($menuId);
+        $title = $titles ?? 'ข้อมูลเมนู' . $menuId;
+
+        $list = DB::table('elibrary')
+            ->where('elibrary_id', $id)
+            ->where('elibrary_display', "A")
+            ->first();
+
+        return view('backend.elibrary.editelibrary', compact('title', 'list', 'menuId', 'id'));
+    }
+
+    function editslide(Request $request, $menuId, $id, $category = "")
+    {
+
+        DB::table('elibrary')
+            ->where('elibrary_id', $id)
+            ->update([
+                'elibrary_title' => $request->title,
+                'elibrary_date_update' => now()
+            ]);
+
+        if ($request->hasFile('topic_picture')) {
+            $file = $request->file('topic_picture');
+            $ext = $file->getClientOriginalExtension();
+            $timestamp = now()->format('Ymd_His');
+
+            $folder = "content/{$menuId}"; // path ใน disk 'public'
+            $filename = "{$id}_elibrary_{$timestamp}.{$ext}";
+            $path = $file->storeAs($folder, $filename, 'public');
+
+            $fullPath = storage_path('app/public/' . $path);
+            if (file_exists($fullPath)) {
+                chmod($fullPath, 0644);
+            }
+
+            $publicStoragePath = public_path('storage/' . $path);
+            if (!file_exists(dirname($publicStoragePath))) {
+                mkdir(dirname($publicStoragePath), 0775, true);
+            }
+            copy($fullPath, $publicStoragePath);
+            chmod($publicStoragePath, 0644);
+
+            DB::table('elibrary')->where('elibrary_id', $id)
+                ->update([
+                    'elibrary_path' => $path,
+                    'elibrary_name_file' => $file->getClientOriginalName()
+                ]);
+        }
+        return redirect('backend/elibrary/menu/' . $menuId);
+    }
+
+    function deleteslide($menuId, $id)
+    {
+
+        DB::table('elibrary')->where('elibrary_id', $id)
+            ->update([
+                'elibrary_display' => 'D',
+                'elibrary_date_update' => now()
+            ]);
+        return redirect('backend/elibrary/menu/' . $menuId);
     }
 }

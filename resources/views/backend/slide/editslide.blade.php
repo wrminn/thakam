@@ -20,7 +20,7 @@
                 </div>
             </caption>
 
-            @if ($menuId == '48')
+            @if ($menuId == '69')
 
                 <div class="card-body">
 

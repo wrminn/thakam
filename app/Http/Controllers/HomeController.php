@@ -58,11 +58,40 @@ class HomeController extends Controller
             ->orderBy('texteditor_id', 'desc')
             ->limit(6)
             ->get();
-            // echo "<pre>";
-            // print_r($SlideMenu8 );
-            // exit();
 
+        $egp = DB::table('texteditor')
+            ->where('texteditor_menu', 8)
+            ->where('texteditor_display', "A")
+            ->orderBy('texteditor_date_show', 'desc')
+            ->orderBy('texteditor_id', 'desc')
+            ->limit(6)
+            ->get();
 
-        return view('home', compact('video', 'SlideMenu70', 'activity','SlideMenu8'));
+        $listMenu48 = DB::table('texteditor')
+            ->where('texteditor_menu', 48)
+            ->where('texteditor_display', "A")
+            ->orderBy('texteditor_date_show', 'desc')
+            ->orderBy('texteditor_id', 'desc')
+            ->limit(6)
+            ->get();
+
+        $listMenu49 = DB::table('texteditor')
+            ->where('texteditor_menu', 49)
+            ->where('texteditor_display', "A")
+            ->orderBy('texteditor_date_show', 'desc')
+            ->orderBy('texteditor_id', 'desc')
+            ->limit(6)
+            ->get();
+
+        $listMenu50 = DB::table('texteditor')
+            ->where('texteditor_menu', 50)
+            ->where('texteditor_display', "A")
+            ->orderBy('texteditor_date_show', 'desc')
+            ->orderBy('texteditor_id', 'desc')
+            ->limit(6)
+            ->get();
+            
+
+        return view('home', compact('video', 'SlideMenu70', 'activity','SlideMenu8','egp','listMenu48','listMenu49','listMenu50'));
     }
 }

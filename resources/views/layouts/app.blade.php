@@ -7,6 +7,7 @@
     <link rel="icon" type="image/svg+xml" href="/img/logo.png">
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@yield('title', 'เทศบาลตำบลท่าข้าม')</title>
     <!-- Fonts -->
     <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
@@ -16,6 +17,7 @@
     <link rel="stylesheet" href="{{ asset('/css/template/layout.css') }}">
     <link rel="stylesheet" href="{{ asset('/css/template/menu.css') }}">
     <link rel="stylesheet" href="{{ asset('/css/template/home.css') }}">
+    <link rel="stylesheet" href="{{ asset('/css/template/book.css') }}">
     {{-- <script src="https://cdn.tailwindcss.com"></script> --}}
 
     <!-- Scripts -->
@@ -153,6 +155,7 @@
                     <div class="submenu">
                         <a href="#">เทศบัญญัติและคำสั่ง</a>
                         <a href="#">กฎหมายที่เกี่ยวข้อง</a>
+                        <a href="#">แผนพัฒนาเศรษฐกิจและสังคมแห่งชาติ</a>
                         <a href="#">พระราชบัญญัติและพระราชกฤษฎีกา</a>
                         <a href="#">กฎหมาย ระเบียบ และประกาศกระทรวง</a>
                     </div>
@@ -190,7 +193,7 @@
                     @empty
                         <div class="carousel-item active">
                             <img src="https://www.w3schools.com/howto/img_snow_wide.jpg" class="d-block w-100"
-                                alt="...">
+                                alt="..." style="width: 1905px; height:600px; object-fit: cover;">
                         </div>
                     @endforelse
                 </div>
@@ -238,8 +241,14 @@
         </section>
         <div class="br-top"></div>
         <section class="animation-top">
-            <img src="https://www.w3schools.com/howto/img_snow_wide.jpg" class="d-block w-100" alt="..."
-                style="width: 1905px; height:650px">
+            {{-- <img src="https://www.w3schools.com/howto/img_snow_wide.jpg" class="d-block w-100" alt="..."
+                style="width: 1905px; height:650px"> --}}
+            <video autoplay muted loop playsinline style="width: 100%;">
+                <source src="/img/Animation.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+
+
         </section>
 
         <section class="vistion-top">

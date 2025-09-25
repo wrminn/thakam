@@ -417,7 +417,6 @@
             </div>
             @if (!empty($activity))
                 <div class="box-all-activity">
-
                     <a href="http://" class="no-underline button-activity-all">ดูข่าวกิจกรรมทั้งหมด</a>
                 </div>
             @endif
@@ -495,7 +494,7 @@
 
     </section>
     <section class="box-here">
-        <img src="/img/here/1.png" alt="" style="margin-top: 130px;">
+        <img src="/img/here/1.png" alt="" style="margin-top: 400px;">
         <div class="box-slide-hrer">
             <div class="slide-img">
                 <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade carousel-slide-here"
@@ -560,4 +559,295 @@
 
         </div>
     </section>
+    <section class="box-announce">
+        <div class="announce-box">
+            <div class="announce-title">
+                <div class="announce-title-one">ประกาศจัดซื้อจัดจ้าง</div>
+                <div class="announce-title-two">เทศบาลตำบลท่าข้าม</div>
+            </div>
+            <div class="announce-body">
+                <div class="tab-buttons">
+                    <button class="active" onclick="openTab('egp')">ประกาศ E-GP</button>
+                    <button onclick="openTab('buy')">ประกาศจัดซื้อจัดจ้าง</button>
+                    <button onclick="openTab('result')">ผลประกาศจัดซื้อจัดจ้าง</button>
+                    <button onclick="openTab('report')">รายงานผลจัดซื้อจัดจ้าง</button>
+                </div>
+
+                <div id="egp" class="tab-content active">
+
+                    <div class="content-announce">
+
+                        @forelse($egp as $list)
+                            <a href="" class="no-underline">
+                                <div class="item">
+                                    <div class="box-one-announce">
+                                        @php
+                                            $date = \Carbon\Carbon::parse($list->texteditor_date_show);
+                                            $months = [
+                                                1 => 'ม.ค',
+                                                2 => 'ก.พ',
+                                                3 => 'มี.ค',
+                                                4 => 'เม.ย',
+                                                5 => 'พ.ค',
+                                                6 => 'มิ.ย',
+                                                7 => 'ก.ค',
+                                                8 => 'ส.ค',
+                                                9 => 'ก.ย',
+                                                10 => 'ต.ค',
+                                                11 => 'พ.ย',
+                                                12 => 'ธ.ค',
+                                            ];
+                                            $day = $date->day;
+                                            $month = $months[$date->month];
+                                            $year = $date->year + 543;
+                                        @endphp
+                                        <div class="item-icon">📄</div>
+                                        <div class="item-text">
+                                            <div class="item-date">{{ $day }}
+                                                {{ $month }}{{ $year }}</div>
+                                            {{ $list->texteditor_title }}
+                                        </div>
+                                    </div>
+                                    <div class="tag-announce">ประกาศ E-GP</div>
+                                </div>
+                            </a>
+                        @empty
+                            <div class="">ไม่พบข้อมูล</div>
+                        @endforelse
+                    </div>
+                    <div class="box-all-announce">
+                        <a href="http://" class="no-underline button-announce-all">ดูทั้งหมด</a>
+                    </div>
+                </div>
+
+                <div id="buy" class="tab-content">
+
+                    <div class="content-announce">
+
+                        @forelse($listMenu48 as $list)
+                            <a href="" class="no-underline">
+                                <div class="item">
+                                    <div class="box-one-announce">
+                                        @php
+                                            $date = \Carbon\Carbon::parse($list->texteditor_date_show);
+                                            $months = [
+                                                1 => 'ม.ค',
+                                                2 => 'ก.พ',
+                                                3 => 'มี.ค',
+                                                4 => 'เม.ย',
+                                                5 => 'พ.ค',
+                                                6 => 'มิ.ย',
+                                                7 => 'ก.ค',
+                                                8 => 'ส.ค',
+                                                9 => 'ก.ย',
+                                                10 => 'ต.ค',
+                                                11 => 'พ.ย',
+                                                12 => 'ธ.ค',
+                                            ];
+                                            $day = $date->day;
+                                            $month = $months[$date->month];
+                                            $year = $date->year + 543;
+                                        @endphp
+                                        <div class="item-icon">📄</div>
+                                        <div class="item-text">
+                                            <div class="item-date">{{ $day }}
+                                                {{ $month }}{{ $year }}</div>
+                                            {{ $list->texteditor_title }}
+                                        </div>
+                                    </div>
+                                    <div class="tag-announce">ประกาศจัดซื้อจัดจ้าง</div>
+                                </div>
+                            </a>
+                        @empty
+                            <div class="">ไม่พบข้อมูล</div>
+                        @endforelse
+                    </div>
+                    <div class="box-all-announce">
+                        <a href="http://" class="no-underline button-announce-all">ดูทั้งหมด</a>
+                    </div>
+                </div>
+
+                <div id="result" class="tab-content">
+
+                    <div class="content-announce">
+
+                        @forelse($listMenu49 as $list)
+                            <a href="" class="no-underline">
+                                <div class="item">
+                                    <div class="box-one-announce">
+                                        @php
+                                            $date = \Carbon\Carbon::parse($list->texteditor_date_show);
+                                            $months = [
+                                                1 => 'ม.ค',
+                                                2 => 'ก.พ',
+                                                3 => 'มี.ค',
+                                                4 => 'เม.ย',
+                                                5 => 'พ.ค',
+                                                6 => 'มิ.ย',
+                                                7 => 'ก.ค',
+                                                8 => 'ส.ค',
+                                                9 => 'ก.ย',
+                                                10 => 'ต.ค',
+                                                11 => 'พ.ย',
+                                                12 => 'ธ.ค',
+                                            ];
+                                            $day = $date->day;
+                                            $month = $months[$date->month];
+                                            $year = $date->year + 543;
+                                        @endphp
+                                        <div class="item-icon">📄</div>
+                                        <div class="item-text">
+                                            <div class="item-date">{{ $day }}
+                                                {{ $month }}{{ $year }}</div>
+                                            {{ $list->texteditor_title }}
+                                        </div>
+                                    </div>
+                                    <div class="tag-announce">ผลประกาศจัดซื้อจัดจ้าง</div>
+                                </div>
+                            </a>
+                        @empty
+                            <div class="">ไม่พบข้อมูล</div>
+                        @endforelse
+                    </div>
+                    <div class="box-all-announce">
+                        <a href="http://" class="no-underline button-announce-all">ดูทั้งหมด</a>
+                    </div>
+                </div>
+
+                <div id="report" class="tab-content">
+
+                    <div class="content-announce">
+
+                        @forelse($listMenu50 as $list)
+                            <a href="" class="no-underline">
+                                <div class="item">
+                                    <div class="box-one-announce">
+                                        @php
+                                            $date = \Carbon\Carbon::parse($list->texteditor_date_show);
+                                            $months = [
+                                                1 => 'ม.ค',
+                                                2 => 'ก.พ',
+                                                3 => 'มี.ค',
+                                                4 => 'เม.ย',
+                                                5 => 'พ.ค',
+                                                6 => 'มิ.ย',
+                                                7 => 'ก.ค',
+                                                8 => 'ส.ค',
+                                                9 => 'ก.ย',
+                                                10 => 'ต.ค',
+                                                11 => 'พ.ย',
+                                                12 => 'ธ.ค',
+                                            ];
+                                            $day = $date->day;
+                                            $month = $months[$date->month];
+                                            $year = $date->year + 543;
+                                        @endphp
+                                        <div class="item-icon">📄</div>
+                                        <div class="item-text">
+                                            <div class="item-date">{{ $day }}
+                                                {{ $month }}{{ $year }}</div>
+                                            {{ $list->texteditor_title }}
+                                        </div>
+                                    </div>
+                                    <div class="tag-announce">รายงานผลจัดซื้อจัดจ้าง</div>
+                                </div>
+                            </a>
+                        @empty
+                            <div class="">ไม่พบข้อมูล</div>
+                        @endforelse
+                    </div>
+                    <div class="box-all-announce">
+                        <a href="http://" class="no-underline button-announce-all">ดูทั้งหมด</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="box-elibrary">
+            <div class="elibrary-one-box">
+                <div class="elibrary-one">
+                    <div class="elibrary-text-one">
+                        <span style="font-size: 60px;">ช่องทางการติดตาม</span>
+                        <span style="font-weight: 900;font-size: 200px;margin-top: -120px;">ข่าวสาร</span>
+                    </div>
+                    <div class="elibrary-img-one" style="margin-top: -50px;">
+                        <img src="/img/09elibrary/Line.png" alt="">
+                    </div>
+                </div>
+                <div class="elibrary-two"><img src="/img/09elibrary/E-Library.png" alt="" style="width: 90%;">
+                </div>
+                <div class="elibrary-three">
+                </div>
+            </div>
+            <div class="elibrary-two-box">
+                <iframe
+                    src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ffacebook&tabs=timeline&width=340&height=1200&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=6174507855916076"
+                    width="340" height="800" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+                    allowfullscreen="true"
+                    allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+            </div>
+        </div>
+        <div class="e-book">
+            <div class="content-book">
+
+                <div class="book">
+                    <a class="" href="#">
+
+                        <div class="book-cover cover1">
+                            <div class="effect"></div>
+                            <div class="light"></div>
+                        </div>
+                        <div class="book-inside">
+                        </div>
+                    </a>
+                </div>
+
+                <div class="book">
+                    <a class="" href="#">
+
+                        <div class="book-cover cover2">
+                            <div class="effect"></div>
+                            <div class="light"></div>
+                        </div>
+                        <div class="book-inside">
+                        </div>
+                    </a>
+                </div>
+
+                <div class="book">
+                    <a class="" href="#">
+                        <div class="book-cover cover3">
+                            <div class="effect"></div>
+                            <div class="light"></div>
+                        </div>
+                        <div class="book-inside">
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+            <div class="f-book">
+                <img src="/img/09elibrary/Plank.png" alt="">
+            </div>
+            <div class="box-all-book">
+                <a href="http://" class="no-underline button-book-all">ดูทั้งหมด</a>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        function openTab(tabId) {
+            // ซ่อน tab ทั้งหมด
+            document.querySelectorAll('.tab-content').forEach(tab => {
+                tab.classList.remove('active');
+            });
+            document.querySelectorAll('.tab-buttons button').forEach(btn => {
+                btn.classList.remove('active');
+            });
+
+            // แสดง tab ที่เลือก
+            document.getElementById(tabId).classList.add('active');
+            event.target.classList.add('active');
+        }
+    </script>
 @endsection
