@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="{{ asset('/css/template/menu.css') }}">
     <link rel="stylesheet" href="{{ asset('/css/template/home.css') }}">
     <link rel="stylesheet" href="{{ asset('/css/template/book.css') }}">
+    <link rel="stylesheet" href="{{ asset('/css/template/mobile.css') }}">
     {{-- <script src="https://cdn.tailwindcss.com"></script> --}}
 
     <!-- Scripts -->

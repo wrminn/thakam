@@ -198,7 +198,7 @@
                 </div>
             </div>
             <div class="slide-in-video">
-                <img src="/img/03/Popup.png" alt="" height="500">
+                <img src="/img/03/Popup.png" alt="">
             </div>
         </div>
 
@@ -226,7 +226,7 @@
                     </a>
                     {{-- <a href="#" class=""><img src="" class="banner-smartcity"></a> --}}
                 </div>
-
+                
                 <a href="#" class="">
                     <img src="/img/SmartCity/Banner-5.png" class="banner-smartcity no-underline">
                 </a>
@@ -264,14 +264,14 @@
         <div class="box-one-stop-service">
 
             <div class="ons-box-one">
-                <span style="font-size: 70px;"><b>O</b>ne <b>S</b>top <b>S</b>ervice <img
+                <span style="font-size: 70px;"class="text-eser-one"><b>O</b>ne <b>S</b>top <b>S</b>ervice <img
                         src="/img/OneStopService/Ready.png" alt="" style="width:25%"
                         class="ons-button-Ready"></span>
-                <span style="font-size: 75px;margin-top: -29px;"><b>ระบบยื่นคำร้องออนไลน์</b></span>
-                <span style="font-size: 33px;margin-top: -30px;">Online Application Submission Service</span>
+                <span style="font-size: 75px;margin-top: -29px;" class="text-eser-two"><b>ระบบยื่นคำร้องออนไลน์</b></span>
+                <span style="font-size: 33px;margin-top: -30px;" class="text-eser-three">Online Application Submission Service</span>
 
                 <div class="ons-box-button-one">
-                    <a href=""> <img src="/img/OneStopService/Banner-1.png" alt=""
+                    <a href="" > <img src="/img/OneStopService/Banner-1.png" alt=""
                             class="bg-ons-button"></a>
                     <a href=""> <img src="/img/OneStopService/Banner-2.png" alt=""
                             class="bg-ons-button"></a>
@@ -298,8 +298,8 @@
                 <div class="carousel-inner">
                     @forelse($SlideMenu70 as $slide)
                         <div class="carousel-item active">
-                            <img src="{{ asset('storage/' . $slide->slide_path) }}" class="d-block w-100" alt="..."
-                                style="width: 1586px!important; height:625px">
+                            <img src="{{ asset('storage/' . $slide->slide_path) }}" class="d-block w-100 slide-8" alt="..."
+                                style="width: 1586px; height:625px">
                         </div>
                     @empty
                         <div class="">ไม่พบข้อมูล</div>
@@ -318,41 +318,41 @@
 
         <div class="public-body">
             <div class="button-public-service-top">
-                <a href="#" class="public-link-one">
+                <a href="#" class="public-link-one sim-one">
                     <img src="/img/publicservice/1.png" class="public-service-img">
                     <span style="margin-top: -30px;">เบี้ยยังชีพผู้สูงอายุ</span>
                     <span>Elderly allowance</span>
                 </a>
-                <a href="#" class="public-link-one">
+                <a href="#" class="public-link-one sim-two">
                     <img src="/img/publicservice/6.png" class="public-service-img">
                     <span style="margin-top: -30px;">เบี้ยยังชีพผู้พิการ</span>
                     <span>Disability living allowance</span>
                 </a>
             </div>
             <div class="button-public-service-center">
-                <a href="#" class="public-link-two">
+                <a href="#" class="public-link-two sim-three">
                     <img src="/img/publicservice/2.png" class="public-service-img">
                     <span style="margin-top: -30px;">ถาม-ตอบ</span>
                     <span>Q & A</span>
                 </a>
-                <a href="#" class="public-link-center">
+                <a href="#" class="public-link-center sim-four">
                     <img src="/img/publicservice/7.png" class="public-service-img">
                     <span style="margin-top: -30px;">แบบสอบถามความพึงพอใจ</span>
                     <span>Satisfaction Survey</span>
                 </a>
-                <a href="#" class="public-link-two">
+                <a href="#" class="public-link-two sim-five">
                     <img src="/img/publicservice/5.png" class="public-service-img">
                     <span style="margin-top: -30px;">คู่มือประชาชน</span>
                     <span>Public Guide</span>
                 </a>
             </div>
             <div class="button-public-service-button">
-                <a href="#" class="public-link-three">
+                <a href="#" class="public-link-three sim-six">
                     <img src="/img/publicservice/3.png" class="public-service-img">
                     <span style="margin-top: -30px;">คู่มือปฏิบัติงาน</span>
                     <span>Work Manual</span>
                 </a>
-                <a href="#" class="public-link-three">
+                <a href="#" class="public-link-three sim-seven">
                     <img src="/img/publicservice/4.png" class="public-service-img">
                     <span style="margin-top: -30px;">ดาวน์โหลดแบบฟอร์ม</span>
                     <span>Download from</span>
@@ -500,7 +500,7 @@
     </section>
 
     <section class="box-here">
-        <img src="/img/here/1.png" alt="" style="margin-top: 400px;">
+        <img src="/img/here/1.png" alt="" style="margin-top: 400px;" class="box-here-img-text">
         <div class="box-slide-hrer">
             <div class="slide-img">
                 <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade carousel-slide-here"
@@ -855,13 +855,14 @@
             </div>
         </div>
         <div class="map-two">
-            <img src="/img/11map/เมฆขยับ.gif" alt=""
+            {{-- <img src="/img/11map/เมฆขยับ.gif" alt=""
                 style="position: absolute;margin-top: 15%;margin-right: 70%;width: 200px;">
             <img src="/img/11map/โดรน.gif" alt="" style="position: absolute;margin-top: 10%;width: 90px;">
             <img src="/img/11map/โดรน2.gif" alt="" style="position: absolute;margin-top: 30%;width: 200px;">
             <img src="/img/11map/เมฆ-ข้าง.gif" alt=""
                 style="margin-left: 55%;position: absolute;margin-top: -5%;2: 200;width: 350px;">
-            <img src="/img/11map/Map.png" alt="">
+            <img src="/img/11map/Map.png" alt=""> --}}
+            <iframe src="/img/AnimationMap/test.html" frameborder="0" style="width: 100%;"></iframe>
         </div>
         <div class="map-three">
             <div class="text-map-three">

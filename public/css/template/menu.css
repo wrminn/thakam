@@ -199,38 +199,245 @@ span.chip {
     max-width: 1000px;
 }
 
+@media (max-width: 1920px) {
+
+    .nav-strip {
+        display: flex;
+        gap: 0.6vw;
+        align-items: center;
+        padding: 0.7vw 1vw;
+        justify-content: center;
+        flex-wrap: nowrap;
+        margin-top: -2.5vw;
+        position: relative;
+        z-index: 15;
+    }
+
+    .nav-pill {
+        position: relative;
+        background: #8CC63E;
+        padding: 0.5vw 2vw;
+        border-radius: 1.5vw;
+        border: 0.05vw solid rgba(0, 0, 0, 0.08);
+        box-shadow:
+            0 0.1vw 0.3vw rgba(0, 0, 0, 0.08),
+            0 0 0.8vw rgba(140, 198, 62, 0.7);
+        font-weight: 600;
+        cursor: pointer;
+        font-size: 1.3vw;
+        color: #fff;
+        transition: all 0.3s ease;
+    }
+
+    .nav-pill:hover {
+        background: #2fb06a;
+        color: #fff;
+    }
+
+    .submenu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        min-width: 11vw;
+        background: #fff;
+        border-radius: 0.6vw;
+        box-shadow: 0 0.3vw 0.9vw rgba(0, 0, 0, 0.12);
+        padding: 0.4vw 0;
+        z-index: 99;
+    }
+
+    .submenu a,
+    .submenu-item {
+        display: block;
+        padding: 0.4vw 0.8vw;
+        font-size: 0.9vw;
+        text-decoration: none;
+        color: #333;
+        cursor: pointer;
+    }
+
+    .submenu a:hover,
+    .submenu-item:hover {
+        background: #f3fdf8;
+        color: #2fb06a;
+        z-index: 99;
+    }
+
+    .has-submenu:hover>.submenu {
+        display: block;
+    }
+
+    .submenu-item {
+        position: relative;
+    }
+
+    .sub-submenu {
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 100%;
+        min-width: 10.5vw;
+        background: #fff;
+        border-radius: 0.6vw;
+        box-shadow: 0 0.3vw 0.9vw rgba(0, 0, 0, 0.12);
+        padding: 0.4vw 0;
+    }
+
+    .submenu-item:hover>.sub-submenu {
+        display: block;
+    }
+
+    .carousel-brand {
+        position: absolute;
+        top: 1vw;
+        left: 6vw;
+        z-index: 10;
+        display: flex;
+        align-items: center;
+        padding: 0.3vw 0.5vw;
+        border-radius: 0.4vw;
+    }
+
+    .carousel-brand img {
+        width: 7.8vw;
+        margin-right: 0.5vw;
+    }
+
+    .carousel-brand span {
+        font-size: 1.8vw;
+        font-weight: bold;
+        color: #ffffff;
+        text-shadow: 0.1vw 0.1vw 0.2vw rgba(0, 0, 0, 0.5);
+        margin-top: 0;
+    }
+
+    a.link-index {
+        color: #000;
+        text-decoration: unset;
+    }
+
+    .box-container {
+        margin-right: auto;
+        margin-left: auto;
+        max-width: 90vw;
+    }
+
+    .py-4 {
+        padding: 0px;
+    }
+
+    .b-vision {
+        display: flex;
+        gap: 0.6vw;
+        align-items: center;
+        padding: 0.7vw 1vw;
+        justify-content: center;
+    }
+
+    .text-vission {
+        position: relative;
+        background: #fff;
+        padding: 0.8vw;
+        border-radius: 1vw;
+        border: 0.05vw solid rgba(0, 0, 0, 0.08);
+        box-shadow: 0 0.1vw 0.3vw rgba(0, 0, 0, 0.08);
+        font-weight: 600;
+        cursor: pointer;
+        width: 50%;
+        gap: 0.6vw;
+        display: flex;
+        align-items: center;
+    }
+
+    span.chip {
+        background: #d0f5cf;
+        padding: 0.4vw;
+        border-radius: 1vw;
+        font-weight: bold;
+        white-space: nowrap;
+    }
+
+    .scroll-container {
+        flex: 1;
+        overflow: hidden;
+        position: relative;
+        height: 1.2vw;
+    }
+
+    .scroll-text {
+        position: absolute;
+        white-space: nowrap;
+        animation: scroll-left 20s linear infinite;
+    }
+
+    @keyframes scroll-left {
+        0% {
+            left: 100%;
+        }
+
+        100% {
+            left: -100%;
+        }
+    }
+
+    .b-detail {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        min-height: 100vh;
+        background: #f5f7fa;
+        padding: 2vw 1vw;
+    }
+
+    .form-wrapper {
+        background: #fff;
+        padding: 1.5vw 2vw;
+        border-radius: 0.6vw;
+        box-shadow: 0 0.3vw 0.9vw rgba(0, 0, 0, 0.1);
+        width: 100%;
+        max-width: 52vw;
+    }
+}
 
 /* สำหรับหน้าจอขนาดกลางและเล็ก (Tablet, Mobile) */
 @media (max-width: 768px) {
     .nav-strip {
-        flex-wrap: wrap; /* เมนูขึ้นบรรทัดใหม่ */
+        flex-wrap: wrap;
+        /* เมนูขึ้นบรรทัดใหม่ */
         gap: 8px;
         padding: 10px;
-        margin-top: -20px; /* ปรับระยะห่าง */
+        margin-top: -20px;
+        /* ปรับระยะห่าง */
     }
 
     .nav-pill {
         padding: 8px 20px;
-        font-size: 18px; /* ลดขนาดฟอนต์ */
+        font-size: 18px;
+        /* ลดขนาดฟอนต์ */
     }
 
     .submenu {
-        position: static; /* สำหรับ Mobile Submenu จะเป็น block ธรรมดา */
+        position: static;
+        /* สำหรับ Mobile Submenu จะเป็น block ธรรมดา */
     }
 
     .sub-submenu {
         position: static;
         left: 0;
     }
-    
+
     .carousel-brand {
         top: 10px;
         left: 50%;
-        transform: translateX(-50%); /* จัดให้อยู่กึ่งกลาง */
+        transform: translateX(-50%);
+        /* จัดให้อยู่กึ่งกลาง */
         padding: 3px 6px;
-        flex-direction: column; /* ไอคอนและข้อความเรียงลงมา */
+        flex-direction: column;
+        /* ไอคอนและข้อความเรียงลงมา */
         text-align: center;
-        background: none; /* ไม่มีพื้นหลัง */
+        background: none;
+        /* ไม่มีพื้นหลัง */
     }
 
     .carousel-brand img {
@@ -238,18 +445,20 @@ span.chip {
         margin-right: 0;
         margin-bottom: 5px;
     }
-    
+
     .carousel-brand span {
         font-size: 20px;
     }
 
     .b-vision {
-        flex-direction: column; /* เรียงจากบนลงล่าง */
+        flex-direction: column;
+        /* เรียงจากบนลงล่าง */
         padding: 10px;
     }
 
     .text-vission {
-        width: 100%; /* ให้เต็มความกว้าง */
+        width: 100%;
+        /* ให้เต็มความกว้าง */
         padding: 12px;
         flex-direction: column;
         align-items: flex-start;

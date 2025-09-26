@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart City Animation</title>
+    <style>
+        /* --- การตั้งค่าหน้าเว็บพื้นฐาน --- */
+        body {
+            margin: 0;
+            padding: 0;
+            /* ป้องกันการเกิด scrollbar จาก element ที่เคลื่อนไหวออกนอกจอ */
+            overflow: hidden; 
+            /* ใช้รูป Map.png เป็นพื้นหลัง */
+            background: none;
+        }
+
+        /* --- Map เป็นพื้นหลัง --- */
+        .map-bg {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 80vw;
+            height: 80vh;
+            object-fit: contain;
+            z-index: 0; /* Map อยู่ชั้นล่างสุด */
+            pointer-events: none; /* ไม่ให้ Map บังการคลิก */
+            transform: translate(-50%, -50%);
+        }
+
+        /* --- การตั้งค่าโดรน --- */
+        .drone {
+            position: absolute;
+            width: 120px;
+            height: auto;
+            z-index: 10;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+
+        /* โดรนลำที่ 1 (ซ้าย) */
+        #drone1 {
+            top: 150px;
+            left: 15%;
+            animation-name: moveUpDown1;
+            animation-duration: 9s;
+            animation-delay: 0s;
+        }
+
+        /* โดรนลำที่ 2 (ขวา) */
+        #drone2 {
+            top: 80px;
+            right: 10%;
+            animation-name: moveUpDown2;
+            animation-duration: 13s;
+            animation-delay: -4s;
+        }
+
+        /* โดรนลำที่ 3 (กลาง ล่างขึ้นบน) */
+        #drone3 {
+            left: 40%; /* อยู่กลางจอ */
+            bottom: 40px; /* เริ่มจากล่าง */
+            animation-name: moveBottomUp;
+            animation-duration: 11s;
+            animation-delay: -2s;
+            /* animation-direction: alternate; ไม่ต้อง alternate เพราะขึ้นอย่างเดียว */
+        }
+
+        /* --- การตั้งค่าก้อนเมฆ --- */
+        .cloud {
+            position: absolute;
+            width: 200px;
+            height: auto;
+            opacity: 1;
+            z-index: 10;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+
+        /* Cloud 1: เลื่อนซ้าย > ขวา */
+        #cloud1 {
+            top: 10%;
+            left: 10vw;
+            right: auto;
+            bottom: auto;
+            animation-name: cloudMoveRight;
+            animation-duration: 40s;
+            animation-direction: alternate; /* เคลื่อนที่กลับไปกลับมา */
+        }
+
+        /* Cloud 2: เลื่อนขวา > ซ้าย */
+        #cloud2 {
+            top: 30%;
+            left: auto;
+            right: 10vw;
+            width: 150px;
+            opacity: 1;
+            animation-name: cloudMoveLeft;
+            animation-duration: 15s;
+            animation-delay: -10s;
+            animation-direction: alternate; /* เคลื่อนที่กลับไปกลับมา */
+        }
+
+        /* Cloud 3: เลื่อนบน > ล่าง */
+        #cloud3 {
+            left: 50vw;
+            top: 5vh;
+            width: 250px;
+            animation-name: cloudMoveDown;
+            animation-duration: 10s;
+            animation-delay: -20s;
+            animation-direction: alternate; /* เคลื่อนที่กลับไปกลับมา */
+        }
+
+
+        /* --- Keyframes สำหรับ Animation --- */
+
+        /* Animation สำหรับโดรน 1 (ขึ้นลง) */
+        @keyframes moveUpDown1 {
+            0% {
+                transform: translateY(0);
+            }
+            100% {
+                transform: translateY(15vh); /* จุดจบของโดรน 1 */
+            }
+        }
+
+        /* Animation สำหรับโดรน 2 (ขึ้นลง) */
+        @keyframes moveUpDown2 {
+            0% {
+                transform: translateY(0);
+            }
+            100% {
+                transform: translateY(7vh); /* จุดจบของโดรน 2 */
+            }
+        }
+
+        /* Animation สำหรับโดรน 3 (ล่างขึ้นบน) */
+        @keyframes moveBottomUp {
+            0% {
+                transform: translateY(0);
+            }
+            100% {
+                transform: translateY(-15vh); /* ขึ้นไปด้านบน ไม่สุดจอ */
+            }
+        }
+
+        /* Cloud 1: ซ้าย > ขวา (วนกลับ) */
+        @keyframes cloudMoveRight {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(16vw); /* เคลื่อนที่แค่นิดเดียว */
+            }
+        }
+
+        /* Cloud 2: ขวา > ซ้าย (วนกลับ) */
+        @keyframes cloudMoveLeft {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(-8vw); /* เคลื่อนที่แค่นิดเดียว */
+            }
+        }
+
+        /* Cloud 3: บน > ล่าง (วนกลับ) */
+        @keyframes cloudMoveDown {
+            0% {
+                transform: translateY(0);
+            }
+            100% {
+                transform: translateY(8vh); /* เคลื่อนที่แค่นิดเดียว */
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <img src="Map.png" class="map-bg" alt="Map">
+    <img src="Drone 1.png" id="drone1" class="drone" alt="Drone 1">
+    <img src="Drone 2.png" id="drone2" class="drone" alt="Drone 2">
+    <img src="Drone 3.png" id="drone3" class="drone" alt="Drone 3">
+    <img src="Cloud.png" id="cloud1" class="cloud" alt="Cloud">
+    <img src="Cloud 2.png" id="cloud2" class="cloud" alt="Cloud">
+    <img src="Cloud.png" id="cloud3" class="cloud" alt="Cloud">
+</body>
+</html>
