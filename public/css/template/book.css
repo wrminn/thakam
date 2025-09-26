@@ -1,29 +1,32 @@
 .content-book {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 90px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 90px;
 }
+
 .book {
-    width: 325px;
-    height: 400px;
-    position: relative;
-    text-align: center;
-    margin: 0 5.5%;
+  width: 325px;
+  height: 400px;
+  position: relative;
+  text-align: center;
+  margin: 0 5.5%;
 }
 
 .book-cover {
   position: absolute;
-  z-index:1;
-  width: 100%;
-  height: 100%;
+  z-index: 1;
+  /* width: 100%;
+  height: 100%; */
+  width: 325px;
+    height: 400px;
   transform-origin: 0 50%;
   -webkit-transform-origin: 0 50%;
   background: #111;
-  background-size:cover;
+  background-size: cover;
   border-radius: 3px;
-  box-shadow: 
+  box-shadow:
     inset 4px 1px 3px #ffffff60,
     inset 0 -1px 2px #00000080;
   transition: all .5s ease-in-out;
@@ -31,16 +34,19 @@
 }
 
 .cover1 {
-  background: url('http://fuel-design.com/media/uploads/publications/Soviet_Space_Dogs_cover.jpg');
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  background-position: center !important;
 }
 
+/*
 .cover2 {
   background: url('http://fuel-design.com/media/uploads/publications/Tattoo_Vol_I_cover.jpg');
 }
 
 .cover3 {
   background: url('http://fuel-design.com/media/uploads/publications/CRIME_cover.jpg');
-}
+} */
 
 .book .book-cover {
   background-size: 100% 100%;
@@ -52,7 +58,7 @@
   height: 100%;
   margin-left: 10px;
   border-left: 2px solid #00000010;
-  background-image: linear-gradient(90deg, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0) 100%);
+  background-image: linear-gradient(90deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%);
   transition: all .5s ease;
 }
 
@@ -60,23 +66,25 @@
   width: 90%;
   height: 100%;
   position: absolute;
-  border-radius: 3px; 
-  background-image: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.2) 100%);
+  border-radius: 3px;
+  background-image: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 100%);
   top: 0;
-  right:0;
+  right: 0;
   opacity: .1;
   transition: all .5s ease;
   -webkit-transition: all .5s ease;
 }
 
-.book:hover { cursor:pointer; }
+.book:hover {
+  cursor: pointer;
+}
 
 .book:hover .book-cover {
   transform: perspective(2000px) rotateY(-30deg);
   -webkit-transform: perspective(2000px) rotateY(-30deg);
   transform-style: preserve-3d;
   -webkit-transform-style: preserve-3d;
-  box-shadow: 
+  box-shadow:
     inset 4px 1px 3px #ffffff60,
     inset 0 -1px 2px #00000080,
     10px 0px 10px -5px #00000030
@@ -84,7 +92,7 @@
 
 .book:hover .effect {
   width: 40px;
- /** margin-left:13px;
+  /** margin-left:13px;
   opacity: 0.5; **/
 }
 
@@ -93,33 +101,33 @@
   width: 70%;
 }
 
-.book-inside{
+.book-inside {
   width: calc(100% - 2px);
-  height:96%;
-  position:relative;
+  height: 96%;
+  position: relative;
   top: 2%;
   border: 1px solid grey;
-  border-radius:3px;
+  border-radius: 3px;
   background: white;
-  box-shadow: 
-  10px 40px 40px -10px #00000030,
-  inset -2px 0 0 grey,
-  inset -3px 0 0 #dbdbdb,
-  inset -4px 0 0 white,
-  inset -5px 0 0 #dbdbdb,
-  inset -6px 0 0 white,
-  inset -7px 0 0 #dbdbdb,
-  inset -8px 0 0 white,
-  inset -9px 0 0 #dbdbdb;
+  box-shadow:
+    10px 40px 40px -10px #00000030,
+    inset -2px 0 0 grey,
+    inset -3px 0 0 #dbdbdb,
+    inset -4px 0 0 white,
+    inset -5px 0 0 #dbdbdb,
+    inset -6px 0 0 white,
+    inset -7px 0 0 #dbdbdb,
+    inset -8px 0 0 white,
+    inset -9px 0 0 #dbdbdb;
 }
 
 .title {
-  font-size:22px;
+  font-size: 22px;
   width: 100%;
   color: #333;
   text-align: center;
   position: absolute;
-  top:-30px;
+  top: -30px;
   height: 1px;
   display: flex;
   align-items: flex-end;
@@ -130,19 +138,19 @@
 
 .title p {
   width: 100%;
-  margin:0;
-  line-height:1.3;
+  margin: 0;
+  line-height: 1.3;
 }
 
 
 .btn-ebook {
-  position:relative;
+  position: relative;
   background: #aaa;
   color: #fff;
   font-weight: bold;
   padding: 15px 30px;
   font-size: 16px;
-  letter-spacing:1px;
+  letter-spacing: 1px;
   border-radius: 50px;
   bottom: -50px;
   display: inline-block;
@@ -151,21 +159,24 @@
   -webkit-transition: all 1s ease-in-out;
 }
 
-.book:hover .btn-ebook, .book:hover .title {
+.book:hover .btn-ebook,
+.book:hover .title {
   opacity: 1;
 }
 
 .f-book {
-    margin-top: -35px;
+  margin-top: -35px;
 }
+
 .box-all-book {
-    text-align: center;
-    margin-top: -80px;
+  text-align: center;
+  margin-top: -80px;
 }
+
 a.no-underline.button-book-all {
-    background: linear-gradient(360deg, #9bd4d46b 0%, #c8feff 50%, #d6d9da75 100%);
-    padding: 10px 20px;
-    font-size: 20px;
-    border-radius: 30px;
-    color: #000;
+  background: linear-gradient(360deg, #9bd4d46b 0%, #c8feff 50%, #d6d9da75 100%);
+  padding: 10px 20px;
+  font-size: 20px;
+  border-radius: 30px;
+  color: #000;
 }

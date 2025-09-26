@@ -20,41 +20,55 @@
                 </div>
             </caption>
 
-           
-                <div class="card-body">
 
-                    <form class="" action="{{ route('editelibraryone', ['menu' => $menuId, 'id' => $id]) }}"
-                        method="post" enctype="multipart/form-data">
-                        @csrf
-                        <div class="row">
+            <div class="card-body">
 
-                            <div class="col">
-                                <div class="mb-3">
-                                    <label for="slot" class="form-label">ไฟล์
-                                        @if (!empty($list->elibrary_path))
-                                            <a href="{{ asset('storage/' . $list->elibrary_path) }}"
-                                                        target="_blank">
-                                                        {{ $list->elibrary_name_file }}
-                                                    </a>
-                                        @endif
-                                    </label>
-                                    <input type="file" class="form-control" name="topic_picture" accept=".pdf">
-                                </div>
+                <form class="" action="{{ route('editelibraryone', ['menu' => $menuId, 'id' => $id]) }}"
+                    method="post" enctype="multipart/form-data">
+                    @csrf
+                    <div class="row">
+
+                        <div class="col">
+                            <div class="mb-3">
+                                <label for="slot" class="form-label">ภาพหน้าปก
+                                    @if (!empty($list->elibrary_path_page))
+                                        <a href="{{ asset('storage/' . $list->elibrary_path_page) }}" target="_blank">
+                                            ภาพหน้าปก
+                                        </a>
+                                    @endif
+                                </label>
+                                <input type="file" class="form-control" name="topic_picture" accept="image/*">
                             </div>
                         </div>
-                        <div class="mb-3">
-                            <label for="floor" class="form-label">หัวข้อ</label>
-                            <input type="text" class="form-control" name="title" required
-                                value="{{ $list->elibrary_title }}">
+                    </div>
+                    <div class="row">
+
+                        <div class="col">
+                            <div class="mb-3">
+                                <label for="slot" class="form-label">ไฟล์
+                                    @if (!empty($list->elibrary_path))
+                                        <a href="{{ asset('storage/' . $list->elibrary_path) }}" target="_blank">
+                                            {{ $list->elibrary_name_file }}
+                                        </a>
+                                    @endif
+                                </label>
+                                <input type="file" class="form-control" name="file_pdf" accept=".pdf">
+                            </div>
                         </div>
-                    
-                        <button class="btn btn-success" type="submit" name="insert">
-                            บันทึก
-                        </button>
-                        <a href="{{ route('selectelibrary', ['menu' => $menuId]) }}" class="btn btn-warning">ย้อนกลับ</a>
-                    </form>
-                </div>
-            
+                    </div>
+                    <div class="mb-3">
+                        <label for="floor" class="form-label">หัวข้อ</label>
+                        <input type="text" class="form-control" name="title" required
+                            value="{{ $list->elibrary_title }}">
+                    </div>
+
+                    <button class="btn btn-success" type="submit" name="insert">
+                        บันทึก
+                    </button>
+                    <a href="{{ route('selectelibrary', ['menu' => $menuId]) }}" class="btn btn-warning">ย้อนกลับ</a>
+                </form>
+            </div>
+
         </div>
     </div>
 

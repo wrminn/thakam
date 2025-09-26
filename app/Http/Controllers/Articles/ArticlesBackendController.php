@@ -223,8 +223,35 @@ class ArticlesBackendController extends Controller
 
             DB::table('elibrary')->where('elibrary_id', $id)
                 ->update([
+                    'elibrary_path_page' => $path,
+                ]);
+        }
+
+        if ($request->hasFile('file_pdf')) {
+            $file_pdf = $request->file('file_pdf');
+            $ext = $file->getClientOriginalExtension();
+            $timestamp = now()->format('Ymd_His');
+
+            $folder = "content/{$menuId}"; // path ใน disk 'public'
+            $filename = "{$id}_elibrary_pdf_{$timestamp}.{$ext}";
+            $path = $file_pdf->storeAs($folder, $filename, 'public');
+
+            $fullPath = storage_path('app/public/' . $path);
+            if (file_exists($fullPath)) {
+                chmod($fullPath, 0644);
+            }
+
+            $publicStoragePath = public_path('storage/' . $path);
+            if (!file_exists(dirname($publicStoragePath))) {
+                mkdir(dirname($publicStoragePath), 0775, true);
+            }
+            copy($fullPath, $publicStoragePath);
+            chmod($publicStoragePath, 0644);
+
+            DB::table('elibrary')->where('elibrary_id', $id)
+                ->update([
                     'elibrary_path' => $path,
-                    'elibrary_name_file' => $file->getClientOriginalName()
+                    'elibrary_name_file' => $file_pdf->getClientOriginalName()
                 ]);
         }
 
@@ -254,7 +281,7 @@ class ArticlesBackendController extends Controller
                 'elibrary_date_update' => now()
             ]);
 
-        if ($request->hasFile('topic_picture')) {
+         if ($request->hasFile('topic_picture')) {
             $file = $request->file('topic_picture');
             $ext = $file->getClientOriginalExtension();
             $timestamp = now()->format('Ymd_His');
@@ -277,10 +304,38 @@ class ArticlesBackendController extends Controller
 
             DB::table('elibrary')->where('elibrary_id', $id)
                 ->update([
-                    'elibrary_path' => $path,
-                    'elibrary_name_file' => $file->getClientOriginalName()
+                    'elibrary_path_page' => $path,
                 ]);
         }
+
+        if ($request->hasFile('file_pdf')) {
+            $file_pdf = $request->file('file_pdf');
+            $ext = $file->getClientOriginalExtension();
+            $timestamp = now()->format('Ymd_His');
+
+            $folder = "content/{$menuId}"; // path ใน disk 'public'
+            $filename = "{$id}_elibrary_pdf_{$timestamp}.{$ext}";
+            $path = $file_pdf->storeAs($folder, $filename, 'public');
+
+            $fullPath = storage_path('app/public/' . $path);
+            if (file_exists($fullPath)) {
+                chmod($fullPath, 0644);
+            }
+
+            $publicStoragePath = public_path('storage/' . $path);
+            if (!file_exists(dirname($publicStoragePath))) {
+                mkdir(dirname($publicStoragePath), 0775, true);
+            }
+            copy($fullPath, $publicStoragePath);
+            chmod($publicStoragePath, 0644);
+
+            DB::table('elibrary')->where('elibrary_id', $id)
+                ->update([
+                    'elibrary_path' => $path,
+                    'elibrary_name_file' => $file_pdf->getClientOriginalName()
+                ]);
+        }
+
         return redirect('backend/elibrary/menu/' . $menuId);
     }
 

@@ -801,10 +801,12 @@
         <div class="e-book">
             <div class="content-book">
 
-                <div class="book">
+                @forelse($elibrary as $slide)
+                    
+                    <div class="book">
                     <a class="" href="#">
 
-                        <div class="book-cover cover1">
+                        <div class="book-cover cover1" style="background: url('{{ asset('storage/' . $slide->elibrary_path_page) }}');">
                             <div class="effect"></div>
                             <div class="light"></div>
                         </div>
@@ -812,29 +814,9 @@
                         </div>
                     </a>
                 </div>
-
-                <div class="book">
-                    <a class="" href="#">
-
-                        <div class="book-cover cover2">
-                            <div class="effect"></div>
-                            <div class="light"></div>
-                        </div>
-                        <div class="book-inside">
-                        </div>
-                    </a>
-                </div>
-
-                <div class="book">
-                    <a class="" href="#">
-                        <div class="book-cover cover3">
-                            <div class="effect"></div>
-                            <div class="light"></div>
-                        </div>
-                        <div class="book-inside">
-                        </div>
-                    </a>
-                </div>
+                @empty
+                    <div class="">ไม่พบข้อมูล</div>
+                @endforelse
 
             </div>
             <div class="f-book">
@@ -873,6 +855,12 @@
             </div>
         </div>
         <div class="map-two">
+            <img src="/img/11map/เมฆขยับ.gif" alt=""
+                style="position: absolute;margin-top: 15%;margin-right: 70%;width: 200px;">
+            <img src="/img/11map/โดรน.gif" alt="" style="position: absolute;margin-top: 10%;width: 90px;">
+            <img src="/img/11map/โดรน2.gif" alt="" style="position: absolute;margin-top: 30%;width: 200px;">
+            <img src="/img/11map/เมฆ-ข้าง.gif" alt=""
+                style="margin-left: 55%;position: absolute;margin-top: -5%;2: 200;width: 350px;">
             <img src="/img/11map/Map.png" alt="">
         </div>
         <div class="map-three">
@@ -966,6 +954,47 @@
         </div>
     </section>
 
+    <section class="box-view">
+        <div class="counter-title">
+            จำนวนผู้เข้าชมเว็บไซต์
+            <small>number of website visitors</small>
+        </div>
+
+        <div class="counter-item">
+            <span class="counter-number">{{ $stats['2min'] }}</span>
+            <span class="counter-label">ขณะนี้</span>
+        </div>
+
+        <div class="counter-item">
+            <span class="counter-number">{{ $stats['today'] }}</span>
+            <span class="counter-label">วันนี้</span>
+        </div>
+
+        <div class="counter-item">
+            <span class="counter-number">{{ $stats['weekly'] }}</span>
+            <span class="counter-label">สัปดาห์นี้</span>
+        </div>
+
+        <div class="counter-item">
+            <span class="counter-number">{{ $stats['monthly'] }}</span>
+            <span class="counter-label">เดือนนี้</span>
+        </div>
+
+        <div class="counter-item">
+            <span class="counter-number">{{ $stats['yearly'] }}</span>
+            <span class="counter-label">ปีนี้</span>
+        </div>
+
+        <div class="counter-total">
+            <span class="counter-number">{{ $stats['total'] }}</span>
+            <span class="counter-label">ทั้งหมด</span>
+        </div>
+    </section>
+
+    <section class="box-view-two">
+        <div class="null-content"></div>
+    </section>
+
     <script>
         function openTab(tabId) {
             // ซ่อน tab ทั้งหมด
@@ -987,6 +1016,7 @@
             event.target.classList.add('active');
         }
     </script>
+
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
     <script>

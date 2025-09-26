@@ -24,11 +24,18 @@
                         enctype="multipart/form-data">
                         @csrf
                         <div class="row">
-
+                            <div class="col">
+                                <div class="mb-3">
+                                    <label for="slot" class="form-label">ปกหนังสือ</label>
+                                    <input type="file" class="form-control" name="topic_picture" accept="image/*">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
                             <div class="col">
                                 <div class="mb-3">
                                     <label for="slot" class="form-label">ไฟล์ (pdf เท่านั้น)</label>
-                                    <input type="file" class="form-control" name="topic_picture" accept=".pdf">
+                                    <input type="file" class="form-control" name="file_pdf" accept=".pdf">
                                 </div>
                             </div>
                         </div>

@@ -239,7 +239,9 @@
 
 
         </section>
+
         <div class="br-top"></div>
+
         <section class="animation-top">
             {{-- <img src="https://www.w3schools.com/howto/img_snow_wide.jpg" class="d-block w-100" alt="..."
                 style="width: 1905px; height:650px"> --}}
@@ -273,6 +275,63 @@
         <main class="py-4">
             @yield('content')
         </main>
+
+        <section class="box-footer">
+            <div class="footer-one">
+                <div class="footer-logo">
+                    <a href="/home"><img src="/img/logo.png" alt="โลโก้" class="header-logo"></a>
+                </div>
+                <div class="footer-contact" style="width: 1000px;">
+                    <p style="display: flex;flex-direction: column;">
+                        <span style="font-size: 50px;font-weight: 900;">เทศบาลตำบลท่าข้าม</span>
+                        <span style="font-size: 24px;margin-top: -15px;">Thakam Subdistrict Municipality</span>
+                        <span style="font-size: 16px;">122 หมู่ที่ 3 ตำบลท่าข้าม อำเภอบางปะกง</span>
+                        <span style="font-size: 16px;">จังหวัดฉะเชิงเทรา 24130</span>
+                    </p>
+                    <div class="text-footer">
+                        <div class="text-footer-one">
+                            <img src="/img/13Footer/Mail.png" alt="">
+                            <div style="display: flex;flex-direction: column;">
+                                <span>admin@thakam.go.th</span>
+                                <span>saraban_05240403@dla.go.th</span>
+                            </div>
+                        </div>
+                        <div class="text-footer-two">
+                            <img src="/img/13Footer/Call.png" alt="">
+                            <div>0-3857-3411-2 ต่อ 144</div>
+                        </div>
+                        <div class="text-footer-three">
+                            <img src="/img/13Footer/Fax.png" alt="">
+                            <div>0-3857-3411-2</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-link">
+                    <div style="font-weight: 900;">
+                        ข้อมูลเว็บไซต์
+                    </div>
+                    <div class="link-footer-two">
+                        <a href="">หน้าแรก</a>
+                        <a href="">กระดานกระทู้</a>
+                        <a href="">ติดต่อ</a>
+                        <a href="#">แผนผังเว็บไซต์</a>
+                        <a href="">รับเเจ้งเรื่องราวร้องเรียนร้องทุกข์</a>
+                    </div>
+                </div>
+                <div class="footer-ma">
+                    <a href=""><img src="/img/13Footer/1.png" alt="" width="250"></a>
+                    <a href=""><img src="/img/13Footer/2.png" alt="" width="250"></a>
+                    <a href=""><img src="/img/13Footer/3.png" alt="" width="250"></a>
+                    <a href=""><img src="/img/13Footer/4.png" alt="" width="250"></a>
+                </div>
+            </div>
+        </section>
+        <section class="Copyright">
+            <div class="footer-two">
+                <div class="tfone">การแสดงผลหน้าเว็บไซต์จะสมบูรณ์ที่สุด บนบราวเซอร์ Google Chrome & FireFox ความละเอียดหน้าจอไม่ต่ำกว่า 1366x768 pixel และไม่เกิน 1600x1200 pixel</div>
+                <div class="tfone">Copyright @ บริษัท So Smart Solution สงวนสิทธิ์ 2025</div>
+            </div>
+        </section>
 
     </div>
 

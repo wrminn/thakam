@@ -8,7 +8,7 @@
     flex-wrap: nowrap;
     margin-top: -45px;
     position: relative;
-    z-index: 2;
+    z-index: 15;
 }
 
 .nav-pill {
@@ -60,6 +60,7 @@
 .submenu-item:hover {
     background: #f3fdf8;
     color: #2fb06a;
+    z-index: 99;
 }
 
 /* แสดง submenu เมื่อ hover */
