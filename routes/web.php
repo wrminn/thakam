@@ -221,3 +221,6 @@ Route::get('/directoryDetail/menu/{menu}/id/{id}', [DirectoryDataController::cla
 Route::get('/categories/menu/{menu}', [DirectoryDataController::class, 'SelectCategoriesFront'])->name('categories.list');
 Route::get('/directory/menu/{menu}/cate/{cate}', [DirectoryDataController::class, 'SelectDirectoryCateFront'])->name('categories.data');
 Route::get('/directoryDetail/menu/{menu}/id/{id}/cate/{cate}', [DirectoryDataController::class, 'SelectDirectoryCateFrontID'])->name('categories.detail');
+
+
+Route::post('/vote/save', [HomeController::class, 'save']);

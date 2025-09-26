@@ -148,6 +148,7 @@
             <div class="box-i"><a href="#"><img src="/img/banner/Banner-5.png" class="banner-top-img"></a></div>
         </div>
     </section>
+
     <section class="box-video">
         <div class="video-text">
             <div class="video-title">
@@ -202,6 +203,7 @@
         </div>
 
     </section>
+
     <section class="banner-box-one">
         <div class="banner-smartcity-body-one">
             <div class="smartcity-one">
@@ -257,6 +259,7 @@
 
         </div>
     </section>
+
     <section class="banner-one-stop-service">
         <div class="box-one-stop-service">
 
@@ -306,6 +309,7 @@
 
         </div>
     </section>
+
     <section class="box-public-service">
         <div class="public-service">
             <span style="font-size: 35px;font-weight: 500;">PUBLIC SERVICE</span>
@@ -356,6 +360,7 @@
             </div>
         </div>
     </section>
+
     <section class="box-activity-relations">
         <div class="box-activity">
             <div class="title-activity">
@@ -493,6 +498,7 @@
         </div>
 
     </section>
+
     <section class="box-here">
         <img src="/img/here/1.png" alt="" style="margin-top: 400px;">
         <div class="box-slide-hrer">
@@ -559,6 +565,7 @@
 
         </div>
     </section>
+
     <section class="box-announce">
         <div class="announce-box">
             <div class="announce-title">
@@ -780,11 +787,15 @@
                 </div>
             </div>
             <div class="elibrary-two-box">
-                <iframe
-                    src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ffacebook&tabs=timeline&width=340&height=1200&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=6174507855916076"
-                    width="340" height="800" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
-                    allowfullscreen="true"
-                    allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                <div id="fb-root"></div>
+                <script async defer crossorigin="anonymous" src="https://connect.facebook.net/th_TH/sdk.js#xfbml=1&version=v17.0"
+                    nonce="12345"></script>
+
+                <div class="fb-page" data-href="https://www.facebook.com/facebook" data-tabs="timeline" data-width="340"
+                    data-height="800" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false"
+                    data-show-facepile="true">
+                </div>
+
             </div>
         </div>
         <div class="e-book">
@@ -835,6 +846,126 @@
         </div>
     </section>
 
+    <section class="box-vote">
+        <form id="voteForm">
+            @csrf
+            <div class="vote">
+                <div class="text-vote">
+                    @foreach ($Vote as $list)
+                        <label><input type="radio" name="vote" value="{{ $list->id }}">
+                            {{ $list->topic }}</label>
+                    @endforeach
+                </div>
+                <div class="bb-vote">
+                    <button type="submit" class="s-vote">โหวต</button>
+                </div>
+            </div>
+        </form>
+        <img src="/img/background/BG-vote.png" alt="" style="width: 100%;">
+    </section>
+
+    <section class="box-map">
+        <div class="map-one">
+            <img src="/img/logo.png" alt="" width="200">
+            <div class="text-map-one">
+                <span style="font-size: 45px;color: #0a4275;">แผนที่</span>
+                <span style="font-size: 80px;margin-top: -30px;font-weight: 800;color: #0a4275;">เทศบาลตำบลท่าข้าม</span>
+            </div>
+        </div>
+        <div class="map-two">
+            <img src="/img/11map/Map.png" alt="">
+        </div>
+        <div class="map-three">
+            <div class="text-map-three">
+                <div class="m-t-three">
+                    <div class="t-m-one" style="text-align: center;">
+                        <img src="/img/12/1.png" alt="" width="200">
+                    </div>
+                    <div class="t-m-two">
+                        <div class="text-m-two">
+                            <span style="font-size: 100px;font-weight: 900;">หนังสือราชการ</span>
+                            <span style="font-size: 40px;margin-top: -45px;text-align: end;">เทศบาลตำบลท่าข้าม</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="m-img-three">
+                    <img src="/img/12/2.png" alt="" width="200">
+                </div>
+            </div>
+        </div>
+
+        <div class="card-map-three">
+            <div class="map-body">
+                <div class="tab-buttons-map">
+                    <button class="active" onclick="openTab('mapone')">จากกรมส่งเสริมการปกครองส่วนท้องถิ่น</button>
+                    <button onclick="openTab('maptwo')">หนังสือราชการจากท้องถิ่นจังหวัด</button>
+
+                </div>
+
+                <div id="mapone" class="tab-content active">
+
+                    <div class="content-map">
+                        <a href="" class="no-underline">
+                            <div class="item-map">
+                                <div class="box-one-announce">
+                                    <div class="item-text">
+                                        หนังสือราชการ สถ.
+                                    </div>
+                                </div>
+
+                            </div>
+                        </a>
+                        <a href="" class="no-underline">
+                            <div class="item-map">
+                                <div class="item-text">
+                                    กฏหมาย ระเบียบ และ มติ ก.กลาง
+                                </div>
+                            </div>
+                        </a>
+                        <a href="" class="no-underline">
+                            <div class="item-map">
+                                <div class="item-text">
+                                    บทความน่าสนใจ
+                                </div>
+                            </div>
+                        </a>
+                        <a href="" class="no-underline">
+                            <div class="item-map">
+                                <div class="item-text">
+                                    พรบ. และประกาศเกี่ยวกับเทคโนโลยีสารสนเทศ
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+                <div id="maptwo" class="tab-content">
+                    <div class="content-map">
+                        <a href="" class="no-underline">
+                            <div class="item-map">
+                                <div class="item-text">
+
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="box-all-map">
+            <a href="http://" class="no-underline button-map-all">ดูทั้งหมด</a>
+        </div>
+        <div class="banner-map">
+            <div class="box-i"><a href="#"><img src="/img/13Footer/Banner1.png" class="banner-map-img"></a></div>
+            <div class="box-i"><a href="#"><img src="/img/13Footer/Banner2.png" class="banner-map-img"></a></div>
+            <div class="box-i"><a href="#"><img src="/img/13Footer/Banner3.png" class="banner-map-img"></a></div>
+            <div class="box-i"><a href="#"><img src="/img/13Footer/Banner4.png" class="banner-map-img"></a></div>
+            <div class="box-i"><a href="#"><img src="/img/13Footer/Banner5.png" class="banner-map-img"></a></div>
+            <div class="box-i"><a href="#"><img src="/img/13Footer/Banner6.png" class="banner-map-img"></a></div>
+        </div>
+    </section>
+
     <script>
         function openTab(tabId) {
             // ซ่อน tab ทั้งหมด
@@ -844,10 +975,77 @@
             document.querySelectorAll('.tab-buttons button').forEach(btn => {
                 btn.classList.remove('active');
             });
+            document.querySelectorAll('.tab-content-map').forEach(tab => {
+                tab.classList.remove('active');
+            });
+            document.querySelectorAll('.tab-buttons-map button').forEach(btn => {
+                btn.classList.remove('active');
+            });
 
             // แสดง tab ที่เลือก
             document.getElementById(tabId).classList.add('active');
             event.target.classList.add('active');
         }
+    </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script>
+        // ฟังก์ชัน set/get cookie
+        function setCookie(name, value, days) {
+            var expires = "";
+            if (days) {
+                var d = new Date();
+                d.setTime(d.getTime() + (days * 24 * 60 * 60 * 1000));
+                expires = "; expires=" + d.toUTCString();
+            }
+            document.cookie = name + "=" + value + expires + "; path=/";
+        }
+
+        function getCookie(name) {
+            var nameEQ = name + "=";
+            var ca = document.cookie.split(';');
+            for (var i = 0; i < ca.length; i++) {
+                var c = ca[i];
+                while (c.charAt(0) == ' ') c = c.substring(1, c.length);
+                if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
+            }
+            return null;
+        }
+
+        // ตรวจว่าโหวตแล้วหรือยัง
+        $(document).ready(function() {
+            if (getCookie("voted") === "true") {
+                $("#voteForm :input").prop("disabled", true);
+                $("#voteForm button").prop("disabled", true).text("โหวตแล้ว");
+            }
+
+            $("#voteForm").on("submit", function(e) {
+                e.preventDefault();
+
+                let voteValue = $("input[name='vote']:checked").val();
+                if (!voteValue) {
+                    alert("กรุณาเลือกคะแนนก่อนโหวต");
+                    return;
+                }
+
+                $.ajax({
+                    url: "/vote/save", // endpoint หลังบ้าน
+                    method: "POST",
+                    data: {
+                        _token: $('input[name="_token"]').val(), // ดึงค่า token
+                        vote: voteValue
+                    },
+                    success: function(res) {
+                        alert("โหวตสำเร็จ ขอบคุณครับ");
+                        setCookie("voted", "true", 7); // กันโหวตซ้ำ 7 วัน
+                        $("#voteForm :input").prop("disabled", true);
+                        $("#voteForm button").prop("disabled", true).text("โหวตแล้ว");
+                    },
+                    error: function() {
+                        alert("เกิดข้อผิดพลาด กรุณาลองใหม่");
+                    }
+                });
+            });
+        });
     </script>
 @endsection

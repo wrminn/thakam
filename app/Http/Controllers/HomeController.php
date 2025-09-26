@@ -90,8 +90,31 @@ class HomeController extends Controller
             ->orderBy('texteditor_id', 'desc')
             ->limit(6)
             ->get();
-            
 
-        return view('home', compact('video', 'SlideMenu70', 'activity','SlideMenu8','egp','listMenu48','listMenu49','listMenu50'));
+        $Vote = $list = DB::table('vote')
+            ->where('vote_display', "A")
+            ->orderBy('vote_id', 'desc')
+            ->select([
+                'vote_id as id',
+                'vote_option as topic',
+                'vote_count as count',
+            ])
+            ->get();
+
+
+        return view('home', compact('video', 'SlideMenu70', 'activity', 'SlideMenu8', 'egp', 'listMenu48', 'listMenu49', 'listMenu50', 'Vote'));
+    }
+
+    public function save(Request $request)
+    {
+        $vote = $request->input('vote');
+
+        // บันทึกลง DB
+
+        DB::table('vote')
+            ->where('vote_id', $vote)
+            ->increment('vote_count');
+
+        return response()->json(['status' => 'success']);
     }
 }
