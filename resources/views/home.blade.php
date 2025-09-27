@@ -374,7 +374,7 @@
 
                 @forelse($activity as $list)
                     <div class="card-activity">
-                        <a href="" class="no-underline">
+                        <a href="/directoryDetail/menu/51/id/{{$list->texteditor_id}}" class="no-underline">
                             <div class="card-activity-body">
 
                                 <div class="activity-img">
@@ -413,7 +413,7 @@
 
                             </div>
                         </a>
-                        <a href="http://" class="no-underline button-activity">อ่านเพิ่มเติม</a>
+                        <a href="/directoryDetail/menu/51/id/{{$list->texteditor_id}}" class="no-underline button-activity">อ่านเพิ่มเติม</a>
                     </div>
                 @empty
                     <div class="">ไม่พบข้อมูล</div>
@@ -422,7 +422,7 @@
             </div>
             @if (!empty($activity))
                 <div class="box-all-activity">
-                    <a href="http://" class="no-underline button-activity-all">ดูข่าวกิจกรรมทั้งหมด</a>
+                    <a href="/directoryDetail/menu/51" class="no-underline button-activity-all">ดูข่าวกิจกรรมทั้งหมด</a>
                 </div>
             @endif
 
@@ -439,9 +439,9 @@
             </div>
             <div class="news-directory">
 
-                @forelse($activity as $list)
+                @forelse($listMenu52 as $list)
                     <div class="card-news">
-                        <a href="" class="no-underline">
+                        <a href="/directoryDetail/menu/52/id/{{$list->texteditor_id}}" class="no-underline">
                             <div class="card-news-body">
 
                                 <div class="news-img">
@@ -491,7 +491,7 @@
             </div>
             @if (!empty($activity))
                 <div class="box-all-news">
-                    <a href="http://" class="no-underline button-news-all">ดูข่าวประชาสัมพันธ์ทั้งหมด</a>
+                    <a href="/directoryDetail/menu/52" class="no-underline button-news-all">ดูข่าวประชาสัมพันธ์ทั้งหมด</a>
                 </div>
             @endif
 
@@ -509,7 +509,7 @@
                     <div class="carousel-inner">
 
                         @forelse($SlideMenu8 as $slide)
-                            <a href="">
+                            <a href="/directoryDetail/menu/8/id/{{$list->texteditor_id}}">
                                 <div class="carousel-item active">
                                     <img src="{{ asset('storage/' . $slide->texteditor_topic_picture) }}"
                                         class="d-block w-100 slide-here" alt="...">
@@ -537,7 +537,7 @@
                 </div>
             </div>
             <div class="box-all-here">
-                <a href="http://" class="no-underline button-here-all">ดูสถานที่ทั้งหมด</a>
+                <a href="/directoryDetail/menu/8" class="no-underline button-here-all">ดูสถานที่ทั้งหมด</a>
             </div>
         </div>
         <div class="banner-service-one">
@@ -632,7 +632,7 @@
                     <div class="content-announce">
 
                         @forelse($listMenu48 as $list)
-                            <a href="" class="no-underline">
+                            <a href="/directoryDetail/menu/48/id/{{$list->texteditor_id}}" class="no-underline">
                                 <div class="item">
                                     <div class="box-one-announce">
                                         @php
@@ -670,7 +670,7 @@
                         @endforelse
                     </div>
                     <div class="box-all-announce">
-                        <a href="http://" class="no-underline button-announce-all">ดูทั้งหมด</a>
+                        <a href="/directoryDetail/menu/48" class="no-underline button-announce-all">ดูทั้งหมด</a>
                     </div>
                 </div>
 
@@ -679,7 +679,7 @@
                     <div class="content-announce">
 
                         @forelse($listMenu49 as $list)
-                            <a href="" class="no-underline">
+                            <a href="/directoryDetail/menu/49/id/{{$list->texteditor_id}}" class="no-underline">
                                 <div class="item">
                                     <div class="box-one-announce">
                                         @php
@@ -717,7 +717,7 @@
                         @endforelse
                     </div>
                     <div class="box-all-announce">
-                        <a href="http://" class="no-underline button-announce-all">ดูทั้งหมด</a>
+                        <a href="/directoryDetail/menu/49" class="no-underline button-announce-all">ดูทั้งหมด</a>
                     </div>
                 </div>
 
@@ -726,7 +726,7 @@
                     <div class="content-announce">
 
                         @forelse($listMenu50 as $list)
-                            <a href="" class="no-underline">
+                            <a href="/directoryDetail/menu/50/id/{{$list->texteditor_id}}" class="no-underline">
                                 <div class="item">
                                     <div class="box-one-announce">
                                         @php
@@ -764,7 +764,7 @@
                         @endforelse
                     </div>
                     <div class="box-all-announce">
-                        <a href="http://" class="no-underline button-announce-all">ดูทั้งหมด</a>
+                        <a href="/directoryDetail/menu/50/id/{{$list->texteditor_id}}" class="no-underline button-announce-all">ดูทั้งหมด</a>
                     </div>
                 </div>
 

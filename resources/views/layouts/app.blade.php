@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="{{ asset('/css/template/home.css') }}">
     <link rel="stylesheet" href="{{ asset('/css/template/book.css') }}">
     <link rel="stylesheet" href="{{ asset('/css/template/mobile.css') }}">
+    <link rel="stylesheet" href="{{ asset('/css/template/mo2.css') }}">
     {{-- <script src="https://cdn.tailwindcss.com"></script> --}}
 
     <!-- Scripts -->
@@ -82,39 +83,39 @@
                 <div class="nav-pill has-submenu">
                     ข้อมูลพื้นฐาน
                     <div class="submenu">
-                        <a href="#">ประวัติความเป็นมา</a>
-                        <a href="#">วิสัยทัศน์</a>
-                        <a href="#">ข้อมูลสภาพทั่วไป</a>
-                        <a href="#">บริการขั้นพื้นฐาน</a>
+                        <a href="/articles/menu/1">ประวัติความเป็นมา</a>
+                        <a href="/articles/menu/2">วิสัยทัศน์</a>
+                        <a href="/articles/menu/3">ข้อมูลสภาพทั่วไป</a>
+                        <a href="/articles/menu/4">บริการขั้นพื้นฐาน</a>
                         <div class="submenu-item has-submenu">
                             ข้อมูลหมู่บ้าน/ชุมชน
                             <div class="submenu sub-submenu">
                                 <a href="#">ผู้นำชุมชน</a>
-                                <a href="#">รายละเอียดชุมชน</a>
+                                <a href="/articles/menu/6">รายละเอียดชุมชน</a>
                             </div>
                         </div>
-                        <a href="#">ผลิตภัณฑ์ชุมชน</a>
-                        <a href="#">สถานที่สำคัญ</a>
+                        <a href="/directory/menu/7">ผลิตภัณฑ์ชุมชน</a>
+                        <a href="/directory/menu/8">สถานที่สำคัญ</a>
                     </div>
                 </div>
                 <div class="nav-pill has-submenu">
                     อำนาจหน้าที่
                     <div class="submenu">
-                        <a href="#">เทศบาลตำบล</a>
-                        <a href="#">สำนักปลัด</a>
-                        <a href="#">กองยุทธศาสตร์</a>
-                        <a href="#">กองคลัง</a>
-                        <a href="#">กองช่าง</a>
-                        <a href="#">กองสาธารณสุขและสิ่งแวดล้อม</a>
-                        <a href="#">กองการศึกษา</a>
-                        <a href="#">กองสวัสดิการสังคม</a>
-                        <a href="#">หน่วยตรวจสอบภายใน</a>
+                        <a href="/articles/menu/29">เทศบาลตำบล</a>
+                        <a href="/articles/menu/30">สำนักปลัด</a>
+                        <a href="/articles/menu/31">กองยุทธศาสตร์</a>
+                        <a href="/articles/menu/32">กองคลัง</a>
+                        <a href="/articles/menu/33">กองช่าง</a>
+                        <a href="/articles/menu/34">กองสาธารณสุขและสิ่งแวดล้อม</a>
+                        <a href="/articles/menu/35">กองการศึกษา</a>
+                        <a href="/articles/menu/36">กองสวัสดิการสังคม</a>
+                        <a href="/articles/menu/37">หน่วยตรวจสอบภายใน</a>
                     </div>
                 </div>
                 <div class="nav-pill has-submenu">
                     บุคลากร
                     <div class="submenu">
-                        <a href="#">แผนผังโครงสร้างองค์กร</a>
+                        <a href="/articles/menu/9">แผนผังโครงสร้างองค์กร</a>
                         <a href="#">คณะผู้บริหาร</a>
                         <a href="#">สมาชิกสภา</a>
                         <a href="#">ผู้บริหารส่วนราชการ</a>
@@ -140,23 +141,23 @@
                 <div class="nav-pill has-submenu">
                     ผลการดำเนินงาน
                     <div class="submenu">
-                        <a href="#">ผลงานองค์กร</a>
-                        <a href="#">รายงานทางการเงิน</a>
-                        <a href="#">รายงานผลการดำเนินงาน</a>
-                        <a href="#">รายงานการจัดซื้อจัดจ้างหรือการจัดหาพัสดุ</a>
-                        <a href="#">ข้อมูลเชิงสถิติ</a>
-                        <a href="#">การบริหารและพัฒนาทรัพยากรบุคล</a>
-                        <a href="#">มาตรการส่งเสริมความโปร่งใสและป้องกันการทุจริต</a>
-                        <a href="#">ประมวลจริยธรรมและการขับเคลื่อนจริยธรรม</a>
+                        <a href="/categories/menu/21">ผลงานองค์กร</a>
+                        <a href="/categories/menu/22">รายงานทางการเงิน</a>
+                        <a href="/categories/menu/23">รายงานผลการดำเนินงาน</a>
+                        <a href="/categories/menu/24">รายงานการจัดซื้อจัดจ้างหรือการจัดหาพัสดุ</a>
+                        <a href="/categories/menu/25">ข้อมูลเชิงสถิติ</a>
+                        <a href="/categories/menu/26">การบริหารและพัฒนาทรัพยากรบุคล</a>
+                        <a href="/categories/menu/27">มาตรการส่งเสริมความโปร่งใสและป้องกันการทุจริต</a>
+                        <a href="/categories/menu/28">ประมวลจริยธรรมและการขับเคลื่อนจริยธรรม</a>
                     </div>
                 </div>
 
                 <div class="nav-pill has-submenu">
                     กฎหมายและระเบียบ
                     <div class="submenu">
-                        <a href="#">เทศบัญญัติและคำสั่ง</a>
-                        <a href="#">กฎหมายที่เกี่ยวข้อง</a>
-                        <a href="#">แผนพัฒนาเศรษฐกิจและสังคมแห่งชาติ</a>
+                        <a href="/directory/menu/39">เทศบัญญัติและคำสั่ง</a>
+                        <a href="/directory/menu/40">กฎหมายที่เกี่ยวข้อง</a>
+                        <a href="/directory/menu/76">แผนพัฒนาเศรษฐกิจและสังคมแห่งชาติ</a>
                         <a href="#">พระราชบัญญัติและพระราชกฤษฎีกา</a>
                         <a href="#">กฎหมาย ระเบียบ และประกาศกระทรวง</a>
                     </div>
@@ -165,12 +166,12 @@
                 <div class="nav-pill has-submenu">
                     บริการประชาชน
                     <div class="submenu">
-                        <a href="#">รับเเจ้งเรื่องราวร้องเรียนร้องทุกข์ </a>
-                        <a href="#">รับเเจ้งเรื่องราวร้องเรียนการทุจริตและประพฤติมิชอบ</a>
-                        <a href="#">แบบสอบถามความพึงพอใจ</a>
-                        <a href="#">รายงานผลสำรวจความพึงพอใจ </a>
-                        <a href="#">คู่มือการทำงานของหน่วยงาน</a>
-                        <a href="#">ดาวน์โหลดแบบฟอร์ม</a>
+                        <a href="/complaint/menu/41">รับเเจ้งเรื่องราวร้องเรียนร้องทุกข์ </a>
+                        <a href="/corruption/menu/42">รับเเจ้งเรื่องราวร้องเรียนการทุจริตและประพฤติมิชอบ</a>
+                        <a href="/satisfaction/menu/43">แบบสอบถามความพึงพอใจ</a>
+                        <a href="/directory/menu/44">รายงานผลสำรวจความพึงพอใจ </a>
+                        <a href="/categories/menu/45">คู่มือการทำงานของหน่วยงาน</a>
+                        <a href="/directory/menu/46">ดาวน์โหลดแบบฟอร์ม</a>
                         <a href="#">ยื่นคำร้องออนไลน์ E-service</a>
                     </div>
                 </div>
@@ -312,11 +313,11 @@
                         ข้อมูลเว็บไซต์
                     </div>
                     <div class="link-footer-two">
-                        <a href="">หน้าแรก</a>
-                        <a href="">กระดานกระทู้</a>
-                        <a href="">ติดต่อ</a>
+                        <a href="/home">หน้าแรก</a>
+                        <a href="/webboard/menu/75">กระดานกระทู้</a>
+                        <a href="/contact/menu/74">ติดต่อ</a>
                         <a href="#">แผนผังเว็บไซต์</a>
-                        <a href="">รับเเจ้งเรื่องราวร้องเรียนร้องทุกข์</a>
+                        <a href="/complaint/menu/41">รับเเจ้งเรื่องราวร้องเรียนร้องทุกข์</a>
                     </div>
                 </div>
                 <div class="footer-ma">

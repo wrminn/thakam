@@ -327,7 +327,7 @@
 
     .personnel-box {
         display: flex;
-        padding: 10px;
+        padding: 15px;
     }
 
     .personnel-box-p1 {
@@ -747,15 +747,13 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        gap: 2rem;
-        /* แทน margin ของการ์ด */
-        padding: 0 clamp(1rem, 5vw, 150px);
+        padding: 0 clamp(1rem, 8vw, 150px);
         margin-top: 4vw;
     }
 
     .card-activity-body {
-        width: clamp(280px, 25vw, 450px);
-        min-height: 400px;
+        width: clamp(280px, 20vw, 450px);
+        min-height: 380px;
         background-color: #fff;
         border-radius: 20px;
         display: flex;
@@ -764,7 +762,8 @@
         padding: 1rem;
         box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
         transition: transform 0.3s ease;
-        height: 450px;
+        height: 400px;
+        margin: 20px
     }
 
     .card-activity-body:hover {
@@ -785,7 +784,7 @@
 
     .activity-img {
         width: 100%;
-        height: clamp(200px, 18vw, 325px);
+        height: clamp(200px, 15vw, 325px);
         overflow: hidden;
         border-radius: 15px;
     }
@@ -886,21 +885,15 @@
         transition: transform 0.3s ease;
     }
 
-    /* .box-bg-title:hover {
-        transform: scale(1.02);
-    } */
+
     .news-directory {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-around;
-
         max-width: 1600px;
-        /* จำกัดความกว้างไม่ให้ยืดจนสุดจอ */
         margin: 0 auto;
-        /* จัดให้อยู่กึ่งกลาง */
-        padding: 15px 60px;
-        /* ลด padding ซ้าย-ขวา ให้บาลานซ์ */
+        padding: 15px 120px;
     }
 
     .card-news-body {
@@ -908,27 +901,23 @@
         flex-direction: row;
         flex-wrap: wrap;
         gap: 20px;
-        /* เพิ่มช่องว่างระหว่าง card */
     }
 
     .box-all-news {
+        margin-top: 5vh;
         padding: 20px;
-        /* ลด padding ให้ content กว้างขึ้น */
         display: flex;
         justify-content: center;
     }
 
     .box-news-id {
         padding: 15px;
-        /* ลด padding ของ card */
     }
 
     a.no-underline.button-news-all {
         background: linear-gradient(271deg, #00565f, #019892);
         padding: 8px 20px;
-        /* ขนาดปุ่มสมดุลขึ้น */
         font-size: 22px;
-        /* ปรับขนาดฟอนต์ให้เข้ากับจอใหญ่ */
         border-radius: 12px;
         color: #fff;
         font-weight: 900;
@@ -936,7 +925,6 @@
 
     .box-news {
         margin-top: 25px;
-        /* ลด margin เล็กน้อย */
     }
 
     .box-slide-hrer {
@@ -944,11 +932,10 @@
         flex-direction: column;
         align-items: center;
         margin-top: -40px;
-        /* ลดการดึงขึ้นมา */
     }
 
     .box-activity-relations {
-        min-height: 2690px;
+        min-height: 2090px;
     }
 
     .box-activity-relations::before {
@@ -960,7 +947,6 @@
         flex-direction: column;
         align-items: center;
         margin-top: -40px;
-        /* ลดการดันขึ้น */
     }
 
     img.slide-here {
@@ -973,10 +959,8 @@
 
     div#carouselExampleSlidesOnly.carousel-slide-here {
         max-width: 1600px;
-        /* กำหนด max ไม่ให้เล็กเกินบนจอใหญ่ */
         width: 100%;
         aspect-ratio: 16 / 7;
-        /* รักษาสัดส่วน */
         background: #fff;
         border-radius: 50px;
         padding: 6px;
@@ -986,13 +970,11 @@
     .here-text {
         position: absolute;
         top: 20px;
-        /* ใช้ top แทน margin-top ลบ */
         left: 50%;
         transform: translateX(-50%);
         background: #fff;
         padding: 5px 25px;
         font-size: 36px;
-        /* ลดลงเพื่อบาลานซ์กับ slide */
         border-radius: 10px;
     }
 
@@ -1006,20 +988,16 @@
     .slide-text {
         font-family: 'MyFont';
         font-size: 60px;
-        /* ลดขนาดลงเล็กน้อย */
         background: linear-gradient(92deg, #ddf0ff, #f8fcff);
         z-index: 5;
         margin-top: -40px;
         border-radius: 20px;
         box-shadow: 0px 0px 20px 4px #888888;
         position: absolute;
-        /* ใช้ absolute วางทับ slide */
         bottom: 30px;
-        /* ชิดด้านล่างของ slide */
         left: 50%;
         transform: translateX(-50%);
         width: 60%;
-        /* กำหนดความกว้าง */
         text-align: center;
         color: #000;
     }
@@ -1029,9 +1007,7 @@
         flex-direction: row;
         justify-content: center;
         gap: 80px;
-        /* เพิ่มช่องว่างระหว่างปุ่ม */
         margin-top: 100px;
-        /* ลดช่องว่างบนจอใหญ่ */
     }
 
     .banner-service-one {
@@ -1045,7 +1021,7 @@
         justify-content: center;
         flex: 1;
         max-width: 100%;
-
+        margin-top: 10vh;
     }
 
     img.button-here-text {
@@ -1063,7 +1039,6 @@
 
     .card-here a:hover {
         transform: scale(1.05);
-        /* เพิ่มเอฟเฟกต์เด้งเบาๆเวลา hover */
     }
 
     .button-here-text:hover {
@@ -1083,13 +1058,12 @@
         border-radius: 50px;
         padding: 6px;
         box-shadow: 0px 0px 20px 4px #888888;
-        /* height: 600px; */
     }
 
     .tab-buttons button {
         padding: 12px 40px;
         border: none;
-        border-radius: 25px;
+        border-radius: 60px;
         background: #2b757e;
         cursor: pointer;
         font-weight: bold;
@@ -1099,7 +1073,6 @@
         min-width: 180px;
         font-size: 22px;
         color: #fff;
-        text-align: center;
         width: 100%;
         max-width: 300px;
     }
@@ -1134,7 +1107,7 @@
         flex-direction: column;
         color: #000;
         justify-content: center;
-        margin: 15px auto;
+        margin: 15px 9px;
         width: 550px;
     }
 
@@ -1144,39 +1117,393 @@
 
     .item-icon {
         width: 60px;
-        /* ขยายให้สมดุลกับจอใหญ่ */
         height: 60px;
         border-radius: 10px;
-        /* มุมโค้งชัดขึ้น */
         display: flex;
         justify-content: center;
         align-items: center;
         font-size: 36px;
-        /* ลดลงให้พอดีกับกล่อง */
         color: #0b95d8;
         background: #f4fafd;
-        /* เติมพื้นหลังอ่อนๆ ให้อ่านง่าย */
         flex-shrink: 0;
-        /* กันไม่ให้กล่องย่อ */
     }
 
     .item-text {
         flex: 1;
         font-size: 20px;
-        /* เพิ่มขนาด text ให้เหมาะกับจอใหญ่ */
         line-height: 1.5;
     }
 
     .item-date {
         font-size: 16px;
-        /* ให้อ่านได้บนจอ 1920px */
         color: #d9534f;
-        /* โทนแดงชัดขึ้น */
         margin-bottom: 6px;
         font-weight: 500;
     }
 
+    .announce-box {
+        min-height: 100vh;
+    }
+
+    .announce-title {
+        text-align: center;
+        color: #fff;
+    }
+
+    .announce-title-one {
+        font-size: clamp(60px, 8vw, 120px);
+        font-weight: 800;
+    }
+
+    .announce-title-two {
+        font-size: clamp(40px, 6vw, 80px);
+        margin-top: -30px;    }
+
+    .announce-body {
+        padding: 20px 5%;    }
+
+    .tab-buttons button {
+        position: relative;
+    }
+
+    .tab-buttons button::before {
+        content: "•";
+        color: #fff;
+        font-size: 28px;
+        position: absolute;
+        left: 40px;
+        top: 75%;
+        transform: translateY(-50%);
+    }
+
+    .tab-buttons {
+        display: flex;
+        gap: 10px;
+        margin-bottom: 50px;
+        justify-content: space-between;
+    }
+
     .content-announce {
-        gap: 0;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        min-height: 600px;
+        gap: 0px;
+    }
+
+    .box-one-announce {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+
+    .tag-announce {
+        padding: 5px 20px;
+        font-size: clamp(12px, 2vw, 18px);
+        background: #fff;
+        border-radius: 20px;
+    }
+
+    .item:hover {
+        background: linear-gradient(92deg, #179d9eed, #1b7985);
+        color: #000;
+    }
+
+    .box-all-announce {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 40px 0;
+        position: relative;
+        padding: 0 5%;
+    }
+
+    .box-all-announce::before,
+    .box-all-announce::after {
+        content: "";
+        flex: 1;
+        height: 3px;
+        background: #ddd;
+        margin: 0 10px;
+    }
+
+    .box-all-announce a {
+        background: #fff;
+        border: 1px solid #ccc;
+        border-radius: 25px;
+        padding: 6px 16px;
+        font-size: clamp(14px, 1.5vw, 20px);
+        cursor: pointer;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        transition: all 0.2s ease;
+    }
+
+    .box-all-announce a:hover {
+        background: #f5f5f5;
+    }
+
+    .elibrary-img-one img {
+        width: 100%;
+    }
+
+    .f-book img {
+        width: 100%;
+    }
+
+    .box-announce {
+        min-height: 3100px;
+    }
+
+    .box-elibrary {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        padding: 0 5%;
+        gap: 20px;
+    }
+
+    .elibrary-text-one {
+        margin-top: clamp(50px, 10vh, 200px);
+        display: flex;
+        flex-direction: column;
+        text-align: end;
+    }
+
+    .elibrary-one-box {
+        width: 100%;
+        max-width: 73%;
+    }
+
+    .elibrary-one {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .elibrary-two {
+        text-align: end;
+        margin-right: clamp(10px, 3vw, 60px);
+        margin-top: -15px;
+    }
+
+    .box-vote {
+        min-height: clamp(500px, 45vh, 862px);
+        margin-top: clamp(-150px, -20vh, -370px);
+        position: relative;
+    }
+
+    .vote {
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        position: absolute;
+        z-index: 5;
+        gap: 10px;
+        top: 25%;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+        flex-direction: column;
+        max-width: 900px;
+        width: 90%;
+    }
+
+    .text-vote {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        margin-bottom: 20px;
+    }
+
+    .text-vote label {
+        display: block;
+        font-size: clamp(25px, 1.3vw, 25px);
+        margin: 6px 0;
+        cursor: pointer;
+        font-weight: 800;
+        color: #fff;
+    }
+
+    .text-vote input[type="radio"] {
+        margin-right: 8px;
+        transform: scale(1.1);
+    }
+
+    .bb-vote {
+        text-align: center;
+        margin-top: 32px;
+    }
+
+    .s-vote {
+        padding: clamp(8px, 1vw, 15px) clamp(20px, 2vw, 40px);
+        background-color: #1976d2;
+        color: #fff;
+        border: none;
+        border-radius: 25px;
+        font-size: clamp(14px, 1vw, 20px);
+        font-weight: bold;
+        cursor: pointer;
+        transition: background 0.3s;
+    }
+
+    .s-vote:hover {
+        background-color: #0d47a1;
+    }
+
+    .map-one {
+        /* margin-top: clamp(40px, 8vh, 150px);
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        gap: 30px;
+        flex-wrap: wrap; */
+        display: flex;
+        text-align: center;
+        gap: 30px;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        margin-top: 15%;
+    }
+
+    .text-map-one {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: clamp(10px, 2vw, 20px);
+        justify-content: center;
+    }
+
+    .map-two {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: clamp(900px, 50vh, 900px);
+    }
+
+    .map-three {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-top: clamp(40px, 5vh, 100px);
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 40px;
+    }
+
+    .t-m-two {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .text-m-two {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .text-map-three {
+        display: flex;
+        align-items: flex-end;
+    }
+
+    .map-body {
+        padding: clamp(20px, 5vw, 120px);
+        background: #fff;
+        border-radius: 30px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+        height: auto;
+        max-width: 1200px;
+        margin: auto;
+    }
+
+    .card-map-three {
+        padding: clamp(20px, 5vw, 80px) clamp(40px, 8vw, 160px);
+    }
+
+    .tab-buttons-map {
+        display: flex;
+        gap: 15px;
+        margin-bottom: 50px;
+        justify-content: center;
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .tab-buttons-map button {
+        padding: 12px 40px;
+        width: auto;
+        min-width: 200px;
+        text-align: center;
+        font-size: 20px;
+    }
+
+    .content-map {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .item-map {
+        padding: 15px 30px;
+        font-size: 20px;
+        height: auto;
+        min-height: 55px;
+    }
+
+    .box-all-map {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 40px 0;
+        position: relative;
+        padding: 0 10%;
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .public-link-two.sim-three::after {
+        width: clamp(180px, 12vw, 220px);
+        left: 12%;
+        top: 50%;
+        transform: rotate(315deg);
+        transform-origin: left center;
+    }
+
+    .public-link-two.sim-five::after {
+        width: clamp(180px, 12vw, 220px);
+        right: 12%;
+        top: 70%;
+        transform: rotate(320deg);
+        transform-origin: right center;
+    }
+
+    .public-link-three.sim-six::after {
+        width: clamp(180px, 12vw, 220px);
+        left: 12%;
+        top: 70%;
+        transform: rotate(40deg);
+        transform-origin: left center;
+    }
+
+    .public-link-three.sim-seven::after {
+        width: clamp(600px, 40vw, 780px);
+        right: clamp(300px, 30vw, 560px);
+        top: 78%;
+        transform: rotate(0deg);
+        transform-origin: right center;
+    }
+
+    .box-view-two {
+        min-height: 1200px;
+    }
+
+    img.banner-map-img {
+        width: 90%;
     }
 }
+

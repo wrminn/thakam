@@ -403,18 +403,15 @@ span.chip {
 /* สำหรับหน้าจอขนาดกลางและเล็ก (Tablet, Mobile) */
 @media (max-width: 768px) {
     .nav-strip {
-        flex-wrap: wrap;
-        /* เมนูขึ้นบรรทัดใหม่ */
+        /* flex-wrap: wrap;
         gap: 8px;
         padding: 10px;
-        margin-top: -20px;
-        /* ปรับระยะห่าง */
+        margin-top: -20px; */
     }
 
     .nav-pill {
         padding: 8px 20px;
-        font-size: 18px;
-        /* ลดขนาดฟอนต์ */
+        font-size: 9px;
     }
 
     .submenu {
