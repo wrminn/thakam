@@ -4,21 +4,19 @@
 @section('content')
     <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.20/dist/summernote-lite.min.css" rel="stylesheet">
     <div class="text-center ">
-        <div class="relative my-10 inline-block h-34" style="width: 594px">
-            <img alt="{{ $title }}"class="w-full h-full object-contain" src="/spa/assets/list/label-frame.png">
-            <span
-                class="absolute inset-0 flex items-center justify-center text-[1.6rem] font-bold text-white drop-shadow-lg px-4 text-center">{{ $title }}</span>
+        <div class="title-menu">
+            {{ $title }}
         </div>
     </div>
     <section class="b-detail">
         <div class="form-wrapper">
-            <img src="{{ asset('/storage/detailweb/logo.png') }}" alt="Logo" class="d-block mx-auto mb-3"
+            <img src="{{ asset('/img/logo.png') }}" alt="Logo" class="d-block mx-auto mb-3"
                 style="max-width: 150px;">
             <h3 class="mb-4 text-center">{{ $title }}</h3>
-            <h4 class="mb-4 text-center">เทศบาลตำบลบ้านโพธิ์</h4>
-            <h4 class="mb-4 text-center">เลขที่ 222 หมู่ 1 ตำบลบ้านโพธิ์ อำเภอบ้านโพธิ์ จังหวัดฉะเชิงเทรา 24140</h4>
-            <h4 class="mb-4 text-center">เบอร์โทรสำนักงาน 0-3858-7308 แฟกซ์ 0-3858-7308 ต่อ 103</h4>
-            <h4 class="mb-4 text-center"> E-mail : office@banphocity.go.th</h4>
+            <h4 class="mb-4 text-center">เทศบาลตำบลท่าข้าม</h4>
+            <h4 class="mb-4 text-center">122 หมู่ที่ 3 ตำบลท่าข้าม อำเภอบางปะกง จังหวัดฉะเชิงเทรา 24130</h4>
+            <h4 class="mb-4 text-center">เบอร์โทรสำนักงาน 0-3857-3411-2 ต่อ 144 แฟกซ์ 0-3857-3411-2</h4>
+            <h4 class="mb-4 text-center"> E-mail : admin@thakam.go.th</h4>
             <form class="" action="{{ route('contact.insert', ['menu' => $menuId]) }}" method="post"
                 enctype="multipart/form-data">
                 @csrf

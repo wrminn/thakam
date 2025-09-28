@@ -4,10 +4,8 @@
 @section('content')
     <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.20/dist/summernote-lite.min.css" rel="stylesheet">
     <div class="text-center ">
-        <div class="relative my-10 inline-block h-34" style="width: 594px">
-            <img alt="{{ $title }}"class="w-full h-full object-contain" src="/spa/assets/list/label-frame.png">
-            <span
-                class="absolute inset-0 flex items-center justify-center text-[1.6rem] font-bold text-white drop-shadow-lg px-4 text-center">{{ $title }}</span>
+         <div class="title-menu">
+            {{ $title }}
         </div>
     </div>
     <section class="b-detail">

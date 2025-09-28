@@ -4,19 +4,17 @@
 @section('content')
     <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.20/dist/summernote-lite.min.css" rel="stylesheet">
     <div class="text-center ">
-        <div class="relative my-10 inline-block h-34" style="width: 594px">
-            <img alt="{{ $title }}"class="w-full h-full object-contain" src="/spa/assets/list/label-frame.png">
-            <span
-                class="absolute inset-0 flex items-center justify-center text-[1.6rem] font-bold text-white drop-shadow-lg px-4 text-center">{{ $title }}</span>
+        <div class="title-menu">
+            {{ $title }}
         </div>
     </div>
     <section class="b-detail">
         <div class="form-wrapper">
-            <img src="{{ asset('/storage/detailweb/logo.png') }}" alt="Logo" class="d-block mx-auto mb-3"
-                style="max-width: 150px;">
+            <img src="{{ asset('/img/logo.png') }}" alt="Logo" class="d-block mx-auto mb-3" style="max-width: 150px;">
             <h3 class="mb-4 text-center">{{ $title }}</h3>
             <h4 class="mb-4 text-center">รับแจ้งข้อมูลทุจริต ประพฤติมิชอบ ไม่บริการประชาชนของพนักงานและลูกจ้าง
-                เทศบาลตำบลบ้านโพธิ์</h4>
+                เทศบาลตำบลท่าข้าม
+            </h4>
             <form class="" action="{{ route('corruption.insert', ['menu' => $menuId]) }}" method="post"
                 enctype="multipart/form-data">
                 @csrf

@@ -88,7 +88,7 @@ class ServiceDataController extends Controller
     function indexCorruption($menuId)
     {
 
-        // $titles = $this->myService->getDataByKey($menuId);
+        $titles = $this->myService->getDataByKey($menuId);
         $title = $titles ?? 'ข้อมูลเมนู' . $menuId;
 
         return view('data.corruption.index', compact('title', 'menuId'));
@@ -145,7 +145,7 @@ class ServiceDataController extends Controller
 
     function indexContact($menuId)
     {
-        // $titles = $this->myService->getDataByKey($menuId);
+        $titles = $this->myService->getDataByKey($menuId);
         $title = $titles ?? 'ข้อมูลเมนู' . $menuId;
         return view('data.contact.index', compact('title', 'menuId'));
     }
@@ -197,7 +197,7 @@ class ServiceDataController extends Controller
     }
     function listform($menuId)
     {
-        // $titles = $this->myService->getDataByKey($menuId);
+        $titles = $this->myService->getDataByKey($menuId);
         $title = $titles ?? 'ข้อมูลเมนู' . $menuId;
 
         $list = GennericForm::active()->paginate(20);
@@ -207,7 +207,7 @@ class ServiceDataController extends Controller
 
     function listformpdf($menuId, $id)
     {
-        // $titles = $this->myService->getDataByKey($menuId);
+        $titles = $this->myService->getDataByKey($menuId);
         $title = $titles ?? 'ข้อมูลเมนู' . $menuId;
 
         $list = DB::table('table_form_1')
@@ -219,7 +219,7 @@ class ServiceDataController extends Controller
 
     function showform($menuId, $id)
     {
-        // $titles = $this->myService->getDataByKey($menuId);
+        $titles = $this->myService->getDataByKey($menuId);
         $title = $titles ?? 'ข้อมูลเมนู' . $menuId;
         $Date = $this->SelectDate();
         $form_page = 'data.formeservice.table_' . $id;
