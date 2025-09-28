@@ -15,9 +15,15 @@ use Illuminate\Support\Facades\Hash;
 
 class PublicDataController extends Controller
 {
+     protected $myService;
+
+    public function __construct(MyService $myService)
+    {
+        $this->myService = $myService;
+    }
     public function satisfaction($menuId)
     {
-        //$titles = $this->myService->getDataByKey($menuId);
+        $titles = $this->myService->getDataByKey($menuId);
         $title = $titles ?? 'ข้อมูลเมนู' . $menuId;
 
         return view('data.public.satisfaction', compact('title', 'menuId'));
@@ -25,7 +31,7 @@ class PublicDataController extends Controller
 
     public function satisfactionInsert(Request $request, $menuId)
     {
-        //$titles = $this->myService->getDataByKey($menuId);
+        $titles = $this->myService->getDataByKey($menuId);
         $title = $titles ?? 'ข้อมูลเมนู' . $menuId;
 
         $request->validate([
@@ -62,7 +68,7 @@ class PublicDataController extends Controller
 
     public function calendar($menuId)
     {
-        //$titles = $this->myService->getDataByKey($menuId);
+        $titles = $this->myService->getDataByKey($menuId);
         $title = $titles ?? 'ข้อมูลเมนู' . $menuId;
         return view('data.public.calendar', compact('title', 'menuId'));
     }

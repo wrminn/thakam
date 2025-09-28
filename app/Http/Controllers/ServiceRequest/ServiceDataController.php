@@ -20,10 +20,16 @@ use App\Models\GennericForm;
 
 class ServiceDataController extends Controller
 {
+     protected $myService;
+
+    public function __construct(MyService $myService)
+    {
+        $this->myService = $myService;
+    }
     function indexComplaint($menuId)
     {
 
-        //$titles = $this->myService->getDataByKey($menuId);
+        $titles = $this->myService->getDataByKey($menuId);
         $title = $titles ?? 'ข้อมูลเมนู' . $menuId;
 
         return view('data.complaint.index', compact('title', 'menuId'));
