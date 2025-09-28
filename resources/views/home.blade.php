@@ -283,9 +283,9 @@
 
             </div>
             <div class="ons-box-button-two">
-                <a href=""> <img src="/img/OneStopService/Banner-4.png" alt=""
+                <a href=""> <img src="/img/03/Member_0.png" alt=""
                         class="bg-ons-button-member" style="float: right;"></a>
-                <a href=""> <img src="/img/OneStopService/Banner-4.png" alt=""
+                <a href=""> <img src="/img/03/General Public_0.png" alt=""
                         class="bg-ons-button-public"></a>
             </div>
         </div>
@@ -409,7 +409,9 @@
                                 <div class="activity-date">{{ $day }} {{ $month }} {{ $year }}
                                 </div>
                                 <div class="activity-title">{{ $list->texteditor_title }}</div>
-                                <div class="activity-detail">{{ trim(strip_tags($list->texteditor_detail)) }}</div>
+                                {{-- <div class="activity-detail">{{ trim(strip_tags($list->texteditor_detail)) }}</div> --}}
+                                <div class="activity-detail">{{ \Illuminate\Support\Str::limit(trim(strip_tags($list->texteditor_detail)), 150) }}
+</div>
 
                             </div>
                         </a>
@@ -477,7 +479,9 @@
                                 @endphp
                                 <div class="box-news-id">
                                     <div class="news-title"><b>{{ $list->texteditor_title }}</b></div>
-                                    <div class="news-detail">{{ trim(strip_tags($list->texteditor_detail)) }}</div>
+                                    {{-- <div class="news-detail">{{ trim(strip_tags($list->texteditor_detail)) }}</div> --}}
+                                    <div class="news-detail">{{ \Illuminate\Support\Str::limit(trim(strip_tags($list->texteditor_detail)), 150) }}
+</div>
                                     <div class="news-date">{{ $day }} {{ $month }} {{ $year }}
                                     </div>
                                 </div>

@@ -601,7 +601,7 @@
     }
 
     img.bg-ons-button {
-        width: 56%;
+        width: 40%;
     }
 
     .ons-box-button-two {
@@ -1312,8 +1312,9 @@
     .text-vote {
         display: flex;
         flex-direction: column;
-        gap: 12px;
-        margin-bottom: 20px;
+        gap: 0px;
+        margin-bottom: -2px;
+        height: 300px;
     }
 
     .text-vote label {
@@ -1466,7 +1467,7 @@
         margin-right: auto;
     }
 
-    .public-link-two.sim-three::after {
+    /* .public-link-two.sim-three::after {
         width: clamp(180px, 12vw, 220px);
         left: 12%;
         top: 50%;
@@ -1496,7 +1497,7 @@
         top: 78%;
         transform: rotate(0deg);
         transform-origin: right center;
-    }
+    } */
 
     .box-view-two {
         min-height: 1200px;

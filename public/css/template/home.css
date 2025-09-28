@@ -691,6 +691,7 @@ a.no-underline.button-here-all {
 
 .box-news-id {
     padding: 30px;
+    width: 380px;
 }
 
 a.no-underline.button-news-all {
@@ -876,6 +877,7 @@ img.button-here-text {
     color: red;
     margin-bottom: 4px;
 }
+
 /*ถึงนี่*/
 .announce-box {
     margin-top: 350px;
@@ -1301,11 +1303,11 @@ img.banner-map-img:hover {
 
 
 .public-link-one.sim-one::after,
-.public-link-one.sim-two::after, 
+.public-link-one.sim-two::after,
 .public-link-two.sim-three::after,
 .public-link-two.sim-five::after,
 .public-link-three.sim-six::after,
-.public-link-three.sim-seven::after  {
+.public-link-three.sim-seven::after {
     content: "";
     position: absolute;
     background: #ffffff;
@@ -1314,7 +1316,7 @@ img.banner-map-img:hover {
 }
 
 .public-link-one.sim-one::after {
-    width: 808px;
+    width: 688px;
     left: 67%;
     top: 46%;
     transform: rotate(360deg);
@@ -1322,37 +1324,41 @@ img.banner-map-img:hover {
 }
 
 .public-link-one.sim-two::after {
-    width: 218px;
+    width: 213px;
     left: 56%;
     top: 86%;
     transform: rotate(223deg);
     transform-origin: revert;
 }
+
 .public-link-two.sim-three::after {
-    width: 209px;
-    left: 14%;
-    top: 49%;
+    width: 196px;
+    left: 10%;
+    top: 46%;
     transform: rotate(315deg);
     transform-origin: revert;
 }
+
 .public-link-two.sim-five::after {
-    width: 208px;
-    right: 15%;
-    top: 69%;
+    width: 193px;
+    right: 12%;
+    top: 65%;
     transform: rotate(320deg);
     transform-origin: revert;
 }
+
 .public-link-three.sim-six::after {
-    width: 208px;
-    left: 15%;
-    top: 69%;
-    transform: rotate(40deg);
+    width: 192px;
+    left: 12%;
+    top: 65%;
+    transform: rotate(42deg);
     transform-origin: revert;
 }
+
 .public-link-three.sim-seven::after {
-    width: 771px;
-    right: 567px;
-    top: 78%;
+    width: 650px;
+    right: 436px;
+    top: 74%;
     transform: rotate(360deg);
     transform-origin: right center;
 }
