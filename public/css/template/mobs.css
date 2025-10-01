@@ -494,3 +494,74 @@
         padding: 0 15px;
     }
 }
+
+/* iPhone 15 / 15 Pro */
+@media (max-width: 393px) {
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        width: 100%;
+        position: relative;
+    }
+
+    .header-logo {
+        width: 50px;
+    }
+
+    .header-box-contact-title,
+    .box-Language,
+    .box-tel,
+    .header-box-contact-email,
+    .box-email,
+    .header-login-title,
+    .header-register-title,
+    .personnel-box-detail-p2,
+    .per-b-tel-p2,
+    .per-b-tel,
+    a.no-underline.b-video {
+        font-size: 5px;
+    }
+
+    svg.p-telephone-fill {
+        width: 5px;
+    }
+
+    .nav-strip {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .box-menu {
+        margin-top: -24px;
+    }
+
+    img.box-img-slide-top {
+        height: 225px !important;
+        width: 100% !important; /* ทำให้ยืดเต็มหน้าจอ */
+        object-fit: cover;
+    }
+
+    img.d-block.w-100 {
+        max-height: 240px;
+        width: 100% !important;
+        object-fit: cover;
+    }
+
+    .search-button.vision {
+        font-size: 8px;
+    }
+
+    /* ... (ใช้โค้ดเดิมของคุณทั้งหมดได้เลย) ... */
+
+    /* footer fix */
+    .footer-contact {
+        width: 100% !important; /* fix ไม่ให้หลุดจอ */
+    }
+
+    .box-footer {
+        min-height: 570px;
+        padding: 0 15px;
+    }
+}
