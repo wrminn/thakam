@@ -15,7 +15,8 @@
 .box-announce,
 .box-map,
 .box-view-two,
-.box-footer {
+.box-footer,
+.Copyright {
     position: relative;
     overflow: hidden;
     margin-top: 0;
@@ -32,7 +33,8 @@
 .box-announce::before,
 .box-map::before,
 .box-view-two::before,
-.box-footer::before {
+.box-footer::before,
+.Copyright::before {
     content: "";
     position: absolute;
     inset: 0;
@@ -1361,4 +1363,11 @@ img.banner-map-img:hover {
     top: 74%;
     transform: rotate(360deg);
     transform-origin: right center;
+}
+.carousel-indicators [data-bs-target]{
+        margin-top: 150%;
+}
+.fb-page{
+    width: 340px;
+    height: 800px;
 }

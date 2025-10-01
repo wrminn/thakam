@@ -477,7 +477,7 @@ span.chip {
 /* สำหรับหน้าจอขนาดเล็กมากๆ (Mobile) */
 @media (max-width: 480px) {
     .nav-strip {
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
     }
 
@@ -485,9 +485,21 @@ span.chip {
         width: 100%;
         text-align: center;
         padding: 10px;
+        font-size: 6px;
+        height: 40px !important;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .submenu {
+        position: absolute;
     }
 
     .text-vission {
         font-size: 14px;
+    }
+    .lav-480{
+        display: none;
     }
 }

@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="{{ asset('/css/template/book.css') }}">
     <link rel="stylesheet" href="{{ asset('/css/template/mobile.css') }}">
     <link rel="stylesheet" href="{{ asset('/css/template/mo2.css') }}">
+    <link rel="stylesheet" href="{{ asset('/css/template/mobs.css') }}">
     {{-- <script src="https://cdn.tailwindcss.com"></script> --}}
 
     <!-- Scripts -->
@@ -285,10 +286,10 @@
                 </div>
                 <div class="footer-contact" style="width: 1000px;">
                     <p style="display: flex;flex-direction: column;">
-                        <span style="font-size: 50px;font-weight: 900;">เทศบาลตำบลท่าข้าม</span>
-                        <span style="font-size: 24px;margin-top: -15px;">Thakam Subdistrict Municipality</span>
-                        <span style="font-size: 16px;">122 หมู่ที่ 3 ตำบลท่าข้าม อำเภอบางปะกง</span>
-                        <span style="font-size: 16px;">จังหวัดฉะเชิงเทรา 24130</span>
+                        <span class="ft-by-one" style="font-size: 50px;font-weight: 900;">เทศบาลตำบลท่าข้าม</span>
+                        <span class="ft-by-two" style="font-size: 24px;margin-top: -15px;">Thakam Subdistrict Municipality</span>
+                        <span class="ft-by-three" style="font-size: 16px;">122 หมู่ที่ 3 ตำบลท่าข้าม อำเภอบางปะกง</span>
+                        <span class="ft-by-three" style="font-size: 16px;">จังหวัดฉะเชิงเทรา 24130</span>
                     </p>
                     <div class="text-footer">
                         <div class="text-footer-one">

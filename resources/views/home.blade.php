@@ -239,10 +239,10 @@
             <div class="box-sbt-one">
                 <div class="smartcity-five">
                     <a href="#" class="">
-                        <img src="/img/SmartCity/Banner-6.png" class="banner-box-sbt-one no-underline"
+                        <img src="/img/SmartCity/Banner-6.png" class="banner-box-sbt-one no-underline bbs-one"
                             style="margin: 0 0 0 175px;width: 35%;"></a>
                     <a href="#" class="">
-                        <img src="/img/SmartCity/Banner-7.png" class="banner-box-sbt-one no-underline"
+                        <img src="/img/SmartCity/Banner-7.png" class="banner-box-sbt-one no-underline bbs-twoheight: 182px;"
                             style="margin: 0 0 0 87px;width: 32%;"></a>
                 </div>
                 <div class="smartcity-six">
@@ -368,7 +368,7 @@
                     <span class="title-activity-top">ข่าวกิจกรรม</span>
                     <span class="title-activity-button"><b>Activity</b> news</span>
                 </div>
-                <img src="/img/activity-loma.png" style="height: 182px;">
+                <img src="/img/activity-loma.png" style="height: 182px;" class="activity-loma">
             </div>
             <div class="activity-directory">
 
@@ -778,8 +778,8 @@
             <div class="elibrary-one-box">
                 <div class="elibrary-one">
                     <div class="elibrary-text-one">
-                        <span style="font-size: 60px;">ช่องทางการติดตาม</span>
-                        <span style="font-weight: 900;font-size: 200px;margin-top: -120px;">ข่าวสาร</span>
+                        <span class="elibrary-text-1" style="font-size: 60px;">ช่องทางการติดตาม</span>
+                        <span class="elibrary-text-2" style="font-weight: 900;font-size: 200px;margin-top: -120px;">ข่าวสาร</span>
                     </div>
                     <div class="elibrary-img-one" style="margin-top: -50px;">
                         <img src="/img/09elibrary/Line.png" alt="">
@@ -795,10 +795,14 @@
                 <script async defer crossorigin="anonymous" src="https://connect.facebook.net/th_TH/sdk.js#xfbml=1&version=v17.0"
                     nonce="12345"></script>
 
-                <div class="fb-page" data-href="https://www.facebook.com/facebook" data-tabs="timeline" data-width="340"
-                    data-height="800" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false"
+                <div class="fb-page" data-href="https://www.facebook.com/facebook" data-tabs="timeline"
+                     data-small-header="true" data-adapt-container-width="true" data-hide-cover="false"
                     data-show-facepile="true">
                 </div>
+                {{-- <div class="fb-page" data-href="https://www.facebook.com/facebook" data-tabs="timeline" data-width="340"
+                    data-height="800" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false"
+                    data-show-facepile="true">
+                </div> --}}
 
             </div>
         </div>
@@ -833,6 +837,10 @@
     </section>
 
     <section class="box-vote">
+        <div class="lav-480">
+            <div class="lav-t-480-1">แบบสำรวจความคิดเห็น</div>
+            <div class="lav-t-480-2">ท่านคิดว่า เทศบาลตำบลท่าข้าม ควรเน้นแก้ปัญหาในเรื่องใดเป็นอันดับแรก?</div>
+        </div>
         <form id="voteForm">
             @csrf
             <div class="vote">
@@ -855,17 +863,11 @@
             <img src="/img/logo.png" alt="" width="200">
             <div class="text-map-one">
                 <span style="font-size: 45px;color: #0a4275;">แผนที่</span>
-                <span style="font-size: 80px;margin-top: -30px;font-weight: 800;color: #0a4275;">เทศบาลตำบลท่าข้าม</span>
+                <span class="tm-one" style="font-size: 80px;margin-top: -30px;font-weight: 800;color: #0a4275;">เทศบาลตำบลท่าข้าม</span>
             </div>
         </div>
         <div class="map-two">
-            {{-- <img src="/img/11map/เมฆขยับ.gif" alt=""
-                style="position: absolute;margin-top: 15%;margin-right: 70%;width: 200px;">
-            <img src="/img/11map/โดรน.gif" alt="" style="position: absolute;margin-top: 10%;width: 90px;">
-            <img src="/img/11map/โดรน2.gif" alt="" style="position: absolute;margin-top: 30%;width: 200px;">
-            <img src="/img/11map/เมฆ-ข้าง.gif" alt=""
-                style="margin-left: 55%;position: absolute;margin-top: -5%;2: 200;width: 350px;">
-            <img src="/img/11map/Map.png" alt=""> --}}
+         
             <iframe src="/img/AnimationMap/test.html" frameborder="0" style="width: 100%;"></iframe>
         </div>
         <div class="map-three">
@@ -876,8 +878,8 @@
                     </div>
                     <div class="t-m-two">
                         <div class="text-m-two">
-                            <span style="font-size: 100px;font-weight: 900;">หนังสือราชการ</span>
-                            <span style="font-size: 40px;margin-top: -45px;text-align: end;">เทศบาลตำบลท่าข้าม</span>
+                            <span class="tmt-one" style="font-size: 100px;font-weight: 900;">หนังสือราชการ</span>
+                            <span class="tmt-two" style="font-size: 40px;margin-top: -45px;text-align: end;">เทศบาลตำบลท่าข้าม</span>
                         </div>
                     </div>
                 </div>
