@@ -561,7 +561,7 @@
     }
 
     .box-footer {
-        min-height: 570px;
+        min-height: 200px;
         padding: 0 15px;
     }
 }
