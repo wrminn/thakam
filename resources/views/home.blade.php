@@ -226,7 +226,7 @@
                     </a>
                     {{-- <a href="#" class=""><img src="" class="banner-smartcity"></a> --}}
                 </div>
-                
+
                 <a href="#" class="">
                     <img src="/img/SmartCity/Banner-5.png" class="banner-smartcity no-underline">
                 </a>
@@ -242,7 +242,8 @@
                         <img src="/img/SmartCity/Banner-6.png" class="banner-box-sbt-one no-underline bbs-one"
                             style="margin: 0 0 0 175px;width: 35%;"></a>
                     <a href="#" class="">
-                        <img src="/img/SmartCity/Banner-7.png" class="banner-box-sbt-one no-underline bbs-twoheight: 182px;"
+                        <img src="/img/SmartCity/Banner-7.png"
+                            class="banner-box-sbt-one no-underline bbs-twoheight: 182px;"
                             style="margin: 0 0 0 87px;width: 32%;"></a>
                 </div>
                 <div class="smartcity-six">
@@ -268,10 +269,11 @@
                         src="/img/OneStopService/Ready.png" alt="" style="width:25%"
                         class="ons-button-Ready"></span>
                 <span style="font-size: 75px;margin-top: -29px;" class="text-eser-two"><b>ระบบยื่นคำร้องออนไลน์</b></span>
-                <span style="font-size: 33px;margin-top: -30px;" class="text-eser-three">Online Application Submission Service</span>
+                <span style="font-size: 33px;margin-top: -30px;" class="text-eser-three">Online Application Submission
+                    Service</span>
 
                 <div class="ons-box-button-one">
-                    <a href="" > <img src="/img/OneStopService/Banner-1.png" alt=""
+                    <a href=""> <img src="/img/OneStopService/Banner-1.png" alt=""
                             class="bg-ons-button"></a>
                     <a href=""> <img src="/img/OneStopService/Banner-2.png" alt=""
                             class="bg-ons-button"></a>
@@ -283,8 +285,8 @@
 
             </div>
             <div class="ons-box-button-two">
-                <a href=""> <img src="/img/03/Member_0.png" alt=""
-                        class="bg-ons-button-member" style="float: right;"></a>
+                <a href=""> <img src="/img/03/Member_0.png" alt="" class="bg-ons-button-member"
+                        style="float: right;"></a>
                 <a href=""> <img src="/img/03/General Public_0.png" alt=""
                         class="bg-ons-button-public"></a>
             </div>
@@ -297,10 +299,12 @@
                 <!-- สไลด์ -->
                 <div class="carousel-inner">
                     @forelse($SlideMenu70 as $slide)
-                        <div class="carousel-item active">
-                            <img src="{{ asset('storage/' . $slide->slide_path) }}" class="d-block w-100 slide-8" alt="..."
-                                style="width: 1586px; height:625px">
-                        </div>
+                        <a href="/slideDetail/menu/70/id/{{ $slide->slide_id }}">
+                            <div class="carousel-item active">
+                                <img src="{{ asset('storage/' . $slide->slide_path) }}" class="d-block w-100 slide-8"
+                                    alt="..." style="width: 1586px; height:625px">
+                            </div>
+                        </a>
                     @empty
                         <div class="">ไม่พบข้อมูล</div>
                     @endforelse
@@ -374,7 +378,7 @@
 
                 @forelse($activity as $list)
                     <div class="card-activity">
-                        <a href="/directoryDetail/menu/51/id/{{$list->texteditor_id}}" class="no-underline">
+                        <a href="/directoryDetail/menu/51/id/{{ $list->texteditor_id }}" class="no-underline">
                             <div class="card-activity-body">
 
                                 <div class="activity-img">
@@ -410,12 +414,14 @@
                                 </div>
                                 <div class="activity-title">{{ $list->texteditor_title }}</div>
                                 {{-- <div class="activity-detail">{{ trim(strip_tags($list->texteditor_detail)) }}</div> --}}
-                                <div class="activity-detail">{{ \Illuminate\Support\Str::limit(trim(strip_tags($list->texteditor_detail)), 150) }}
-</div>
+                                <div class="activity-detail">
+                                    {{ \Illuminate\Support\Str::limit(trim(strip_tags($list->texteditor_detail)), 150) }}
+                                </div>
 
                             </div>
                         </a>
-                        <a href="/directoryDetail/menu/51/id/{{$list->texteditor_id}}" class="no-underline button-activity">อ่านเพิ่มเติม</a>
+                        <a href="/directoryDetail/menu/51/id/{{ $list->texteditor_id }}"
+                            class="no-underline button-activity">อ่านเพิ่มเติม</a>
                     </div>
                 @empty
                     <div class="">ไม่พบข้อมูล</div>
@@ -424,7 +430,7 @@
             </div>
             @if (!empty($activity))
                 <div class="box-all-activity">
-                    <a href="/directoryDetail/menu/51" class="no-underline button-activity-all">ดูข่าวกิจกรรมทั้งหมด</a>
+                    <a href="/directory/menu/51" class="no-underline button-activity-all">ดูข่าวกิจกรรมทั้งหมด</a>
                 </div>
             @endif
 
@@ -443,7 +449,7 @@
 
                 @forelse($listMenu52 as $list)
                     <div class="card-news">
-                        <a href="/directoryDetail/menu/52/id/{{$list->texteditor_id}}" class="no-underline">
+                        <a href="/directoryDetail/menu/52/id/{{ $list->texteditor_id }}" class="no-underline">
                             <div class="card-news-body">
 
                                 <div class="news-img">
@@ -480,8 +486,9 @@
                                 <div class="box-news-id">
                                     <div class="news-title"><b>{{ $list->texteditor_title }}</b></div>
                                     {{-- <div class="news-detail">{{ trim(strip_tags($list->texteditor_detail)) }}</div> --}}
-                                    <div class="news-detail">{{ \Illuminate\Support\Str::limit(trim(strip_tags($list->texteditor_detail)), 150) }}
-</div>
+                                    <div class="news-detail">
+                                        {{ \Illuminate\Support\Str::limit(trim(strip_tags($list->texteditor_detail)), 150) }}
+                                    </div>
                                     <div class="news-date">{{ $day }} {{ $month }} {{ $year }}
                                     </div>
                                 </div>
@@ -495,7 +502,7 @@
             </div>
             @if (!empty($activity))
                 <div class="box-all-news">
-                    <a href="/directoryDetail/menu/52" class="no-underline button-news-all">ดูข่าวประชาสัมพันธ์ทั้งหมด</a>
+                    <a href="/directory/menu/52" class="no-underline button-news-all">ดูข่าวประชาสัมพันธ์ทั้งหมด</a>
                 </div>
             @endif
 
@@ -513,7 +520,7 @@
                     <div class="carousel-inner">
 
                         @forelse($SlideMenu8 as $slide)
-                            <a href="/directoryDetail/menu/8/id/{{$list->texteditor_id}}">
+                            <a href="/directoryDetail/menu/8/id/{{ $list->texteditor_id }}">
                                 <div class="carousel-item active">
                                     <img src="{{ asset('storage/' . $slide->texteditor_topic_picture) }}"
                                         class="d-block w-100 slide-here" alt="...">
@@ -636,7 +643,7 @@
                     <div class="content-announce">
 
                         @forelse($listMenu48 as $list)
-                            <a href="/directoryDetail/menu/48/id/{{$list->texteditor_id}}" class="no-underline">
+                            <a href="/directoryDetail/menu/48/id/{{ $list->texteditor_id }}" class="no-underline">
                                 <div class="item">
                                     <div class="box-one-announce">
                                         @php
@@ -674,7 +681,7 @@
                         @endforelse
                     </div>
                     <div class="box-all-announce">
-                        <a href="/directoryDetail/menu/48" class="no-underline button-announce-all">ดูทั้งหมด</a>
+                        <a href="/directory/menu/48" class="no-underline button-announce-all">ดูทั้งหมด</a>
                     </div>
                 </div>
 
@@ -683,7 +690,7 @@
                     <div class="content-announce">
 
                         @forelse($listMenu49 as $list)
-                            <a href="/directoryDetail/menu/49/id/{{$list->texteditor_id}}" class="no-underline">
+                            <a href="/directoryDetail/menu/49/id/{{ $list->texteditor_id }}" class="no-underline">
                                 <div class="item">
                                     <div class="box-one-announce">
                                         @php
@@ -721,7 +728,7 @@
                         @endforelse
                     </div>
                     <div class="box-all-announce">
-                        <a href="/directoryDetail/menu/49" class="no-underline button-announce-all">ดูทั้งหมด</a>
+                        <a href="/directory/menu/49" class="no-underline button-announce-all">ดูทั้งหมด</a>
                     </div>
                 </div>
 
@@ -730,7 +737,7 @@
                     <div class="content-announce">
 
                         @forelse($listMenu50 as $list)
-                            <a href="/directoryDetail/menu/50/id/{{$list->texteditor_id}}" class="no-underline">
+                            <a href="/directoryDetail/menu/50/id/{{ $list->texteditor_id }}" class="no-underline">
                                 <div class="item">
                                     <div class="box-one-announce">
                                         @php
@@ -768,7 +775,8 @@
                         @endforelse
                     </div>
                     <div class="box-all-announce">
-                        <a href="/directoryDetail/menu/50/id/{{$list->texteditor_id}}" class="no-underline button-announce-all">ดูทั้งหมด</a>
+                        <a href="/directory/menu/50/id/{{ $list->texteditor_id }}"
+                            class="no-underline button-announce-all">ดูทั้งหมด</a>
                     </div>
                 </div>
 
@@ -779,7 +787,8 @@
                 <div class="elibrary-one">
                     <div class="elibrary-text-one">
                         <span class="elibrary-text-1" style="font-size: 60px;">ช่องทางการติดตาม</span>
-                        <span class="elibrary-text-2" style="font-weight: 900;font-size: 200px;margin-top: -120px;">ข่าวสาร</span>
+                        <span class="elibrary-text-2"
+                            style="font-weight: 900;font-size: 200px;margin-top: -120px;">ข่าวสาร</span>
                     </div>
                     <div class="elibrary-img-one" style="margin-top: -50px;">
                         <img src="/img/09elibrary/Line.png" alt="">
@@ -796,7 +805,7 @@
                     nonce="12345"></script>
 
                 <div class="fb-page" data-href="https://www.facebook.com/facebook" data-tabs="timeline"
-                     data-small-header="true" data-adapt-container-width="true" data-hide-cover="false"
+                    data-small-header="true" data-adapt-container-width="true" data-hide-cover="false"
                     data-show-facepile="true">
                 </div>
                 {{-- <div class="fb-page" data-href="https://www.facebook.com/facebook" data-tabs="timeline" data-width="340"
@@ -810,18 +819,18 @@
             <div class="content-book">
 
                 @forelse($elibrary as $slide)
-                    
                     <div class="book">
-                    <a class="" href="#">
+                        <a class="" href="#">
 
-                        <div class="book-cover cover1" style="background: url('{{ asset('storage/' . $slide->elibrary_path_page) }}');">
-                            <div class="effect"></div>
-                            <div class="light"></div>
-                        </div>
-                        <div class="book-inside">
-                        </div>
-                    </a>
-                </div>
+                            <div class="book-cover cover1"
+                                style="background: url('{{ asset('storage/' . $slide->elibrary_path_page) }}');">
+                                <div class="effect"></div>
+                                <div class="light"></div>
+                            </div>
+                            <div class="book-inside">
+                            </div>
+                        </a>
+                    </div>
                 @empty
                     <div class="">ไม่พบข้อมูล</div>
                 @endforelse
@@ -863,11 +872,12 @@
             <img src="/img/logo.png" alt="" width="200">
             <div class="text-map-one">
                 <span style="font-size: 45px;color: #0a4275;">แผนที่</span>
-                <span class="tm-one" style="font-size: 80px;margin-top: -30px;font-weight: 800;color: #0a4275;">เทศบาลตำบลท่าข้าม</span>
+                <span class="tm-one"
+                    style="font-size: 80px;margin-top: -30px;font-weight: 800;color: #0a4275;">เทศบาลตำบลท่าข้าม</span>
             </div>
         </div>
         <div class="map-two">
-         
+
             <iframe src="/img/AnimationMap/test.html" frameborder="0" style="width: 100%;"></iframe>
         </div>
         <div class="map-three">
@@ -879,7 +889,8 @@
                     <div class="t-m-two">
                         <div class="text-m-two">
                             <span class="tmt-one" style="font-size: 100px;font-weight: 900;">หนังสือราชการ</span>
-                            <span class="tmt-two" style="font-size: 40px;margin-top: -45px;text-align: end;">เทศบาลตำบลท่าข้าม</span>
+                            <span class="tmt-two"
+                                style="font-size: 40px;margin-top: -45px;text-align: end;">เทศบาลตำบลท่าข้าม</span>
                         </div>
                     </div>
                 </div>
@@ -892,12 +903,16 @@
         <div class="card-map-three">
             <div class="map-body">
                 <div class="tab-buttons-map">
-                    <button class="active" onclick="openTab('mapone')">จากกรมส่งเสริมการปกครองส่วนท้องถิ่น</button>
-                    <button onclick="openTab('maptwo')">หนังสือราชการจากท้องถิ่นจังหวัด</button>
-
+                    <button class="active" onclick="openTabmap(this,'mapone')">
+                        จากกรมส่งเสริมการปกครองส่วนท้องถิ่น
+                    </button>
+                    <button onclick="openTabmap(this,'maptwo')">
+                        หนังสือราชการจากท้องถิ่นจังหวัด
+                    </button>
                 </div>
 
-                <div id="mapone" class="tab-content active">
+
+                <div id="mapone" class="tab-content-map active">
 
                     <div class="content-map">
                         <a href="" class="no-underline">
@@ -934,7 +949,8 @@
                     </div>
 
                 </div>
-                <div id="maptwo" class="tab-content">
+
+                <div id="maptwo" class="tab-content-map">
                     <div class="content-map">
                         <a href="" class="no-underline">
                             <div class="item-map">
@@ -1008,19 +1024,37 @@
             document.querySelectorAll('.tab-content').forEach(tab => {
                 tab.classList.remove('active');
             });
+
             document.querySelectorAll('.tab-buttons button').forEach(btn => {
-                btn.classList.remove('active');
-            });
-            document.querySelectorAll('.tab-content-map').forEach(tab => {
-                tab.classList.remove('active');
-            });
-            document.querySelectorAll('.tab-buttons-map button').forEach(btn => {
                 btn.classList.remove('active');
             });
 
             // แสดง tab ที่เลือก
             document.getElementById(tabId).classList.add('active');
             event.target.classList.add('active');
+        }
+
+        function openTabmap(button, tabId) {
+            // ซ่อน tab ของ .tab-content-map
+            document.querySelectorAll('.tab-content-map').forEach(tab => {
+                tab.classList.remove('active');
+            });
+
+            // ลบ active ของปุ่มทั้งหมดใน .tab-buttons-map
+            document.querySelectorAll('.tab-buttons-map button').forEach(btn => {
+                btn.classList.remove('active');
+            });
+
+            // แสดง tab ที่เลือก
+            const target = document.getElementById(tabId);
+            if (target) {
+                target.classList.add('active');
+            }
+
+            // ใส่ active ให้ปุ่มที่กด
+            if (button) {
+                button.classList.add('active');
+            }
         }
     </script>
 

@@ -91,7 +91,7 @@
                         <div class="submenu-item has-submenu">
                             ข้อมูลหมู่บ้าน/ชุมชน
                             <div class="submenu sub-submenu">
-                                <a href="#">ผู้นำชุมชน</a>
+                                <a href="/personnel/menu/5">ผู้นำชุมชน</a>
                                 <a href="/articles/menu/6">รายละเอียดชุมชน</a>
                             </div>
                         </div>
@@ -117,25 +117,27 @@
                     บุคลากร
                     <div class="submenu">
                         <a href="/articles/menu/9">แผนผังโครงสร้างองค์กร</a>
-                        <a href="#">คณะผู้บริหาร</a>
-                        <a href="#">สมาชิกสภา</a>
-                        <a href="#">ผู้บริหารส่วนราชการ</a>
-                        <a href="#">สำนักปลัด</a>
-                        <a href="#">กองยุทธศาสตร์</a>
-                        <a href="#">กองคลัง</a>
-                        <a href="#">กองช่าง</a>
-                        <a href="#">กองสาธารณสุขและสิ่งแวดล้อม</a>
-                        <a href="#">กองการศึกษา</a>
-                        <a href="#">หน่วยตรวจสอบภายใน</a>
+                        <a href="/personnel/menu/10">คณะผู้บริหาร</a>
+                        <a href="/personnel/menu/11">สมาชิกสภา</a>
+                        <a href="/personnel/menu/12">ผู้บริหารส่วนราชการ</a>
+                        <a href="/personnel/menu/13">สำนักปลัด</a>
+                        <a href="/personnel/menu/14">กองยุทธศาสตร์</a>
+                        <a href="/personnel/menu/15">กองคลัง</a>
+                        <a href="/personnel/menu/16">กองช่าง</a>
+                        <a href="/personnel/menu/17">กองสาธารณสุขและสิ่งแวดล้อม</a>
+                        <a href="/personnel/menu/18">กองการศึกษา</a>
+                        <a href="/personnel/menu/19">หน่วยตรวจสอบภายใน</a>
                     </div>
                 </div>
 
                 <div class="nav-pill has-submenu">
                     แผนงานและงบประมาณ
                     <div class="submenu">
-                        <a href="#">แผนพัฒนาท้องถิ่น</a>
-                        <a href="#">แผนการดำเนินงานประจำปี</a>
-                        <a href="#">แผนแม่บทระบบเทคโนโลยีสารสนเทศ</a>
+                        @forelse($recentMenu as $Menu)
+                            <a
+                                href="/directory/menu/38/cate/{{ $Menu->categories_id }}">{{ $Menu->categories_name }}</a>
+                        @empty
+                        @endforelse
                     </div>
                 </div>
 
@@ -287,8 +289,10 @@
                 <div class="footer-contact" style="width: 1000px;">
                     <p style="display: flex;flex-direction: column;">
                         <span class="ft-by-one" style="font-size: 50px;font-weight: 900;">เทศบาลตำบลท่าข้าม</span>
-                        <span class="ft-by-two" style="font-size: 24px;margin-top: -15px;">Thakam Subdistrict Municipality</span>
-                        <span class="ft-by-three" style="font-size: 16px;">122 หมู่ที่ 3 ตำบลท่าข้าม อำเภอบางปะกง</span>
+                        <span class="ft-by-two" style="font-size: 24px;margin-top: -15px;">Thakam Subdistrict
+                            Municipality</span>
+                        <span class="ft-by-three" style="font-size: 16px;">122 หมู่ที่ 3 ตำบลท่าข้าม
+                            อำเภอบางปะกง</span>
                         <span class="ft-by-three" style="font-size: 16px;">จังหวัดฉะเชิงเทรา 24130</span>
                     </p>
                     <div class="text-footer">
@@ -331,7 +335,8 @@
         </section>
         <section class="Copyright">
             <div class="footer-two">
-                <div class="tfone">การแสดงผลหน้าเว็บไซต์จะสมบูรณ์ที่สุด บนบราวเซอร์ Google Chrome & FireFox ความละเอียดหน้าจอไม่ต่ำกว่า 1366x768 pixel และไม่เกิน 1600x1200 pixel</div>
+                <div class="tfone">การแสดงผลหน้าเว็บไซต์จะสมบูรณ์ที่สุด บนบราวเซอร์ Google Chrome & FireFox
+                    ความละเอียดหน้าจอไม่ต่ำกว่า 1366x768 pixel และไม่เกิน 1600x1200 pixel</div>
                 <div class="tfone">Copyright @ บริษัท So Smart Solution สงวนสิทธิ์ 2025</div>
             </div>
         </section>

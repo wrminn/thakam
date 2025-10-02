@@ -222,5 +222,12 @@ Route::get('/categories/menu/{menu}', [DirectoryDataController::class, 'SelectCa
 Route::get('/directory/menu/{menu}/cate/{cate}', [DirectoryDataController::class, 'SelectDirectoryCateFront'])->name('categories.data');
 Route::get('/directoryDetail/menu/{menu}/id/{id}/cate/{cate}', [DirectoryDataController::class, 'SelectDirectoryCateFrontID'])->name('categories.detail');
 
-
+//บันทึกผลโหวต
 Route::post('/vote/save', [HomeController::class, 'save']);
+
+//บุคคลากร
+Route::get('/personnel/menu/{menu}', [PersonnelDataController::class, 'SelectPersonnelFront'])->name('personnel.list');
+
+//
+Route::get('/slide/menu/{menu}', [SlideDataController::class, 'SelectSlideFront'])->name('slide.list');
+Route::get('/slideDetail/menu/{menu}/id/{id}', [SlideDataController::class, 'SelectSlideDetailFront'])->name('slide.detail');

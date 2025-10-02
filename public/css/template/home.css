@@ -1371,3 +1371,13 @@ img.banner-map-img:hover {
     width: 340px;
     height: 800px;
 }
+.tab-content-map { display: none; }
+.tab-content-map.active { display: block; }
+
+/* .tab-buttons-map button.active {
+    background: #2c7be5;
+    color: white;
+} */
+ .lav-480{
+    display: none;
+ }
