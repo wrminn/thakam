@@ -171,6 +171,7 @@
 .box-all-book {
   text-align: center;
   margin-top: -80px;
+  height: 180px;
 }
 
 a.no-underline.button-book-all {

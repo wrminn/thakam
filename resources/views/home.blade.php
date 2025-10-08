@@ -7,7 +7,7 @@
             <div class="personnel-box-p1">
                 <img src="/img/personnel/นายก.png">
                 <div class="personnel-box-detail-ny">
-                    <div class="per-b-name">นางสมจิตร พันธุ์สุวรรณ</div>
+                    <div class="per-b-name">นางสมจิตร์ พันธุ์สุวรรณ</div>
                     <div class="per-b-position">นายกเทศมนตรีตำบลท่าข้าม</div>
                 </div>
                 <div class="per-b-tel">

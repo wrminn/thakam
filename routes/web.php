@@ -108,12 +108,12 @@ Route::middleware(['auth'])->group(function () {
     Route::post('backend/editslidevideo/menu/{menu}/id/{id}', [SlideBackendController::class, 'editslidevideo'])->name('editslideone.video');
 
     //elibrary
-    Route::get('backend/elibrary/menu/{menu}', [ArticlesBackendController::class, 'selectslide'])->name('selectelibrary');
-    Route::get('backend/addelibrary/menu/{menu}', [ArticlesBackendController::class, 'addslide'])->name('addelibrary');
-    Route::post('backend/addelibrary/menu/{menu}', [ArticlesBackendController::class, 'insertslide'])->name('elibrary.insert');
-    Route::get('backend/editelibrary/menu/{menu}/id/{id}', [ArticlesBackendController::class, 'selectslideone'])->name('elibraryone');
-    Route::post('backend/editelibrary/menu/{menu}/id/{id}', [ArticlesBackendController::class, 'editslide'])->name('editelibraryone');
-    Route::get('backend/deleteelibrary/menu/{menu}/id/{id}', [ArticlesBackendController::class, 'deleteslide'])->name('deleteelibraryid');
+    Route::get('backend/elibrary/menu/{menu}', [ArticlesBackendController::class, 'selectEbook'])->name('selectelibrary');
+    Route::get('backend/addelibrary/menu/{menu}', [ArticlesBackendController::class, 'addEbook'])->name('addelibrary');
+    Route::post('backend/addelibrary/menu/{menu}', [ArticlesBackendController::class, 'insertEbook'])->name('elibrary.insert');
+    Route::get('backend/editelibrary/menu/{menu}/id/{id}', [ArticlesBackendController::class, 'selectEbookone'])->name('elibraryone');
+    Route::post('backend/editelibrary/menu/{menu}/id/{id}', [ArticlesBackendController::class, 'editEbook'])->name('editelibraryone');
+    Route::get('backend/deleteelibrary/menu/{menu}/id/{id}', [ArticlesBackendController::class, 'deleteEbook'])->name('deleteelibraryid');
 
     // complaint
     Route::get('backend/complaint/menu/{menu}', [ServiceBackendController::class, 'SelectComplaint'])->name('list.complaint');
@@ -228,6 +228,20 @@ Route::post('/vote/save', [HomeController::class, 'save']);
 //บุคคลากร
 Route::get('/personnel/menu/{menu}', [PersonnelDataController::class, 'SelectPersonnelFront'])->name('personnel.list');
 
-//
+//slide
 Route::get('/slide/menu/{menu}', [SlideDataController::class, 'SelectSlideFront'])->name('slide.list');
 Route::get('/slideDetail/menu/{menu}/id/{id}', [SlideDataController::class, 'SelectSlideDetailFront'])->name('slide.detail');
+
+//elibrary
+Route::get('/elibrary/menu/{menu}', [ArticlesDataController::class, 'SelectElibraryFront'])->name('elibrary.data');
+Route::get('/elibrary/menu/{menu}/id/{id}', [ArticlesDataController::class, 'SelectElibraryFrontID'])->name('elibrary.detail');
+
+
+Route::get('/flipbook', function () {
+   
+    $pdf_files = [
+        'test.pdf'
+    ];
+
+    return view('flipbook', compact('pdf_files'));
+});

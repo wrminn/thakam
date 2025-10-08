@@ -54,5 +54,45 @@ class ArticlesDataController extends Controller
         return view('data.articles.texteditor', compact('title', 'menuId', 'list', 'file', 'breadcrumbs'));
     }
 
+    function SelectElibraryFront($menuId)
+    {
+        $titles = $this->myService->getDataByKey($menuId);
+        $title = $titles ?? 'ข้อมูลเมนู' . $menuId;
+
+        $breadcrumbs = [
+            ['name' => 'หน้าแรก', 'url' => route('home')],
+            ['name' => $title, 'url' => route('elibrary.data', ['menu' => $menuId])] // หน้า current
+        ];
+
+        $list = DB::table('elibrary')
+            ->where('elibrary_menu', $menuId)
+            ->where('elibrary_display', 'A')
+            ->orderBy('elibrary_id', 'desc')
+            ->paginate(20);
+
+        $startIndex = ($list->currentPage() - 1) * $list->perPage() + 1;
+
+        return view('data.elibrary.list', compact('title', 'menuId', 'list', 'startIndex', 'breadcrumbs'));
+    }
+
+    function SelectElibraryFrontID($menuId, $Id)
+    {
+        $titles = $this->myService->getDataByKey($menuId);
+        $title = $titles ?? 'ข้อมูลเมนู' . $menuId;
+
+        $file = null;
+
+        $breadcrumbs = [
+            ['name' => 'หน้าแรก', 'url' => route('home')],
+            ['name' => $title, 'url' => route('elibrary.data', ['menu' => $menuId])], // หน้า current
+        ];
+
+        $list = DB::table('elibrary')
+            ->where('elibrary_id', $Id)
+            ->where('elibrary_display', 'A')
+            ->first();
+            
     
+        return view('data.elibrary.detail', compact('title', 'menuId', 'list', 'breadcrumbs'));
+    }
 }

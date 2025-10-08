@@ -169,7 +169,7 @@ class ArticlesBackendController extends Controller
         return redirect('backend/articles/menu/' . $menuId);
     }
 
-    function selectslide($menuId)
+    function selectEbook($menuId)
     {
         $titles = $this->myService->getDataByKey($menuId);
         $title = $titles ?? 'ข้อมูลเมนู' . $menuId;
@@ -183,14 +183,14 @@ class ArticlesBackendController extends Controller
         return view('backend.elibrary.elibrary', compact('title', 'list', 'menuId', 'startIndex'));
     }
 
-    function addslide($menuId)
+    function addEbook($menuId)
     {
         $titles = $this->myService->getDataByKey($menuId);
         $title = $titles ?? 'ข้อมูลเมนู' . $menuId;
         return view('backend.elibrary.addelibrary', compact('title', 'menuId'));
     }
 
-    function insertslide(Request $request, $menuId, $category = "")
+    function insertEbook(Request $request, $menuId, $category = "")
     {
 
         $id = DB::table('elibrary')->insertGetId([
@@ -229,7 +229,7 @@ class ArticlesBackendController extends Controller
 
         if ($request->hasFile('file_pdf')) {
             $file_pdf = $request->file('file_pdf');
-            $ext = $file->getClientOriginalExtension();
+            $ext = $file_pdf->getClientOriginalExtension();
             $timestamp = now()->format('Ymd_His');
 
             $folder = "content/{$menuId}"; // path ใน disk 'public'
@@ -258,7 +258,7 @@ class ArticlesBackendController extends Controller
         return redirect('backend/elibrary/menu/' . $menuId);
     }
 
-    function selectslideone($menuId, $id)
+    function selectEbookone($menuId, $id)
     {
         $titles = $this->myService->getDataByKey($menuId);
         $title = $titles ?? 'ข้อมูลเมนู' . $menuId;
@@ -271,7 +271,7 @@ class ArticlesBackendController extends Controller
         return view('backend.elibrary.editelibrary', compact('title', 'list', 'menuId', 'id'));
     }
 
-    function editslide(Request $request, $menuId, $id, $category = "")
+    function editEbook(Request $request, $menuId, $id, $category = "")
     {
 
         DB::table('elibrary')
@@ -310,7 +310,7 @@ class ArticlesBackendController extends Controller
 
         if ($request->hasFile('file_pdf')) {
             $file_pdf = $request->file('file_pdf');
-            $ext = $file->getClientOriginalExtension();
+            $ext = $file_pdf->getClientOriginalExtension();
             $timestamp = now()->format('Ymd_His');
 
             $folder = "content/{$menuId}"; // path ใน disk 'public'
@@ -339,7 +339,7 @@ class ArticlesBackendController extends Controller
         return redirect('backend/elibrary/menu/' . $menuId);
     }
 
-    function deleteslide($menuId, $id)
+    function deleteEbook($menuId, $id)
     {
 
         DB::table('elibrary')->where('elibrary_id', $id)
