@@ -5,6 +5,10 @@
     font-style: normal;
 }
 
+body {
+    top: 0 !important;
+}
+
 .box-personnel,
 .box-video,
 .banner-box-one,
@@ -1364,20 +1368,38 @@ img.banner-map-img:hover {
     transform: rotate(360deg);
     transform-origin: right center;
 }
-.carousel-indicators [data-bs-target]{
-        margin-top: 150%;
+
+.carousel-indicators [data-bs-target] {
+    margin-top: 150%;
 }
-.fb-page{
+
+.fb-page {
     width: 340px;
     height: 800px;
 }
-.tab-content-map { display: none; }
-.tab-content-map.active { display: block; }
+
+.tab-content-map {
+    display: none;
+}
+
+.tab-content-map.active {
+    display: block;
+}
 
 /* .tab-buttons-map button.active {
     background: #2c7be5;
     color: white;
 } */
- .lav-480{
+.lav-480 {
     display: none;
- }
+}
+
+.VIpgJd-ZVi9od-ORHb-OEVmcd.skiptranslate {
+    display: none;
+}
+
+.flag-img img {
+    width: 30px;
+    height: 20px;
+    padding: 2px;
+}

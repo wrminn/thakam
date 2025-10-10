@@ -20,7 +20,7 @@ use App\Models\GennericForm;
 
 class ServiceDataController extends Controller
 {
-     protected $myService;
+    protected $myService;
 
     public function __construct(MyService $myService)
     {

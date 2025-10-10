@@ -126,6 +126,7 @@ svg.bi.bi-telephone-fill {
     display: flex;
     align-items: center;
     padding: 5px;
+    justify-content: space-between;
 }
 
 section.slide-top {
@@ -241,6 +242,7 @@ img.box-img-slide-top {
 .footer-one a {
     color: #0b4275;
 }
+
 .text-footer-one,
 .text-footer-two,
 .text-footer-three {
@@ -251,27 +253,32 @@ img.box-img-slide-top {
     gap: 20px;
     align-items: center;
 }
+
 .footer-link {
     display: flex;
     flex-direction: column;
     font-size: 30px;
     width: 500px;
 }
+
 .link-footer-two {
     display: flex;
     flex-direction: column;
     font-size: 20px;
     margin-left: 10%;
 }
-.link-footer-two a{
+
+.link-footer-two a {
     text-decoration: unset;
 }
+
 .footer-ma {
     margin-top: 5%;
     display: flex;
     flex-direction: column;
     gap: 5%;
 }
+
 .footer-two {
     padding: 10px;
     display: flex;

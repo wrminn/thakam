@@ -386,7 +386,7 @@
                                         <img src="{{ asset('storage/' . $list->texteditor_topic_picture) }}"
                                             alt="topic picture" width="420" style="border-radius: 20px">
                                     @else
-                                        <img src="{{ asset('img/logo.png') }}" alt="default logo" width="420">
+                                        <img src="{{ asset('img/representation.png') }}" alt="default logo" width="420">
                                     @endif
 
                                 </div>
@@ -458,7 +458,7 @@
                                             alt="topic picture" width="150" height="150"
                                             style="border-radius: 30px">
                                     @else
-                                        <img src="{{ asset('img/logo.png') }}" alt="default logo" width="150"
+                                        <img src="{{ asset('img/representation.png') }}" alt="default logo" width="150"
                                             height="150">
                                     @endif
 
@@ -821,9 +821,14 @@
                 @forelse($elibrary as $slide)
                     <div class="book">
                         <a class="" href="#">
-
-                            <div class="book-cover cover1"
-                                style="background: url('{{ asset('storage/' . $slide->elibrary_path_page) }}');">
+                            @if ($slide->elibrary_path_page)
+                                <div class="book-cover cover1"
+                                    style="background: url('{{ asset('storage/' . $slide->elibrary_path_page) }}');">
+                                @else
+                                    <div class="book-cover cover1"
+                                        style="background: url('{{ asset('img/representation.png') }}');">
+                            @endif
+                          
                                 <div class="effect"></div>
                                 <div class="light"></div>
                             </div>
@@ -869,7 +874,7 @@
 
     <section class="box-map">
         <div class="map-one">
-            <img src="/img/logo.png" alt="" width="200">
+            <img src="/img/representation.png" alt="" width="200">
             <div class="text-map-one">
                 <span style="font-size: 45px;color: #0a4275;">แผนที่</span>
                 <span class="tm-one"

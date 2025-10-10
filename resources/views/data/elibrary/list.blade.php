@@ -34,7 +34,7 @@
                                                 <img src="{{ asset('storage/' . $item->elibrary_path_page) }}"
                                                     class="directory-img" alt="topic picture">
                                             @else
-                                                <img src="{{ asset('img/logo.png') }}" alt="default logo"
+                                                <img src="{{ asset('img/representation.png') }}" alt="default logo"
                                                     class="directory-img" style="">
                                             @endif
                                         </div>

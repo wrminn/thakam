@@ -69,8 +69,49 @@
                         <div class="header-register-title"><a class="no-underline">สมัครสมาชิก</a></div>
                     </div>
                     <div class="header-box-flag">
-                        <img src="/img/flag/TH.webp" alt="" width="30">
+                        <div class="flag-img">
+                            <img src="/img/flag/TH.webp" alt="ไทย" width="30" onclick="changeLang('th')">
+                        </div>
+                        <div class="flag-img">
+                            <img src="/img/flag/SG.png" alt="สิงคโปร์" title="English" width="30"
+                                onclick="changeLang('en')">
+                        </div>
+                        <div class="flag-img">
+                            <img src="/img/flag/MY.png" alt="มาเลเซีย" title="มาเลย์" width="30"
+                                onclick="changeLang('ms')">
+                        </div>
+                        <div class="flag-img">
+                            <img src="/img/flag/ID.png" alt="อินโดนีเซีย" title="อินโดนีเซีย" width="30"
+                                onclick="changeLang('id')">
+                        </div>
+                        <div class="flag-img">
+                            <img src="/img/flag/PH.png" alt="ฟิลิปปินส์" title="ฟิลิปปินส์" width="30"
+                                onclick="changeLang('tl')">
+                        </div>
+                        <div class="flag-img">
+                            <img src="/img/flag/VN.png" alt="เวียดนาม" title="เวียดนาม" width="30"
+                                onclick="changeLang('vi')">
+                        </div>
+                        <div class="flag-img">
+                            <img src="/img/flag/LA.png" alt="ลาว" title="ลาว" width="30"
+                                onclick="changeLang('lo')">
+                        </div>
+                        <div class="flag-img">
+                            <img src="/img/flag/MM.png" alt="เมียนมา" title="พม่า" width="30"
+                                onclick="changeLang('my')">
+                        </div>
+                        <div class="flag-img">
+                            <img src="/img/flag/KH.png" alt="กัมพูชา" title="เขมร"width="30"
+                                onclick="changeLang('km')">
+                        </div>
+                        <div class="flag-img">
+                            <img src="/img/flag/BN.png" alt="บรูไน" title="บรูไน"width="30"
+                                onclick="changeLang('ms')">
+                        </div>
+
                     </div>
+                    <div id="google_translate_element" style="display:none;"></div>
+
                     <div class="box-Language">
                         เปลี่ยนภาษา | Language
                     </div>
@@ -344,5 +385,25 @@
     </div>
 
 </body>
+<script type="text/javascript">
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement({
+                pageLanguage: 'th',
+                includedLanguages: 'en,th,zh-CN,ja,ms,id,tl,vi,lo,my,km'
+            },
+            'google_translate_element'
+        );
+    }
+
+    function changeLang(lang) {
+        var select = document.querySelector("select.goog-te-combo");
+        if (select) {
+            select.value = lang;
+            select.dispatchEvent(new Event('change'));
+        }
+    }
+</script>
+
+<script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
 </html>
