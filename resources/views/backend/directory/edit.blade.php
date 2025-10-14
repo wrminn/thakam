@@ -31,26 +31,31 @@
 
                 @csrf
                 @method('PUT')
-                <div class="row">
-                    <div class="col">
-                        <div class="mb-3">
-                            <label class="form-label">วันที่</label>
-                            <input type="date" name="date" class="form-control" required
-                                value="{{ $list->texteditor_date_show }}">
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="mb-3">
 
-                            <label for="slot" class="form-label">รูปหัวข้อ
-                                @if (!empty($list->texteditor_topic_picture))
-                                    <img src="{{ asset('storage/' . $list->texteditor_topic_picture) }}" width="10%">
-                                @endif
-                            </label>
-                            <input type="file" class="form-control" name="topic_picture" accept="image/*">
+                @if (empty($cateID))
+                    <div class="row">
+                        <div class="col">
+                            <div class="mb-3">
+                                <label class="form-label">วันที่</label>
+                                <input type="date" name="date" class="form-control" required
+                                    value="{{ $list->texteditor_date_show }}">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="mb-3">
+
+                                <label for="slot" class="form-label">รูปหัวข้อ
+                                    @if (!empty($list->texteditor_topic_picture))
+                                        <img src="{{ asset('storage/' . $list->texteditor_topic_picture) }}" width="10%">
+                                    @endif
+                                </label>
+                                <input type="file" class="form-control" name="topic_picture" accept="image/*">
+                            </div>
                         </div>
                     </div>
-                </div>
+                @endif
+
+
                 <div class="mb-3">
                     <label for="floor" class="form-label">หัวข้อ</label>
                     <input type="text" class="form-control" name="topic" required
