@@ -670,7 +670,7 @@
                                         <div class="item-text">
                                             <div class="item-date">{{ $day }}
                                                 {{ $month }}{{ $year }}</div>
-                                            {{ $list->texteditor_title }}
+                                            {{ \Illuminate\Support\Str::limit($list->texteditor_title, 100) }}
                                         </div>
                                     </div>
                                     <div class="tag-announce">ประกาศจัดซื้อจัดจ้าง</div>
@@ -717,7 +717,7 @@
                                         <div class="item-text">
                                             <div class="item-date">{{ $day }}
                                                 {{ $month }}{{ $year }}</div>
-                                            {{ $list->texteditor_title }}
+                                            {{ \Illuminate\Support\Str::limit($list->texteditor_title, 100) }}
                                         </div>
                                     </div>
                                     <div class="tag-announce">ผลประกาศจัดซื้อจัดจ้าง</div>
@@ -764,7 +764,7 @@
                                         <div class="item-text">
                                             <div class="item-date">{{ $day }}
                                                 {{ $month }}{{ $year }}</div>
-                                            {{ $list->texteditor_title }}
+                                            {{ \Illuminate\Support\Str::limit($list->texteditor_title, 100) }}
                                         </div>
                                     </div>
                                     <div class="tag-announce">รายงานผลจัดซื้อจัดจ้าง</div>
