@@ -141,11 +141,11 @@
         </div>
         <div class="banner-top">
             <div class="divider-line"></div>
-            <div class="box-i"><a href="#"><img src="/img/banner/Banner-1.png" class="banner-top-img"></a></div>
-            <div class="box-i"><a href="#"><img src="/img/banner/Banner-2.png" class="banner-top-img"></a></div>
-            <div class="box-i"><a href="#"><img src="/img/banner/Banner-3.png" class="banner-top-img"></a></div>
-            <div class="box-i"><a href="#"><img src="/img/banner/Banner-4.png" class="banner-top-img"></a></div>
-            <div class="box-i"><a href="#"><img src="/img/banner/Banner-5.png" class="banner-top-img"></a></div>
+            <div class="box-i"><a href="/directory/menu/58"><img src="/img/banner/Banner-1.png" class="banner-top-img"></a></div>
+            <div class="box-i"><a href="/complaint/menu/41"><img src="/img/banner/Banner-2.png" class="banner-top-img"></a></div>
+            <div class="box-i"><a href="/corruption/menu/42"><img src="/img/banner/Banner-3.png" class="banner-top-img"></a></div>
+            <div class="box-i"><a href="/directory/menu/71"><img src="/img/banner/Banner-4.png" class="banner-top-img"></a></div>
+            <div class="box-i"><a href="/articles/menu/72"><img src="/img/banner/Banner-5.png" class="banner-top-img"></a></div>
         </div>
     </section>
 
@@ -215,19 +215,19 @@
                 </a>
             </div>
             <div class="smartcity-two">
-                <a href="#">
+                <a href="https://www.enic8r.com/">
                     <img src="/img/SmartCity/Banner-3.png" class="banner-smartcity no-underline">
                 </a>
             </div>
             <div class="smartcity-three">
                 <div class="regis-smartcity">
-                    <a href="#" class="">
+                    <a href="forms.gle/qD95JhX62Cr7cb7H7" class="">
                         <img src="/img/SmartCity/Banner-4.png" class="banner-smartcity no-underline">
                     </a>
                     {{-- <a href="#" class=""><img src="" class="banner-smartcity"></a> --}}
                 </div>
 
-                <a href="#" class="">
+                <a href="https://pr.moi.go.th/citizenknowledge.htm" class="">
                     <img src="/img/SmartCity/Banner-5.png" class="banner-smartcity no-underline">
                 </a>
             </div>
@@ -802,7 +802,7 @@
             </div>
             <div class="elibrary-two-box">
                 <div id="fb-root"></div>
-                <script async defer crossorigin="anonymous" src="https://connect.facebook.net/th_TH/sdk.js#xfbml=1&version=v17.0"
+                <script async defer crossorigin="anonymous" src="https://www.facebook.com/thakam.go.th/?ref=embed_page#xfbml=1&version=v17.0"
                     nonce="12345"></script>
 
                 <div class="fb-page" data-href="https://www.facebook.com/facebook" data-tabs="timeline"
