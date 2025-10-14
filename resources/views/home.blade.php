@@ -386,7 +386,7 @@
                                         <img src="{{ asset('storage/' . $list->texteditor_topic_picture) }}"
                                             alt="topic picture" width="420" style="border-radius: 20px">
                                     @else
-                                        <img src="{{ asset('img/representation.png') }}" alt="default logo" width="420">
+                                        <img src="{{ asset('img/representation.png') }}" alt="default logo" width="420" style="border-radius: 30px">
                                     @endif
 
                                 </div>
@@ -459,7 +459,7 @@
                                             style="border-radius: 30px">
                                     @else
                                         <img src="{{ asset('img/representation.png') }}" alt="default logo" width="150"
-                                            height="150">
+                                            height="150" style="border-radius: 30px">
                                     @endif
 
                                 </div>

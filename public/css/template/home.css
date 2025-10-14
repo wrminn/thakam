@@ -604,6 +604,7 @@ img.public-service-img {
     overflow: hidden;
     max-width: 420px;
     height: 325px;
+    border-radius: 20px;
 }
 
 .card-activity {
