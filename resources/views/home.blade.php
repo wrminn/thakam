@@ -141,11 +141,16 @@
         </div>
         <div class="banner-top">
             <div class="divider-line"></div>
-            <div class="box-i"><a href="/directory/menu/58"><img src="/img/banner/Banner-1.png" class="banner-top-img"></a></div>
-            <div class="box-i"><a href="/complaint/menu/41"><img src="/img/banner/Banner-2.png" class="banner-top-img"></a></div>
-            <div class="box-i"><a href="/corruption/menu/42"><img src="/img/banner/Banner-3.png" class="banner-top-img"></a></div>
-            <div class="box-i"><a href="/directory/menu/71"><img src="/img/banner/Banner-4.png" class="banner-top-img"></a></div>
-            <div class="box-i"><a href="/articles/menu/72"><img src="/img/banner/Banner-5.png" class="banner-top-img"></a></div>
+            <div class="box-i"><a href="/directory/menu/58"><img src="/img/banner/Banner-1.png"
+                        class="banner-top-img"></a></div>
+            <div class="box-i"><a href="/complaint/menu/41"><img src="/img/banner/Banner-2.png"
+                        class="banner-top-img"></a></div>
+            <div class="box-i"><a href="/corruption/menu/42"><img src="/img/banner/Banner-3.png"
+                        class="banner-top-img"></a></div>
+            <div class="box-i"><a href="/directory/menu/71"><img src="/img/banner/Banner-4.png"
+                        class="banner-top-img"></a></div>
+            <div class="box-i"><a href="/articles/menu/72"><img src="/img/banner/Banner-5.png"
+                        class="banner-top-img"></a></div>
         </div>
     </section>
 
@@ -220,13 +225,21 @@
                 </a>
             </div>
             <div class="smartcity-three">
-                <div class="regis-smartcity">
-                    <a href="forms.gle/qD95JhX62Cr7cb7H7" class="">
-                        <img src="/img/SmartCity/Banner-4.png" class="banner-smartcity no-underline">
-                    </a>
-                    {{-- <a href="#" class=""><img src="" class="banner-smartcity"></a> --}}
+                <div class="regis-smartcity-box">
+                    <div class="three-text">
+                        <div> ระบบจองห้องประชุมและ</div>
+                        <div>เครื่องเสียงห้องประชุม</div>
+                    </div>
+                    <div class="regis-smartcity">
+                        <a href="forms.gle/qD95JhX62Cr7cb7H7" class="">
+                            <img src="/img/SmartCity/Banner4-2.png" class="banner-smartcity no-underline">
+                        </a>
+                        <a href="https://calendar.google.com/calendar/u/0/embed?src=7urnqsg4qsg6hki6c1666k5psg@group.calendar.google.com&ctz=Asia/Bangkok"
+                            class="">
+                            <img src="/img/SmartCity/Banner4-3.png" class="banner-smartcity no-underline">
+                        </a>
+                    </div>
                 </div>
-
                 <a href="https://pr.moi.go.th/citizenknowledge.htm" class="">
                     <img src="/img/SmartCity/Banner-5.png" class="banner-smartcity no-underline">
                 </a>
@@ -559,19 +572,19 @@
         </div>
         <div class="banner-service-two">
             <div class="card-here">
-                <a href=""> <img src="/img/here/BannerText/Banner-Down-1-text.png" class="button-here-text"
+                <a href="/calendar/menu/57"> <img src="/img/here/BannerText/Banner-Down-1-text.png" class="button-here-text"
                         alt=""></a>
                 <a href=""> <img src="/img/here/BannerText/Banner-Down-2-text.png" class="button-here-text"
                         alt=""></a>
-                <a href=""> <img src="/img/here/BannerText/Banner-Down-3-text.png" class="button-here-text"
+                <a href="/directory/menu/56"> <img src="/img/here/BannerText/Banner-Down-3-text.png" class="button-here-text"
                         alt=""></a>
-                <a href=""> <img src="/img/here/BannerText/Banner-Down-4-text.png" class="button-here-text"
+                <a href="/directory/menu/61/cate/0"> <img src="/img/here/BannerText/Banner-Down-4-text.png" class="button-here-text"
                         alt=""></a>
-                <a href=""> <img src="/img/here/BannerText/Banner-Down-5-text.png" class="button-here-text"
+                <a href="/complaint/menu/41"> <img src="/img/here/BannerText/Banner-Down-5-text.png" class="button-here-text"
                         alt=""></a>
-                <a href=""> <img src="/img/here/BannerText/Banner-Down-6-text.png" class="button-here-text"
+                <a href="/directory/menu/60"> <img src="/img/here/BannerText/Banner-Down-6-text.png" class="button-here-text"
                         alt=""></a>
-                <a href=""> <img src="/img/here/BannerText/Banner-Down-7-text.png" class="button-here-text"
+                <a href="/directory/menu/64/cate/0"> <img src="/img/here/BannerText/Banner-Down-7-text.png" class="button-here-text"
                         alt=""></a>
             </div>
 
@@ -809,7 +822,11 @@
                     data-small-header="true" data-adapt-container-width="true" data-hide-cover="false"
                     data-show-facepile="true">
                 </div> --}}
-               <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fthakam.go.th&tabs=timeline&width=340&height=750&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=6174507855916076" width="340" height="750" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                <iframe
+                    src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fthakam.go.th&tabs=timeline&width=340&height=750&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=6174507855916076"
+                    width="340" height="750" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+                    allowfullscreen="true"
+                    allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
 
             </div>
         </div>
@@ -918,7 +935,8 @@
                 <div id="mapone" class="tab-content-map active">
 
                     <div class="content-map">
-                        <a href="" class="no-underline">
+                        <a href="https://www.dla.go.th/servlet/DocumentServlet?documentType=2&isSbpac=N"
+                            class="no-underline">
                             <div class="item-map">
                                 <div class="box-one-announce">
                                     <div class="item-text">
@@ -928,21 +946,21 @@
 
                             </div>
                         </a>
-                        <a href="" class="no-underline">
+                        <a href="https://www.dla.go.th/servlet/LawServlet?regType=1" class="no-underline">
                             <div class="item-map">
                                 <div class="item-text">
-                                    กฏหมาย ระเบียบ และ มติ ก.กลาง
+                                    กฎหมาย ระเบียบ และ มติ ก.กลาง
                                 </div>
                             </div>
                         </a>
-                        <a href="" class="no-underline">
+                        <a href="https://www.dla.go.th/servlet/DocumentServlet?documentType=4" class="no-underline">
                             <div class="item-map">
                                 <div class="item-text">
                                     บทความน่าสนใจ
                                 </div>
                             </div>
                         </a>
-                        <a href="" class="no-underline">
+                        <a href="https://www.dla.go.th/servlet/TemplateOrganizeServlet?organize=it" class="no-underline">
                             <div class="item-map">
                                 <div class="item-text">
                                     พรบ. และประกาศเกี่ยวกับเทคโนโลยีสารสนเทศ
@@ -955,10 +973,31 @@
 
                 <div id="maptwo" class="tab-content-map">
                     <div class="content-map">
-                        <a href="" class="no-underline">
+                        <a href="https://www.chacheongsaolocal.go.th/news/cate/2" class="no-underline">
                             <div class="item-map">
                                 <div class="item-text">
-
+                                    ข่าวประชาสัมพันธ์ สถ.จ.
+                                </div>
+                            </div>
+                        </a>
+                        <a href="https://www.chacheongsaolocal.go.th/order" class="no-underline">
+                            <div class="item-map">
+                                <div class="item-text">
+                                    หนังสือสั่งการจังหวัด
+                                </div>
+                            </div>
+                        </a>
+                        <a href="https://www.chacheongsaolocal.go.th/gallery" class="no-underline">
+                            <div class="item-map">
+                                <div class="item-text">
+                                    ภาพกิจกรรม สถ.จ.
+                                </div>
+                            </div>
+                        </a>
+                        <a href="https://www.chacheongsaolocal.go.th/contactus" class="no-underline">
+                            <div class="item-map">
+                                <div class="item-text">
+                                    ติดต่อหน่วยงานสถ.จ.
                                 </div>
                             </div>
                         </a>
