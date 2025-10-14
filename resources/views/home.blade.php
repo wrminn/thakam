@@ -511,7 +511,7 @@
     </section>
 
     <section class="box-here">
-        <img src="/img/here/1.png" alt="" style="margin-top: 400px;" class="box-here-img-text">
+        <img src="/img/here/1.png" alt="" class="box-here-img-text">
         <div class="box-slide-hrer">
             <div class="slide-img">
                 <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade carousel-slide-here"

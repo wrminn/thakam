@@ -73,9 +73,11 @@ body {
 
 .box-activity-relations::before {
     background-image: url("/img/background/BG-activity.png");
-    background-position: 0px -250px;
+    /* background-position: 0px -250px; */
 }
-
+img.box-here-img-text{
+        margin-top: 600px !important;
+}
 .box-here::before {
     background-image: url("/img/background/BG-here.jpg");
 }
