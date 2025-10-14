@@ -845,7 +845,7 @@
                 <img src="/img/09elibrary/Plank.png" alt="">
             </div>
             <div class="box-all-book">
-                <a href="http://" class="no-underline button-book-all">ดูทั้งหมด</a>
+                <a href="/elibrary/menu/78" class="no-underline button-book-all">ดูทั้งหมด</a>
             </div>
         </div>
     </section>
