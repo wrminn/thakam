@@ -801,18 +801,15 @@
                 </div>
             </div>
             <div class="elibrary-two-box">
-                <div id="fb-root"></div>
-                <script async defer crossorigin="anonymous" src="https://www.facebook.com/thakam.go.th/?ref=embed_page#xfbml=1&version=v17.0"
+                {{-- <div id="fb-root"></div>
+                <script async defer crossorigin="anonymous" src="https://connect.facebook.net/th_TH/sdk.js#xfbml=1&version=v17.0"
                     nonce="12345"></script>
 
                 <div class="fb-page" data-href="https://www.facebook.com/facebook" data-tabs="timeline"
                     data-small-header="true" data-adapt-container-width="true" data-hide-cover="false"
                     data-show-facepile="true">
-                </div>
-                {{-- <div class="fb-page" data-href="https://www.facebook.com/facebook" data-tabs="timeline" data-width="340"
-                    data-height="800" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false"
-                    data-show-facepile="true">
                 </div> --}}
+               <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fthakam.go.th&tabs=timeline&width=340&height=750&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=6174507855916076" width="340" height="750" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
 
             </div>
         </div>
