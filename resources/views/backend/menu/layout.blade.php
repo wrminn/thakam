@@ -195,7 +195,7 @@
             </div>
             <div class="submenu level-1">
                 <a href="/backend/directory/menu/39">เทศบัญญัติและคำสั่ง</a>
-                <a href="/backend/directory/menu/40/cate/0">กฎหมายที่เกี่ยวข้อง</a>
+                <a href="/backend/directory/menu/40">กฎหมายอื่นๆที่เกี่ยวข้อง</a>
                 <a href="/backend/directory/menu/76">แผนพัฒนาเศรษฐกิจและสังคมแห่งชาติ</a>
             </div>
             <div class="menu-item has-submenu">
@@ -247,7 +247,7 @@
                     <a href="/backend/directory/menu/59">การประเมินประสิทธิภาพภายใน (LPA)</a>
                     <a href="/backend/directory/menu/60">การจัดการองค์ความรู้ (KM)</a>
                     <a href="/backend/directory/menu/61/cate/0">ศูนย์ข้อมูลข่าสาร</a>
-                    <a href="/backend/directory/menu/77/cate/0">ศูนย์ดำรงธรรม</a>
+                    <a href="/backend/directory/menu/77">ศูนย์ดำรงธรรม</a>
                     <a href="/backend/directory/menu/62">ข้อมูลอาเซียน</a>
                     <a href="/backend/articles/menu/63">ประชาสัมพันธ์การเลือกตั้ง</a>
                     <a href="/backend/directory/menu/64/cate/0">รายงานกิจการสภา</a>
