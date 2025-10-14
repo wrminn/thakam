@@ -874,7 +874,7 @@
 
     <section class="box-map">
         <div class="map-one">
-            <img src="/img/representation.png" alt="" width="200">
+            <img src="/img/logo.png" alt="" width="200">
             <div class="text-map-one">
                 <span style="font-size: 45px;color: #0a4275;">แผนที่</span>
                 <span class="tm-one"
