@@ -189,6 +189,7 @@ class ArticlesBackendController extends Controller
 
         $list = DB::table('elibrary')
             ->where('elibrary_menu', $menuId)
+            ->where('elibrary_display', 'A')
             ->orderBy('elibrary_id', 'desc')
             ->paginate(20);
         $startIndex = ($list->currentPage() - 1) * $list->perPage() + 1;

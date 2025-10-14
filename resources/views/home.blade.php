@@ -386,7 +386,8 @@
                                         <img src="{{ asset('storage/' . $list->texteditor_topic_picture) }}"
                                             alt="topic picture" width="420" style="border-radius: 20px">
                                     @else
-                                        <img src="{{ asset('img/representation.png') }}" alt="default logo" width="420" style="border-radius: 30px">
+                                        <img src="{{ asset('img/representation.png') }}" alt="default logo"
+                                            width="420" style="border-radius: 30px">
                                     @endif
 
                                 </div>
@@ -458,8 +459,8 @@
                                             alt="topic picture" width="150" height="150"
                                             style="border-radius: 30px">
                                     @else
-                                        <img src="{{ asset('img/representation.png') }}" alt="default logo" width="150"
-                                            height="150" style="border-radius: 30px">
+                                        <img src="{{ asset('img/representation.png') }}" alt="default logo"
+                                            width="150" height="150" style="border-radius: 30px">
                                     @endif
 
                                 </div>
@@ -820,7 +821,7 @@
 
                 @forelse($elibrary as $slide)
                     <div class="book">
-                        <a class="" href="#">
+                        <a class="" href="/elibrary/menu/78/id/{{ $slide->elibrary_id }}">
                             @if ($slide->elibrary_path_page)
                                 <div class="book-cover cover1"
                                     style="background: url('{{ asset('storage/' . $slide->elibrary_path_page) }}');">
@@ -828,25 +829,25 @@
                                     <div class="book-cover cover1"
                                         style="background: url('{{ asset('img/representation.png') }}');">
                             @endif
-                          
-                                <div class="effect"></div>
-                                <div class="light"></div>
-                            </div>
-                            <div class="book-inside">
-                            </div>
-                        </a>
-                    </div>
-                @empty
-                    <div class="">ไม่พบข้อมูล</div>
-                @endforelse
 
+                            <div class="effect"></div>
+                            <div class="light"></div>
+                    </div>
+                    <div class="book-inside">
+                    </div>
+                    </a>
             </div>
-            <div class="f-book">
-                <img src="/img/09elibrary/Plank.png" alt="">
-            </div>
-            <div class="box-all-book">
-                <a href="/elibrary/menu/78" class="no-underline button-book-all">ดูทั้งหมด</a>
-            </div>
+        @empty
+            <div class="">ไม่พบข้อมูล</div>
+            @endforelse
+
+        </div>
+        <div class="f-book">
+            <img src="/img/09elibrary/Plank.png" alt="">
+        </div>
+        <div class="box-all-book">
+            <a href="/elibrary/menu/78" class="no-underline button-book-all">ดูทั้งหมด</a>
+        </div>
         </div>
     </section>
 
