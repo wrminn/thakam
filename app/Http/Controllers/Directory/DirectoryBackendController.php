@@ -150,9 +150,23 @@ class DirectoryBackendController extends Controller
         $titles = $this->myService->getDataByKey($menuId);
         $title = $titles ?? 'ข้อมูลเมนู' . $menuId;
 
+        // $list = DB::table('texteditor')
+        //     ->leftJoin('texteditor_detail', 'texteditor.texteditor_id', '=', 'texteditor_detail.texteditor_id')
+        //     ->where('texteditor.texteditor_id', $id)
+        //     ->first();
+
         $list = DB::table('texteditor')
-            ->leftJoin('texteditor_detail', 'texteditor.texteditor_id', '=', 'texteditor_detail.texteditor_id')
+            ->leftJoin('texteditor_detail', function ($join) {
+                $join->on('texteditor.texteditor_id', '=', 'texteditor_detail.texteditor_id')
+                    ->where('texteditor_detail.texteditor_display', '=', 'A');
+            })
             ->where('texteditor.texteditor_id', $id)
+            ->select(
+                'texteditor.*',
+                'texteditor_detail.texteditor_detail_id',
+                'texteditor_detail.texteditor_detail_seq',
+                'texteditor_detail.texteditor_detail'
+            )
             ->first();
 
         if (!empty($list)) {

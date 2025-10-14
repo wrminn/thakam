@@ -33,10 +33,24 @@ class ArticlesBackendController extends Controller
 
         $file = null;
 
+        // $list = DB::table('texteditor')
+        //     ->leftJoin('texteditor_detail', 'texteditor.texteditor_id', '=', 'texteditor_detail.texteditor_id')
+        //     ->where('texteditor.texteditor_menu', $menuId)
+        //     ->where('texteditor_detail.texteditor_display', "A")
+        //     ->select(
+        //         'texteditor.*',
+        //         'texteditor_detail.texteditor_detail_id',
+        //         'texteditor_detail.texteditor_detail_seq',
+        //         'texteditor_detail.texteditor_detail'
+        //     )
+        //     ->first();
+
         $list = DB::table('texteditor')
-            ->leftJoin('texteditor_detail', 'texteditor.texteditor_id', '=', 'texteditor_detail.texteditor_id')
+            ->leftJoin('texteditor_detail', function ($join) {
+                $join->on('texteditor.texteditor_id', '=', 'texteditor_detail.texteditor_id')
+                    ->where('texteditor_detail.texteditor_display', '=', 'A');
+            })
             ->where('texteditor.texteditor_menu', $menuId)
-            ->where('texteditor_detail.texteditor_display', "A")
             ->select(
                 'texteditor.*',
                 'texteditor_detail.texteditor_detail_id',
@@ -67,7 +81,6 @@ class ArticlesBackendController extends Controller
             ->orderBy('texteditor_id', 'desc')
             ->first();
 
-
         if (!empty($list)) {
             $filename = null;
 
@@ -83,7 +96,7 @@ class ArticlesBackendController extends Controller
 
             if (trim(strip_tags($request->detail)) === '') {
 
-                DB::table('texteditor_detail')->where('texteditor_id', $list_texteditor->texteditor_id)
+                DB::table('texteditor_detail')->where('texteditor_id', $list->texteditor_id)
                     ->update([
                         'texteditor_display' => "D"
                     ]);
@@ -281,7 +294,7 @@ class ArticlesBackendController extends Controller
                 'elibrary_date_update' => now()
             ]);
 
-         if ($request->hasFile('topic_picture')) {
+        if ($request->hasFile('topic_picture')) {
             $file = $request->file('topic_picture');
             $ext = $file->getClientOriginalExtension();
             $timestamp = now()->format('Ymd_His');

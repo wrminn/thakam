@@ -32,8 +32,22 @@ class ArticlesDataController extends Controller
         ];
 
 
+        // $list = DB::table('texteditor')
+        //     ->leftJoin('texteditor_detail', 'texteditor.texteditor_id', '=', 'texteditor_detail.texteditor_id')
+        //     ->where('texteditor.texteditor_menu', $menuId)
+        //     ->select(
+        //         'texteditor.*',
+        //         'texteditor_detail.texteditor_detail_id',
+        //         'texteditor_detail.texteditor_detail_seq',
+        //         'texteditor_detail.texteditor_detail'
+        //     )
+        //     ->first();
+
         $list = DB::table('texteditor')
-            ->leftJoin('texteditor_detail', 'texteditor.texteditor_id', '=', 'texteditor_detail.texteditor_id')
+            ->leftJoin('texteditor_detail', function ($join) {
+                $join->on('texteditor.texteditor_id', '=', 'texteditor_detail.texteditor_id')
+                    ->where('texteditor_detail.texteditor_display', '=', 'A');
+            })
             ->where('texteditor.texteditor_menu', $menuId)
             ->select(
                 'texteditor.*',
