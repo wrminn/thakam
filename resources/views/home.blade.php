@@ -232,11 +232,11 @@
                     </div>
                     <div class="regis-smartcity">
                         <a href="forms.gle/qD95JhX62Cr7cb7H7" class="">
-                            <img src="/img/SmartCity/Banner4-2.png" class="banner-smartcity no-underline">
+                            <img src="/img/SmartCity/Banner4-2-1.png" class="banner-smartcity no-underline">
                         </a>
                         <a href="https://calendar.google.com/calendar/u/0/embed?src=7urnqsg4qsg6hki6c1666k5psg@group.calendar.google.com&ctz=Asia/Bangkok"
                             class="">
-                            <img src="/img/SmartCity/Banner4-3.png" class="banner-smartcity no-underline">
+                            <img src="/img/SmartCity/Banner4-3-1.png" class="banner-smartcity no-underline">
                         </a>
                     </div>
                 </div>
@@ -244,6 +244,12 @@
                     <img src="/img/SmartCity/Banner-5.png" class="banner-smartcity no-underline">
                 </a>
             </div>
+        </div>
+        <div class="banner-smartcity-body-center">
+            <a href="https://sites.google.com/view/e-learning-thakam/%E0%B8%AB%E0%B8%99%E0%B8%B2%E0%B9%81%E0%B8%A3%E0%B8%81"
+                class="">
+                <img src="/img/SmartCity/Banner-10.png" class="banner-smartcity no-underline">
+            </a>
         </div>
         <div class="banner-smartcity-body-two">
             <div class="smartcity-four">
@@ -253,20 +259,20 @@
                 <div class="smartcity-five">
                     <a href="#" class="">
                         <img src="/img/SmartCity/Banner-6.png" class="banner-box-sbt-one no-underline bbs-one"
-                            style="margin: 0 0 0 175px;width: 35%;"></a>
+                            style="margin: 0 0 0 175px;width: 350px;"></a>
                     <a href="#" class="">
                         <img src="/img/SmartCity/Banner-7.png"
                             class="banner-box-sbt-one no-underline bbs-twoheight: 182px;"
-                            style="margin: 0 0 0 87px;width: 32%;"></a>
+                            style="margin: 0 0 0 87px;width: 350px;"></a>
                 </div>
                 <div class="smartcity-six">
                     <a href="#" class="">
                         <img src="/img/SmartCity/Banner-8.png" class="banner-box-sbt-one no-underline"
-                            style="width: 73%;">
+                            style="width: 250px;float: inline-end;">
                     </a>
                     <a href="#" class="">
                         <img src="/img/SmartCity/Banner-9.png" class="banner-box-sbt-one no-underline"
-                            style="width: 73%;">
+                            style="width: 280px;float: inline-start;">
                     </a>
                 </div>
             </div>
@@ -572,20 +578,20 @@
         </div>
         <div class="banner-service-two">
             <div class="card-here">
-                <a href="/calendar/menu/57"> <img src="/img/here/BannerText/Banner-Down-1-text.png" class="button-here-text"
-                        alt=""></a>
+                <a href="/calendar/menu/57"> <img src="/img/here/BannerText/Banner-Down-1-text.png"
+                        class="button-here-text" alt=""></a>
                 <a href=""> <img src="/img/here/BannerText/Banner-Down-2-text.png" class="button-here-text"
                         alt=""></a>
-                <a href="/directory/menu/56"> <img src="/img/here/BannerText/Banner-Down-3-text.png" class="button-here-text"
-                        alt=""></a>
-                <a href="/directory/menu/61/cate/0"> <img src="/img/here/BannerText/Banner-Down-4-text.png" class="button-here-text"
-                        alt=""></a>
-                <a href="/complaint/menu/41"> <img src="/img/here/BannerText/Banner-Down-5-text.png" class="button-here-text"
-                        alt=""></a>
-                <a href="/directory/menu/60"> <img src="/img/here/BannerText/Banner-Down-6-text.png" class="button-here-text"
-                        alt=""></a>
-                <a href="/directory/menu/64/cate/0"> <img src="/img/here/BannerText/Banner-Down-7-text.png" class="button-here-text"
-                        alt=""></a>
+                <a href="/directory/menu/56"> <img src="/img/here/BannerText/Banner-Down-3-text.png"
+                        class="button-here-text" alt=""></a>
+                <a href="/directory/menu/61/cate/0"> <img src="/img/here/BannerText/Banner-Down-4-text.png"
+                        class="button-here-text" alt=""></a>
+                <a href="/complaint/menu/41"> <img src="/img/here/BannerText/Banner-Down-5-text.png"
+                        class="button-here-text" alt=""></a>
+                <a href="/directory/menu/60"> <img src="/img/here/BannerText/Banner-Down-6-text.png"
+                        class="button-here-text" alt=""></a>
+                <a href="/directory/menu/64/cate/0"> <img src="/img/here/BannerText/Banner-Down-7-text.png"
+                        class="button-here-text" alt=""></a>
             </div>
 
         </div>
@@ -789,8 +795,7 @@
                         @endforelse
                     </div>
                     <div class="box-all-announce">
-                        <a href="/directory/menu/50/id/{{ $list->texteditor_id }}"
-                            class="no-underline button-announce-all">ดูทั้งหมด</a>
+                        <a href="/directory/menu/50" class="no-underline button-announce-all">ดูทั้งหมด</a>
                     </div>
                 </div>
 
@@ -1009,13 +1014,36 @@
         <div class="box-all-map">
             <a href="http://" class="no-underline button-map-all">ดูทั้งหมด</a>
         </div>
-        <div class="banner-map">
+        {{-- <div class="banner-map">
             <div class="box-i"><a href="#"><img src="/img/13Footer/Banner1.png" class="banner-map-img"></a></div>
             <div class="box-i"><a href="#"><img src="/img/13Footer/Banner2.png" class="banner-map-img"></a></div>
             <div class="box-i"><a href="#"><img src="/img/13Footer/Banner3.png" class="banner-map-img"></a></div>
             <div class="box-i"><a href="#"><img src="/img/13Footer/Banner4.png" class="banner-map-img"></a></div>
             <div class="box-i"><a href="#"><img src="/img/13Footer/Banner5.png" class="banner-map-img"></a></div>
             <div class="box-i"><a href="#"><img src="/img/13Footer/Banner6.png" class="banner-map-img"></a></div>
+        </div> --}}
+        <div class="banner-carousel" id="bannerCarousel">
+            <button class="banner-arrow left" id="prevBtn"><img src="/img/13Footer/Next-Button.png"></button>
+            <div class="banner-track" id="bannerTrack">
+                <div class="banner-item"><a href="#"><img src="/img/13Footer/Banner1.png"></a></div>
+                <div class="banner-item"><a href="#"><img src="/img/13Footer/Banner2.png"></a></div>
+                <div class="banner-item"><a href="#"><img src="/img/13Footer/Banner3.png"></a></div>
+                <div class="banner-item"><a href="#"><img src="/img/13Footer/Banner4.png"></a></div>
+                <div class="banner-item"><a href="#"><img src="/img/13Footer/Banner5.png"></a></div>
+                <div class="banner-item"><a href="#"><img src="/img/13Footer/Banner6.png"></a></div>
+                <div class="banner-item"><a href="https://www.cgd.go.th/cs/internet/internet/%E0%B8%AB%E0%B8%99%E0%B9%89%E0%B8%B2%E0%B8%AB%E0%B8%A5%E0%B8%B1%E0%B8%812.html?page_locale=th_TH"><img src="/img/13Footer/Banner7.png"></a></div>
+                <div class="banner-item"><a href="https://www.prd.go.th/th/page/item/index/id/1"><img src="/img/13Footer/Banner8.png"></a></div>
+                <div class="banner-item"><a href="https://www.dla.go.th/index.jsp"><img src="/img/13Footer/Banner9.png"></a></div>
+                <div class="banner-item"><a href="https://www.rd.go.th/272.html"><img src="/img/13Footer/Banner10.png"></a></div>
+                <div class="banner-item"><a href="https://www.moc.go.th/th/page/item/index/id/1"><img src="/img/13Footer/Banner11.png"></a></div>
+                <div class="banner-item"><a href="https://moi.go.th/moi/"><img src="/img/13Footer/Banner12.png"></a></div>
+                <div class="banner-item"><a href="https://www.audit.go.th/home"><img src="/img/13Footer/Banner13.png"></a></div>
+                <div class="banner-item"><a href="https://www.pr.moi.go.th/"><img src="/img/13Footer/Banner14.png"></a></div>
+                <div class="banner-item"><a href="https://nacc.go.th/?"><img src="/img/13Footer/Banner15.png"></a></div>
+                <div class="banner-item"><a href="https://www.bb.go.th/"><img src="/img/13Footer/Banner16.png"></a></div>
+             
+            </div>
+            <button class="banner-arrow right" id="nextBtn"><img src="/img/13Footer/Next-Button-2.png"></button>
         </div>
     </section>
 
@@ -1159,6 +1187,65 @@
                     }
                 });
             });
+        });
+    </script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const track = document.getElementById("bannerTrack");
+            const items = document.querySelectorAll(".banner-item");
+            const total = items.length;
+            const visible = 6;
+            const intervalTime = 5000;
+            let index = 0;
+            let autoSlide;
+
+            function moveCarousel() {
+                index++;
+                if (index > total - visible) index = 0;
+                updateTransform();
+            }
+
+            function movePrev() {
+                index--;
+                if (index < 0) index = total - visible;
+                updateTransform();
+            }
+
+            function updateTransform() {
+                const offset = -(index * (100 / visible));
+                track.style.transform = `translateX(${offset}%)`;
+            }
+
+            // เริ่ม auto slide
+            function startAutoSlide() {
+                autoSlide = setInterval(moveCarousel, intervalTime);
+            }
+
+            function stopAutoSlide() {
+                clearInterval(autoSlide);
+            }
+
+            // ปุ่มซ้ายขวา
+            document.getElementById("nextBtn").addEventListener("click", () => {
+                moveCarousel();
+                stopAutoSlide();
+                startAutoSlide();
+            });
+
+            document.getElementById("prevBtn").addEventListener("click", () => {
+                movePrev();
+                stopAutoSlide();
+                startAutoSlide();
+            });
+
+            // หยุดเมื่อ hover
+            const carousel = document.getElementById("bannerCarousel");
+            carousel.addEventListener("mouseenter", stopAutoSlide);
+            carousel.addEventListener("mouseleave", startAutoSlide);
+
+            // เริ่มทำงาน
+            startAutoSlide();
         });
     </script>
 @endsection
