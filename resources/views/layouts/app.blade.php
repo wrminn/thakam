@@ -301,19 +301,24 @@
 
         <section class="vistion-top">
             <div class="search-bar-container">
-                <div class="search-button vision">วิสัยทัศน์</div>
+                {{-- <div class="search-button vision">วิสัยทัศน์</div> --}}
+                <div class="vision"><img src="/img/vission/3.png" alt=""></div>
                 <div class="search-button intercity-port">
                     <div class="scroll-text">ท่าข้ามเมืองน่าอยู่ พัฒนาสู่ EEC</div>
                 </div>
-                <div class="search-box">
-                    <input type="text" placeholder="" class="search-input">
-                    <div class="search-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                            class="bi bi-search" viewBox="0 0 16 16">
-                            <path
-                                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
-                        </svg>
+                <div class="search-box-1">
+                    <div class="search-box-img">
+                        <img src="/img/vission/2.png" alt="">
                     </div>
+                    <div class="search-box">
+                        <input type="text" placeholder="" class="search-input">
+                        <div class="search-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                                <path
+                                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+                            </svg>
+                        </div>
                 </div>
             </div>
         </section>
