@@ -182,7 +182,7 @@
                                 }
                             @endphp
 
-                            <iframe width="900" height="500"
+                            <iframe width="1200" height="680"
                                 src="https://www.youtube.com/embed/{{ $videoId }}?si=2nJqA0yQzUPwTWvj&amp;start=206"
                                 title="YouTube video player" frameborder="0"
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -336,10 +336,53 @@
     <section class="box-public-service">
         <div class="public-service">
             <span style="font-size: 35px;font-weight: 500;">PUBLIC SERVICE</span>
-            <span style="font-size: 80px;font-weight: 800;">บริการประชาชน</span>
+            <span style="font-size: 70px;font-weight: 800;">บริการประชาชน</span>
         </div>
 
-        <div class="public-body">
+        <div class="public-body-one">
+            <div class="button-public-service">
+                <a href="#" class="public-link">
+                    <img src="/img/publicservice/1.png" class="public-service-img-one">
+                    <span style="margin-top: -30px;">เบี้ยยังชีพผู้สูงอายุ</span>
+                    <span>Elderly allowance</span>
+                </a>
+                <a href="#" class="public-link">
+                    <img src="/img/publicservice/6.png" class="public-service-img-one">
+                    <span style="margin-top: -30px;">เบี้ยยังชีพผู้พิการ</span>
+                    <span>Disability living allowance</span>
+                </a>
+                <a href="#" class="public-link">
+                    <img src="/img/publicservice/2.png" class="public-service-img-one">
+                    <span style="margin-top: -30px;">ถาม-ตอบ</span>
+                    <span>Q & A</span>
+                </a>
+            </div>
+            <div class="button-public-service">
+
+                <a href="#" class="public-link">
+                    <img src="/img/publicservice/7.png" class="public-service-img-one">
+                    <span style="margin-top: -30px;">แบบสอบถามความพึงพอใจ</span>
+                    <span>Satisfaction Survey</span>
+                </a>
+                <a href="#" class="public-link">
+                    <img src="/img/publicservice/5.png" class="public-service-img-one">
+                    <span style="margin-top: -30px;">คู่มือประชาชน</span>
+                    <span>Public Guide</span>
+                </a>
+                <a href="#" class="public-link">
+                    <img src="/img/publicservice/3.png" class="public-service-img-one">
+                    <span style="margin-top: -30px;">คู่มือปฏิบัติงาน</span>
+                    <span>Work Manual</span>
+                </a>
+                <a href="#" class="public-link">
+                    <img src="/img/publicservice/4.png" class="public-service-img-one">
+                    <span style="margin-top: -30px;">ดาวน์โหลดแบบฟอร์ม</span>
+                    <span>Download from</span>
+                </a>
+            </div>
+
+        </div>
+        {{-- <div class="public-body">
             <div class="button-public-service-top">
                 <a href="#" class="public-link-one sim-one">
                     <img src="/img/publicservice/1.png" class="public-service-img">
@@ -381,7 +424,7 @@
                     <span>Download from</span>
                 </a>
             </div>
-        </div>
+        </div> --}}
     </section>
 
     <section class="box-activity-relations">
@@ -1031,17 +1074,26 @@
                 <div class="banner-item"><a href="#"><img src="/img/13Footer/Banner4.png"></a></div>
                 <div class="banner-item"><a href="#"><img src="/img/13Footer/Banner5.png"></a></div>
                 <div class="banner-item"><a href="#"><img src="/img/13Footer/Banner6.png"></a></div>
-                <div class="banner-item"><a href="https://www.cgd.go.th/cs/internet/internet/%E0%B8%AB%E0%B8%99%E0%B9%89%E0%B8%B2%E0%B8%AB%E0%B8%A5%E0%B8%B1%E0%B8%812.html?page_locale=th_TH"><img src="/img/13Footer/Banner7.png"></a></div>
-                <div class="banner-item"><a href="https://www.prd.go.th/th/page/item/index/id/1"><img src="/img/13Footer/Banner8.png"></a></div>
-                <div class="banner-item"><a href="https://www.dla.go.th/index.jsp"><img src="/img/13Footer/Banner9.png"></a></div>
-                <div class="banner-item"><a href="https://www.rd.go.th/272.html"><img src="/img/13Footer/Banner10.png"></a></div>
-                <div class="banner-item"><a href="https://www.moc.go.th/th/page/item/index/id/1"><img src="/img/13Footer/Banner11.png"></a></div>
-                <div class="banner-item"><a href="https://moi.go.th/moi/"><img src="/img/13Footer/Banner12.png"></a></div>
-                <div class="banner-item"><a href="https://www.audit.go.th/home"><img src="/img/13Footer/Banner13.png"></a></div>
-                <div class="banner-item"><a href="https://www.pr.moi.go.th/"><img src="/img/13Footer/Banner14.png"></a></div>
+                <div class="banner-item"><a
+                        href="https://www.cgd.go.th/cs/internet/internet/%E0%B8%AB%E0%B8%99%E0%B9%89%E0%B8%B2%E0%B8%AB%E0%B8%A5%E0%B8%B1%E0%B8%812.html?page_locale=th_TH"><img
+                            src="/img/13Footer/Banner7.png"></a></div>
+                <div class="banner-item"><a href="https://www.prd.go.th/th/page/item/index/id/1"><img
+                            src="/img/13Footer/Banner8.png"></a></div>
+                <div class="banner-item"><a href="https://www.dla.go.th/index.jsp"><img
+                            src="/img/13Footer/Banner9.png"></a></div>
+                <div class="banner-item"><a href="https://www.rd.go.th/272.html"><img
+                            src="/img/13Footer/Banner10.png"></a></div>
+                <div class="banner-item"><a href="https://www.moc.go.th/th/page/item/index/id/1"><img
+                            src="/img/13Footer/Banner11.png"></a></div>
+                <div class="banner-item"><a href="https://moi.go.th/moi/"><img src="/img/13Footer/Banner12.png"></a>
+                </div>
+                <div class="banner-item"><a href="https://www.audit.go.th/home"><img
+                            src="/img/13Footer/Banner13.png"></a></div>
+                <div class="banner-item"><a href="https://www.pr.moi.go.th/"><img src="/img/13Footer/Banner14.png"></a>
+                </div>
                 <div class="banner-item"><a href="https://nacc.go.th/?"><img src="/img/13Footer/Banner15.png"></a></div>
                 <div class="banner-item"><a href="https://www.bb.go.th/"><img src="/img/13Footer/Banner16.png"></a></div>
-             
+
             </div>
             <button class="banner-arrow right" id="nextBtn"><img src="/img/13Footer/Next-Button-2.png"></button>
         </div>

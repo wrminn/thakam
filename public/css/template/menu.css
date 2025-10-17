@@ -168,7 +168,7 @@ span.chip {
 .scroll-text {
     position: absolute;
     white-space: nowrap;
-    animation: scroll-left 20s linear infinite;
+    animation: scroll-left 40s linear infinite;
 }
 
 @keyframes scroll-left {
@@ -368,7 +368,7 @@ span.chip {
     .scroll-text {
         position: absolute;
         white-space: nowrap;
-        animation: scroll-left 20s linear infinite;
+        animation: scroll-left 40s linear infinite;
     }
 
     @keyframes scroll-left {
