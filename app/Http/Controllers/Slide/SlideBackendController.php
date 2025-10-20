@@ -149,15 +149,71 @@ class SlideBackendController extends Controller
         return redirect('backend/slide/menu/' . $menuId);
     }
 
+    // function insertslidevideo(Request $request, $menuId, $category = "")
+    // {
+
+    //     $id = DB::table('slide')->insertGetId([
+    //         'slide_title' => $request->topic,
+    //         'slide_menu' => $menuId,
+    //         'slide_date_insert' => now(),
+    //     ]);
+
+
+    //     if ($request->input('inputType') === 'V' && $request->hasFile('video')) {
+    //         $file = $request->file('video');
+    //         $ext = $file->getClientOriginalExtension();
+    //         $timestamp = now()->format('Ymd_His');
+
+    //         $folder = "content/{$menuId}";
+    //         $filename = "{$id}_video_{$timestamp}.{$ext}";
+    //         $path = $file->storeAs($folder, $filename, 'public');
+
+    //         $fullPath = storage_path('app/public/' . $path);
+    //         if (file_exists($fullPath)) {
+    //             chmod($fullPath, 0644);
+    //         }
+
+    //         $publicStoragePath = public_path('storage/' . $path);
+    //         if (!file_exists(dirname($publicStoragePath))) {
+    //             mkdir(dirname($publicStoragePath), 0775, true);
+    //         }
+    //         copy($fullPath, $publicStoragePath);
+    //         chmod($publicStoragePath, 0644);
+
+    //         DB::table('slide')->where('slide_id', $id)
+    //             ->update([
+    //                 'slide_path' => $path,
+    //                 'slide_link' => null, // reset link ถ้าเลือก video
+    //                 'slide_type' => 'V'
+    //             ]);
+    //     } elseif ($request->input('inputType') === 'L' && $request->filled('link')) {
+    //         DB::table('slide')->where('slide_id', $id)
+    //             ->update([
+    //                 'slide_link' => $request->input('link'),
+    //                 'slide_path' => null, // reset video ถ้าเลือก link
+    //                 'slide_type' => 'L'
+    //             ]);
+    //     }
+
+    //     return redirect('backend/slide/menu/' . $menuId);
+    // }
+
     function insertslidevideo(Request $request, $menuId, $category = "")
     {
+
+        // ✅ Validate ข้อมูลเบื้องต้น
+        $request->validate([
+            'topic' => 'required|string|max:255',
+            'video' => 'nullable|file|mimes:mp4,mov,avi,wmv|max:71680', // 70MB
+            'link'  => 'nullable|url',
+            'inputType' => 'required|in:V,L'
+        ]);
 
         $id = DB::table('slide')->insertGetId([
             'slide_title' => $request->topic,
             'slide_menu' => $menuId,
             'slide_date_insert' => now(),
         ]);
-
 
         if ($request->input('inputType') === 'V' && $request->hasFile('video')) {
             $file = $request->file('video');
@@ -183,14 +239,14 @@ class SlideBackendController extends Controller
             DB::table('slide')->where('slide_id', $id)
                 ->update([
                     'slide_path' => $path,
-                    'slide_link' => null, // reset link ถ้าเลือก video
+                    'slide_link' => null,
                     'slide_type' => 'V'
                 ]);
         } elseif ($request->input('inputType') === 'L' && $request->filled('link')) {
             DB::table('slide')->where('slide_id', $id)
                 ->update([
                     'slide_link' => $request->input('link'),
-                    'slide_path' => null, // reset video ถ้าเลือก link
+                    'slide_path' => null,
                     'slide_type' => 'L'
                 ]);
         }

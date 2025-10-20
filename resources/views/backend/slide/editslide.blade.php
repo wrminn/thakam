@@ -46,7 +46,7 @@
                                     <div class="mb-3">
                                         <label for="slot" class="form-label">วีดีโอ
                                             @if (!empty($list->slide_path))
-                                                <img src="{{ asset('storage/' . $list->slide_path) }}" width="10%">
+                                                <a href="{{ asset('storage/' . $list->slide_path) }}" target="_blank">กดเพื่อเปิดวีดีโอ</a>
                                             @endif
                                         </label>
                                         <input type="file" class="form-control" name="video" id="videoInput"

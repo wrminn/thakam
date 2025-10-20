@@ -6,6 +6,10 @@
     padding-right: 20px;
 }
 
+.py-4 {
+    background: #f1f1f3;
+}
+
 .card.detail-body {
     min-height: 800px;
     margin-top: 30px;
@@ -98,7 +102,7 @@ nav.breadcrumb {
 }
 
 .detail-articles,
-.detail-directory  {
+.detail-directory {
     padding: 2px 30px;
 }
 
@@ -149,6 +153,7 @@ nav.breadcrumb {
     box-shadow: 0px 0px 4px 2px #dbdbdb;
     padding: 10px;
 }
+
 .directory-card-cate {
     height: 50px;
     margin: 10px 0;
@@ -160,18 +165,22 @@ nav.breadcrumb {
 .directory-card-cate:hover {
     background: #e2ebd2a3;
 }
+
 .directory-title {
     margin: 15px;
     font-size: 23px;
     font-weight: 800;
 }
+
 .directory-img-topic {
     display: flex;
     justify-content: center;
 }
+
 .directory-text-box.mt-6 {
     margin: 55px;
 }
+
 img.clickable-img {
     width: 250px;
     height: 100px;
@@ -180,6 +189,7 @@ img.clickable-img {
     width: auto;
     height: auto;
 }
+
 .title-menu {
     font-size: 50px;
     text-align: center;

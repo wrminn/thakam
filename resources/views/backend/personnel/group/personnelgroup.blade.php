@@ -17,13 +17,13 @@
                                         d="M9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.5zm0 1v2A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1z">
                                     </path>
                                 </svg>
-                                {{ $title }}
+                                ภาพหมู่ {{ $title }}
                             </div>
 
                             {{-- <p class="sum-list">ทั้งหมด 1 รายการ</p> --}}
                         </div>
-                        <div class="col-md-3 ms-auto" style="width: 30%;">
-                            <a href="/backend/addpersonnel/menu/{{ $menuId }}"><button type="button"
+                        <div class="col-md-3 ms-auto" style="width: 20%;">
+                            <a href="/backend/addpersonnelgroup/menu/{{ $menuId }}"><button type="button"
                                     class="btn btn-outline-primary" fdprocessedid="2gfdil">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
                                         fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
@@ -37,25 +37,12 @@
                                     เพิ่มข้อมูล
                                 </button>
                             </a>
-                            <a href="/backend/personnelseq/menu/{{ $menuId }}"><button type="button"
+                            <a href="/backend/personnel/menu/{{ $menuId }}"><button type="button"
                                     class="btn btn-outline-warning" fdprocessedid="2gfdil">
-                                    แก้ไขลำดับการแสดงผล
+                                    ย้อนกลับ
                                 </button>
                             </a>
-                            <a href="/backend/personnelgroup/menu/{{ $menuId }}"><button type="button"
-                                    class="btn btn-outline-primary" fdprocessedid="2gfdil">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
-                                        fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
-                                        <path
-                                            d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z">
-                                        </path>
-                                        <path fill-rule="evenodd"
-                                            d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5z">
-                                        </path>
-                                    </svg>
-                                    ภาพหมู่
-                                </button>
-                            </a>
+                           
                         </div>
                     </div>
 
@@ -65,10 +52,7 @@
                 <thead>
                     <tr>
                         <th scope="col" class="col-1">ลำดับ</th>
-                        <th scope="col"class="col-3" style="width: 20%">ชื่อ</th>
-                        <th scope="col"class="col-3" style="width: 15%">เบอร์โทร</th>
-                        <th scope="col"class="col-3" style="width: 25%">ตำแหน่ง</th>
-                        <th scope="col"class="col-3" style="width: 15%">รูปภาพ</th>
+                        <th scope="col"class="col-3">รูปภาพ</th>
                         <th scope="col"class="col-4">การจัดการ</th>
                     </tr>
                 </thead>
@@ -81,17 +65,11 @@
                         @foreach ($list as $item)
                             <tr>
                                 <th scope="row">{{ $startIndex + $loop->index }}</th>
-                                <td>{{ $item->personnel_name }}</td>
-                                <td>{{ $item->personnel_tel }}</td>
-                                <td>{{ $item->personnel_position }}</td>
-                                <td>
-                                    @if (!empty($item->personnel_path))
-                                        <img src="{{ asset('storage/' . $item->personnel_path) }}" width="100px">
-                                    @endif
-                                </td>
+                                <td> <img src="{{ asset('storage/' . $item->personnelgroup_path) }}" width="100px"></td>
+                              
                                 <td>
                                     <a
-                                        href="{{ route('personnel.edit', ['menu' => $menuId, 'id' => $item->personnel_id]) }}">
+                                        href="{{ route('personnelgroup.edit', ['menu' => $menuId, 'id' => $item->personnelgroup_id]) }}">
 
                                         <button type="button" class="btn btn-outline-warning" fdprocessedid="2gfdil">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
@@ -109,7 +87,7 @@
 
 
                                     <a
-                                        href="{{ route('deletepersonnelid', ['menu' => $menuId, 'id' => $item->personnel_id]) }}">
+                                        href="{{ route('deletepersonnelidgroup', ['menu' => $menuId, 'id' => $item->personnelgroup_id]) }}">
                                         <button type="button" class="btn btn-outline-danger" fdprocessedid="qd81si"
                                             onclick="return confirm('ต้องการลบบทความหรือไม่')">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"

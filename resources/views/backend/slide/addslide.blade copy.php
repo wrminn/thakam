@@ -57,7 +57,7 @@
                         <input class="btn btn-warning" type="button" value="ย้อนกลับ" onClick="history.go(-1)">
                     </form>
                 </div>
-
+ 
                 <script>
                     const radioVideo = document.getElementById('radioVideo');
                     const radioLink = document.getElementById('radioLink');
@@ -68,11 +68,7 @@
                     const videoError = document.getElementById('videoError');
                     const form = document.getElementById('uploadForm');
 
-                    // ✅ กำหนดขนาดสูงสุดของไฟล์ (หน่วย MB)
-                    const MAX_FILE_SIZE_MB = 70;
-                    const MAX_FILE_SIZE = MAX_FILE_SIZE_MB * 1024 * 1024; // แปลงเป็น byte
-
-                    // ✅ ฟังก์ชัน toggle ช่องกรอก + required
+                    // ฟังก์ชัน toggle ช่องกรอก + required
                     function toggleInput() {
                         if (radioVideo.checked) {
                             videoGroup.classList.remove('d-none');
@@ -93,25 +89,16 @@
                     radioVideo.addEventListener('change', toggleInput);
                     radioLink.addEventListener('change', toggleInput);
 
-                    // ✅ ตรวจสอบขนาดไฟล์และความยาววิดีโอ
+                    // ตรวจสอบความยาววิดีโอ
                     videoInput.addEventListener('change', function(event) {
                         const file = event.target.files[0];
                         if (file) {
-                            // 🧩 เช็คขนาดไฟล์ก่อน
-                            if (file.size > MAX_FILE_SIZE) {
-                                videoError.textContent = `ไฟล์มีขนาดเกิน ${MAX_FILE_SIZE_MB} MB กรุณาเลือกไฟล์ที่เล็กกว่านี้`;
-                                videoError.classList.remove('d-none');
-                                event.target.value = "";
-                                return;
-                            }
-
                             const video = document.createElement('video');
                             video.preload = 'metadata';
                             video.onloadedmetadata = function() {
                                 window.URL.revokeObjectURL(video.src);
-                                // จำกัดความยาววิดีโอ (เช่น 6 นาที = 360 วินาที)
+                                //if (video.duration > 180) {
                                 if (video.duration > 360) {
-                                    videoError.textContent = "วิดีโอมีความยาวเกิน 6 นาที กรุณาอัปโหลดวิดีโอที่สั้นกว่านี้";
                                     videoError.classList.remove('d-none');
                                     event.target.value = "";
                                 } else {
@@ -122,7 +109,7 @@
                         }
                     });
 
-                    // ✅ Validation เพิ่มเติมก่อน submit
+                    // validation เพิ่มเติมก่อน submit
                     form.addEventListener('submit', function(e) {
                         if (radioVideo.checked && !videoInput.value) {
                             e.preventDefault();

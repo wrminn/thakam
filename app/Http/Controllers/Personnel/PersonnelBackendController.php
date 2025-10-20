@@ -207,4 +207,135 @@ class PersonnelBackendController extends Controller
         return response()->json(['status' => 'success']);
         // return view('backend.personnel.addpersonnel', compact('title', 'menuId'));
     }
+
+    function SelectDataPersonnelGroup($menuId)
+    {
+        $titles = $this->myService->getDataByKey($menuId);
+        $title = $titles ?? 'ข้อมูลเมนู' . $menuId;
+
+        $list = DB::table('personnelgroup')
+            ->where('personnelgroup_menu', $menuId)
+            ->where('personnelgroup_display', 'A')
+            ->orderByRaw('CAST(personnelgroup_id AS UNSIGNED) ASC')
+            ->paginate(50);
+        $startIndex = ($list->currentPage() - 1) * $list->perPage() + 1;
+
+        return view('backend.personnel.group.personnelgroup', compact('title', 'list', 'menuId', 'startIndex'));
+    }
+
+    function addgroup($menuId)
+    {
+        $titles = $this->myService->getDataByKey($menuId);
+        $title = $titles ?? 'ข้อมูลเมนู' . $menuId;
+        return view('backend.personnel.group.addpersonnelgroup', compact('title', 'menuId'));
+    }
+
+    function insertpersonnelgroup(Request $request, $menuId, $category = "")
+    {
+
+
+        if ($request->hasFile('personnelgroup_img')) {
+
+            $file = $request->file('personnelgroup_img');
+            $ext = $file->getClientOriginalExtension();
+            $timestamp = now()->format('Ymd_His');
+
+            $folder = "content/{$menuId}"; // path ใน disk 'public'
+            $filename = "personnelgroup_{$timestamp}.{$ext}";
+            $path = $file->storeAs($folder, $filename, 'public');
+
+            $fullPath = storage_path('app/public/' . $path);
+            if (file_exists($fullPath)) {
+                chmod($fullPath, 0644);
+            }
+
+            $publicStoragePath = public_path('storage/' . $path);
+            if (!file_exists(dirname($publicStoragePath))) {
+                mkdir(dirname($publicStoragePath), 0775, true);
+            }
+            copy($fullPath, $publicStoragePath);
+            chmod($publicStoragePath, 0644);
+
+            DB::table('personnelgroup')->insertGetId([
+                'personnelgroup_path' => $path,
+                'personnelgroup_menu' => $menuId,
+            ]);
+        }
+
+        return redirect('backend/personnelgroup/menu/' . $menuId);
+    }
+
+    function selectpersonnelidgroup(Request $request, $menuId, $id, $category = "")
+    {
+
+        $titles = $this->myService->getDataByKey($menuId);
+        $title = $titles ?? 'ข้อมูลเมนู' . $menuId;
+
+        $list = DB::table('personnelgroup')
+            ->where('personnelgroup_id', $id)
+            ->where('personnelgroup_display', "A")
+            ->first();
+
+        return view('backend.personnel.group.editpersonnelgroup', compact('title', 'list', 'menuId', 'id'));
+    }
+
+    function editpersonnelgroup(Request $request, $menuId, $id, $category = "")
+    {
+
+        // DB::table('personnel')
+        //     ->where('personnel_id', $id)
+        //     ->update([
+        //         'personnel_name' => $request->name,
+        //         'personnel_position' => $request->position,
+        //         'personnel_tel' => $request->tel,
+        //         'personnel_date_update' => now()
+        //     ]);
+
+        if ($request->hasFile('personnelgroup_img')) {
+
+            $file = $request->file('personnelgroup_img');
+            $ext = $file->getClientOriginalExtension();
+
+            // สร้างชื่อกลาง
+            $timestamp = now()->format('Ymd_His');
+
+            $folder = "content/{$menuId}"; // path ใน disk 'public'
+            $filename = "personnelgroup_{$timestamp}.{$ext}";
+
+            // บันทึกไฟล์เข้า storage/app/public/content/{menuId}
+            $path = $file->storeAs($folder, $filename, 'public');
+
+            // ตั้ง permission ให้ไฟล์ใหม่
+            $fullPath = storage_path('app/public/' . $path);
+            if (file_exists($fullPath)) {
+                chmod($fullPath, 0644);
+            }
+
+            // สำหรับ host ที่ symlink ไม่ทำงาน → copy ไป public/storage
+            $publicStoragePath = public_path('storage/' . $path);
+            if (!file_exists(dirname($publicStoragePath))) {
+                mkdir(dirname($publicStoragePath), 0775, true);
+            }
+            copy($fullPath, $publicStoragePath);
+            chmod($publicStoragePath, 0644);
+
+            // บันทึก path ลง database
+            DB::table('personnelgroup')->where('personnelgroup_id', $id)
+                ->update([
+                    'personnelgroup_path' => $path
+                ]);
+        }
+
+        return redirect('backend/personnelgroup/menu/' . $menuId);
+    }
+
+    function deletepersonnelgroup($menuId, $id)
+    {
+
+        DB::table('personnelgroup')->where('personnelgroup_id', $id)
+            ->update([
+                'personnelgroup_display' => 'D',
+            ]);
+        return redirect('backend/personnelgroup/menu/' . $menuId);
+    }
 }

@@ -2,11 +2,6 @@
 @section('title', $title)
 @section('content')
     <style>
-        margin:10px 0 5px;
-        font-size:20px;
-        }
-
-
         .leader p {
             margin: 0;
             font-size: 14px;
@@ -19,6 +14,8 @@
             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
             gap: 20px;
             justify-content: space-evenly;
+            flex-direction: row;
+            flex-wrap: wrap;
         }
 
 
@@ -77,6 +74,10 @@
             .deputy img {
                 width: 100px
             }
+        }
+
+        .img-group {
+            padding: 40px;
         }
     </style>
     <link rel="stylesheet" href="{{ asset('/css/template/detail.css') }}">
@@ -140,6 +141,27 @@
                     </div>
                 @endif
             </div>
+
+            <section class="img-group">
+                <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade position-relative"
+                    data-bs-ride="carousel" data-bs-interval="2500">
+                    <div class="carousel-inner mt-5">
+                        @forelse($File as $key => $slide)
+                            <div class="carousel-item {{ $key === 0 ? 'active' : '' }}">
+                                <img src="{{ asset('storage/' . $slide->personnelgroup_path) }}" class="d-block w-100"
+                                    alt="slide {{ $key + 1 }}"
+                                    style="width: 1905px; height:600px; object-fit: cover;">
+                            </div>
+                        @empty
+                            <div class="carousel-item active">
+                                <img src="https://www.w3schools.com/howto/img_snow_wide.jpg" class="d-block w-100"
+                                    alt="..." style="width: 1905px; height:600px; object-fit: cover;">
+                            </div>
+                        @endforelse
+                    </div>
+                </div>
+            </section>
+
 
         </div>
         <div class="mt-5">

@@ -49,7 +49,7 @@
                         <th scope="col"class="col-2" style="width: 55%;">ชื่อ</th>
                         <th scope="col"class="col-3" style="width: 15%;">ลิงก์</th>
                         @if ($menuId !== '48')
-                            <th scope="col"class="col-3">ภาพ</th>
+                            <th scope="col"class="col-3">วิดีโอ</th>
                         @endif
                         {{-- <th scope="col">รายการไฟล์</th> --}}
                         <th scope="col"class="col-4">การจัดการ</th>
@@ -69,7 +69,8 @@
                                 @if ($menuId !== '48')
                                     <td>
                                         @if (!empty($item->slide_path))
-                                            <img src="{{ asset('storage/' . $item->slide_path) }}" width="30%">
+                                           
+                                            <a href="{{ asset('storage/' . $item->slide_path) }}" target="_blank">กดเพื่อเปิดวีดีโอ</a>
                                         @endif
                                     </td>
                                 @endif

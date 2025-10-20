@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Personnel;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Services\MyService;
+use Illuminate\Support\Facades\DB;
 
 use App\Models\Personnel;
 
@@ -32,6 +33,11 @@ class PersonnelDataController extends Controller
 
         $startIndex = ($list->currentPage() - 1) * $list->perPage() + 1;
 
-        return view('data.personnel.personnel', compact('title', 'list', 'menuId', 'startIndex', 'breadcrumbs'));
+        $File = DB::table('personnelgroup')
+            ->where('personnelgroup_menu', $menuId)
+            ->where('personnelgroup_display', 'A')
+            ->paginate(10);
+
+        return view('data.personnel.personnel', compact('title', 'list', 'menuId', 'startIndex', 'breadcrumbs','File'));
     }
 }

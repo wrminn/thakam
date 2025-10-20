@@ -88,6 +88,14 @@ Route::middleware(['auth'])->group(function () {
     Route::get('backend/personnelseq/menu/{menu}', [PersonnelBackendController::class, 'selectdataseq']);
     Route::post('backend/personnelseq/menu/{menu}', [PersonnelBackendController::class, 'updateseqpersonnel'])->name('updateseqpersonnel');
 
+    //Personnel
+    Route::get('backend/personnelgroup/menu/{menu}', [PersonnelBackendController::class, 'SelectDataPersonnelGroup'])->name('selectpersonnelgroup');
+    Route::get('backend/addpersonnelgroup/menu/{menu}', [PersonnelBackendController::class, 'addgroup']);
+    Route::post('backend/addpersonnelgroup/menu/{menu}', [PersonnelBackendController::class, 'insertpersonnelgroup'])->name('personnelgroup.insert');
+    Route::get('backend/editpersonnelgroup/menu/{menu}/id/{id}', [PersonnelBackendController::class, 'selectpersonnelidgroup'])->name('personnelgroup.edit');
+    Route::post('backend/editpersonnelgroup/menu/{menu}/id/{id}', [PersonnelBackendController::class, 'editpersonnelgroup'])->name('editpersonnelonegroup');
+    Route::get('backend/deletepersonnelgroup/menu/{menu}/id/{id}', [PersonnelBackendController::class, 'deletepersonnelgroup'])->name('deletepersonnelidgroup');
+
     //banner
     Route::get('backend/banner/menu/{menu}', [BannerBackendController::class, 'SelectBanner'])->name('selectbanner');
     Route::get('backend/addbanner/menu/{menu}', [BannerBackendController::class, 'AddBanner'])->name('addbanner');
@@ -238,7 +246,7 @@ Route::get('/elibrary/menu/{menu}/id/{id}', [ArticlesDataController::class, 'Sel
 
 
 Route::get('/flipbook', function () {
-   
+
     $pdf_files = [
         'test.pdf'
     ];
