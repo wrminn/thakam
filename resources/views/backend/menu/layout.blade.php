@@ -209,7 +209,7 @@
                 <a href="/backend/directory/menu/44">รายงานผลสำรวจความพึงพอใจ</a>
                 <a href="/backend/directory/menu/45/cate/0">คู่มือการทำงานของหน่วยงาน</a>
                 <a href="/backend/directory/menu/46">ดาวน์โหลดแบบฟอร์ม</a>
-                <a href="/backend/eservice/menu/47">ยื่นคำร้องออนไลน์ E-service</a>
+                {{-- <a href="/backend/eservice/menu/47">ยื่นคำร้องออนไลน์ E-service</a> --}}
 
             </div>
             <div class="menu-item has-submenu">
