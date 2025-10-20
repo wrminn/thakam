@@ -1,4 +1,13 @@
 @media (max-width: 1919px) {
+    .box-public-service {
+        min-height: 970px;
+    }
+
+    .box-public-service::before {
+        background-image: url("/img/background/BG-publicservice.jpg");
+        height: 970px;
+    }
+
     .header-section {
         background-color: #00a79d;
         padding: 2% 3%;
@@ -1484,7 +1493,7 @@
         margin-right: auto;
     }
 
-    .public-link-one.sim-one::after {
+    /* .public-link-one.sim-one::after {
         width: 688px;
         left: 67%;
         top: 46%;
@@ -1498,71 +1507,71 @@
         top: 86%;
         transform: rotate(223deg);
         transform-origin: revert;
-    }
+    } */
 
-    .public-link-two.sim-three::after {
+    /* .public-link-two.sim-three::after {
         width: clamp(180px, 12vw, 220px);
         left: 12%;
         top: 50%;
         transform: rotate(315deg);
         transform-origin: left center;
-    }
+    } */
 
-    .public-link-two.sim-three::after {
+    /* .public-link-two.sim-three::after {
         width: 196px;
         left: 10%;
         top: 46%;
         transform: rotate(315deg);
         transform-origin: revert;
-    }
+    } */
 
-    .public-link-two.sim-five::after {
+    /* .public-link-two.sim-five::after {
         width: clamp(180px, 12vw, 220px);
         right: 12%;
         top: 70%;
         transform: rotate(320deg);
         transform-origin: right center;
-    }
+    } */
 
-    .public-link-two.sim-five::after {
+    /* .public-link-two.sim-five::after {
         width: 193px;
         right: 12%;
         top: 65%;
         transform: rotate(320deg);
         transform-origin: revert;
-    }
+    } */
 
-    .public-link-three.sim-six::after {
+    /* .public-link-three.sim-six::after {
         width: clamp(180px, 12vw, 220px);
         left: 12%;
         top: 70%;
         transform: rotate(40deg);
         transform-origin: left center;
-    }
+    } */
 
-    .public-link-three.sim-six::after {
+    /* .public-link-three.sim-six::after {
         width: 192px;
         left: 12%;
         top: 65%;
         transform: rotate(42deg);
         transform-origin: revert;
-    }
+    } */
 
-    .public-link-three.sim-seven::after {
+    /* .public-link-three.sim-seven::after {
         width: clamp(600px, 40vw, 780px);
         right: clamp(300px, 30vw, 560px);
         top: 78%;
         transform: rotate(0deg);
         transform-origin: right center;
-    }
+    } */
 
-    .public-link-three.sim-seven::after {
+    /* .public-link-three.sim-seven::after {
         width: 650px;
         right: 436px;
         top: 74%;
         transform: rotate(360deg);
         transform-origin: right center;
-    }
+    } */
 
 
 

@@ -227,7 +227,7 @@
             <a href="/backend/directory/menu/52">
                 <div class="menu-item">ข่าวประชาสัมพันธ์</div>
             </a>
-            <div class="menu-item has-submenu">
+            {{-- <div class="menu-item has-submenu">
                 แบนเนอร์
                 <i class='bx bx-chevron-right chevron'></i>
             </div>
@@ -255,7 +255,30 @@
                     <a href="/backend/directory/menu/66">แนะนำร้านอาหาร</a>
                 </div>
 
+            </div> --}}
+
+            <div class="menu-item has-submenu">
+                งานบริการและอื่นๆ
+                <i class='bx bx-chevron-right chevron'></i>
             </div>
+            <div class="submenu">
+                <a href="/backend/directory/menu/56">รางวัลแห่งความภูมิใจ</a>
+                <a href="/backend/event-calendar/menu/57">ปฏิทินกิจกรรม</a>
+                <a href="/backend/elibrary/menu/78">E-Library</a>
+                <a href="/backend/directory/menu/58">การประเมินคุณธรรมและความโปร่งใส (ITA)</a>
+                <a href="/backend/directory/menu/59">การประเมินประสิทธิภาพภายใน (LPA)</a>
+                <a href="/backend/directory/menu/60">การจัดการองค์ความรู้ (KM)</a>
+                <a href="/backend/directory/menu/61/cate/0">ศูนย์ข้อมูลข่าสาร</a>
+                <a href="/backend/directory/menu/77">ศูนย์ดำรงธรรม</a>
+                <a href="/backend/directory/menu/62">ข้อมูลอาเซียน</a>
+                {{-- <a href="/backend/articles/menu/63">ประชาสัมพันธ์การเลือกตั้ง</a> --}}
+                <a href="/backend/directory/menu/64/cate/0">รายงานกิจการสภา</a>
+                <a href="/backend/directory/menu/65">แนะนำสถานที่ท่องเที่ยว</a>
+                <a href="/backend/directory/menu/66">แนะนำร้านอาหาร</a>
+                <a href="/backend/directory/menu/79">กองทุนหลักประกันสุขภาพ สปสช.</a>
+                <a href="/backend/directory/menu/80">พรบ.อำนวยความสะดวก</a>
+            </div>
+
             {{-- <a href="46"> --}}
             <a href="/backend/popup/menu/67">
                 <div class="menu-item">POP UP</div>

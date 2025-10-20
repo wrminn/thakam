@@ -41,9 +41,9 @@
                         </div>
 
                         <div class="mb-3 d-none" id="videoGroup">
-                            <label class="form-label">วิดีโอ (MP4 ไม่เกิน 3 นาที)</label>
+                            <label class="form-label">วิดีโอ (MP4 ไม่เกิน 6 นาที)</label>
                             <input type="file" class="form-control" name="video" id="videoInput" accept="video/mp4">
-                            <small class="text-danger d-none" id="videoError">❌ วิดีโอห้ามเกิน 3 นาที</small>
+                            <small class="text-danger d-none" id="videoError">❌ วิดีโอห้ามเกิน 6 นาที</small>
                         </div>
 
                         <div class="mb-3 d-none" id="linkGroup">
@@ -97,7 +97,8 @@
                             video.preload = 'metadata';
                             video.onloadedmetadata = function() {
                                 window.URL.revokeObjectURL(video.src);
-                                if (video.duration > 180) {
+                                //if (video.duration > 180) {
+                                if (video.duration > 360) {
                                     videoError.classList.remove('d-none');
                                     event.target.value = "";
                                 } else {
