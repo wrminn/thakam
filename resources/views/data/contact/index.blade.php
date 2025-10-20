@@ -53,10 +53,7 @@
                 </div>
             </form>
             <div class="mt-3">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7755.850156394513!2d101.085491!3d13.601388!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x311d3d003d705b77%3A0x3cf46533314b8b10!2z4LmA4LiX4Lio4Lia4Liy4Lil4LiV4Liz4Lia4Lil4Lia4LmJ4Liy4LiZ4LmC4Lie4LiY4Li04LmM!5e0!3m2!1sth!2sth!4v1757558645364!5m2!1sth!2sth"
-                    width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3879.9218013717436!2d100.9941254!3d13.478916100000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x311d382930e1b751%3A0xe3df05a76a79a6d0!2z4Liq4Liz4LiZ4Lix4LiB4LiH4Liy4LiZ4LmA4LiX4Lio4Lia4Liy4Lil4LiV4Liz4Lia4Lil4LiX4LmI4Liy4LiC4LmJ4Liy4Lih!5e0!3m2!1sth!2sth!4v1760958800953!5m2!1sth!2sth" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
 
         </div>
