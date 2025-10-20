@@ -48,8 +48,11 @@
                         <th scope="col" class="col-1">ลำดับ</th>
                         <th scope="col"class="col-2" style="width: 55%;">ชื่อ</th>
                         <th scope="col"class="col-3" style="width: 15%;">ลิงก์</th>
-                        @if ($menuId !== '48')
+                        @if ($menuId === '69')
                             <th scope="col"class="col-3">วิดีโอ</th>
+                        @endif
+                        @if ($menuId !== '69')
+                            <th scope="col"class="col-3">ภาพ</th>
                         @endif
                         {{-- <th scope="col">รายการไฟล์</th> --}}
                         <th scope="col"class="col-4">การจัดการ</th>
@@ -66,11 +69,17 @@
                                 <th scope="row">{{ $startIndex + $loop->index }}</th>
                                 <td>{{ Str::limit($item->slide_title, 30) }}</td>
                                 <td>{{ Str::limit($item->slide_link, 20) ?? '-' }}</td>
-                                @if ($menuId !== '48')
+                                @if ($menuId === '69')
                                     <td>
                                         @if (!empty($item->slide_path))
-                                           
                                             <a href="{{ asset('storage/' . $item->slide_path) }}" target="_blank">กดเพื่อเปิดวีดีโอ</a>
+                                        @endif
+                                    </td>
+                                @endif
+                                @if ($menuId !== '69')
+                                    <td>
+                                        @if (!empty($item->slide_path))
+                                            <img src="{{ asset('storage/' . $item->slide_path) }}" alt="" width="100">
                                         @endif
                                     </td>
                                 @endif

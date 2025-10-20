@@ -311,21 +311,74 @@
                         <img src="/img/vission/2.png" alt="">
                     </div>
                     <div class="search-box">
-                        <input type="text" placeholder="" class="search-input">
+                        {{-- <input type="text" placeholder="" class="search-input">
                         <div class="search-icon">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                 fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
                                 <path
                                     d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
                             </svg>
+                        </div> --}}
+                        <input type="text" id="googleSearchInput" placeholder="" class="search-input">
+                        <div class="search-icon" onclick="googleSearch()">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                                <path
+                                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+                            </svg>
                         </div>
+                    </div>
+
+                    {{-- <script async src="https://cse.google.com/cse.js?cx=07dbb266289c14fbb"></script>
+                    <div class="gcse-search"></div> --}}
+
                 </div>
-            </div>
         </section>
 
         <main class="py-4">
             @yield('content')
         </main>
+
+        <section class="box-view">
+            <div class="counter-title">
+                จำนวนผู้เข้าชมเว็บไซต์
+                <small>number of website visitors</small>
+            </div>
+
+            <div class="counter-item">
+                <span class="counter-number">{{ $stats['2min'] }}</span>
+                <span class="counter-label">ขณะนี้</span>
+            </div>
+
+            <div class="counter-item">
+                <span class="counter-number">{{ $stats['today'] }}</span>
+                <span class="counter-label">วันนี้</span>
+            </div>
+
+            <div class="counter-item">
+                <span class="counter-number">{{ $stats['weekly'] }}</span>
+                <span class="counter-label">สัปดาห์นี้</span>
+            </div>
+
+            <div class="counter-item">
+                <span class="counter-number">{{ $stats['monthly'] }}</span>
+                <span class="counter-label">เดือนนี้</span>
+            </div>
+
+            <div class="counter-item">
+                <span class="counter-number">{{ $stats['yearly'] }}</span>
+                <span class="counter-label">ปีนี้</span>
+            </div>
+
+            <div class="counter-total">
+                <span class="counter-number">{{ $stats['total'] }}</span>
+                <span class="counter-label">ทั้งหมด</span>
+            </div>
+        </section>
+
+        <section class="box-view-two">
+            <div class="null-content"></div>
+        </section>
 
         <section class="box-footer">
             <div class="footer-one">
@@ -408,6 +461,18 @@
         }
     }
 </script>
+
+<script>
+    function googleSearch() {
+        const query = document.getElementById("googleSearchInput").value.trim();
+        if (query) {
+            // ใช้ Google Custom Search Engine ที่คุณสร้างไว้
+            const searchUrl = `https://cse.google.com/cse?cx=07dbb266289c14fbb&q=${encodeURIComponent(query)}`;
+            window.open(searchUrl, '_blank'); // เปิดในแท็บใหม่
+        }
+    }
+</script>
+
 
 <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 

@@ -493,6 +493,64 @@
         min-height: 570px;
         padding: 0 15px;
     }
+
+    .flag-img img {
+        width: 11px;
+        height: 11px;
+        padding: 2px;
+    }
+
+    .vision img,
+    .search-box-1 {
+        display: none;
+    }
+
+    img.banner-smartcity.no-underline {
+        width: 100%;
+        max-width: 150px;
+        height: auto;
+    }
+
+    .three-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 10px;
+    }
+
+    .regis-smartcity-box {
+        width: 150px;
+        margin-top: 0px;
+        padding: 9px;
+        border-radius: 10px;
+    }
+
+    .regis-smartcity {
+        display: flex;
+        gap: 10px;
+    }
+
+    .regis-smartcity img {
+        width: 60px !important;
+    }
+
+    a.public-link {
+        gap: 20px;
+        font-size: 7px;
+    }
+
+    .box-public-service,
+    .box-public-service::before {
+        height: 470px;
+    }
+
+    iframe.fb-page {
+        width: 90px;
+        position: absolute;
+        height: 115px;
+        margin-top: -11%;
+        right: 20%;
+    }
 }
 
 /* iPhone 15 / 15 Pro */
@@ -539,7 +597,8 @@
 
     img.box-img-slide-top {
         height: 225px !important;
-        width: 100% !important; /* ทำให้ยืดเต็มหน้าจอ */
+        width: 100% !important;
+        /* ทำให้ยืดเต็มหน้าจอ */
         object-fit: cover;
     }
 
@@ -557,11 +616,64 @@
 
     /* footer fix */
     .footer-contact {
-        width: 100% !important; /* fix ไม่ให้หลุดจอ */
+        width: 100% !important;
+        /* fix ไม่ให้หลุดจอ */
     }
 
     .box-footer {
         min-height: 200px;
         padding: 0 15px;
+    }
+
+    .flag-img img {
+        width: 11px;
+        height: 11px;
+        padding: 2px;
+    }
+
+    .vision img,
+    .search-box-1 {
+        display: none;
+    }
+
+    .three-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 10px;
+    }
+
+    .regis-smartcity-box {
+        width: 150px;
+        margin-top: 0px;
+        padding: 9px;
+        border-radius: 10px;
+    }
+
+    .regis-smartcity {
+        display: flex;
+        gap: 10px;
+    }
+
+    .regis-smartcity img {
+        width: 60px !important;
+    }
+
+    a.public-link {
+        gap: 20px;
+        font-size: 7px;
+    }
+
+    .box-public-service,
+    .box-public-service::before {
+        height: 470px;
+    }
+
+    iframe.fb-page {
+        width: 90px;
+        position: absolute;
+        height: 115px;
+        margin-top: -11%;
+        right: 20%;
     }
 }

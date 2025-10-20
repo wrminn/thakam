@@ -142,6 +142,7 @@
     .search-button.intercity-port {
         height: 30px;
         width: 200px;
+        margin-top: 0px;
     }
 
     img.box-img-slide-top {
@@ -301,8 +302,7 @@
     }
 
     .divider-line {
-        height: 2px;
-        margin: 65px 0;
+        display: none;
     }
 
     .box-personnel {

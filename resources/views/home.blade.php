@@ -188,7 +188,7 @@
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                 referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                         @else
-                            <video controls width="600">
+                            <video controls width="1200" height="680">
                                 <source src="{{ asset('storage/' . $video->slide_path) }}" type="video/mp4">
                                 Your browser does not support the video tag.
                             </video>
@@ -257,7 +257,7 @@
             </div>
             <div class="box-sbt-one">
                 <div class="smartcity-five">
-                    <a href="#" class="">
+                    <a href="https://infocenter.oic.go.th/%E0%B9%80%E0%B8%97%E0%B8%A8%E0%B8%9A%E0%B8%B2%E0%B8%A5%E0%B8%95%E0%B8%B3%E0%B8%9A%E0%B8%A5%E0%B8%97%E0%B9%88%E0%B8%B2%E0%B8%82%E0%B9%89%E0%B8%B2%E0%B8%A1%20%E0%B8%88%E0%B8%B1%E0%B8%87%E0%B8%AB%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%89%E0%B8%B0%E0%B9%80%E0%B8%8A%E0%B8%B4%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%A3%E0%B8%B2/index.php?gid=0&mid=1012" class="">
                         <img src="/img/SmartCity/Banner-6.png" class="banner-box-sbt-one no-underline bbs-one"
                             style="margin: 0 0 0 175px;width: 350px;"></a>
                     <a href="#" class="">
@@ -351,7 +351,7 @@
                     <span style="margin-top: -30px;">เบี้ยยังชีพผู้พิการ</span>
                     <span>Disability living allowance</span>
                 </a>
-                <a href="#" class="public-link">
+                <a href="/webboard/menu/75" class="public-link">
                     <img src="/img/publicservice/2.png" class="public-service-img-one">
                     <span style="margin-top: -30px;">ถาม-ตอบ</span>
                     <span>Q & A</span>
@@ -359,22 +359,22 @@
             </div>
             <div class="button-public-service">
 
-                <a href="#" class="public-link">
+                <a href="/satisfaction/menu/43" class="public-link">
                     <img src="/img/publicservice/7.png" class="public-service-img-one">
                     <span style="margin-top: -30px;">แบบสอบถามความพึงพอใจ</span>
                     <span>Satisfaction Survey</span>
                 </a>
-                <a href="#" class="public-link">
+                <a href="/directory/menu/45/cate/34" class="public-link">
                     <img src="/img/publicservice/5.png" class="public-service-img-one">
                     <span style="margin-top: -30px;">คู่มือประชาชน</span>
                     <span>Public Guide</span>
                 </a>
-                <a href="#" class="public-link">
+                <a href="/directory/menu/45/cate/35" class="public-link">
                     <img src="/img/publicservice/3.png" class="public-service-img-one">
                     <span style="margin-top: -30px;">คู่มือปฏิบัติงาน</span>
                     <span>Work Manual</span>
                 </a>
-                <a href="#" class="public-link">
+                <a href="/directory/menu/46" class="public-link">
                     <img src="/img/publicservice/4.png" class="public-service-img-one">
                     <span style="margin-top: -30px;">ดาวน์โหลดแบบฟอร์ม</span>
                     <span>Download from</span>
@@ -627,13 +627,13 @@
                         alt=""></a>
                 <a href="/directory/menu/56"> <img src="/img/here/BannerText/Banner-Down-3-text.png"
                         class="button-here-text" alt=""></a>
-                <a href="/directory/menu/61/cate/0"> <img src="/img/here/BannerText/Banner-Down-4-text.png"
+                <a href="/categories/menu/61"> <img src="/img/here/BannerText/Banner-Down-4-text.png"
                         class="button-here-text" alt=""></a>
                 <a href="/complaint/menu/41"> <img src="/img/here/BannerText/Banner-Down-5-text.png"
                         class="button-here-text" alt=""></a>
                 <a href="/directory/menu/60"> <img src="/img/here/BannerText/Banner-Down-6-text.png"
                         class="button-here-text" alt=""></a>
-                <a href="/directory/menu/64/cate/0"> <img src="/img/here/BannerText/Banner-Down-7-text.png"
+                <a href="/categories/menu/64"> <img src="/img/here/BannerText/Banner-Down-7-text.png"
                         class="button-here-text" alt=""></a>
             </div>
 
@@ -870,7 +870,7 @@
                     data-small-header="true" data-adapt-container-width="true" data-hide-cover="false"
                     data-show-facepile="true">
                 </div> --}}
-                <iframe
+                <iframe class="fb-page"
                     src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fthakam.go.th&tabs=timeline&width=340&height=750&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=6174507855916076"
                     width="340" height="750" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
                     allowfullscreen="true"
@@ -1099,46 +1099,7 @@
         </div>
     </section>
 
-    <section class="box-view">
-        <div class="counter-title">
-            จำนวนผู้เข้าชมเว็บไซต์
-            <small>number of website visitors</small>
-        </div>
-
-        <div class="counter-item">
-            <span class="counter-number">{{ $stats['2min'] }}</span>
-            <span class="counter-label">ขณะนี้</span>
-        </div>
-
-        <div class="counter-item">
-            <span class="counter-number">{{ $stats['today'] }}</span>
-            <span class="counter-label">วันนี้</span>
-        </div>
-
-        <div class="counter-item">
-            <span class="counter-number">{{ $stats['weekly'] }}</span>
-            <span class="counter-label">สัปดาห์นี้</span>
-        </div>
-
-        <div class="counter-item">
-            <span class="counter-number">{{ $stats['monthly'] }}</span>
-            <span class="counter-label">เดือนนี้</span>
-        </div>
-
-        <div class="counter-item">
-            <span class="counter-number">{{ $stats['yearly'] }}</span>
-            <span class="counter-label">ปีนี้</span>
-        </div>
-
-        <div class="counter-total">
-            <span class="counter-number">{{ $stats['total'] }}</span>
-            <span class="counter-label">ทั้งหมด</span>
-        </div>
-    </section>
-
-    <section class="box-view-two">
-        <div class="null-content"></div>
-    </section>
+   
 
     <script>
         function openTab(tabId) {
