@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart City Animation with Responsive Popups</title>
+    <style>
+        /* --- การตั้งค่าหน้าเว็บพื้นฐาน --- */
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background: none;
+        }
+
+        /* --- Map Container --- */
+        .map-container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 80vw;
+            max-height: 90vh;
+            aspect-ratio: 16 / 9;
+        }
+
+        /* --- Map Background --- */
+        .map-bg {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            display: block;
+            z-index: 1;
+        }
+
+        /* --- Pin Container --- */
+        .pin-container {
+            position: absolute;
+            width: 3%; /* ขนาด relative กับ map container */
+            height: auto;
+            animation: pinBounce 2s infinite ease-in-out;
+        }
+
+        /* --- Pin Icon --- */
+        .location-pin {
+            width: 100%;
+            height: auto;
+            display: block;
+            cursor: pointer;
+        }
+
+        /* --- Popup --- */
+        .popup {
+            position: absolute;
+            bottom: 120%; /* ปรับให้เหนือหมุด */
+            left: 50%;
+            transform: translateX(-50%);
+            width: 16vw; /* responsive width */
+            max-width: 320px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            text-align: center;
+            padding: 10px;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease-out;
+            pointer-events: none;
+            z-index: 5;
+        }
+
+        .popup-image {
+            width: 100%;
+            border-radius: 5px;
+            height: auto;
+        }
+
+        .popup-text {
+            margin-top: 8px;
+            margin-bottom: 0;
+            font-family: sans-serif;
+            color: #333;
+            font-weight: bold;
+        }
+
+        /* --- แสดง popup เมื่อ hover --- */
+        .pin-container:hover .popup {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        /* --- ตำแหน่งแต่ละหมุด (%) --- */
+        #pin-container-1 { top: 12%; left: 73%; }
+        #pin-container-2 { top: 28%; left: 60%; }
+        #pin-container-3 { top: 20%; left: 9%; }
+        #pin-container-4 { top: 39%; left: 49%; }
+        #pin-container-5 { top: 48%; left: 32%; }
+        #pin-container-6 { top: 52%; left: 46%; }
+        #pin-container-7 { top: 40%; left: 30%; }
+        #pin-container-8 { top: 45%; left: 23%; }
+        #pin-container-9 { top: 23%; left: 66%; }
+        #pin-container-10 { top: 57%; left: 26%; }
+
+        /* --- Drone และ Cloud Animation --- */
+        .drone {
+            position: absolute;
+            width: 15%;
+            height: auto;
+            z-index: 10;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+        #drone1 { top: 20%; left: 10%; width: 10%; animation-name: moveUpDown1; animation-duration: 9s; }
+        #drone2 { top: 10%; right: 5%; width: 10%; animation-name: moveUpDown2; animation-duration: 13s; }
+        #drone3 { left: 45%; bottom: 5%; width: 10%; animation-name: moveBottomUp; animation-duration: 11s; }
+
+        .cloud {
+            position: absolute;
+            width: 25%;
+            height: auto;
+            opacity: 1;
+            z-index: 10;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+        #cloud1 { top: 5%; left: 15%; width: 15%; animation-name: cloudMoveRight; animation-duration: 40s; animation-direction: alternate; }
+        #cloud2 { top: 15%; right: 15%; width: 7%; animation-name: cloudMoveLeft; animation-duration: 35s; animation-direction: alternate; }
+        #cloud3 { left: 50%; top: 2%; width: 10%; animation-name: cloudMoveDown; animation-duration: 30s; animation-direction: alternate; }
+
+        @keyframes moveUpDown1 { 0% { transform: translateY(0); } 100% { transform: translateY(15vh); } }
+        @keyframes moveUpDown2 { 0% { transform: translateY(0); } 100% { transform: translateY(7vh); } }
+        @keyframes moveBottomUp { 0% { transform: translateY(0); } 100% { transform: translateY(-15vh); } }
+        @keyframes cloudMoveRight { 0% { transform: translateX(0); } 100% { transform: translateX(16vw); } }
+        @keyframes cloudMoveLeft { 0% { transform: translateX(0); } 100% { transform: translateX(-8vw); } }
+        @keyframes cloudMoveDown { 0% { transform: translateY(0); } 100% { transform: translateY(8vh); } }
+        /* --- Animation for Pins --- */
+        @keyframes pinBounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-5px); }
+        }
+    </style>
+</head>
+<body>
+    <div class="map-container">
+        <img src="Map.png" class="map-bg" alt="Map">
+
+        <!-- หมุดทั้งหมด -->
+        <div class="pin-container" id="pin-container-1">
+            <a href="https://maps.app.goo.gl/KvKomBSrEsEsm36h6" target="_blank">
+                <img src="Location.png" class="location-pin">
+                <div class="popup"><img src="Power-Plant.png" class="popup-image"><p class="popup-text">โรงไฟฟ้าบางปะกง</p></div>
+            </a>
+        </div>
+        <div class="pin-container" id="pin-container-2">
+            <a href="https://maps.app.goo.gl/TUCoZUpWUB346PXy9" target="_blank">
+                <img src="Location.png" class="location-pin">
+                <div class="popup"><img src="Thakam-Temple-2.png" class="popup-image"><p class="popup-text">วัดทองนพคุณ</p></div>
+            </a>
+        </div>
+        <div class="pin-container" id="pin-container-3">
+            <a href="https://maps.app.goo.gl/3uNJ2g89HJfsHZXg6" target="_blank">
+                <img src="Location.png" class="location-pin">
+                <div class="popup"><img src="Island.png" class="popup-image"><p class="popup-text">เกาะนก</p></div>
+            </a>
+        </div>
+        <div class="pin-container" id="pin-container-4">
+            <a href="https://maps.app.goo.gl/tEw4XiBSsJDVjURz7" target="_blank">
+                <img src="Location.png" class="location-pin">
+                <div class="popup"><img src="Park.png" class="popup-image"><p class="popup-text">สวนสุขภาพปากคลองพานทอง</p></div>
+            </a>
+        </div>
+        <div class="pin-container" id="pin-container-5">
+            <a href="https://maps.app.goo.gl/Tv2TGQPZzp5vZozV6" target="_blank">
+                <img src="Location.png" class="location-pin">
+                <div class="popup"><img src="Thakam-Temple.png" class="popup-image"><p class="popup-text">วัดท่าข้ามเจริญศรัทธา</p></div>
+            </a>
+        </div>
+        <div class="pin-container" id="pin-container-6">
+            <a href="https://maps.app.goo.gl/6RqT6KfhJDVTLg6Y6" target="_blank">
+                <img src="Location.png" class="location-pin">
+                <div class="popup"><img src="School-2.png" class="popup-image"><p class="popup-text">โรงเรียนคลองพานทอง</p></div>
+            </a>
+        </div>
+        <div class="pin-container" id="pin-container-7">
+            <a href="https://maps.app.goo.gl/prYiQhYFKvH1HRes6" target="_blank">
+                <img src="Location.png" class="location-pin">
+                <div class="popup"><img src="Hospital.png" class="popup-image"><p class="popup-text">โรงพยาบาลส่งเสริม<br>สุขภาพตำบลท่าข้าม</p></div>
+            </a>
+        </div>
+        <div class="pin-container" id="pin-container-8">
+            <a href="https://maps.app.goo.gl/G3zSd8ZWrk8YAxiSA" target="_blank">
+                <img src="Location.png" class="location-pin">
+                <div class="popup"><img src="office.png" class="popup-image"><p class="popup-text">สำนักงาน ทต.ท่าข้าม</p></div>
+            </a>
+        </div>
+        <div class="pin-container" id="pin-container-9">
+            <a href="https://maps.app.goo.gl/oRWweggjdgAzDAFx5" target="_blank">
+                <img src="Location.png" class="location-pin">
+                <div class="popup"><img src="School-3.png" class="popup-image"><p class="popup-text">โรงเรียนวัดบางแสม</p></div>
+            </a>
+        </div>
+        <div class="pin-container" id="pin-container-10">
+            <a href="https://maps.app.goo.gl/rRRf2QnycFxhsjWE6" target="_blank">
+                <img src="Location.png" class="location-pin">
+                <div class="popup"><img src="School-1.png" class="popup-image"><p class="popup-text">โรงเรียนบ้านท่าข้ามตั้งตรงจิตร 10ฯ</p></div>
+            </a>
+        </div>
+
+        <!-- Drone & Cloud -->
+        <img src="Drone 1.png" id="drone1" class="drone" alt="Drone 1">
+        <img src="Drone 2.png" id="drone2" class="drone" alt="Drone 2">
+        <img src="Drone 3.png" id="drone3" class="drone" alt="Drone 3">
+        <img src="Cloud.png" id="cloud1" class="cloud" alt="Cloud">
+        <img src="Cloud 2.png" id="cloud2" class="cloud" alt="Cloud">
+        <img src="Cloud.png" id="cloud3" class="cloud" alt="Cloud">
+    </div>
+</body>
+</html>

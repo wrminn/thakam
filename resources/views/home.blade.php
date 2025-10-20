@@ -946,7 +946,7 @@
         </div>
         <div class="map-two">
 
-            <iframe src="/img/AnimationMap/test.html" frameborder="0" style="width: 100%;"></iframe>
+            <iframe src="/img/AnimationMap/index.html" frameborder="0" style="width: 100%;"></iframe>
         </div>
         <div class="map-three">
             <div class="text-map-three">
