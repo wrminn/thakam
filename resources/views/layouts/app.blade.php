@@ -234,7 +234,7 @@
                         <div class="carousel-item {{ $key === 0 ? 'active' : '' }}">
                             <img src="{{ asset('storage/' . $slide->slide_path) }}" class="d-block w-100"
                                 alt="slide {{ $key + 1 }}"
-                                style="width: 1905px; height:600px; object-fit: cover;">
+                                style="width: 953px !important;height:600px;object-fit: cover;float: inline-end;">
                         </div>
                     @empty
                         <div class="carousel-item active">
