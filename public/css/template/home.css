@@ -776,6 +776,13 @@ div#carouselExampleSlidesOnly.carousel-slide-here {
     color: #000;
 }
 
+section.slide-top .carousel-item img {
+    width: 953px !important;
+    height: 600px;
+    object-fit: cover;
+    float: inline-end;
+}
+
 .box-all-here {
     display: flex;
     flex-direction: row;

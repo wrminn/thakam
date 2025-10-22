@@ -152,6 +152,18 @@
         margin-top: -2.5vw;
     }
 
+    section.slide-top .carousel-item img {
+        width: 853px !important;
+        height: 600px;
+        object-fit: cover;
+        float: inline-end;
+    }
+
+    img.box-img-slide-top {
+        width: 800px;
+        margin-top: 11%;
+    }
+
     .search-bar-container {
         display: flex;
         align-items: center;
@@ -208,7 +220,7 @@
 
     .search-button.intercity-port {
         height: 2.3vw;
-        width: 26vw;
+        /* width: 26vw; */
         overflow: hidden;
         position: relative;
     }
@@ -461,7 +473,7 @@
     }
 
     .box-video {
-        min-height: 50vw;
+        min-height: 57vw;
         margin-top: -1.8vw;
         display: flex;
         flex-direction: column;
@@ -488,8 +500,10 @@
     }
 
     .video-show {
-        width: 47vw;
-        height: 26vw;
+        width: 65vw;
+        height: 35vw;
+        /* width: 47vw;
+        height: 26vw; */
         display: flex;
         align-items: center;
         justify-content: center;
@@ -507,7 +521,8 @@
     }
 
     .slide-in-video img {
-        width: 40vh;
+        /* width: 40vh; */
+        width: 55vh;
     }
 
     .box-button {
@@ -1583,5 +1598,12 @@
         width: 90%;
     }
 
+    .public-body-one {
+        gap: 20px;
+        display: flex;
+        flex-direction: column;
+        margin-top: 10%;
+        padding: 0 155px;
+    }
 
 }
