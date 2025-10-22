@@ -86,6 +86,7 @@
             flex-direction: row;
             flex-wrap: wrap;
             gap: 20px;
+            width: 100%;
         }
     </style>
     <link rel="stylesheet" href="{{ asset('/css/template/detail.css') }}">
@@ -172,10 +173,6 @@
                                     style="width: 1905px; height:600px; object-fit: cover;">
                             </div>
                         @empty
-                            <div class="carousel-item active">
-                                <img src="https://www.w3schools.com/howto/img_snow_wide.jpg" class="d-block w-100"
-                                    alt="..." style="width: 1905px; height:600px; object-fit: cover;">
-                            </div>
                         @endforelse
                     </div>
                 </div>
