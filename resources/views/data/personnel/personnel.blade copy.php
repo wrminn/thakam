@@ -79,14 +79,6 @@
         .img-group {
             padding: 40px;
         }
-
-        .row-parent {
-            display: flex;
-            justify-content: space-around;
-            flex-direction: row;
-            flex-wrap: wrap;
-            gap: 20px;
-        }
     </style>
     <link rel="stylesheet" href="{{ asset('/css/template/detail.css') }}">
     <div class="container-body">
@@ -129,30 +121,19 @@
                         @endforeach
 
                         <div class="deputies">
-                            @php
-                                // จัดกลุ่มตาม parent
-                                $grouped = $list->groupBy('personnel_parent');
-                            @endphp
+                            @foreach ($list as $item)
+                                <!-- Deputies -->
 
-                            {{-- วนลูป parent >= 2 --}}
-                            @foreach ($grouped as $parentId => $items)
-                                @if ($parentId != 1)
-                                    {{-- ข้าม parent 1 --}}
-                                    <div class="row-parent">
-                                        @foreach ($items as $item)
-                                            <div class="deputy">
-                                                <div class="per-content">
-                                                    <img class="leader-img"
-                                                        src="{{ asset('storage/' . $item->personnel_path) }}"
-                                                        alt="{{ $item->personnel_name }}"
-                                                        data-name="{{ $item->personnel_name }}"
-                                                        data-role="{{ $item->personnel_position }}" />
-                                                    <h3>{{ $item->personnel_name }}</h3>
-                                                    <p>{{ $item->personnel_position }}</p>
-                                                    <p>{{ $item->personnel_tel }}</p>
-                                                </div>
-                                            </div>
-                                        @endforeach
+                                @if ($item['personnel_seq'] != '1')
+                                    <div class="deputy">
+                                        <div class="per-content">
+                                            <img class="leader-img" src="{{ asset('storage/' . $item->personnel_path) }}"
+                                                alt="Deputy" data-name="{{ $item->personnel_name }}"
+                                                data-role="{{ $item->personnel_position }}" />
+                                            <h3>{{ $item->personnel_name }}</h3>
+                                            <p>{{ $item->personnel_position }}</p>
+                                            <p>{{ $item->personnel_tel }}</p>
+                                        </div>
                                     </div>
                                 @endif
                             @endforeach

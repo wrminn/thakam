@@ -478,7 +478,9 @@
                                 <div class="activity-title">{{ $list->texteditor_title }}</div>
                                 {{-- <div class="activity-detail">{{ trim(strip_tags($list->texteditor_detail)) }}</div> --}}
                                 <div class="activity-detail">
-                                    {{ \Illuminate\Support\Str::limit(trim(strip_tags($list->texteditor_detail)), 150) }}
+                                    {{-- {{ \Illuminate\Support\Str::limit(trim(strip_tags($list->texteditor_detail)), 150) }} --}}
+                                    {{ \Illuminate\Support\Str::limit( trim(html_entity_decode(strip_tags($list->texteditor_detail))),150) }}
+
                                 </div>
 
                             </div>
