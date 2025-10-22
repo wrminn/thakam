@@ -233,7 +233,7 @@
         position: absolute;
         z-index: 5;
         /* margin-top: 1.8vw; */
-        margin-top: 2.4vw;
+        /* margin-top: 2.4vw; */
     }
 
     .carousel-indicators [data-bs-target] {
