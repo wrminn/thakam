@@ -475,7 +475,8 @@
                                 @endphp
                                 <div class="activity-date">{{ $day }} {{ $month }} {{ $year }}
                                 </div>
-                                <div class="activity-title">{{ $list->texteditor_title }}</div>
+                                {{-- <div class="activity-title">{{ $list->texteditor_title }}</div> --}}
+                                <div class="activity-title">{{ \Illuminate\Support\Str::limit($list->texteditor_title, 50) }}</div>
                                 {{-- <div class="activity-detail">{{ trim(strip_tags($list->texteditor_detail)) }}</div> --}}
                                 <div class="activity-detail">
                                     {!! \Illuminate\Support\Str::limit(trim(strip_tags($list->texteditor_detail)), 100) !!}
