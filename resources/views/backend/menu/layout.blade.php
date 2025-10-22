@@ -162,7 +162,7 @@
                 <a href="/backend/articles/menu/9">แผนผังโครงสร้างองค์กร</a>
                 <a href="/backend/personnel/menu/10">คณะผู้บริหาร</a>
                 <a href="/backend/personnel/menu/11">สภาชิกสภา</a>
-                <a href="/backend/personnel/menu/12">ผู้บริหารส่วนราชการ</a>
+                {{-- <a href="/backend/personnel/menu/12">ผู้บริหารส่วนราชการ</a> --}}
                 <a href="/backend/personnel/menu/13">สำนักปลัด</a>
                 <a href="/backend/personnel/menu/14">กองยุทธศาสตร์</a>
                 <a href="/backend/personnel/menu/15">กองคลัง</a>
@@ -171,6 +171,7 @@
                 <a href="/backend/personnel/menu/18">กองการศึกษา</a>
                 <a href="/backend/personnel/menu/19">กองสวัสดิการสังคม</a>
                 <a href="/backend/personnel/menu/20">หน่วยตรวจสอบภายใน</a>
+                <a href="/backend/directory/menu/26/cate/0">การบริหารและพัฒนาทรัพยากรบุคล</a>
             </div>
             <a href="/backend/directory/menu/38/cate/0">
                 <div class="menu-item">แผนงานและงบประมาณ</div>
@@ -185,7 +186,6 @@
                 <a href="/backend/directory/menu/23/cate/0">รายงานผลการดำเนินงาน</a>
                 <a href="/backend/directory/menu/24/cate/0">รายงานการจัดซื้อจัดจ้างหรือการจัดหาพัสดุ</a>
                 <a href="/backend/directory/menu/25/cate/0">ข้อมูลเชิงสถิติ</a>
-                <a href="/backend/directory/menu/26/cate/0">การบริหารและพัฒนาทรัพยากรบุคล</a>
                 <a href="/backend/directory/menu/27/cate/0">มาตรการส่งเสริมความโปร่งใสและป้องกันการทุจริต</a>
                 <a href="/backend/directory/menu/28/cate/0">ประมวลจริยธรรมและการขับเคลื่อนจริยธรรม</a>
             </div>

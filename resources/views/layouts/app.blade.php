@@ -160,14 +160,16 @@
                         <a href="/articles/menu/9">แผนผังโครงสร้างองค์กร</a>
                         <a href="/personnel/menu/10">คณะผู้บริหาร</a>
                         <a href="/personnel/menu/11">สมาชิกสภา</a>
-                        <a href="/personnel/menu/12">ผู้บริหารส่วนราชการ</a>
+                        {{-- <a href="/personnel/menu/12">ผู้บริหารส่วนราชการ</a> --}}
                         <a href="/personnel/menu/13">สำนักปลัด</a>
                         <a href="/personnel/menu/14">กองยุทธศาสตร์</a>
                         <a href="/personnel/menu/15">กองคลัง</a>
                         <a href="/personnel/menu/16">กองช่าง</a>
                         <a href="/personnel/menu/17">กองสาธารณสุขและสิ่งแวดล้อม</a>
                         <a href="/personnel/menu/18">กองการศึกษา</a>
-                        <a href="/personnel/menu/19">หน่วยตรวจสอบภายใน</a>
+                        <a href="/personnel/menu/19">กองสวัสดิการสังคม</a>
+                        <a href="/personnel/menu/20">หน่วยตรวจสอบภายใน</a>
+                        <a href="/categories/menu/26">การบริหารและพัฒนาทรัพยากรบุคล</a>
                     </div>
                 </div>
 
@@ -190,7 +192,6 @@
                         <a href="/categories/menu/23">รายงานผลการดำเนินงาน</a>
                         <a href="/categories/menu/24">รายงานการจัดซื้อจัดจ้างหรือการจัดหาพัสดุ</a>
                         <a href="/categories/menu/25">ข้อมูลเชิงสถิติ</a>
-                        <a href="/categories/menu/26">การบริหารและพัฒนาทรัพยากรบุคล</a>
                         <a href="/categories/menu/27">มาตรการส่งเสริมความโปร่งใสและป้องกันการทุจริต</a>
                         <a href="/categories/menu/28">ประมวลจริยธรรมและการขับเคลื่อนจริยธรรม</a>
                     </div>
