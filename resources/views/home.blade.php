@@ -257,7 +257,8 @@
             </div>
             <div class="box-sbt-one">
                 <div class="smartcity-five">
-                    <a href="https://infocenter.oic.go.th/%E0%B9%80%E0%B8%97%E0%B8%A8%E0%B8%9A%E0%B8%B2%E0%B8%A5%E0%B8%95%E0%B8%B3%E0%B8%9A%E0%B8%A5%E0%B8%97%E0%B9%88%E0%B8%B2%E0%B8%82%E0%B9%89%E0%B8%B2%E0%B8%A1%20%E0%B8%88%E0%B8%B1%E0%B8%87%E0%B8%AB%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%89%E0%B8%B0%E0%B9%80%E0%B8%8A%E0%B8%B4%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%A3%E0%B8%B2/index.php?gid=0&mid=1012" class="">
+                    <a href="https://infocenter.oic.go.th/%E0%B9%80%E0%B8%97%E0%B8%A8%E0%B8%9A%E0%B8%B2%E0%B8%A5%E0%B8%95%E0%B8%B3%E0%B8%9A%E0%B8%A5%E0%B8%97%E0%B9%88%E0%B8%B2%E0%B8%82%E0%B9%89%E0%B8%B2%E0%B8%A1%20%E0%B8%88%E0%B8%B1%E0%B8%87%E0%B8%AB%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%89%E0%B8%B0%E0%B9%80%E0%B8%8A%E0%B8%B4%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%A3%E0%B8%B2/index.php?gid=0&mid=1012"
+                        class="">
                         <img src="/img/SmartCity/Banner-6.png" class="banner-box-sbt-one no-underline bbs-one"
                             style="margin: 0 0 0 175px;width: 350px;"></a>
                     <a href="#" class="">
@@ -444,6 +445,10 @@
                             <div class="card-activity-body">
 
                                 <div class="activity-img">
+                                    <div class="view-count">
+                                        👁️ เข้าชม {{ $list->texteditor_view ?? 0 }} ครั้ง
+                                    </div>
+
                                     @if ($list->texteditor_topic_picture)
                                         <img src="{{ asset('storage/' . $list->texteditor_topic_picture) }}"
                                             alt="topic picture" width="420" style="border-radius: 20px">
@@ -476,12 +481,13 @@
                                 <div class="activity-date">{{ $day }} {{ $month }} {{ $year }}
                                 </div>
                                 {{-- <div class="activity-title">{{ $list->texteditor_title }}</div> --}}
-                                <div class="activity-title">{{ \Illuminate\Support\Str::limit($list->texteditor_title, 50) }}</div>
+                                <div class="activity-title">
+                                    {{ \Illuminate\Support\Str::limit($list->texteditor_title, 50) }}</div>
                                 {{-- <div class="activity-detail">{{ trim(strip_tags($list->texteditor_detail)) }}</div> --}}
                                 <div class="activity-detail">
                                     {!! \Illuminate\Support\Str::limit(trim(strip_tags($list->texteditor_detail)), 100) !!}
 
-                                    
+
                                 </div>
 
                             </div>
@@ -553,7 +559,7 @@
                                     <div class="news-title"><b>{{ $list->texteditor_title }}</b></div>
                                     {{-- <div class="news-detail">{{ trim(strip_tags($list->texteditor_detail)) }}</div> --}}
                                     <div class="news-detail">
-                                        
+
                                         {!! \Illuminate\Support\Str::limit(trim(strip_tags($list->texteditor_detail)), 100) !!}
 
                                     </div>
@@ -1104,7 +1110,7 @@
         </div>
     </section>
 
-   
+
 
     <script>
         function openTab(tabId) {

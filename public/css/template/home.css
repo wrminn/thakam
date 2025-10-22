@@ -1639,3 +1639,23 @@ a.public-link {
     text-decoration: unset;
     font-weight: 900;
 }
+
+.activity-img {
+    position: relative;
+    display: inline-block;
+}
+
+.view-count {
+    position: absolute;
+    top: 7px;
+    right: 80px;
+    background: rgb(255 255 255 / 60%);
+    color: #000;
+    font-size: 14px;
+    padding: 5px 10px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    backdrop-filter: blur(4px);
+}

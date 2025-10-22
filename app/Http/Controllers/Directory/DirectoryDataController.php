@@ -52,6 +52,11 @@ class DirectoryDataController extends Controller
             ['name' => $title, 'url' => route('directory.data', ['menu' => $menuId])], // หน้า current
         ];
 
+
+        DB::table('texteditor')
+            ->where('texteditor_id', $Id)
+            ->increment('texteditor_view', 1);
+
         $list = DB::table('texteditor')
             ->leftJoin('texteditor_detail', 'texteditor.texteditor_id', '=', 'texteditor_detail.texteditor_id')
             ->where('texteditor.texteditor_id', $Id)
@@ -70,6 +75,8 @@ class DirectoryDataController extends Controller
                 ->where('texteditor_display', "A")
                 ->get()->toArray();
         }
+
+       
 
         return view('data.directory.detail', compact('title', 'menuId', 'list', 'file', 'breadcrumbs'));
     }
@@ -96,14 +103,14 @@ class DirectoryDataController extends Controller
         $titles = $this->myService->getDataByKey($menuId);
         $title = $titles ?? 'ข้อมูลเมนู' . $menuId;
 
-         $name_cat = Category::active()
+        $name_cat = Category::active()
             ->where('categories_id', $cateID)
             ->first();
 
         $breadcrumbs = [
             ['name' => 'หน้าแรก', 'url' => route('home')],
             ['name' => $title, 'url' => route('categories.list', ['menu' => $menuId])], // หน้า current
-            ['name' => $name_cat->categories_name, 'url' => route('categories.data', ['menu' => $menuId,'cate' => $cateID])], // หน้า current
+            ['name' => $name_cat->categories_name, 'url' => route('categories.data', ['menu' => $menuId, 'cate' => $cateID])], // หน้า current
         ];
 
         $list = Texteditor::active()
@@ -132,7 +139,7 @@ class DirectoryDataController extends Controller
         $breadcrumbs = [
             ['name' => 'หน้าแรก', 'url' => route('home')],
             ['name' => $title, 'url' => route('categories.list', ['menu' => $menuId])], // หน้า current
-            ['name' => $name_cat->categories_name, 'url' => route('categories.data', ['menu' => $menuId,'cate' => $cateID])], // หน้า current
+            ['name' => $name_cat->categories_name, 'url' => route('categories.data', ['menu' => $menuId, 'cate' => $cateID])], // หน้า current
         ];
 
         $list = DB::table('texteditor')
