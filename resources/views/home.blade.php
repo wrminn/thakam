@@ -299,7 +299,7 @@
                             class="bg-ons-button"></a>
                     <a href="https://eservice.demo.sosmartsolution.com/Requestforms"> <img src="/img/OneStopService/Banner-3.png" alt=""
                             class="bg-ons-button"></a>
-                    <a href="https://demo.trush.sosmartsolution.com/homepage"> <img src="/img/OneStopService/Banner-4.png" alt=""
+                    <a href="https://demo.trush.sosmartsolution.com/user/emergency/accident"> <img src="/img/OneStopService/Banner-4.png" alt=""
                             class="bg-ons-button"></a>
                 </div>
 
