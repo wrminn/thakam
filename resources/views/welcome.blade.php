@@ -62,11 +62,18 @@
             cursor: pointer;
         }
 
+        /* .image-button img {
+            width: 30vw;
+            max-width: 250px;
+            height: auto;
+            transition: transform 0.2s;
+        } */
         .image-button img {
             width: 30vw;
             max-width: 250px;
             height: auto;
             transition: transform 0.2s;
+            margin: -25px;
         }
 
         .image-button img:hover {
