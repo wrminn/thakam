@@ -792,7 +792,8 @@
 
     .card-activity-body {
         width: clamp(280px, 20vw, 450px);
-        min-height: 380px;
+        /* min-height: 380px; */
+        min-height: 580px;
         background-color: #fff;
         border-radius: 20px;
         display: flex;
@@ -823,7 +824,8 @@
 
     .activity-img {
         width: 100%;
-        height: clamp(200px, 15vw, 325px);
+        /* height: clamp(200px, 15vw, 325px); */
+        height: 460px;
         overflow: hidden;
         border-radius: 15px;
     }

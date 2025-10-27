@@ -93,11 +93,18 @@
     }
 
     .header-box-flag {
-        width: 120px;
+        /* width: 120px; */
+        width: 177px;
         height: 20px;
         margin: 5px;
         border-radius: 5px;
         padding: 3px;
+    }
+
+    .flag-img img {
+        width: 17px;
+        height: 14px;
+        padding: 2px;
     }
 
     section.slide-top {
@@ -141,14 +148,23 @@
 
     .search-button.intercity-port {
         height: 30px;
-        width: 200px;
+        /* width: 200px; */
+        width: 100%;
         margin-top: 0px;
+    }
+
+    section.slide-top .carousel-item img {
+        width: 410px !important;
+        height: auto;
+        object-fit: cover;
+        float: inline-end;
     }
 
     img.box-img-slide-top {
         margin-top: 15px;
-        width: 100%;
-        height: 390px;
+        /* width: 100%;
+        height: 390px; */
+        width: 450px;
     }
 
     img.d-block.w-100 {
@@ -318,11 +334,54 @@
 
     /* Video Section (ส่วนวิดีโอ) */
     .box-video {
-        min-height: 400px;
+        min-height: 440px;
         /* ปรับเป็น auto */
         margin-top: -15px;
         /* ปรับเป็น px */
         /* display: flex; flex-direction: column; align-content: center; align-items: center; */
+    }
+
+    .regis-smartcity-box {
+        width: 210px;
+        margin-top: 5px;
+        margin-left: 4%;
+
+    }
+
+    .three-text {
+        font-size: 15px;
+    }
+
+    .regis-smartcity-box img {
+        width: 89px !important;
+    }
+
+    .public-body-one {
+        gap: 20px;
+        display: flex;
+        flex-direction: column;
+        margin-top: 10%;
+        padding: 0 20px;
+    }
+
+    a.public-link {
+        font-size: 12px;
+    }
+
+    .view-count {
+        font-size: 6px;
+    }
+
+    .fb-page {
+        margin-left: 17%;
+        width: 250px;
+        height: 300px;
+    }
+
+    .regis-smartcity {
+        display: flex;
+        gap: 6px;
+        justify-content: center;
     }
 
     .video-text {
@@ -362,7 +421,8 @@
     }
 
     .slide-in-video img {
-        width: 150px;
+        /* width: 150px; */
+        width: 180px;
     }
 
     .box-button {
