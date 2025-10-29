@@ -1668,6 +1668,8 @@ a.public-link {
     margin-right: -7%;
 }
 
-#carouselExampleSlidesOnly .carousel-indicators {
-    margin-top: -30px !important;
+
+#carouselExampleSlidesOnly .carousel-indicators button
+ {
+    margin: 0px 5px;
 }
