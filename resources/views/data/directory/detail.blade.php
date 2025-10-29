@@ -53,12 +53,12 @@
                         @endif
                     @endforeach
                 </ol>
-                @if ($menuId == '51' || $menuId == '52')
+                {{-- @if ($menuId == '51' || $menuId == '52') --}}
                     <ol class="breadcrumb custom-breadcrumb" style=" width: 70%;justify-content: flex-end;">
                         <li class="breadcrumb-item">จำนวนผู้เข้าชม :
                             {{ $list->texteditor_view ? $list->texteditor_view : 0 }}</li>
                     </ol>
-                @endif
+                {{-- @endif --}}
 
             </nav>
 

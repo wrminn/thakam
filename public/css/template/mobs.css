@@ -277,12 +277,12 @@
         overflow: hidden;
     }
 
-    div#carouselExampleSlidesOnly.carousel-slide-here {
+    div#carouselExampleSlidesHere.carousel-slide-here {
         width: 350px;
         height: auto;
     }
 
-    div#carouselExampleSlidesOnly.carousel-slide-here {
+    div#carouselExampleSlidesHere.carousel-slide-here {
         width: 350px;
         height: 249px;
     }

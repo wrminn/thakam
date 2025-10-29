@@ -738,7 +738,7 @@ img.slide-here {
     border-radius: 75px;
 }
 
-div#carouselExampleSlidesOnly.carousel-slide-here {
+div#carouselExampleSlidesHere.carousel-slide-here {
     width: 1420px;
     height: 638px;
     background: #fff;
@@ -1658,4 +1658,16 @@ a.public-link {
     align-items: center;
     gap: 5px;
     backdrop-filter: blur(4px);
+}
+
+.view-count-tag {
+    font-size: 10px;
+    float: inline-end;
+    color: aliceblue;
+    margin-top: -12%;
+    margin-right: -7%;
+}
+
+#carouselExampleSlidesOnly .carousel-indicators {
+    margin-top: -30px !important;
 }

@@ -65,8 +65,8 @@
                 </div>
                 <div class="header-text-right">
                     <div class="header-box-login">
-                        <div class="header-login-title"><a class="no-underline">เข้าสู่ระบบ</a></div>
-                        <div class="header-register-title"><a class="no-underline">สมัครสมาชิก</a></div>
+                        <div class="header-login-title"><a href="/backend" class="no-underline">เข้าสู่ระบบ</a></div>
+                        <div class="header-register-title"><a href="https://demo.trush.sosmartsolution.com/register" class="no-underline">สมัครสมาชิก</a></div>
                     </div>
                     <div class="header-box-flag">
                         <div class="flag-img">
@@ -260,7 +260,7 @@
                         <span class="visually-hidden">Previous</span>
                     </button>
 
-                    <div class="carousel-indicators position-static m-0">
+                    <div class="carousel-indicators position-static m-0 ">
                         @forelse($SlideTop as $key => $slide)
                             <button type="button" data-bs-target="#carouselExampleSlidesOnly"
                                 data-bs-slide-to="{{ $key }}" class="{{ $key === 0 ? 'active' : '' }}"
@@ -430,7 +430,7 @@
                     <a href="http://webmail.thakam.go.th"><img src="/img/13Footer/1.png" alt="" width="250"></a>
                     <a href=""><img src="/img/13Footer/2.png" alt="" width="250"></a>
                     <a href=""><img src="/img/13Footer/3.png" alt="" width="250"></a>
-                    <a href=""><img src="/img/13Footer/4.png" alt="" width="250"></a>
+                    <a href="/backend"><img src="/img/13Footer/4.png" alt="" width="250"></a>
                 </div>
             </div>
         </section>

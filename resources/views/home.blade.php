@@ -314,7 +314,7 @@
         <img src="/img/OneStopService/OSS.png" alt="" class="bg-ons">
         <div class="box-slide-menu">
 
-            <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade" data-bs-ride="carousel"
+            <div id="carouselExampleSlides" class="carousel slide carousel-fade" data-bs-ride="carousel"
                 data-bs-interval="2500">
                 <!-- สไลด์ -->
                 <div class="carousel-inner">
@@ -517,7 +517,70 @@
 
                 </div>
             </div>
-            <div class="news-directory">
+             <div class="activity-directory">
+
+                @forelse($listMenu52 as $list)
+                    <div class="card-activity">
+                        <a href="/directoryDetail/menu/51/id/{{ $list->texteditor_id }}" class="no-underline">
+                            <div class="card-activity-body">
+
+                                <div class="activity-img">
+                                    <div class="view-count">
+                                        👁️ เข้าชม {{ $list->texteditor_view ?? 0 }} ครั้ง
+                                    </div>
+
+                                    @if ($list->texteditor_topic_picture)
+                                        <img src="{{ asset('storage/' . $list->texteditor_topic_picture) }}"
+                                            alt="topic picture" width="420" style="border-radius: 20px">
+                                    @else
+                                        <img src="{{ asset('img/representation.png') }}" alt="default logo"
+                                            width="420" style="border-radius: 30px">
+                                    @endif
+
+                                </div>
+                                @php
+                                    $date = \Carbon\Carbon::parse($list->texteditor_date_show);
+                                    $months = [
+                                        1 => 'มกราคม',
+                                        2 => 'กุมภาพันธ์',
+                                        3 => 'มีนาคม',
+                                        4 => 'เมษายน',
+                                        5 => 'พฤษภาคม',
+                                        6 => 'มิถุนายน',
+                                        7 => 'กรกฎาคม',
+                                        8 => 'สิงหาคม',
+                                        9 => 'กันยายน',
+                                        10 => 'ตุลาคม',
+                                        11 => 'พฤศจิกายน',
+                                        12 => 'ธันวาคม',
+                                    ];
+                                    $day = $date->day;
+                                    $month = $months[$date->month];
+                                    $year = $date->year + 543;
+                                @endphp
+                                <div class="activity-date">{{ $day }} {{ $month }} {{ $year }}
+                                </div>
+                                {{-- <div class="activity-title">{{ $list->texteditor_title }}</div> --}}
+                                <div class="activity-title">
+                                    {{ \Illuminate\Support\Str::limit($list->texteditor_title, 50) }}</div>
+                                {{-- <div class="activity-detail">{{ trim(strip_tags($list->texteditor_detail)) }}</div> --}}
+                                <div class="activity-detail">
+                                    {!! \Illuminate\Support\Str::limit(trim(strip_tags($list->texteditor_detail)), 100) !!}
+
+
+                                </div>
+
+                            </div>
+                        </a>
+                        <a href="/directoryDetail/menu/51/id/{{ $list->texteditor_id }}"
+                            class="no-underline button-activity">อ่านเพิ่มเติม</a>
+                    </div>
+                @empty
+                    <div class="">ไม่พบข้อมูล</div>
+                @endforelse
+
+            </div>
+            {{-- <div class="news-directory">
 
                 @forelse($listMenu52 as $list)
                     <div class="card-news">
@@ -557,11 +620,8 @@
                                 @endphp
                                 <div class="box-news-id">
                                     <div class="news-title"><b>{{ $list->texteditor_title }}</b></div>
-                                    {{-- <div class="news-detail">{{ trim(strip_tags($list->texteditor_detail)) }}</div> --}}
                                     <div class="news-detail">
-
                                         {!! \Illuminate\Support\Str::limit(trim(strip_tags($list->texteditor_detail)), 100) !!}
-
                                     </div>
                                     <div class="news-date">{{ $day }} {{ $month }} {{ $year }}
                                     </div>
@@ -573,7 +633,7 @@
                     <div class="">ไม่พบข้อมูล</div>
                 @endforelse
 
-            </div>
+            </div> --}}
             @if (!empty($activity))
                 <div class="box-all-news">
                     <a href="/directory/menu/52" class="no-underline button-news-all">ดูข่าวประชาสัมพันธ์ทั้งหมด</a>
@@ -588,7 +648,7 @@
         <img src="/img/here/1.png" alt="" class="box-here-img-text">
         <div class="box-slide-hrer">
             <div class="slide-img">
-                <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade carousel-slide-here"
+                <div id="carouselExampleSlidesHere" class="carousel slide carousel-fade carousel-slide-here"
                     data-bs-ride="carousel" data-bs-interval="2500">
                     <!-- สไลด์ -->
                     <div class="carousel-inner">
@@ -609,12 +669,12 @@
                             <div class="">ไม่พบข้อมูล</div>
                         @endforelse
                     </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleSlidesHere"
                         data-bs-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Previous</span>
                     </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleSlidesHere"
                         data-bs-slide="next">
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Next</span>
@@ -747,7 +807,12 @@
                                             {{ \Illuminate\Support\Str::limit($list->texteditor_title, 70) }}
                                         </div>
                                     </div>
-                                    <div class="tag-announce">ประกาศจัดซื้อจัดจ้าง</div>
+                                    
+                                    <div class="tag-announce">
+                                        ประกาศจัดซื้อจัดจ้าง
+                                        <div class="view-count-tag">👁️ เข้าชม {{ $list->texteditor_view ?? 0 }} ครั้ง</div>
+                                    </div>
+                                    
                                 </div>
                             </a>
                         @empty
