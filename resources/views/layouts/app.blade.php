@@ -248,7 +248,7 @@
 
                 {{-- Controls + Indicators (overlay) --}}
                 <div class="position-absolute bottom-0 start-0 end-0 d-flex justify-content-center align-items-center gap-3 mb-3"
-                    style="z-index: 10;">
+                    style="z-index: 10;height: 10px;">
 
                     <button class="carousel-control-prev position-static" type="button"
                         data-bs-target="#carouselExampleSlidesOnly" data-bs-slide="prev">
