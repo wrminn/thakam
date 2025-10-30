@@ -243,15 +243,13 @@
                             @endphp
 
                             @if (in_array(strtolower($extension), ['mp4', 'webm', 'ogg']))
-                                {{-- แสดงวิดีโอ --}}
-                                <video class="d-block w-100" autoplay muted loop playsinline
-                                    style="object-fit: cover; height: 600px;">
+                                <video class="d-block w-100" preload="auto" style="object-fit: cover; height: 600px;"
+                                    muted>
                                     <source src="{{ asset('storage/' . $slide->slide_path) }}"
                                         type="video/{{ $extension }}">
                                     เบราว์เซอร์ของคุณไม่รองรับการเล่นวิดีโอ
                                 </video>
                             @else
-                                {{-- แสดงภาพ --}}
                                 <img src="{{ asset('storage/' . $slide->slide_path) }}" class="d-block w-100"
                                     alt="slide {{ $key + 1 }}" style="object-fit: cover; height: 600px;">
                             @endif
@@ -493,7 +491,41 @@
         }
     }
 </script>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const carousel = document.querySelector('#slideTopCarousel');
+        const bsCarousel = new bootstrap.Carousel(carousel, {
+            interval: 5000, // เฉพาะภาพเท่านั้นที่ใช้ interval นี้
+            pause: false,
+            ride: false
+        });
 
+        carousel.addEventListener('slid.bs.carousel', function(event) {
+            const activeItem = event.target.querySelector('.carousel-item.active');
+            const video = activeItem.querySelector('video');
+
+            if (video) {
+                bsCarousel.pause(); // หยุดเลื่อนอัตโนมัติ
+                video.currentTime = 0;
+                video.play();
+
+                video.onended = function() {
+                    bsCarousel.next(); // เล่นจบแล้วเลื่อนไปสไลด์ต่อไป
+                };
+            } else {
+                bsCarousel.cycle(); // ถ้าเป็นภาพ กลับมาเล่นอัตโนมัติปกติ
+            }
+        });
+
+        // เรียกครั้งแรกตอนโหลดหน้า
+        const firstVideo = carousel.querySelector('.carousel-item.active video');
+        if (firstVideo) {
+            bsCarousel.pause();
+            firstVideo.play();
+            firstVideo.onended = () => bsCarousel.next();
+        }
+    });
+</script>
 
 <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
