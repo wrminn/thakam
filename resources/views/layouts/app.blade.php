@@ -317,8 +317,6 @@
                     </button>
                 </div>
             </div>
-
-
         </section>
 
         <div class="br-top"></div>
@@ -509,40 +507,44 @@
     }
 </script>
 <script>
-    document.addEventListener('DOMContentLoaded', function() {
-        const carousel = document.querySelector('#carouselExampleSlidesOnly');
-        const bsCarousel = new bootstrap.Carousel(carousel, {
-            interval: 5000, // เฉพาะภาพเท่านั้นที่ใช้ interval นี้
-            pause: false,
-            ride: false
-        });
-
-        carousel.addEventListener('slid.bs.carousel', function(event) {
-            const activeItem = event.target.querySelector('.carousel-item.active');
-            const video = activeItem.querySelector('video');
-
-            if (video) {
-                bsCarousel.pause(); // หยุดเลื่อนอัตโนมัติ
-                video.currentTime = 0;
-                video.play();
-
-                video.onended = function() {
-                    bsCarousel.next(); // เล่นจบแล้วเลื่อนไปสไลด์ต่อไป
-                };
-            } else {
-                bsCarousel.cycle(); // ถ้าเป็นภาพ กลับมาเล่นอัตโนมัติปกติ
-            }
-        });
-
-        // เรียกครั้งแรกตอนโหลดหน้า
-        const firstVideo = carousel.querySelector('.carousel-item.active video');
-        if (firstVideo) {
-            bsCarousel.pause();
-            firstVideo.play();
-            firstVideo.onended = () => bsCarousel.next();
-        }
+document.addEventListener('DOMContentLoaded', function() {
+    const carousel = document.querySelector('#carouselExampleSlidesOnly');
+    const bsCarousel = new bootstrap.Carousel(carousel, {
+        interval: false, // ปิดการเลื่อนอัตโนมัติทั้งหมดก่อน
+        pause: false
     });
+
+    function playVideoIfExists(item) {
+        const video = item.querySelector('video');
+        if (video) {
+            bsCarousel.pause();
+            video.currentTime = 0;
+            video.play();
+
+            // เมื่อวิดีโอเล่นจบ ค่อยเลื่อนไปสไลด์ถัดไป
+            video.onended = function() {
+                bsCarousel.next();
+            };
+        } else {
+            // ถ้าไม่มีวิดีโอ ให้รอ 5 วิ ก่อนเลื่อนไปเอง
+            setTimeout(() => {
+                bsCarousel.next();
+            }, 5000);
+        }
+    }
+
+    // ตอนโหลดครั้งแรก
+    const firstItem = carousel.querySelector('.carousel-item.active');
+    playVideoIfExists(firstItem);
+
+    // เมื่อเปลี่ยนสไลด์ (หลังจากเลื่อนเสร็จ)
+    carousel.addEventListener('slid.bs.carousel', function(event) {
+        const activeItem = event.target.querySelector('.carousel-item.active');
+        playVideoIfExists(activeItem);
+    });
+});
 </script>
+
 
 <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
