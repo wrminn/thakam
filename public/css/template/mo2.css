@@ -180,7 +180,7 @@
 
     section.slide-top .carousel-item img {
         width: 410px !important;
-        height: auto;
+        height: auto !important;
         object-fit: cover;
         float: inline-end;
     }
@@ -274,10 +274,21 @@
         display: flex;
         padding: 10px;
         flex-direction: row;
+        align-items: center;
     }
 
     .personnel-box-p1 {
         padding-left: 0;
+        max-width: 500px;
+        width: 500px;
+        
+    }
+
+    #carouselpersonnel .carousel-inner .carousel-item img,
+    #carouselpersonnel .carousel-item.active,
+    #carouselpersonnel .carousel-item.active.carousel-item-start {
+        max-width: 500px;
+        height: auto;
     }
 
     .personnel-box-detail-ny {
@@ -503,7 +514,7 @@
     }
 
     .banner-box-one {
-        min-height: 820px;
+        min-height: 906px;
         padding-bottom: 20px;
     }
 
@@ -1318,8 +1329,8 @@
 
     .counter-total {
         position: relative;
-        width: 21px;
-        left: -19px;
+        width: 140px;
+        left: -36px;
         transition: none;
     }
 
@@ -1330,7 +1341,7 @@
 
     .box-view {
         background: #8dc63f;
-        padding: 20px 0px 20px 67px;
+        padding: 20px 0px 20px 40px;
         display: flex;
         align-items: center;
         gap: 40px;
@@ -1457,6 +1468,7 @@
         margin-top: -12%;
         margin-right: 0%;
     }
+
     .header-section {
         padding: 3% 4%;
         height: auto;
@@ -1612,7 +1624,7 @@
 
     section.slide-top .carousel-item img {
         width: 410px !important;
-        height: auto;
+        height: auto !important;
         object-fit: cover;
         float: inline-end;
     }
@@ -1706,10 +1718,20 @@
         display: flex;
         padding: 10px;
         flex-direction: row;
+        align-items: center;
     }
 
     .personnel-box-p1 {
         padding-left: 0;
+        max-width: 446px;
+        /* height: 408px; */
+    }
+
+    #carouselpersonnel .carousel-inner .carousel-item img,
+    #carouselpersonnel .carousel-item.active,
+    #carouselpersonnel .carousel-item.active.carousel-item-start {
+        max-width: 446px;
+        height: auto;
     }
 
     .personnel-box-detail-ny {
@@ -2754,7 +2776,7 @@
 
     .counter-total {
         position: relative;
-        width: 21px;
+        width: 133px;
         left: -19px;
         transition: none;
     }
@@ -2766,7 +2788,7 @@
 
     .box-view {
         background: #8dc63f;
-        padding: 20px 0px 20px 67px;
+        padding: 20px 0px 20px 40px;
         display: flex;
         align-items: center;
         gap: 40px;
@@ -2882,5 +2904,8 @@
     .text-footer-two img,
     .text-footer-three img {
         width: 10%;
+    }
+    .counter-title{
+        font-size: 25px;
     }
 }

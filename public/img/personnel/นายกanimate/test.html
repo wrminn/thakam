@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Fade Slideshow</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+
+        .slideshow-section {
+            width: 1920px;
+            height: 600px;
+            position: relative;
+            overflow: hidden;
+            background-color: #ffffff; 
+            /* หากต้องการพื้นหลังแบบในรูปตัวอย่าง สามารถใส่โค้ดพื้นหลังตรงนี้ได้ */
+            /* background-image: url('path/to/your/background.jpg'); */
+        }
+
+        /* === ส่วนที่แก้ไข === */
+        .slideshow-section img {
+            position: absolute;
+            
+            /* --- โค้ดใหม่สำหรับจัดขนาดและตำแหน่ง --- */
+            bottom: 0; /* จัดให้ภาพอยู่ชิดขอบล่างของกรอบ */
+            right: 420px; /* **ปรับค่านี้** เพื่อเลื่อนตำแหน่ง ซ้าย-ขวา */
+            height: 95%;  /* **ปรับค่านี้** เพื่อปรับขนาดความสูงของภาพ */
+            width: auto;   /* รักษาสัดส่วนของภาพให้ถูกต้องเสมอ */
+            /* --- สิ้นสุดโค้ดใหม่ --- */
+            
+            opacity: 0; 
+            animation: fadeEffect 12s infinite;
+        }
+
+        /* ไม่มีการเปลี่ยนแปลงในส่วนนี้ */
+        .slideshow-section img:nth-child(1) {
+            animation-delay: 0s;
+        }
+        .slideshow-section img:nth-child(2) {
+            animation-delay: 4s;
+        }
+        .slideshow-section img:nth-child(3) {
+            animation-delay: 8s;
+        }
+
+        /* ไม่มีการเปลี่ยนแปลงในส่วนนี้ */
+        @keyframes fadeEffect {
+            0% { opacity: 0; }
+            8.3% { opacity: 1; }
+            25% { opacity: 1; }
+            33.3% { opacity: 0; }
+            100% { opacity: 0; }
+        }
+
+    </style>
+</head>
+<body>
+
+    <section class="slideshow-section">
+        <img src="นายก-1.png" alt="รูปที่ 1">
+        <img src="นายก-2.png" alt="รูปที่ 2">
+        <img src="นายก-3.png" alt="รูปที่ 3">
+    </section>
+
+</body>
+</html>

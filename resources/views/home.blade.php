@@ -5,7 +5,21 @@
         <div class="title-personnel">คณะผู้บริหาร</div>
         <div class="personnel-box">
             <div class="personnel-box-p1">
-                <img src="/img/personnel/นายก.png">
+                {{-- <img src="/img/personnel/นายก.png"> --}}
+                <div id="carouselpersonnel" class="carousel slide carousel-fade position-relative"
+                data-bs-ride="carousel" data-bs-interval="3500">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="/img/personnel/นายกanimate/นายก-1.png" class="d-block" alt="..." >
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/img/personnel/นายกanimate/นายก-2.png" class="d-block" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/img/personnel/นายกanimate/นายก-3.png" class="d-block" alt="...">
+                        </div>
+                    </div>
+                </div>
                 <div class="personnel-box-detail-ny">
                     <div class="per-b-name">นางสมจิตร์ พันธุ์สุวรรณ</div>
                     <div class="per-b-position">นายกเทศมนตรีตำบลท่าข้าม</div>
@@ -16,7 +30,8 @@
                         <path fill-rule="evenodd"
                             d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z" />
                     </svg>
-                    <a href="tel:038573411" class="no-underline">038573411 ต่อ 111</a>
+                    {{-- <a href="tel:038573411" class="no-underline">038573411 ต่อ 111</a> --}}
+                    <a href="tel:038573411" class="no-underline">038573411</a>
                 </div>
             </div>
             <div class="personnel-box-group">
@@ -35,7 +50,8 @@
                                 <path fill-rule="evenodd"
                                     d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z" />
                             </svg>
-                            <a href="tel:038573411" class="no-underline">038573411 ต่อ 113</a>
+                            {{-- <a href="tel:038573411" class="no-underline">038573411 ต่อ 113</a> --}}
+                            <a href="tel:038573411" class="no-underline">038573411</a>
                         </div>
                     </div>
                     <div class="personnel-box-p2">
@@ -51,7 +67,8 @@
                                 <path fill-rule="evenodd"
                                     d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z" />
                             </svg>
-                            <a href="tel:038573411" class="no-underline">038573411 ต่อ 118</a>
+                            {{-- <a href="tel:038573411" class="no-underline">038573411 ต่อ 118</a> --}}
+                            <a href="tel:038573411" class="no-underline">038573411</a>
                         </div>
                     </div>
                     <div class="personnel-box-p2">
@@ -67,7 +84,8 @@
                                 <path fill-rule="evenodd"
                                     d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z" />
                             </svg>
-                            <a href="tel:038573411" class="no-underline">038573411 ต่อ 114</a>
+                            {{-- <a href="tel:038573411" class="no-underline">038573411 ต่อ 114</a> --}}
+                            <a href="tel:038573411" class="no-underline">038573411</a>
                         </div>
                     </div>
                     <div class="personnel-box-p2">
@@ -83,7 +101,8 @@
                                 <path fill-rule="evenodd"
                                     d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z" />
                             </svg>
-                            <a href="tel:038573411" class="no-underline">038573411 ต่อ 144</a>
+                            {{-- <a href="tel:038573411" class="no-underline">038573411 ต่อ 144</a> --}}
+                            <a href="tel:038573411" class="no-underline">038573411</a>
                         </div>
                     </div>
                 </div>
@@ -101,7 +120,8 @@
                                 <path fill-rule="evenodd"
                                     d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z" />
                             </svg>
-                            <a href="tel:038573411" class="no-underline">038573411 ต่อ 123</a>
+                            {{-- <a href="tel:038573411" class="no-underline">038573411 ต่อ 123</a> --}}
+                            <a href="tel:038573411" class="no-underline">038573411</a>
                         </div>
                     </div>
                     <div class="personnel-box-p2">
@@ -117,7 +137,8 @@
                                 <path fill-rule="evenodd"
                                     d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z" />
                             </svg>
-                            <a href="tel:038573411" class="no-underline">038573411 ต่อ 123</a>
+                            {{-- <a href="tel:038573411" class="no-underline">038573411 ต่อ 123</a> --}}
+                            <a href="tel:038573411" class="no-underline">038573411</a>
                         </div>
                     </div>
                     <div class="personnel-box-p2">
@@ -133,7 +154,8 @@
                                 <path fill-rule="evenodd"
                                     d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z" />
                             </svg>
-                            <a href="tel:038573411" class="no-underline">038573411 ต่อ 123</a>
+                            {{-- <a href="tel:038573411" class="no-underline">038573411 ต่อ 123</a> --}}
+                            <a href="tel:038573411" class="no-underline">038573411</a>
                         </div>
                     </div>
                 </div>
@@ -293,22 +315,22 @@
                     Service</span>
 
                 <div class="ons-box-button-one">
-                    <a href="https://demo.trush.sosmartsolution.com/user/waste_payment"> <img src="/img/OneStopService/Banner-1.png" alt=""
-                            class="bg-ons-button"></a>
-                    <a href="https://demo.trush.sosmartsolution.com/user/request/health_hazard_license"> <img src="/img/OneStopService/Banner-2.png" alt=""
-                            class="bg-ons-button"></a>
-                    <a href="https://eservice-thakam.sosmartsolution.com/Requestforms"> <img src="/img/OneStopService/Banner-3.png" alt=""
-                            class="bg-ons-button"></a>
-                    <a href="https://demo.trush.sosmartsolution.com/user/emergency/accident"> <img src="/img/OneStopService/Banner-4.png" alt=""
-                            class="bg-ons-button"></a>
+                    <a href="https://demo.trush.sosmartsolution.com/user/waste_payment"> <img
+                            src="/img/OneStopService/Banner-1.png" alt="" class="bg-ons-button"></a>
+                    <a href="https://demo.trush.sosmartsolution.com/user/request/health_hazard_license"> <img
+                            src="/img/OneStopService/Banner-2.png" alt="" class="bg-ons-button"></a>
+                    <a href="https://eservice-thakam.sosmartsolution.com/Requestforms"> <img
+                            src="/img/OneStopService/Banner-3.png" alt="" class="bg-ons-button"></a>
+                    <a href="https://demo.trush.sosmartsolution.com/user/emergency/accident"> <img
+                            src="/img/OneStopService/Banner-4.png" alt="" class="bg-ons-button"></a>
                 </div>
 
             </div>
             <div class="ons-box-button-two">
-                <a href="https://demo.trush.sosmartsolution.com/login"> <img src="/img/03/Member_0.png" alt="" class="bg-ons-button-member"
-                        style="float: right;"></a>
-                <a href="https://demo.trush.sosmartsolution.com/register"> <img src="/img/03/General Public_0.png" alt=""
-                        class="bg-ons-button-public"></a>
+                <a href="https://demo.trush.sosmartsolution.com/login"> <img src="/img/03/Member_0.png" alt=""
+                        class="bg-ons-button-member" style="float: right;"></a>
+                <a href="https://demo.trush.sosmartsolution.com/register"> <img src="/img/03/General Public_0.png"
+                        alt="" class="bg-ons-button-public"></a>
             </div>
         </div>
         <img src="/img/OneStopService/OSS.png" alt="" class="bg-ons">
@@ -517,7 +539,7 @@
 
                 </div>
             </div>
-             <div class="activity-directory">
+            <div class="activity-directory">
 
                 @forelse($listMenu52 as $list)
                     <div class="card-activity">
@@ -807,12 +829,13 @@
                                             {{ \Illuminate\Support\Str::limit($list->texteditor_title, 70) }}
                                         </div>
                                     </div>
-                                    
+
                                     <div class="tag-announce">
                                         ประกาศจัดซื้อจัดจ้าง
-                                        <div class="view-count-tag">👁️ เข้าชม {{ $list->texteditor_view ?? 0 }} ครั้ง</div>
+                                        <div class="view-count-tag">👁️ เข้าชม {{ $list->texteditor_view ?? 0 }} ครั้ง
+                                        </div>
                                     </div>
-                                    
+
                                 </div>
                             </a>
                         @empty

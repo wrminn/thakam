@@ -227,8 +227,9 @@
 
         <section class="slide-top">
             <img src="/img/ficslide.webp" alt="" class="box-img-slide-top">
-            <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade position-relative"
-                data-bs-ride="carousel" data-bs-interval="2500">
+            <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade position-relative">
+            {{-- <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade position-relative"
+                data-bs-ride="carousel" data-bs-interval="2500"> --}}
 
                 {{-- Slides --}}
                 <div class="carousel-inner">
@@ -260,8 +261,8 @@
                             @endphp
 
                             @if (in_array(strtolower($extension), ['mp4', 'webm', 'ogg']))
-                                <video class="d-block w-100" preload="auto" style="object-fit: cover; height: 600px;"
-                                    muted>
+                                <video class="d-block w-100" preload="auto" autoplay muted loop playsinline
+                                    style="object-fit: cover; height: 600px;" muted>
                                     <source src="{{ asset('storage/' . $slide->slide_path) }}"
                                         type="video/{{ $extension }}">
                                     เบราว์เซอร์ของคุณไม่รองรับการเล่นวิดีโอ
@@ -506,40 +507,80 @@
         }
     }
 </script>
+{{-- <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const carousel = document.querySelector('#carouselExampleSlidesOnly');
+        const bsCarousel = new bootstrap.Carousel(carousel, {
+            interval: false, // ปิดการเลื่อนอัตโนมัติทั้งหมดก่อน
+            pause: false
+        });
+
+        function playVideoIfExists(item) {
+            const video = item.querySelector('video');
+            if (video) {
+                bsCarousel.pause();
+                video.currentTime = 0;
+                video.play();
+
+                // เมื่อวิดีโอเล่นจบ ค่อยเลื่อนไปสไลด์ถัดไป
+                video.onended = function() {
+                    bsCarousel.next();
+                };
+            } else {
+                // ถ้าไม่มีวิดีโอ ให้รอ 5 วิ ก่อนเลื่อนไปเอง
+                setTimeout(() => {
+                    bsCarousel.next();
+                }, 5000);
+            }
+        }
+
+        // ตอนโหลดครั้งแรก
+        const firstItem = carousel.querySelector('.carousel-item.active');
+        playVideoIfExists(firstItem);
+
+        // เมื่อเปลี่ยนสไลด์ (หลังจากเลื่อนเสร็จ)
+        carousel.addEventListener('slid.bs.carousel', function(event) {
+            const activeItem = event.target.querySelector('.carousel-item.active');
+            playVideoIfExists(activeItem);
+        });
+    });
+</script> --}}
 <script>
 document.addEventListener('DOMContentLoaded', function() {
     const carousel = document.querySelector('#carouselExampleSlidesOnly');
     const bsCarousel = new bootstrap.Carousel(carousel, {
-        interval: false, // ปิดการเลื่อนอัตโนมัติทั้งหมดก่อน
-        pause: false
+        interval: false, // ปิดการเลื่อนอัตโนมัติทั้งหมด
+        pause: false,
+        ride: false
     });
 
     function playVideoIfExists(item) {
         const video = item.querySelector('video');
+
         if (video) {
-            bsCarousel.pause();
+            bsCarousel.pause(); // หยุดเลื่อน
             video.currentTime = 0;
             video.play();
 
-            // เมื่อวิดีโอเล่นจบ ค่อยเลื่อนไปสไลด์ถัดไป
+            // เมื่อวิดีโอจบ ค่อยเปลี่ยนสไลด์
             video.onended = function() {
                 bsCarousel.next();
             };
         } else {
-            // ถ้าไม่มีวิดีโอ ให้รอ 5 วิ ก่อนเลื่อนไปเอง
+            // ถ้าไม่มีวิดีโอ ให้รอ 5 วิ ก่อนเลื่อนไป
             setTimeout(() => {
                 bsCarousel.next();
             }, 5000);
         }
     }
 
-    // ตอนโหลดครั้งแรก
+    // เล่นสไลด์แรกตอนโหลด
     const firstItem = carousel.querySelector('.carousel-item.active');
     playVideoIfExists(firstItem);
 
-    // เมื่อเปลี่ยนสไลด์ (หลังจากเลื่อนเสร็จ)
+    // ทุกครั้งที่สไลด์เปลี่ยน (เลื่อนไปแล้ว)
     carousel.addEventListener('slid.bs.carousel', function(event) {
-        const activeItem = event.target.querySelector('.carousel-item.active');
+        const activeItem = carousel.querySelector('.carousel-item.active');
         playVideoIfExists(activeItem);
     });
 });
