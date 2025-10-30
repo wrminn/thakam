@@ -27,6 +27,7 @@ class ViewServiceProvider extends ServiceProvider
         View::composer('layouts.app', function ($view) {
             $SlideTop = Slide::active()
                 ->where('slide_menu', 68)
+                ->orderBy('slide_id', 'desc')
                 ->get();
 
             $recentMenu = DB::table('categories')
