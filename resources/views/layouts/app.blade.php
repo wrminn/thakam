@@ -66,7 +66,8 @@
                 <div class="header-text-right">
                     <div class="header-box-login">
                         <div class="header-login-title"><a href="/backend" class="no-underline">เข้าสู่ระบบ</a></div>
-                        <div class="header-register-title"><a href="https://demo.trush.sosmartsolution.com/register" class="no-underline">สมัครสมาชิก</a></div>
+                        <div class="header-register-title"><a href="https://demo.trush.sosmartsolution.com/register"
+                                class="no-underline">สมัครสมาชิก</a></div>
                     </div>
                     <div class="header-box-flag">
                         <div class="flag-img">
@@ -232,11 +233,28 @@
                 {{-- Slides --}}
                 <div class="carousel-inner">
                     @forelse($SlideTop as $key => $slide)
-                        <div class="carousel-item {{ $key === 0 ? 'active' : '' }}">
+                        {{-- <div class="carousel-item {{ $key === 0 ? 'active' : '' }}">
                             <img src="{{ asset('storage/' . $slide->slide_path) }}" class="d-block w-100"alt="slide {{ $key + 1 }}">
-                            {{-- <img src="{{ asset('storage/' . $slide->slide_path) }}" class="d-block w-100"
-                                alt="slide {{ $key + 1 }}"
-                                style="width: 953px !important;height:600px;object-fit: cover;float: inline-end;"> --}}
+                           
+                        </div> --}}
+                        <div class="carousel-item {{ $key === 0 ? 'active' : '' }}">
+                            @php
+                                $extension = pathinfo($slide->slide_path, PATHINFO_EXTENSION);
+                            @endphp
+
+                            @if (in_array(strtolower($extension), ['mp4', 'webm', 'ogg']))
+                                {{-- แสดงวิดีโอ --}}
+                                <video class="d-block w-100" autoplay muted loop playsinline
+                                    style="object-fit: cover; height: 600px;">
+                                    <source src="{{ asset('storage/' . $slide->slide_path) }}"
+                                        type="video/{{ $extension }}">
+                                    เบราว์เซอร์ของคุณไม่รองรับการเล่นวิดีโอ
+                                </video>
+                            @else
+                                {{-- แสดงภาพ --}}
+                                <img src="{{ asset('storage/' . $slide->slide_path) }}" class="d-block w-100"
+                                    alt="slide {{ $key + 1 }}" style="object-fit: cover; height: 600px;">
+                            @endif
                         </div>
                     @empty
                         <div class="carousel-item active">
@@ -427,7 +445,8 @@
                     </div>
                 </div>
                 <div class="footer-ma">
-                    <a href="http://webmail.thakam.go.th"><img src="/img/13Footer/1.png" alt="" width="250"></a>
+                    <a href="http://webmail.thakam.go.th"><img src="/img/13Footer/1.png" alt=""
+                            width="250"></a>
                     <a href=""><img src="/img/13Footer/2.png" alt="" width="250"></a>
                     <a href=""><img src="/img/13Footer/3.png" alt="" width="250"></a>
                     <a href="/backend"><img src="/img/13Footer/4.png" alt="" width="250"></a>
