@@ -70,13 +70,18 @@
                                 <td>{{ Str::limit($item->slide_title, 30) }}</td>
                                 <td>{{ Str::limit($item->slide_link, 20) ?? '-' }}</td>
                                 @if ($menuId === '68')
+                                    {{-- <td>
+                                        @if (!empty($item->slide_path))
+                                            <a href="{{ asset('storage/' . $item->slide_path) }}" target="_blank">กดเพื่อเปิดวีดีโอ</a>
+                                        @endif
+                                    </td> --}}
                                     <td>
-                                        @if (!empty($item->slide_part))
+                                        @if (!empty($item->slide_path))
                                             @php
                                                 $extension = strtolower(
-                                                    pathinfo($item->slide_part, PATHINFO_EXTENSION),
+                                                    pathinfo($item->slide_path, PATHINFO_EXTENSION),
                                                 );
-                                                $fileUrl = asset('storage/' . $item->slide_part);
+                                                $fileUrl = asset('storage/' . $item->slide_path);
                                             @endphp
                                             @if (in_array($extension, ['jpg', 'jpeg', 'png', 'gif', 'webp']))
                                                 <img src="{{ $fileUrl }}" width="30%">
@@ -93,8 +98,7 @@
                                 @if ($menuId !== '68')
                                     <td>
                                         @if (!empty($item->slide_path))
-                                            <img src="{{ asset('storage/' . $item->slide_path) }}" alt=""
-                                                width="100">
+                                            <img src="{{ asset('storage/' . $item->slide_path) }}" alt="" width="100">
                                         @endif
                                     </td>
                                 @endif
@@ -115,7 +119,7 @@
                                         </button>
                                     </a>
 
-
+                                    
                                     <button type="button" class="btn btn-outline-danger"
                                         onclick="deleteItem('{{ route('deleteslideid', ['menu' => $menuId, 'id' => $item->slide_id]) }}')">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
