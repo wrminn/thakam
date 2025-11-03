@@ -239,7 +239,7 @@
                                 @endphp
 
                                 @if (in_array(strtolower($extension), ['mp4', 'webm', 'ogg']))
-                                    <video class="d-block w-100" preload="auto" autoplay muted loop playsinline
+                                    <video class="d-block w-100" preload="auto" autoplay muted playsinline
                                         style="object-fit: cover; height: auto;">
                                     {{-- <video class="d-block w-100" preload="auto" autoplay muted loop playsinline
                                         style="object-fit: cover; height: 600px;"> --}}
