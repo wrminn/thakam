@@ -69,7 +69,7 @@
                     const form = document.getElementById('uploadForm');
 
                     // ✅ กำหนดขนาดสูงสุดของไฟล์ (หน่วย MB)
-                    const MAX_FILE_SIZE_MB = 70;
+                    const MAX_FILE_SIZE_MB = 150;
                     const MAX_FILE_SIZE = MAX_FILE_SIZE_MB * 1024 * 1024; // แปลงเป็น byte
 
                     // ✅ ฟังก์ชัน toggle ช่องกรอก + required
