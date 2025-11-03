@@ -23,7 +23,7 @@
     <link rel="stylesheet" href="{{ asset('/css/template/mobs.css') }}">
     {{-- <script src="https://cdn.tailwindcss.com"></script> --}}
     {{-- <script src="bootstrap/js/bootstrap.min.js"></script> --}}
-    <script src="{{ asset('bootstrap/css/bootstrap.min.js') }}"></script>
+    <script src="{{ asset('bootstrap/js/bootstrap.min.js') }}"></script>
 
     <!-- Scripts -->
     @vite(['resources/sass/app.scss', 'resources/js/app.js'])

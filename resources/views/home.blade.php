@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-    <script src="{{ asset('bootstrap/css/bootstrap.min.js') }}"></script>
+    <script src="{{ asset('bootstrap/js/bootstrap.min.js') }}"></script>
 
     <section class="box-personnel">
         <div class="title-personnel">คณะผู้บริหาร</div>
