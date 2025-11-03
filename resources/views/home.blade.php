@@ -42,7 +42,8 @@
                         <div class="person-box-background"></div>
                         <div class="personnel-box-detail-p2">
                             <div class="per-b-name-p2">นายสมประสงค์ สายสิณะวัฒน์</div>
-                            <div class="per-b-position-p2">รองนายกเทศมนตรีตำบลท่าข้าม 1</div>
+                            {{-- <div class="per-b-position-p2">รองนายกเทศมนตรีตำบลท่าข้าม 1</div> --}}
+                            <div class="per-b-position-p2">รองนายกเทศมนตรีตำบลท่าข้าม </div>
                         </div>
                         <div class="per-b-tel-p2">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
@@ -59,7 +60,8 @@
                         <div class="person-box-background"></div>
                         <div class="personnel-box-detail-p2">
                             <div class="per-b-name-p2">นายสมศักดิ์ จรุญเลิศ</div>
-                            <div class="per-b-position-p2">รองนายกเทศมนตรีตำบลท่าข้าม 2</div>
+                            {{-- <div class="per-b-position-p2">รองนายกเทศมนตรีตำบลท่าข้าม 2</div> --}}
+                            <div class="per-b-position-p2">รองนายกเทศมนตรีตำบลท่าข้าม </div>
                         </div>
                         <div class="per-b-tel-p2">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
@@ -112,7 +114,8 @@
                         <div class="person-box-background"></div>
                         <div class="personnel-box-detail-p2">
                             <div class="per-b-name-p2">นายพิชัย พันธุ์สุวรรณ</div>
-                            <div class="per-b-position-p2">ที่ปรึกษาพิเศษ 1</div>
+                            {{-- <div class="per-b-position-p2">ที่ปรึกษาพิเศษ 1</div> --}}
+                            <div class="per-b-position-p2">ที่ปรึกษาพิเศษ </div>
                         </div>
                         <div class="per-b-tel-p2">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
@@ -129,7 +132,8 @@
                         <div class="person-box-background"></div>
                         <div class="personnel-box-detail-p2">
                             <div class="per-b-name-p2">นามานิตย์ ดีเอื้อ</div>
-                            <div class="per-b-position-p2">ที่ปรึกษาพิเศษ 2</div>
+                            {{-- <div class="per-b-position-p2">ที่ปรึกษาพิเศษ 2</div> --}}
+                            <div class="per-b-position-p2">ที่ปรึกษาพิเศษ</div>
                         </div>
                         <div class="per-b-tel-p2">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
@@ -146,7 +150,8 @@
                         <div class="person-box-background"></div>
                         <div class="personnel-box-detail-p2">
                             <div class="per-b-name-p2">นางมณี จิตมาศฐาน</div>
-                            <div class="per-b-position-p2">ที่ปรึกษาพิเศษ 3</div>
+                            {{-- <div class="per-b-position-p2">ที่ปรึกษาพิเศษ 3</div> --}}
+                            <div class="per-b-position-p2">ที่ปรึกษาพิเศษ</div>
                         </div>
                         <div class="per-b-tel-p2">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"

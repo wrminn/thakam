@@ -22,7 +22,6 @@
     <link rel="stylesheet" href="{{ asset('/css/template/mo2.css') }}">
     <link rel="stylesheet" href="{{ asset('/css/template/mobs.css') }}">
     {{-- <script src="https://cdn.tailwindcss.com"></script> --}}
-    <script src="bootstrap/js/bootstrap.min.js"></script>
 
     <!-- Scripts -->
     @vite(['resources/sass/app.scss', 'resources/js/app.js'])
@@ -225,40 +224,60 @@
 
             </nav>
         </section>
+
         <section class="slide-top">
             <img src="/img/ficslide.webp" alt="" class="box-img-slide-top">
             <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade position-relative">
+                {{-- <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade position-relative"
+                data-bs-ride="carousel" data-bs-interval="2500"> --}}
 
+                {{-- Slides --}}
+                <div class="carousel-inner">
+                    @forelse($SlideTop as $key => $slide)
+                        {{-- <div class="carousel-item {{ $key === 0 ? 'active' : '' }}">
+                            <img src="{{ asset('storage/' . $slide->slide_path) }}" class="d-block w-100"alt="slide {{ $key + 1 }}">
+                           
+                        </div> --}}
+                        {{-- <div class="carousel-item {{ $key === 0 ? 'active' : '' }}">
+                            @php
+                                $extension = pathinfo($slide->slide_path, PATHINFO_EXTENSION);
+                            @endphp
 
-                <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade position-relative">
-                    <div class="carousel-inner">
-                        @forelse($SlideTop as $key => $slide)
-                            <div class="carousel-item {{ $key === 0 ? 'active' : '' }}">
-                                @php
-                                    $extension = pathinfo($slide->slide_path, PATHINFO_EXTENSION);
-                                @endphp
+                            @if (in_array(strtolower($extension), ['mp4', 'webm', 'ogg']))
+                                <video class="d-block w-100" autoplay muted loop playsinline
+                                    style="object-fit: cover; height: 600px;">
+                                    <source src="{{ asset('storage/' . $slide->slide_path) }}"
+                                        type="video/{{ $extension }}">
+                                    เบราว์เซอร์ของคุณไม่รองรับการเล่นวิดีโอ
+                                </video>
+                            @else
+                                <img src="{{ asset('storage/' . $slide->slide_path) }}" class="d-block w-100"
+                                    alt="slide {{ $key + 1 }}" style="object-fit: cover; height: 600px;">
+                            @endif
+                        </div> --}}
+                        <div class="carousel-item {{ $key === 0 ? 'active' : '' }}">
+                            @php
+                                $extension = pathinfo($slide->slide_path, PATHINFO_EXTENSION);
+                            @endphp
 
-                                @if (in_array(strtolower($extension), ['mp4', 'webm', 'ogg']))
-                                    <video class="d-block w-100" preload="auto" autoplay muted loop playsinline
-                                        style="object-fit: cover; height: auto;">
-                                    {{-- <video class="d-block w-100" preload="auto" autoplay muted loop playsinline
-                                        style="object-fit: cover; height: 600px;"> --}}
-                                        <source src="{{ asset('storage/' . $slide->slide_path) }}"
-                                            type="video/{{ $extension }}">
-                                        เบราว์เซอร์ของคุณไม่รองรับการเล่นวิดีโอ
-                                    </video>
-                                @else
-                                    <img src="{{ asset('storage/' . $slide->slide_path) }}" class="d-block w-100"
-                                        alt="slide {{ $key + 1 }}" style="object-fit: cover; height: 600px;">
-                                @endif
-                            </div>
-                        @empty
-                            <div class="carousel-item active">
-                                <img src="https://www.w3schools.com/howto/img_snow_wide.jpg" class="d-block w-100"
-                                    alt="..." style="width: 1905px; height:600px; object-fit: cover;">
-                            </div>
-                        @endforelse
-                    </div>
+                            @if (in_array(strtolower($extension), ['mp4', 'webm', 'ogg']))
+                                <video class="d-block w-100" preload="auto" autoplay muted loop playsinline
+                                    style="object-fit: cover; height: 600px;" muted>
+                                    <source src="{{ asset('storage/' . $slide->slide_path) }}"
+                                        type="video/{{ $extension }}">
+                                    เบราว์เซอร์ของคุณไม่รองรับการเล่นวิดีโอ
+                                </video>
+                            @else
+                                <img src="{{ asset('storage/' . $slide->slide_path) }}" class="d-block w-100"
+                                    alt="slide {{ $key + 1 }}" style="object-fit: cover; height: 600px;">
+                            @endif
+                        </div>
+                    @empty
+                        <div class="carousel-item active">
+                            <img src="https://www.w3schools.com/howto/img_snow_wide.jpg" class="d-block w-100"
+                                alt="..." style="width: 1905px; height:600px; object-fit: cover;">
+                        </div>
+                    @endforelse
                 </div>
 
                 {{-- Controls + Indicators (overlay) --}}
@@ -488,10 +507,10 @@
         }
     }
 </script>
-<script>
+
+{{-- <script>
     document.addEventListener('DOMContentLoaded', function() {
         const carousel = document.querySelector('#carouselExampleSlidesOnly');
-        const bgImage = document.querySelector('.box-img-slide-top');
         const bsCarousel = new bootstrap.Carousel(carousel, {
             interval: false, // ปิดการเลื่อนอัตโนมัติทั้งหมด
             pause: false,
@@ -502,7 +521,6 @@
             const video = item.querySelector('video');
 
             if (video) {
-                bgImage.style.display = 'none';
                 bsCarousel.pause(); // หยุดเลื่อน
                 video.currentTime = 0;
                 video.play();
@@ -512,7 +530,6 @@
                     bsCarousel.next();
                 };
             } else {
-                bgImage.style.display = 'block';
                 // ถ้าไม่มีวิดีโอ ให้รอ 5 วิ ก่อนเลื่อนไป
                 setTimeout(() => {
                     bsCarousel.next();
@@ -530,7 +547,64 @@
             playVideoIfExists(activeItem);
         });
     });
-</script> 
+</script> --}}
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const carousel = document.querySelector('#carouselExampleSlidesOnly');
+        const boxImgSlideTop = document.querySelector('.box-img-slide-top'); // เลือก element ที่ต้องการซ่อน
+
+        const bsCarousel = new bootstrap.Carousel(carousel, {
+            interval: false, // ปิดการเลื่อนอัตโนมัติทั้งหมด
+            pause: false,
+            ride: false
+        });
+
+        function toggleBoxImg(shouldHide) {
+            if (boxImgSlideTop) {
+                // ซ่อน/แสดง box-img-slide-top
+                boxImgSlideTop.style.display = shouldHide ? 'none' : 'block';
+            }
+        }
+
+        function playVideoIfExists(item) {
+            const video = item.querySelector('video');
+
+            if (video) {
+                // ⚠️ เป็นวิดีโอ: ซ่อน box-img-slide-top
+                toggleBoxImg(true);
+
+                bsCarousel.pause(); // หยุดเลื่อน
+                video.currentTime = 0;
+                video.play();
+
+                // เมื่อวิดีโอจบ ค่อยเปลี่ยนสไลด์
+                video.onended = function() {
+                    // แสดง box-img-slide-top กลับมา ก่อนที่จะเลื่อนสไลด์
+                    toggleBoxImg(false);
+                    bsCarousel.next();
+                };
+            } else {
+                // 🖼️ เป็นรูปภาพ: ให้แน่ใจว่า box-img-slide-top ถูกแสดง
+                toggleBoxImg(false);
+
+                // ถ้าไม่มีวิดีโอ ให้รอ 5 วิ ก่อนเลื่อนไป
+                setTimeout(() => {
+                    bsCarousel.next();
+                }, 5000);
+            }
+        }
+
+        // เริ่มต้นสำหรับสไลด์แรก
+        const firstItem = carousel.querySelector('.carousel-item.active');
+        playVideoIfExists(firstItem);
+
+        // เมื่อมีการเปลี่ยนสไลด์ (หลังจากการเลื่อนเสร็จสมบูรณ์)
+        carousel.addEventListener('slid.bs.carousel', function(event) {
+            const activeItem = carousel.querySelector('.carousel-item.active');
+            playVideoIfExists(activeItem);
+        });
+    });
+</script>
 
 <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
