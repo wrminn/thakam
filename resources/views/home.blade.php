@@ -6,11 +6,11 @@
         <div class="personnel-box">
             <div class="personnel-box-p1">
                 {{-- <img src="/img/personnel/นายก.png"> --}}
-                <div id="carouselpersonnel" class="carousel slide carousel-fade position-relative"
-                data-bs-ride="carousel" data-bs-interval="3500">
+                <div id="carouselpersonnel" class="carousel slide carousel-fade position-relative" data-bs-ride="carousel"
+                    data-bs-interval="3500">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img src="/img/personnel/นายกanimate/นายก-1.png" class="d-block" alt="..." >
+                            <img src="/img/personnel/นายกanimate/นายก-1.png" class="d-block" alt="...">
                         </div>
                         <div class="carousel-item">
                             <img src="/img/personnel/นายกanimate/นายก-2.png" class="d-block" alt="...">
@@ -1365,48 +1365,48 @@
             startAutoSlide();
         });
     </script>
-
+    <script src="bootstrap/js/bootstrap.min.js"></script>
     <script>
-    document.addEventListener('DOMContentLoaded', function() {
-        const carousel = document.querySelector('#carouselExampleSlidesOnly');
-        const bgImage = document.querySelector('.box-img-slide-top');
-        const bsCarousel = new bootstrap.Carousel(carousel, {
-            interval: false, // ปิดการเลื่อนอัตโนมัติทั้งหมด
-            pause: false,
-            ride: false
-        });
+        document.addEventListener('DOMContentLoaded', function() {
+            const carousel = document.querySelector('#carouselExampleSlidesOnly');
+            const bgImage = document.querySelector('.box-img-slide-top');
+            const bsCarousel = new bootstrap.Carousel(carousel, {
+                interval: false, // ปิดการเลื่อนอัตโนมัติทั้งหมด
+                pause: false,
+                ride: false
+            });
 
-        function playVideoIfExists(item) {
-            const video = item.querySelector('video');
+            function playVideoIfExists(item) {
+                const video = item.querySelector('video');
 
-            if (video) {
-                bgImage.style.display = 'none';
-                bsCarousel.pause(); // หยุดเลื่อน
-                video.currentTime = 0;
-                video.play();
+                if (video) {
+                    bgImage.style.display = 'none';
+                    bsCarousel.pause(); // หยุดเลื่อน
+                    video.currentTime = 0;
+                    video.play();
 
-                // เมื่อวิดีโอจบ ค่อยเปลี่ยนสไลด์
-                video.onended = function() {
-                    bsCarousel.next();
-                };
-            } else {
-                bgImage.style.display = 'block';
-                // ถ้าไม่มีวิดีโอ ให้รอ 5 วิ ก่อนเลื่อนไป
-                setTimeout(() => {
-                    bsCarousel.next();
-                }, 5000);
+                    // เมื่อวิดีโอจบ ค่อยเปลี่ยนสไลด์
+                    video.onended = function() {
+                        bsCarousel.next();
+                    };
+                } else {
+                    bgImage.style.display = 'block';
+                    // ถ้าไม่มีวิดีโอ ให้รอ 5 วิ ก่อนเลื่อนไป
+                    setTimeout(() => {
+                        bsCarousel.next();
+                    }, 5000);
+                }
             }
-        }
 
-        // เล่นสไลด์แรกตอนโหลด
-        const firstItem = carousel.querySelector('.carousel-item.active');
-        playVideoIfExists(firstItem);
+            // เล่นสไลด์แรกตอนโหลด
+            const firstItem = carousel.querySelector('.carousel-item.active');
+            playVideoIfExists(firstItem);
 
-        // ทุกครั้งที่สไลด์เปลี่ยน (เลื่อนไปแล้ว)
-        carousel.addEventListener('slid.bs.carousel', function(event) {
-            const activeItem = carousel.querySelector('.carousel-item.active');
-            playVideoIfExists(activeItem);
+            // ทุกครั้งที่สไลด์เปลี่ยน (เลื่อนไปแล้ว)
+            carousel.addEventListener('slid.bs.carousel', function(event) {
+                const activeItem = carousel.querySelector('.carousel-item.active');
+                playVideoIfExists(activeItem);
+            });
         });
-    });
-</script> 
+    </script>
 @endsection
