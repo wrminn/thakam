@@ -322,21 +322,21 @@
                     Service</span>
 
                 <div class="ons-box-button-one">
-                    <a href="https://demo.trush.sosmartsolution.com/user/waste_payment"> <img
+                    <a href="https://thakam.trash.sosmartsolution.com/user/waste_payment"> <img
                             src="/img/OneStopService/Banner-1.png" alt="" class="bg-ons-button"></a>
-                    <a href="https://demo.trush.sosmartsolution.com/user/request/health_hazard_license"> <img
+                    <a href="https://thakam.trash.sosmartsolution.com/user/request/health_hazard_license"> <img
                             src="/img/OneStopService/Banner-2.png" alt="" class="bg-ons-button"></a>
                     <a href="https://eservice-thakam.sosmartsolution.com/Requestforms"> <img
                             src="/img/OneStopService/Banner-3.png" alt="" class="bg-ons-button"></a>
-                    <a href="https://demo.trush.sosmartsolution.com/user/emergency/accident"> <img
+                    <a href="https://thakam.trash.sosmartsolution.com/user/emergency/accident"> <img
                             src="/img/OneStopService/Banner-4.png" alt="" class="bg-ons-button"></a>
                 </div>
 
             </div>
             <div class="ons-box-button-two">
-                <a href="https://demo.trush.sosmartsolution.com/login"> <img src="/img/03/Member_0.png" alt=""
+                <a href="https://thakam.trash.sosmartsolution.com/login"> <img src="/img/03/Member_0.png" alt=""
                         class="bg-ons-button-member" style="float: right;"></a>
-                <a href="https://demo.trush.sosmartsolution.com/register"> <img src="/img/03/General Public_0.png"
+                <a href="https://thakam.trash.sosmartsolution.com/register"> <img src="/img/03/General Public_0.png"
                         alt="" class="bg-ons-button-public"></a>
             </div>
         </div>
