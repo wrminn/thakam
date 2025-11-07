@@ -260,7 +260,7 @@
                         <div>เครื่องเสียงห้องประชุม</div>
                     </div>
                     <div class="regis-smartcity">
-                        <a href="forms.gle/qD95JhX62Cr7cb7H7" class="">
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSd6bQ5WfgSTI8lq8Xo4VfA3FZ1FKgIc-_lhF-YKuIPewfGItg/viewform" class="">
                             <img src="/img/SmartCity/Banner4-2-1.png" class="banner-smartcity no-underline">
                         </a>
                         <a href="https://calendar.google.com/calendar/u/0/embed?src=7urnqsg4qsg6hki6c1666k5psg@group.calendar.google.com&ctz=Asia/Bangkok"
