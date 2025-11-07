@@ -260,7 +260,8 @@
                         <div>เครื่องเสียงห้องประชุม</div>
                     </div>
                     <div class="regis-smartcity">
-                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSd6bQ5WfgSTI8lq8Xo4VfA3FZ1FKgIc-_lhF-YKuIPewfGItg/viewform" class="">
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSd6bQ5WfgSTI8lq8Xo4VfA3FZ1FKgIc-_lhF-YKuIPewfGItg/viewform"
+                            class="">
                             <img src="/img/SmartCity/Banner4-2-1.png" class="banner-smartcity no-underline">
                         </a>
                         <a href="https://calendar.google.com/calendar/u/0/embed?src=7urnqsg4qsg6hki6c1666k5psg@group.calendar.google.com&ctz=Asia/Bangkok"
@@ -723,8 +724,8 @@
             <div class="card-here">
                 <a href="/calendar/menu/57"> <img src="/img/here/BannerText/Banner-Down-1-text.png"
                         class="button-here-text" alt=""></a>
-                <a href="/webboard/menu/75"> <img src="/img/here/BannerText/Banner-Down-2-text.png" class="button-here-text"
-                        alt=""></a>
+                <a href="/webboard/menu/75"> <img src="/img/here/BannerText/Banner-Down-2-text.png"
+                        class="button-here-text" alt=""></a>
                 <a href="/directory/menu/56"> <img src="/img/here/BannerText/Banner-Down-3-text.png"
                         class="button-here-text" alt=""></a>
                 <a href="/categories/menu/61"> <img src="/img/here/BannerText/Banner-Down-4-text.png"
@@ -1089,8 +1090,7 @@
                 <div id="mapone" class="tab-content-map active">
 
                     <div class="content-map">
-                        <a href="https://www.dla.go.th/land/tempOfficialDoc.do"
-                            class="no-underline">
+                        <a href="https://www.dla.go.th/land/officialDoc.do" class="no-underline">
                             <div class="item-map">
                                 <div class="box-one-announce">
                                     <div class="item-text">
@@ -1174,18 +1174,22 @@
         <div class="banner-carousel" id="bannerCarousel">
             <button class="banner-arrow left" id="prevBtn"><img src="/img/13Footer/Next-Button.png"></button>
             <div class="banner-track" id="bannerTrack">
-                <div class="banner-item"><a href="https://e-service.doe.go.th/"><img src="/img/13Footer/Banner1.png"></a></div>
-                <div class="banner-item"><a href="https://www.admincourt.go.th/"><img src="/img/13Footer/Banner2.png"></a></div>
-                <div class="banner-item"><a href="https://ndwc.disaster.go.th/ndwc"><img src="/img/13Footer/Banner3.png"></a></div>
+                <div class="banner-item"><a href="https://e-service.doe.go.th/"><img src="/img/13Footer/Banner1.png"></a>
+                </div>
+                <div class="banner-item"><a href="https://www.admincourt.go.th/"><img
+                            src="/img/13Footer/Banner2.png"></a></div>
+                <div class="banner-item"><a href="https://ndwc.disaster.go.th/ndwc"><img
+                            src="/img/13Footer/Banner3.png"></a></div>
                 <div class="banner-item"><a href="https://www.dit.go.th/"><img src="/img/13Footer/Banner4.png"></a></div>
-                <div class="banner-item"><a href="https://www.baac.or.th/royal_page.php"><img src="/img/13Footer/Banner5.png"></a></div>
+                <div class="banner-item"><a href="https://www.baac.or.th/royal_page.php"><img
+                            src="/img/13Footer/Banner5.png"></a></div>
                 <div class="banner-item"><a href="https://www.gsb.or.th/"><img src="/img/13Footer/Banner6.png"></a></div>
                 <div class="banner-item"><a
                         href="https://www.cgd.go.th/cs/internet/internet/%E0%B8%AB%E0%B8%99%E0%B9%89%E0%B8%B2%E0%B8%AB%E0%B8%A5%E0%B8%B1%E0%B8%812.html?page_locale=th_TH"><img
                             src="/img/13Footer/Banner7.png"></a></div>
                 <div class="banner-item"><a href="https://www.prd.go.th/th/page/item/index/id/1"><img
                             src="/img/13Footer/Banner8.png"></a></div>
-                <div class="banner-item"><a href="https://www.dla.go.th/index.jsp"><img
+                <div class="banner-item"><a href="https://www.dla.go.th/index.do"><img
                             src="/img/13Footer/Banner9.png"></a></div>
                 <div class="banner-item"><a href="https://www.rd.go.th/272.html"><img
                             src="/img/13Footer/Banner10.png"></a></div>
@@ -1309,7 +1313,7 @@
         });
     </script>
 
-    <script>
+    {{-- <script>
         document.addEventListener("DOMContentLoaded", function() {
             const track = document.getElementById("bannerTrack");
             const items = document.querySelectorAll(".banner-item");
@@ -1366,7 +1370,90 @@
             // เริ่มทำงาน
             startAutoSlide();
         });
+    </script> --}}
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const track = document.getElementById("bannerTrack");
+            const items = Array.from(document.querySelectorAll(".banner-item"));
+            const total = items.length;
+            const visible = 6;
+            const intervalTime = 3000;
+            let index = 0;
+            let autoSlide;
+
+            // ทำซ้ำแบนเนอร์อีกชุด (เพื่อให้เลื่อนไม่ขาดช่วง)
+            track.innerHTML += track.innerHTML;
+            const allItems = document.querySelectorAll(".banner-item");
+
+            function moveCarousel() {
+                index++;
+                updateTransform();
+
+                // ถ้าเลื่อนไปถึงครึ่งหลังของ track ให้รีเซ็ตตำแหน่งแบบเนียน ๆ
+                if (index >= total) {
+                    setTimeout(() => {
+                        track.style.transition = "none";
+                        index = 0;
+                        updateTransform();
+                        // รอแป๊บก่อนเปิด transition กลับมา
+                        setTimeout(() => {
+                            track.style.transition = "transform 0.5s linear";
+                        }, 50);
+                    }, 500);
+                }
+            }
+
+            function movePrev() {
+                index--;
+                if (index < 0) {
+                    track.style.transition = "none";
+                    index = total - 1;
+                    updateTransform();
+                    setTimeout(() => {
+                        track.style.transition = "transform 0.5s linear";
+                    }, 50);
+                } else {
+                    updateTransform();
+                }
+            }
+
+            function updateTransform() {
+                const offset = -(index * (100 / visible));
+                track.style.transform = `translateX(${offset}%)`;
+            }
+
+            function startAutoSlide() {
+                autoSlide = setInterval(moveCarousel, intervalTime);
+            }
+
+            function stopAutoSlide() {
+                clearInterval(autoSlide);
+            }
+
+            // ปุ่มซ้ายขวา
+            document.getElementById("nextBtn").addEventListener("click", () => {
+                moveCarousel();
+                stopAutoSlide();
+                startAutoSlide();
+            });
+
+            document.getElementById("prevBtn").addEventListener("click", () => {
+                movePrev();
+                stopAutoSlide();
+                startAutoSlide();
+            });
+
+            // หยุดเมื่อ hover
+            const carousel = document.getElementById("bannerCarousel");
+            carousel.addEventListener("mouseenter", stopAutoSlide);
+            carousel.addEventListener("mouseleave", startAutoSlide);
+
+            // เริ่มทำงาน
+            startAutoSlide();
+        });
     </script>
+
 
     <script>
         document.addEventListener('DOMContentLoaded', function() {
