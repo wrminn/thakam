@@ -1089,7 +1089,7 @@
                 <div id="mapone" class="tab-content-map active">
 
                     <div class="content-map">
-                        <a href="https://www.dla.go.th/servlet/DocumentServlet?documentType=2&isSbpac=N"
+                        <a href="https://www.dla.go.th/land/tempOfficialDoc.do"
                             class="no-underline">
                             <div class="item-map">
                                 <div class="box-one-announce">
@@ -1100,21 +1100,21 @@
 
                             </div>
                         </a>
-                        <a href="https://www.dla.go.th/servlet/LawServlet?regType=1" class="no-underline">
+                        <a href="https://www.dla.go.th/land/tempDataWarehouse.do" class="no-underline">
                             <div class="item-map">
                                 <div class="item-text">
                                     กฎหมาย ระเบียบ และ มติ ก.กลาง
                                 </div>
                             </div>
                         </a>
-                        <a href="https://www.dla.go.th/servlet/DocumentServlet?documentType=4" class="no-underline">
+                        <a href="https://www.dla.go.th/land/articles.do" class="no-underline">
                             <div class="item-map">
                                 <div class="item-text">
                                     บทความน่าสนใจ
                                 </div>
                             </div>
                         </a>
-                        <a href="https://www.dla.go.th/servlet/TemplateOrganizeServlet?organize=it" class="no-underline">
+                        <a href="https://www.dla.go.th/land/tempNews.do" class="no-underline">
                             <div class="item-map">
                                 <div class="item-text">
                                     พรบ. และประกาศเกี่ยวกับเทคโนโลยีสารสนเทศ
@@ -1151,7 +1151,7 @@
                         <a href="https://www.chacheongsaolocal.go.th/contactus" class="no-underline">
                             <div class="item-map">
                                 <div class="item-text">
-                                    ติดต่อหน่วยงานสถ.จ.
+                                    ติดต่อหน่วยงาน สถ.จ.
                                 </div>
                             </div>
                         </a>
