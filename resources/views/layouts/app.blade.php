@@ -40,7 +40,7 @@
                         <div class="header-title-th">เทศบาลตำบลท่าข้าม</div>
                         <div class="header-title-en">Thakam Subdistrict Municipality</div>
                         <div class="header-box-contact">
-                            <div class="header-box-contact-title">ติดต่อองค์กร</div>
+                            <a href="/contact/menu/74"><div class="header-box-contact-title">ติดต่อองค์กร</div></a>
                             <div class="header-box-contact-tel">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                     fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
