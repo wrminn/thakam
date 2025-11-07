@@ -241,10 +241,10 @@
     <section class="banner-box-one">
         <div class="banner-smartcity-body-one">
             <div class="smartcity-one">
-                <a href="#" class="">
+                <a href="https://asean.org/our-communities/economic-community/" class="">
                     <img src="/img/SmartCity/Banner-1.png" class="banner-smartcity no-underline">
                 </a>
-                <a href="#" class="">
+                <a href="https://thakam.go.th/directory/menu/7" class="">
                     <img src="/img/SmartCity/Banner-2.png" class="banner-smartcity no-underline">
                 </a>
             </div>
@@ -290,17 +290,17 @@
                         class="">
                         <img src="/img/SmartCity/Banner-6.png" class="banner-box-sbt-one no-underline bbs-one"
                             style="margin: 0 0 0 175px;width: 350px;"></a>
-                    <a href="#" class="">
+                    <a href="https://www.nacc.go.th/NACCPPWFC?" class="">
                         <img src="/img/SmartCity/Banner-7.png"
                             class="banner-box-sbt-one no-underline bbs-twoheight: 182px;"
                             style="margin: 0 0 0 87px;width: 350px;"></a>
                 </div>
                 <div class="smartcity-six">
-                    <a href="#" class="">
+                    <a href="https://www.admincourt.go.th/admincourt/site/09illustration.html" class="">
                         <img src="/img/SmartCity/Banner-8.png" class="banner-box-sbt-one no-underline"
                             style="width: 250px;float: inline-end;">
                     </a>
-                    <a href="#" class="">
+                    <a href="http://www.damrongdhama.moi.go.th/home/" class="">
                         <img src="/img/SmartCity/Banner-9.png" class="banner-box-sbt-one no-underline"
                             style="width: 280px;float: inline-start;">
                     </a>
@@ -371,12 +371,12 @@
 
         <div class="public-body-one">
             <div class="button-public-service">
-                <a href="#" class="public-link">
+                <a href="https://share.google/gqLI6okKQPTt1dDci" class="public-link">
                     <img src="/img/publicservice/1.png" class="public-service-img-one">
                     <span style="margin-top: -30px;">เบี้ยยังชีพผู้สูงอายุ</span>
                     <span>Elderly allowance</span>
                 </a>
-                <a href="#" class="public-link">
+                <a href="https://share.google/gqLI6okKQPTt1dDci" class="public-link">
                     <img src="/img/publicservice/6.png" class="public-service-img-one">
                     <span style="margin-top: -30px;">เบี้ยยังชีพผู้พิการ</span>
                     <span>Disability living allowance</span>
@@ -715,15 +715,15 @@
             </div>
         </div>
         <div class="banner-service-one">
-            <a href=""> <img src="/img/here/Banner-1.png" class="button-here" alt=""></a>
+            <a href="/directory/menu/65"> <img src="/img/here/Banner-1.png" class="button-here" alt=""></a>
             <a href=""> <img src="/img/here/Banner-2.png" class="button-here" alt=""></a>
-            <a href=""> <img src="/img/here/Banner-3.png" class="button-here" alt=""></a>
+            <a href="/directory/menu/66"> <img src="/img/here/Banner-3.png" class="button-here" alt=""></a>
         </div>
         <div class="banner-service-two">
             <div class="card-here">
                 <a href="/calendar/menu/57"> <img src="/img/here/BannerText/Banner-Down-1-text.png"
                         class="button-here-text" alt=""></a>
-                <a href=""> <img src="/img/here/BannerText/Banner-Down-2-text.png" class="button-here-text"
+                <a href="/webboard/menu/75"> <img src="/img/here/BannerText/Banner-Down-2-text.png" class="button-here-text"
                         alt=""></a>
                 <a href="/directory/menu/56"> <img src="/img/here/BannerText/Banner-Down-3-text.png"
                         class="button-here-text" alt=""></a>
@@ -1174,12 +1174,12 @@
         <div class="banner-carousel" id="bannerCarousel">
             <button class="banner-arrow left" id="prevBtn"><img src="/img/13Footer/Next-Button.png"></button>
             <div class="banner-track" id="bannerTrack">
-                <div class="banner-item"><a href="#"><img src="/img/13Footer/Banner1.png"></a></div>
-                <div class="banner-item"><a href="#"><img src="/img/13Footer/Banner2.png"></a></div>
-                <div class="banner-item"><a href="#"><img src="/img/13Footer/Banner3.png"></a></div>
-                <div class="banner-item"><a href="#"><img src="/img/13Footer/Banner4.png"></a></div>
-                <div class="banner-item"><a href="#"><img src="/img/13Footer/Banner5.png"></a></div>
-                <div class="banner-item"><a href="#"><img src="/img/13Footer/Banner6.png"></a></div>
+                <div class="banner-item"><a href="https://e-service.doe.go.th/"><img src="/img/13Footer/Banner1.png"></a></div>
+                <div class="banner-item"><a href="https://www.admincourt.go.th/"><img src="/img/13Footer/Banner2.png"></a></div>
+                <div class="banner-item"><a href="https://ndwc.disaster.go.th/ndwc"><img src="/img/13Footer/Banner3.png"></a></div>
+                <div class="banner-item"><a href="https://www.dit.go.th/"><img src="/img/13Footer/Banner4.png"></a></div>
+                <div class="banner-item"><a href="https://www.baac.or.th/royal_page.php"><img src="/img/13Footer/Banner5.png"></a></div>
+                <div class="banner-item"><a href="https://www.gsb.or.th/"><img src="/img/13Footer/Banner6.png"></a></div>
                 <div class="banner-item"><a
                         href="https://www.cgd.go.th/cs/internet/internet/%E0%B8%AB%E0%B8%99%E0%B9%89%E0%B8%B2%E0%B8%AB%E0%B8%A5%E0%B8%B1%E0%B8%812.html?page_locale=th_TH"><img
                             src="/img/13Footer/Banner7.png"></a></div>
