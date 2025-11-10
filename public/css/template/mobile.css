@@ -1,4 +1,13 @@
 @media (max-width: 1919px) {
+
+    #carouselpersonnel .carousel-inner .carousel-item img,
+    #carouselpersonnel .carousel-item.active,
+    #carouselpersonnel .carousel-item.active.carousel-item-start {
+        max-width: 450px;
+        width: 450px;
+        height: 632px;
+    }
+
     .box-public-service {
         min-height: 970px;
     }

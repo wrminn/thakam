@@ -1100,10 +1100,11 @@
 
                             </div>
                         </a>
-                        <a href="https://www.dla.go.th/land/tempDataWarehouse.do" class="no-underline">
+                        <a href="https://www.dla.go.th/index.do#information" class="no-underline">
                             <div class="item-map">
                                 <div class="item-text">
-                                    กฎหมาย ระเบียบ และ มติ ก.กลาง
+                                    {{-- กฎหมาย ระเบียบ และ มติ ก.กลาง --}}
+                                    ระบบสารสนเทศ
                                 </div>
                             </div>
                         </a>
@@ -1114,10 +1115,11 @@
                                 </div>
                             </div>
                         </a>
-                        <a href="https://www.dla.go.th/land/tempNews.do" class="no-underline">
+                        <a href="https://www.dla.go.th/index.do#e-book" class="no-underline">
                             <div class="item-map">
                                 <div class="item-text">
-                                    พรบ. และประกาศเกี่ยวกับเทคโนโลยีสารสนเทศ
+                                    {{-- พรบ. และประกาศเกี่ยวกับเทคโนโลยีสารสนเทศ --}}
+                                    หนังสืออิเล็กทรอนิกส์
                                 </div>
                             </div>
                         </a>
@@ -1141,10 +1143,11 @@
                                 </div>
                             </div>
                         </a>
-                        <a href="https://www.chacheongsaolocal.go.th/gallery" class="no-underline">
+                        <a href="https://www.chacheongsaolocal.go.th/law" class="no-underline">
                             <div class="item-map">
                                 <div class="item-text">
-                                    ภาพกิจกรรม สถ.จ.
+                                    {{-- ภาพกิจกรรม สถ.จ. --}}
+                                    กฎหมาย ระเบียบ และมติ กจจ./ก.ท.จ./ก.อบต. 
                                 </div>
                             </div>
                         </a>
