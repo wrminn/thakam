@@ -8,6 +8,11 @@
         height: 632px;
     }
 
+    div#carouselpersonnel {
+        width: 400px;
+    }
+
+
     .box-public-service {
         min-height: 970px;
     }
