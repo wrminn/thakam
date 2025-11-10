@@ -760,11 +760,11 @@
                     <div class="content-announce">
 
                         @forelse($egp as $list)
-                            <a href="" class="no-underline">
+                            <a href="{{ $list['link'] }}" class="no-underline">
                                 <div class="item">
                                     <div class="box-one-announce">
                                         @php
-                                            $date = \Carbon\Carbon::parse($list->texteditor_date_show);
+                                            $date = \Carbon\Carbon::parse($list['pub_date']);
                                             $months = [
                                                 1 => 'ม.ค',
                                                 2 => 'ก.พ',
@@ -787,7 +787,7 @@
                                         <div class="item-text">
                                             <div class="item-date">{{ $day }}
                                                 {{ $month }}{{ $year }}</div>
-                                            {{ $list->texteditor_title }}
+                                            {{ $list['title'] }}
                                         </div>
                                     </div>
                                     <div class="tag-announce">ประกาศ E-GP</div>

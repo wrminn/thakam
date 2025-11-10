@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Carbon\Carbon;
+use Illuminate\Support\Facades\Http;
 
 use App\Models\Slide;
 use App\Models\Texteditor;
@@ -77,13 +78,13 @@ class HomeController extends Controller
             ->limit(6)
             ->get();
 
-        $egp = DB::table('texteditor')
-            ->where('texteditor_menu', 8)
-            ->where('texteditor_display', "A")
-            ->orderBy('texteditor_date_show', 'desc')
-            ->orderBy('texteditor_id', 'desc')
-            ->limit(6)
-            ->get();
+        // $egp = DB::table('texteditor')
+        //     ->where('texteditor_menu', 8)
+        //     ->where('texteditor_display', "A")
+        //     ->orderBy('texteditor_date_show', 'desc')
+        //     ->orderBy('texteditor_id', 'desc')
+        //     ->limit(6)
+        //     ->get();
 
         $listMenu48 = DB::table('texteditor')
             ->where('texteditor_menu', 48)
@@ -153,7 +154,17 @@ class HomeController extends Controller
             'total' => DB::table('visits')->count(),
         ];
 
-        return view('home', compact('video', 'SlideMenu70', 'activity', 'listMenu52', 'SlideMenu8', 'egp', 'listMenu48', 'listMenu49', 'listMenu50', 'Vote', 'stats', 'elibrary'));
+        try {
+            $egp = $this->getLatestEgp();
+        } catch (\Exception $e) {
+            $egp = $e->getMessage();
+        }
+
+        // echo "<pre>";
+        // print_r($egp);
+        // exit();
+
+        return view('home', compact('video', 'SlideMenu70', 'activity', 'listMenu52', 'SlideMenu8', 'egp', 'listMenu48', 'listMenu49', 'listMenu50', 'Vote', 'stats', 'elibrary', 'egp'));
     }
 
     public function save(Request $request)
@@ -196,5 +207,16 @@ class HomeController extends Controller
                 ->where('visits_visited_at', '>=', $now->subMinutes(5))
                 ->count(),
         ]);
+    }
+
+    public function getLatestEgp()
+    {
+        $response = Http::get("https://egp.sosmartsolution.com/api.php?deptsub=524040624000001");
+
+        if ($response->successful() && $response->json('success') === true) {
+            return $response->json('data');
+        }
+
+        throw new \Exception('Cannot fetch EGP data');
     }
 }
