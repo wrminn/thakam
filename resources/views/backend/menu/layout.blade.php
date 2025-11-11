@@ -146,7 +146,7 @@
             <div class="submenu level-1">
                 <a href="/backend/articles/menu/29">เทศบาลตำบล</a>
                 <a href="/backend/articles/menu/30">สำนักปลัด</a>
-                <a href="/backend/articles/menu/31">กองยุทธศาสตร์</a>
+                <a href="/backend/articles/menu/31">กองยุทธศาสตร์และงบประมาณ</a>
                 <a href="/backend/articles/menu/32">กองคลัง</a>
                 <a href="/backend/articles/menu/33">กองช่าง</a>
                 <a href="/backend/articles/menu/34">กองสาธารณสุขและสิ่งแวดล้อม</a>
@@ -164,7 +164,7 @@
                 <a href="/backend/personnel/menu/11">สภาชิกสภา</a>
                 {{-- <a href="/backend/personnel/menu/12">ผู้บริหารส่วนราชการ</a> --}}
                 <a href="/backend/personnel/menu/13">สำนักปลัด</a>
-                <a href="/backend/personnel/menu/14">กองยุทธศาสตร์</a>
+                <a href="/backend/personnel/menu/14">กองยุทธศาสตร์และงบประมาณ</a>
                 <a href="/backend/personnel/menu/15">กองคลัง</a>
                 <a href="/backend/personnel/menu/16">กองช่าง</a>
                 <a href="/backend/personnel/menu/17">กองสาธารณสุขและสิ่งแวดล้อม</a>

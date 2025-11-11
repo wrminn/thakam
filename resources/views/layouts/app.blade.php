@@ -151,7 +151,7 @@
                     <div class="submenu">
                         <a href="/articles/menu/29">เทศบาลตำบล</a>
                         <a href="/articles/menu/30">สำนักปลัด</a>
-                        <a href="/articles/menu/31">กองยุทธศาสตร์</a>
+                        <a href="/articles/menu/31">กองยุทธศาสตร์และงบประมาณ</a>
                         <a href="/articles/menu/32">กองคลัง</a>
                         <a href="/articles/menu/33">กองช่าง</a>
                         <a href="/articles/menu/34">กองสาธารณสุขและสิ่งแวดล้อม</a>
@@ -168,7 +168,7 @@
                         <a href="/personnel/menu/11">สมาชิกสภา</a>
                         {{-- <a href="/personnel/menu/12">ผู้บริหารส่วนราชการ</a> --}}
                         <a href="/personnel/menu/13">สำนักปลัด</a>
-                        <a href="/personnel/menu/14">กองยุทธศาสตร์</a>
+                        <a href="/personnel/menu/14">กองยุทธศาสตร์และงบประมาณ</a>
                         <a href="/personnel/menu/15">กองคลัง</a>
                         <a href="/personnel/menu/16">กองช่าง</a>
                         <a href="/personnel/menu/17">กองสาธารณสุขและสิ่งแวดล้อม</a>
