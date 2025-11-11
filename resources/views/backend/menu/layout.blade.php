@@ -207,8 +207,10 @@
                 <a href="/backend/corruption/menu/42">รับเเจ้งเรื่องราวร้องเรียนการทุจริตและประพฤติมิชอบ</a>
                 <a href="/backend/satisfaction/menu/43">แบบสอบถามความพึงพอใจ</a>
                 <a href="/backend/directory/menu/44">รายงานผลสำรวจความพึงพอใจ</a>
-                <a href="/backend/directory/menu/45/cate/0">คู่มือการทำงานของหน่วยงาน</a>
+                {{-- <a href="/backend/directory/menu/45/cate/0">คู่มือการทำงานของหน่วยงาน</a> --}}
                 <a href="/backend/directory/menu/46">ดาวน์โหลดแบบฟอร์ม</a>
+                <a href="/backend/directory/menu/81">คู่มือหรือแนวทางการปฏิบัติสําหรับเจ้าหน้าที่</a>
+                <a href="/backend/directory/menu/82">คู่มือสำหรับประชาชน</a>
                 {{-- <a href="/backend/eservice/menu/47">ยื่นคำร้องออนไลน์ E-service</a> --}}
 
             </div>

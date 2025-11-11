@@ -9,7 +9,7 @@
     }
 
     div#carouselpersonnel {
-        width: 400px;
+        width: 450px;
     }
 
 
@@ -377,6 +377,7 @@
     .personnel-box {
         display: flex;
         padding: 15px;
+        justify-content: center;
     }
 
     .personnel-box-p1 {
@@ -536,7 +537,8 @@
 
     .slide-in-video img {
         /* width: 40vh; */
-        width: 55vh;
+        /* width: 55vh; */
+        width: 50vh;
     }
 
     .box-button {

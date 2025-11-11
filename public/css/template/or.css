@@ -1,0 +1,264 @@
+/* 
+ * สไตล์พื้นฐานสำหรับเว็บไซต์แบบ Responsive
+ * พัฒนาโดย Cascade AI
+ * วันที่: 11 พฤศจิกายน 2025
+ */
+
+/* กำหนดตัวแปร CSS สำหรับใช้ทั่วทั้งเว็บไซต์ */
+:root {
+    /* สีหลัก */
+    --primary-color: #00565f;        /* สีหลักของเว็บไซต์ */
+    --secondary-color: #019892;      /* สีรอง */
+    --accent-color: #01A89E;         /* สีเน้น */
+    --text-color: #333;              /* สีข้อความหลัก */
+    --white: #fff;                   /* สีขาว */
+    --light-gray: #f5f5f5;           /* สีเทาอ่อน */
+    --dark-gray: #333;               /* สีเทาเข้ม */
+    
+    /* ระยะห่าง */
+    --spacing-xs: 0.5rem;            /* ระยะห่างขนาดเล็ก */
+    --spacing-sm: 1rem;              /* ระยะห่างขนาดกลางเล็ก */
+    --spacing-md: 1.5rem;            /* ระยะห่างขนาดกลาง */
+    --spacing-lg: 2rem;              /* ระยะห่างขนาดใหญ่ */
+    
+    /* ขนาดเส้นขอบ */
+    --border-radius-sm: 4px;         /* มุมโค้งขนาดเล็ก */
+    --border-radius-md: 8px;         /* มุมโค้งขนาดกลาง */
+    --border-radius-lg: 16px;        /* มุมโค้งขนาดใหญ่ */
+    
+    /* เงา */
+    --box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* รีเซ็ต CSS พื้นฐาน */
+* {
+    box-sizing: border-box;          /* รวม padding และ border เข้าในความกว้าง */
+    margin: 0;
+    padding: 0;
+}
+
+/* สไตล์พื้นฐานของหน้าเว็บ */
+body {
+    font-family: 'Sarabun', 'Kanit', sans-serif; /* ฟอนต์ไทยที่รองรับ */
+    line-height: 1.6;               /* ระยะห่างระหว่างบรรทัด */
+    color: var(--text-color);
+    background-color: var(--white);
+    overflow-x: hidden;             /* ป้องกันการเลื่อนแนวนอน */
+}
+
+/* องค์ประกอบทั่วไป */
+img {
+    max-width: 100%;               /* รูปภาพจะไม่เกินขนาดคอนเทนเนอร์ */
+    height: auto;                  /* รักษาสัดส่วนอัตโนมัติ */
+}
+
+a {
+    text-decoration: none;         /* เอาเส้นใต้ลิงก์ออก */
+    color: var(--primary-color);
+    transition: all 0.3s ease;     /* เอฟเฟกต์การเปลี่ยนสถานะ */
+}
+
+a:hover {
+    color: var(--secondary-color);
+    text-decoration: underline;
+}
+
+/* คอนเทนเนอร์หลัก */
+.container {
+    width: 100%;
+    padding: 0 var(--spacing-md);
+    margin: 0 auto;
+    max-width: 1200px;             /* ความกว้างสูงสุดของเนื้อหา */
+}
+
+/* ส่วนหัว */
+.header {
+    background-color: var(--white);
+    box-shadow: var(--box-shadow);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    padding: var(--spacing-sm) 0;
+}
+
+/* เมนูนำทาง */
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--spacing-sm) 0;
+}
+
+/* ปุ่ม */
+.btn {
+    display: inline-block;
+    padding: 0.5rem 1.5rem;
+    border-radius: var(--border-radius-md);
+    font-weight: 500;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: none;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+
+.btn-primary:hover {
+    background-color: var(--secondary-color);
+    transform: translateY(-2px);
+    box-shadow: var(--box-shadow);
+}
+
+/* ส่วนหลักของหน้าเว็บ */
+.main {
+    margin-top: 80px; /* เว้นที่ให้กับ header */
+    padding: var(--spacing-lg) 0;
+}
+
+/* การ์ด */
+.card {
+    background: var(--white);
+    border-radius: var(--border-radius-md);
+    box-shadow: var(--box-shadow);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    margin-bottom: var(--spacing-md);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* กริดระบบ */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--spacing-md);
+    margin: var(--spacing-md) 0;
+}
+
+/* ส่วนท้ายเว็บ */
+.footer {
+    background-color: var(--dark-gray);
+    color: var(--white);
+    padding: var(--spacing-lg) 0;
+    margin-top: var(--spacing-lg);
+}
+
+/* Media Queries สำหรับ Responsive Design */
+
+/* สำหรับแท็บเล็ต (768px ขึ้นไป) */
+@media (min-width: 768px) {
+    .container {
+        padding: 0 var(--spacing-lg);
+    }
+    
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* สำหรับเดสก์ท็อป (1024px ขึ้นไป) */
+@media (min-width: 1024px) {
+    .grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* สำหรับหน้าจอขนาดใหญ่ (1200px ขึ้นไป) */
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1200px;
+    }
+}
+
+/* สำหรับการพิมพ์ */
+@media print {
+    /* ซ่อนองค์ประกอบที่ไม่จำเป็นในการพิมพ์ */
+    .no-print {
+        display: none !important;
+    }
+    
+    /* ตั้งค่าขนาดตัวอักษรสำหรับการพิมพ์ */
+    body {
+        font-size: 12pt;
+        line-height: 1.5;
+        color: #000;
+    }
+    
+    /* กำหนดระยะขอบหน้ากระดาษ */
+    @page {
+        margin: 2cm;
+    }
+}
+
+/* คลาสช่วยเหลือ (Utility Classes) */
+.text-center { text-align: center; }
+.text-right { text-align: right; }
+.mt-1 { margin-top: var(--spacing-xs); }
+.mt-2 { margin-top: var(--spacing-sm); }
+.mt-3 { margin-top: var(--spacing-md); }
+.mt-4 { margin-top: var(--spacing-lg); }
+.mb-1 { margin-bottom: var(--spacing-xs); }
+.mb-2 { margin-bottom: var(--spacing-sm); }
+.mb-3 { margin-bottom: var(--spacing-md); }
+.mb-4 { margin-bottom: var(--spacing-lg); }
+.p-1 { padding: var(--spacing-xs); }
+.p-2 { padding: var(--spacing-sm); }
+.p-3 { padding: var(--spacing-md); }
+.p-4 { padding: var(--spacing-lg); }
+
+/* Animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.fade-in {
+    animation: fadeIn 0.6s ease-out forwards;
+}
+
+/* Accessibility - สำหรับโปรแกรมอ่านหน้าจอ */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+/* ปรับปรุงการแสดงผลบนมือถือ */
+@media (max-width: 767px) {
+    .header {
+        position: relative;
+    }
+    
+    .nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .main {
+        margin-top: 0;
+    }
+    
+    .btn {
+        width: 100%;
+        margin-bottom: var(--spacing-xs);
+    }
+}
+
+/* ปรับปรุงการแสดงผลบนแท็บเล็ตแนวตั้ง */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .container {
+        padding: 0 var(--spacing-md);
+    }
+}

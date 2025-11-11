@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="{{ asset('/css/template/mobile.css') }}">
     <link rel="stylesheet" href="{{ asset('/css/template/mo2.css') }}">
     <link rel="stylesheet" href="{{ asset('/css/template/mobs.css') }}">
+    <link rel="stylesheet" href="{{ asset('/css/template/or.css') }}">
     {{-- <script src="https://cdn.tailwindcss.com"></script> --}}
     {{-- <script src="bootstrap/js/bootstrap.min.js"></script> --}}
     <script src="{{ asset('bootstrap/js/bootstrap.min.js') }}"></script>
@@ -40,7 +41,9 @@
                         <div class="header-title-th">เทศบาลตำบลท่าข้าม</div>
                         <div class="header-title-en">Thakam Subdistrict Municipality</div>
                         <div class="header-box-contact">
-                            <a href="/contact/menu/74"><div class="header-box-contact-title">ติดต่อองค์กร</div></a>
+                            <a href="/contact/menu/74">
+                                <div class="header-box-contact-title">ติดต่อองค์กร</div>
+                            </a>
                             <div class="header-box-contact-tel">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                     fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
@@ -218,9 +221,12 @@
                         <a href="/corruption/menu/42">รับเเจ้งเรื่องราวร้องเรียนการทุจริตและประพฤติมิชอบ</a>
                         <a href="/satisfaction/menu/43">แบบสอบถามความพึงพอใจ</a>
                         <a href="/directory/menu/44">รายงานผลสำรวจความพึงพอใจ </a>
-                        <a href="/categories/menu/45">คู่มือการทำงานของหน่วยงาน</a>
+                        {{-- <a href="/categories/menu/45">คู่มือการทำงานของหน่วยงาน</a> --}}
                         <a href="/directory/menu/46">ดาวน์โหลดแบบฟอร์ม</a>
-                        <a href="https://eservice-thakam.sosmartsolution.com/Requestforms">ยื่นคำร้องออนไลน์ E-service</a>
+                        <a href="/directory/menu/81">คู่มือหรือแนวทางการปฏิบัติสําหรับเจ้าหน้าที่</a>
+                        <a href="/directory/menu/82">คู่มือสำหรับประชาชน</a>
+                        <a href="https://eservice-thakam.sosmartsolution.com/Requestforms">ยื่นคำร้องออนไลน์
+                            E-service</a>
                     </div>
                 </div>
 
@@ -242,7 +248,7 @@
                                 @if (in_array(strtolower($extension), ['mp4', 'webm', 'ogg']))
                                     <video class="d-block w-100" preload="auto" autoplay muted playsinline
                                         style="object-fit: cover; height: auto;">
-                                    {{-- <video class="d-block w-100" preload="auto" autoplay muted loop playsinline
+                                        {{-- <video class="d-block w-100" preload="auto" autoplay muted loop playsinline
                                         style="object-fit: cover; height: 600px;"> --}}
                                         <source src="{{ asset('storage/' . $slide->slide_path) }}"
                                             type="video/{{ $extension }}">
@@ -531,7 +537,7 @@
             playVideoIfExists(activeItem);
         });
     });
-</script> 
+</script>
 
 <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
