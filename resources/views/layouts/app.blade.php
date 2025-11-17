@@ -209,8 +209,8 @@
                         <a href="/directory/menu/39">เทศบัญญัติและคำสั่ง</a>
                         <a href="/directory/menu/40">กฎหมายอื่นๆที่เกี่ยวข้อง</a>
                         <a href="/directory/menu/76">แผนพัฒนาเศรษฐกิจและสังคมแห่งชาติ</a>
-                        <a href="#">พระราชบัญญัติและพระราชกฤษฎีกา</a>
-                        <a href="#">กฎหมาย ระเบียบ และประกาศกระทรวง</a>
+                        <a href="https://www.dla.go.th/land/legalItemFon.do?searchCondition.typeLegalItem=2">พระราชบัญญัติและพระราชกฤษฎีกา</a>
+                        <a href="https://www.dla.go.th/land/legalItemFon.do?searchCondition.typeLegalItem=3">กฎหมาย ระเบียบ และประกาศกระทรวง</a>
                     </div>
                 </div>
 
