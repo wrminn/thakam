@@ -395,12 +395,12 @@
                     <span style="margin-top: -30px;">แบบสอบถามความพึงพอใจ</span>
                     <span>Satisfaction Survey</span>
                 </a>
-                <a href="/directory/menu/45/cate/34" class="public-link">
+                <a href="/directory/menu/82" class="public-link">
                     <img src="/img/publicservice/5.png" class="public-service-img-one">
                     <span style="margin-top: -30px;">คู่มือประชาชน</span>
                     <span>Public Guide</span>
                 </a>
-                <a href="/directory/menu/45/cate/35" class="public-link">
+                <a href="/directory/menu/81" class="public-link">
                     <img src="/img/publicservice/3.png" class="public-service-img-one">
                     <span style="margin-top: -30px;">คู่มือปฏิบัติงาน</span>
                     <span>Work Manual</span>

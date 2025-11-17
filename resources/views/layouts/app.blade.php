@@ -175,7 +175,7 @@
                         <a href="/personnel/menu/18">กองการศึกษา</a>
                         <a href="/personnel/menu/19">กองสวัสดิการสังคม</a>
                         <a href="/personnel/menu/20">หน่วยตรวจสอบภายใน</a>
-                        <a href="/categories/menu/26">การบริหารและพัฒนาทรัพยากรบุคล</a>
+                        <a href="/categories/menu/26">การบริหารและพัฒนาทรัพยากรบุคคล</a>
                     </div>
                 </div>
 
@@ -217,8 +217,10 @@
                 <div class="nav-pill has-submenu">
                     บริการประชาชน
                     <div class="submenu">
-                        <a href="/complaint/menu/41">รับเเจ้งเรื่องราวร้องเรียนร้องทุกข์ </a>
-                        <a href="/corruption/menu/42">รับเเจ้งเรื่องราวร้องเรียนการทุจริตและประพฤติมิชอบ</a>
+                        {{-- <a href="/complaint/menu/41">รับเเจ้งเรื่องราวร้องเรียนร้องทุกข์ </a>
+                        <a href="/corruption/menu/42">รับเเจ้งเรื่องราวร้องเรียนการทุจริตและประพฤติมิชอบ</a> --}}
+                        <a href="https://eservice-thakam.sosmartsolution.com/FormeService/id/1">รับเเจ้งเรื่องราวร้องเรียนร้องทุกข์ </a>
+                        <a href="https://eservice-thakam.sosmartsolution.com/FormeService/id/3">รับเเจ้งเรื่องราวร้องเรียนการทุจริตและประพฤติมิชอบ</a>
                         <a href="/satisfaction/menu/43">แบบสอบถามความพึงพอใจ</a>
                         <a href="/directory/menu/44">รายงานผลสำรวจความพึงพอใจ </a>
                         {{-- <a href="/categories/menu/45">คู่มือการทำงานของหน่วยงาน</a> --}}

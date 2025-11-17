@@ -171,7 +171,7 @@
                 <a href="/backend/personnel/menu/18">กองการศึกษา</a>
                 <a href="/backend/personnel/menu/19">กองสวัสดิการสังคม</a>
                 <a href="/backend/personnel/menu/20">หน่วยตรวจสอบภายใน</a>
-                <a href="/backend/directory/menu/26/cate/0">การบริหารและพัฒนาทรัพยากรบุคล</a>
+                <a href="/backend/directory/menu/26/cate/0">การบริหารและพัฒนาทรัพยากรบุคคล</a>
             </div>
             <a href="/backend/directory/menu/38/cate/0">
                 <div class="menu-item">แผนงานและงบประมาณ</div>
@@ -203,8 +203,8 @@
                 <i class='bx bx-chevron-right chevron'></i>
             </div>
             <div class="submenu level-1">
-                <a href="/backend/complaint/menu/41">รับเเจ้งเรื่องราวร้องเรียนร้องทุกข์</a>
-                <a href="/backend/corruption/menu/42">รับเเจ้งเรื่องราวร้องเรียนการทุจริตและประพฤติมิชอบ</a>
+                {{-- <a href="/backend/complaint/menu/41">รับเเจ้งเรื่องราวร้องเรียนร้องทุกข์</a>
+                <a href="/backend/corruption/menu/42">รับเเจ้งเรื่องราวร้องเรียนการทุจริตและประพฤติมิชอบ</a> --}}
                 <a href="/backend/satisfaction/menu/43">แบบสอบถามความพึงพอใจ</a>
                 <a href="/backend/directory/menu/44">รายงานผลสำรวจความพึงพอใจ</a>
                 {{-- <a href="/backend/directory/menu/45/cate/0">คู่มือการทำงานของหน่วยงาน</a> --}}

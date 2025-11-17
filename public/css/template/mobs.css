@@ -9,6 +9,10 @@
         position: relative;
     }
 
+    div#carouselpersonnel {
+        width: auto;
+    }
+
     .header-logo {
         width: 50px;
     }
@@ -106,6 +110,7 @@
         width: 90px;
         height: auto;
     }
+
     .personnel-box-p1 {
         width: 90px;
         height: auto;
@@ -615,6 +620,10 @@
         position: relative;
     }
 
+    div#carouselpersonnel {
+        width: auto;
+    }
+
     .header-logo {
         width: 50px;
     }
@@ -771,6 +780,7 @@
         width: 90px;
         height: auto;
     }
+
     .personnel-box-p1 {
         width: 90px;
         height: auto;
