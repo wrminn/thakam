@@ -32,6 +32,7 @@ class DirectoryDataController extends Controller
         $list = Texteditor::active()
             ->where('texteditor_menu', $menuId)
             ->orderBy('texteditor_date_show', 'desc')
+            ->orderBy('texteditor_seq', 'asc')
             ->orderBy('texteditor_id', 'desc')
             ->paginate(20);
 
