@@ -25,7 +25,9 @@
                                 @if (!$cate->isEmpty())
                                     <select class="form-select" aria-label="Default select example"
                                         onchange="if (this.value) window.location.href=this.value">
-                                        <option value="{{ route('directory.category', ['menu' => $menuId, 'cate' => '0']) }}">เลือกหมวดหมู่</option>
+                                        <option
+                                            value="{{ route('directory.category', ['menu' => $menuId, 'cate' => '0']) }}">
+                                            เลือกหมวดหมู่</option>
                                         @foreach ($cate as $item)
                                             <option
                                                 value="{{ route('directory.category', ['menu' => $menuId, 'cate' => $item['categories_id']]) }}"
@@ -43,8 +45,8 @@
 
                         <div class="col-md-auto ms-auto">
                             @if ($cateID !== '0')
-                                <a href="/backend/addDirectory/menu/{{ $menuId }}/cate/{{ $cateID }}"><button type="button"
-                                        class="btn btn-outline-primary" fdprocessedid="2gfdil">
+                                <a href="/backend/addDirectory/menu/{{ $menuId }}/cate/{{ $cateID }}"><button
+                                        type="button" class="btn btn-outline-primary" fdprocessedid="2gfdil">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
                                             fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
                                             <path
@@ -55,6 +57,11 @@
                                             </path>
                                         </svg>
                                         เพิ่มข้อมูล
+                                    </button>
+                                </a>
+                                <a href="/backend/directoryseqcate/menu/{{ $menuId }}/cate/{{ $cateID }}"><button type="button"
+                                        class="btn btn-outline-warning" fdprocessedid="2gfdil">
+                                        แก้ไขลำดับการแสดงผล
                                     </button>
                                 </a>
                             @endif

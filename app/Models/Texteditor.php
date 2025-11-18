@@ -13,7 +13,8 @@ class Texteditor extends Model
     protected $table = 'texteditor';          // ชื่อตาราง
     protected $primaryKey = 'texteditor_id';   // primary key
     protected $appends = ['texteditor_date_show_buddhist'];
-
+    const CREATED_AT = 'texteditor_date_create';
+    const UPDATED_AT = 'texteditor_date_update';
 
     public function scopeActive($query)
     {

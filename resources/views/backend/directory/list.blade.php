@@ -20,7 +20,7 @@
                                 {{ $title }}
                             </div>
                         </div>
-                        <div class="col-md-1 ms-auto">
+                        <div class="col-md-3 ms-auto">
                             <a href="{{ route('directory.add', ['menu' => $menuId]) }}"><button type="button"
                                     class="btn btn-outline-primary" fdprocessedid="2gfdil">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
@@ -33,6 +33,11 @@
                                         </path>
                                     </svg>
                                     เพิ่มข้อมูล
+                                </button>
+                            </a>
+                            <a href="/backend/directoryseq/menu/{{ $menuId }}"><button
+                                    type="button" class="btn btn-outline-warning" fdprocessedid="2gfdil">
+                                    แก้ไขลำดับการแสดงผล
                                 </button>
                             </a>
                         </div>

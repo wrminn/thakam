@@ -24,7 +24,7 @@ class DirectoryBackendController extends Controller
     {
         $this->myService = $myService;
     }
-    
+
     private function uploadFiles($files, $menuId, $id, $type = 'list', $single = false)
     {
         $uploadedPaths = [];
@@ -70,6 +70,7 @@ class DirectoryBackendController extends Controller
         $list = Texteditor::active()
             ->where('texteditor_menu', $menuId)
             ->orderBy('texteditor_date_show', 'desc')
+            ->orderBy('texteditor_seq', 'asc')
             ->orderBy('texteditor_id', 'desc')
             ->paginate(20);
 
@@ -310,6 +311,7 @@ class DirectoryBackendController extends Controller
         $list = Texteditor::active()
             ->where('texteditor_menu', $menuId)
             ->where('texteditor_category_id', $cateID)
+            ->orderBy('texteditor_seq', 'asc')
             ->orderBy('texteditor_id', 'desc')
             ->paginate(20);
 
@@ -380,5 +382,85 @@ class DirectoryBackendController extends Controller
                 'categories_date_update' => now()
             ]);
         return redirect('backend/categorylist/menu/' . $menuId);
+    }
+
+    function selectdataseqtexteditor($menuId)
+    {
+        $titles = $this->myService->getDataByKey($menuId);
+        $title = $titles ?? 'ข้อมูลเมนู' . $menuId;
+
+        $list = Texteditor::active()
+            ->where('texteditor_menu', $menuId)
+            ->orderBy('texteditor_date_show', 'desc')
+            ->orderBy('texteditor_seq', 'asc')
+            ->orderBy('texteditor_id', 'desc')
+            ->paginate(20);
+        // ->get();
+        $startIndex = ($list->currentPage() - 1) * $list->perPage() + 1;
+
+        return view('backend.directory.directoryseq', compact('title', 'list', 'menuId', 'startIndex'));
+    }
+
+    function updateseqtexteditor(Request $request, $menuId)
+    {
+        $titles = $this->myService->getDataByKey($menuId);
+        $title = $titles ?? 'ข้อมูลเมนู' . $menuId;
+
+        $data = $request->input('users');
+
+
+        foreach ($data as $item) {
+
+            Texteditor::where('texteditor_menu', $menuId)
+                ->where('texteditor_id', $item['id'])
+                ->update(
+                    [
+                        'texteditor_seq' => $item['seq'],
+                        'texteditor_date_update' => now()
+                    ]
+                );
+        }
+
+        return response()->json(['status' => 'success']);
+    }
+
+    function selectdataseqtexteditorCate($menuId, $cateID)
+    {
+        $titles = $this->myService->getDataByKey($menuId);
+        $title = $titles ?? 'ข้อมูลเมนู' . $menuId;
+
+        $list = Texteditor::active()
+            ->where('texteditor_menu', $menuId)
+            ->where('texteditor_category_id', $cateID)
+            ->orderBy('texteditor_seq', 'asc')
+            ->orderBy('texteditor_id', 'desc')
+            ->paginate(20);
+        // ->get();
+        $startIndex = ($list->currentPage() - 1) * $list->perPage() + 1;
+
+        return view('backend.directory.directoryseqcate', compact('title', 'list', 'menuId', 'cateID', 'startIndex'));
+    }
+
+    function updateseqtexteditorCate(Request $request, $menuId, $cateID)
+    {
+        $titles = $this->myService->getDataByKey($menuId);
+        $title = $titles ?? 'ข้อมูลเมนู' . $menuId;
+
+        $data = $request->input('users');
+
+
+        foreach ($data as $item) {
+
+            Texteditor::where('texteditor_menu', $menuId)
+                ->where('texteditor_id', $item['id'])
+                ->update(
+                    [
+                        'texteditor_seq' => $item['seq'],
+                        'texteditor_date_update' => now()
+                    ]
+                );
+        }
+
+        return response()->json(['status' => 'success']);
     }
 }

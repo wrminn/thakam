@@ -49,6 +49,7 @@ Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
 Route::middleware(['auth'])->group(function () {
 
     Route::get('backend', [DashboardController::class, 'backend'])->name('backend');
+
     //list
     Route::get('backend/directory/menu/{menu}', [DirectoryBackendController::class, 'SelectDirectory'])->name('directory');
     Route::get('backend/addDirectory/menu/{menu}', [DirectoryBackendController::class, 'FormAdd'])->name('directory.add');
@@ -58,6 +59,10 @@ Route::middleware(['auth'])->group(function () {
     Route::get('backend/deleteDirectoryid/menu/{menu}/id/{id}', [DirectoryBackendController::class, 'Delete'])->name('directory.delete');
     Route::get('backend/deleteDirectoryfile/menu/{menu}/id/{id}/idfile/{idfile}', [DirectoryBackendController::class, 'DeleteOneFile'])->name('directory.deleteOnefile');
     Route::post('/file/toggle-visibility', [DirectoryBackendController::class, 'toggleFileVisibility'])->name('directory.toggleFileVisibility');
+
+    Route::get('backend/directoryseq/menu/{menu}', [DirectoryBackendController::class, 'selectdataseqtexteditor']);
+    Route::post('backend/directoryseq/menu/{menu}', [DirectoryBackendController::class, 'updateseqtexteditor'])->name('updateseqdirectory');
+    
 
     //category
     Route::get('backend/directory/menu/{menu}/cate/{cate}', [DirectoryBackendController::class, 'SelectCategory'])->name('directory.category');
@@ -72,6 +77,10 @@ Route::middleware(['auth'])->group(function () {
     Route::put('backend/updateDirectoryCategory/menu/{menu}/id/{id}', [DirectoryBackendController::class, 'EditCategory'])->name('directory.category.update');
     Route::get('backend/deletecategoryid/menu/{menu}/id/{id}', [DirectoryBackendController::class, 'DeleteCategoryid'])->name('directory.delete.cate');
     Route::get('backend/deleteDirectoryfile/menu/{menu}/id/{id}/idfile/{idfile}/cate/{cate}', [DirectoryBackendController::class, 'DeleteOneFile'])->name('directory.deleteOnefile.category');
+
+    //แก้ไขตำแหน่งการแสดงผลของหมวดหมู่
+    Route::get('backend/directoryseqcate/menu/{menu}/cate/{cate}', [DirectoryBackendController::class, 'selectdataseqtexteditorCate']);
+    Route::post('backend/directoryseqcate/menu/{menu}/cate/{cate}', [DirectoryBackendController::class, 'updateseqtexteditorCate'])->name('updateseqdirectorycate');
 
     //Texteditor
     Route::get('backend/articles/menu/{menu}', [ArticlesBackendController::class, 'SelectArticles'])->name('articles.data');

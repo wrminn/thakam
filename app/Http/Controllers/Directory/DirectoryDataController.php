@@ -76,7 +76,7 @@ class DirectoryDataController extends Controller
                 ->get()->toArray();
         }
 
-       
+
 
         return view('data.directory.detail', compact('title', 'menuId', 'list', 'file', 'breadcrumbs'));
     }
@@ -117,6 +117,7 @@ class DirectoryDataController extends Controller
             ->where('texteditor_menu', $menuId)
             ->where('texteditor_category_id', $cateID)
             // ->orderBy('texteditor_date_show', 'desc')
+            ->orderBy('texteditor_seq', 'asc')
             ->orderBy('texteditor_id', 'desc')
             ->paginate(20);
 
