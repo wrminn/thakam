@@ -72,8 +72,9 @@
                     <div class="header-box-login">
                         <div class="header-login-title"><a href="/backend" class="no-underline">เข้าสู่ระบบ</a></div>
                         <div class="header-register-title"><a href="https://demo.trush.sosmartsolution.com/register"
-                                class="no-underline">สมัครสมาชิก</a></div>
+                                class="no-underline" target="_blank">สมัครสมาชิก</a></div>
                     </div>
+
                     <div class="header-box-flag">
                         <div class="flag-img">
                             <img src="/img/flag/TH.webp" alt="ไทย" width="30" onclick="changeLang('th')">
@@ -122,6 +123,17 @@
                         เปลี่ยนภาษา | Language
                     </div>
 
+                    <div class="disability-box">
+                    <div id="toggleAccessibility" class="access-btn">
+                        <img src="/img/disability.png" width="30">
+                    </div>
+                    <div class="font-box">
+
+                        <span class="font-small">ก-</span>
+                        <span class="font-default">ก</span>
+                        <span class="font-big">ก+</span>
+                    </div>
+                </div>
                 </div>
             </div>
         </section>
@@ -231,10 +243,10 @@
                         <a href="/directory/menu/46">ดาวน์โหลดแบบฟอร์ม</a>
                         <a href="/directory/menu/81">คู่มือหรือแนวทางการปฏิบัติสําหรับเจ้าหน้าที่</a>
                         <a href="/directory/menu/82">คู่มือสำหรับประชาชน</a>
-                        <a href="https://eservice-thakam.sosmartsolution.com/Requestforms">ยื่นคำร้องออนไลน์
-                            E-service</a>
-                        <a href="https://thakam.trash.sosmartsolution.com/user/request/health_hazard_license">ยื่นคำขออนุญาตออนไลน์
-                            (one stop service)</a>
+                        <a href="https://eservice-thakam.sosmartsolution.com/Requestforms"
+                            target="_blank">ยื่นคำร้องออนไลน์ E-service</a>
+                        <a href="https://thakam.trash.sosmartsolution.com/" target="_blank">ยื่นคำขออนุญาตออนไลน์ (one
+                            stop service)</a>
                     </div>
                 </div>
 
@@ -452,13 +464,13 @@
                         <a href="/webboard/menu/75">กระดานกระทู้</a>
                         <a href="/contact/menu/74">ติดต่อ</a>
                         <a href="/Sitemap">แผนผังเว็บไซต์</a>
-                        <a
-                            href="https://eservice-thakam.sosmartsolution.com/FormeService/id/1">รับเเจ้งเรื่องราวร้องเรียนร้องทุกข์</a>
+                        <a href="https://eservice-thakam.sosmartsolution.com/FormeService/id/1"
+                            target="_blank">รับเเจ้งเรื่องราวร้องเรียนร้องทุกข์</a>
                     </div>
                 </div>
                 <div class="footer-ma">
-                    <a href="http://webmail.thakam.go.th"><img src="/img/13Footer/1.png" alt=""
-                            width="250"></a>
+                    <a href="http://webmail.thakam.go.th" target="_blank"><img src="/img/13Footer/1.png"
+                            alt="" width="250"></a>
                     <a href=""><img src="/img/13Footer/2.png" alt="" width="250"></a>
                     <a href=""><img src="/img/13Footer/3.png" alt="" width="250"></a>
                     <a href="/backend"><img src="/img/13Footer/4.png" alt="" width="250"></a>
@@ -623,6 +635,51 @@
     });
 </script>
 
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const body = document.body;
+        const btn = document.getElementById("toggleAccessibility");
+
+        // ถ้ามีค่าใน localStorage → เปิดโหมด
+        if (localStorage.getItem("accessibilityMode") === "on") {
+            body.classList.add("accessibility-mode");
+        }
+
+        btn.addEventListener("click", function() {
+            body.classList.toggle("accessibility-mode");
+
+            if (body.classList.contains("accessibility-mode")) {
+                localStorage.setItem("accessibilityMode", "on");
+            } else {
+                localStorage.removeItem("accessibilityMode");
+            }
+        });
+    });
+</script>
+
+<script>
+    const body = document.querySelector('body');
+    const btnSmall = document.querySelector('.font-small');
+    const btnDefault = document.querySelector('.font-default');
+    const btnBig = document.querySelector('.font-big');
+
+    let currentSize = 16;
+
+    btnSmall.addEventListener('click', () => {
+        currentSize = 14;
+        body.style.fontSize = currentSize + 'px';
+    });
+
+    btnDefault.addEventListener('click', () => {
+        currentSize = 16;
+        body.style.fontSize = currentSize + 'px';
+    });
+
+    btnBig.addEventListener('click', () => {
+        currentSize = 20;
+        body.style.fontSize = currentSize + 'px';
+    });
+</script>
 
 <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 

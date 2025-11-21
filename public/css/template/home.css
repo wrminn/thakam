@@ -1731,3 +1731,51 @@ a.public-link {
 .cookie-box button:hover {
     background-color: #059669;
 }
+
+.access-btn {
+
+    cursor: pointer;
+}
+
+/* โหมดผู้พิการทางสายตา */
+.accessibility-mode {
+    filter: contrast(150%);
+    background: #000 !important;
+    color: #ffff00 !important; /* เหลืองอ่านง่าย */
+}
+
+.accessibility-mode * {
+    background: transparent !important;
+    color: #ffff00 !important;
+    font-size: 20px !important; /* ขยายตัวอักษร */
+    line-height: 1.6 !important;
+}
+
+.font-box {
+    background-color: #fff;
+    font-weight: 500;
+    border-radius: 10px;
+    color: #000;
+    cursor: pointer;
+}
+
+span.font-small {
+    font-size: 16px;
+    padding: 0 10px;
+}
+
+span.font-default {
+    font-size: 20px;
+    padding: 0 10px;
+}
+
+span.font-big {
+    font-size: 25px;
+    padding: 0 10px;
+}
+.disability-box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 6px;
+}

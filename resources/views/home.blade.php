@@ -172,9 +172,9 @@
             <div class="divider-line"></div>
             <div class="box-i"><a href="/directory/menu/58"><img src="/img/banner/Banner-1.png"
                         class="banner-top-img"></a></div>
-            <div class="box-i"><a href="https://eservice-thakam.sosmartsolution.com/FormeService/id/1"><img src="/img/banner/Banner-2.png"
+            <div class="box-i"><a href="https://eservice-thakam.sosmartsolution.com/FormeService/id/1" target="_blank"><img src="/img/banner/Banner-2.png"
                         class="banner-top-img"></a></div>
-            <div class="box-i"><a href="https://eservice-thakam.sosmartsolution.com/FormeService/id/3"><img src="/img/banner/Banner-3.png"
+            <div class="box-i"><a href="https://eservice-thakam.sosmartsolution.com/FormeService/id/3" target="_blank"><img src="/img/banner/Banner-3.png"
                         class="banner-top-img"></a></div>
             <div class="box-i"><a href="/directory/menu/71"><img src="/img/banner/Banner-4.png"
                         class="banner-top-img"></a></div>
@@ -241,15 +241,15 @@
     <section class="banner-box-one">
         <div class="banner-smartcity-body-one">
             <div class="smartcity-one">
-                <a href="https://asean.org/our-communities/economic-community/" class="">
+                <a href="https://asean.org/our-communities/economic-community/" class="" target="_blank">
                     <img src="/img/SmartCity/Banner-1.png" class="banner-smartcity no-underline">
                 </a>
-                <a href="https://thakam.go.th/directory/menu/7" class="">
+                <a href="https://thakam.go.th/directory/menu/7" class="" target="_blank">
                     <img src="/img/SmartCity/Banner-2.png" class="banner-smartcity no-underline">
                 </a>
             </div>
             <div class="smartcity-two">
-                <a href="https://www.enic8r.com/">
+                <a href="https://www.enic8r.com/" target="_blank">
                     <img src="/img/SmartCity/Banner-3.png" class="banner-smartcity no-underline">
                 </a>
             </div>
@@ -261,23 +261,23 @@
                     </div>
                     <div class="regis-smartcity">
                         <a href="https://docs.google.com/forms/d/e/1FAIpQLSd6bQ5WfgSTI8lq8Xo4VfA3FZ1FKgIc-_lhF-YKuIPewfGItg/viewform"
-                            class="">
+                            class="" target="_blank">
                             <img src="/img/SmartCity/Banner4-2-1.png" class="banner-smartcity no-underline">
                         </a>
                         <a href="https://calendar.google.com/calendar/u/0/embed?src=7urnqsg4qsg6hki6c1666k5psg@group.calendar.google.com&ctz=Asia/Bangkok"
-                            class="">
+                            class="" target="_blank">
                             <img src="/img/SmartCity/Banner4-3-1.png" class="banner-smartcity no-underline">
                         </a>
                     </div>
                 </div>
-                <a href="https://pr.moi.go.th/citizenknowledge.htm" class="">
+                <a href="https://pr.moi.go.th/citizenknowledge.htm" class="" target="_blank">
                     <img src="/img/SmartCity/Banner-5.png" class="banner-smartcity no-underline">
                 </a>
             </div>
         </div>
         <div class="banner-smartcity-body-center">
             <a href="https://sites.google.com/view/e-learning-thakam/%E0%B8%AB%E0%B8%99%E0%B8%B2%E0%B9%81%E0%B8%A3%E0%B8%81"
-                class="">
+                class="" target="_blank">
                 <img src="/img/SmartCity/Banner-10.png" class="banner-smartcity no-underline">
             </a>
         </div>
@@ -288,20 +288,20 @@
             <div class="box-sbt-one">
                 <div class="smartcity-five">
                     <a href="https://infocenter.oic.go.th/%E0%B9%80%E0%B8%97%E0%B8%A8%E0%B8%9A%E0%B8%B2%E0%B8%A5%E0%B8%95%E0%B8%B3%E0%B8%9A%E0%B8%A5%E0%B8%97%E0%B9%88%E0%B8%B2%E0%B8%82%E0%B9%89%E0%B8%B2%E0%B8%A1%20%E0%B8%88%E0%B8%B1%E0%B8%87%E0%B8%AB%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%89%E0%B8%B0%E0%B9%80%E0%B8%8A%E0%B8%B4%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%A3%E0%B8%B2/index.php?gid=0&mid=1012"
-                        class="">
+                        class="" target="_blank">
                         <img src="/img/SmartCity/Banner-6.png" class="banner-box-sbt-one no-underline bbs-one"
                             style="margin: 0 0 0 175px;width: 350px;"></a>
-                    <a href="https://www.nacc.go.th/NACCPPWFC?" class="">
+                    <a href="https://www.nacc.go.th/NACCPPWFC?" class="" target="_blank">
                         <img src="/img/SmartCity/Banner-7.png"
                             class="banner-box-sbt-one no-underline bbs-twoheight: 182px;"
                             style="margin: 0 0 0 87px;width: 350px;"></a>
                 </div>
                 <div class="smartcity-six">
-                    <a href="https://www.admincourt.go.th/admincourt/site/09illustration.html" class="">
+                    <a href="https://www.admincourt.go.th/admincourt/site/09illustration.html" class="" target="_blank">
                         <img src="/img/SmartCity/Banner-8.png" class="banner-box-sbt-one no-underline"
                             style="width: 250px;float: inline-end;">
                     </a>
-                    <a href="http://www.damrongdhama.moi.go.th/home/" class="">
+                    <a href="http://www.damrongdhama.moi.go.th/home/" class="" target="_blank">
                         <img src="/img/SmartCity/Banner-9.png" class="banner-box-sbt-one no-underline"
                             style="width: 280px;float: inline-start;">
                     </a>
@@ -323,21 +323,21 @@
                     Service</span>
 
                 <div class="ons-box-button-one">
-                    <a href="https://thakam.trash.sosmartsolution.com/user/waste_payment"> <img
+                    <a href="https://thakam.trash.sosmartsolution.com/user/waste_payment" target="_blank"> <img
                             src="/img/OneStopService/Banner-1.png" alt="" class="bg-ons-button"></a>
-                    <a href="https://thakam.trash.sosmartsolution.com/user/request/health_hazard_license"> <img
+                    <a href="https://thakam.trash.sosmartsolution.com/user/request/health_hazard_license" target="_blank"> <img
                             src="/img/OneStopService/Banner-2.png" alt="" class="bg-ons-button"></a>
-                    <a href="https://eservice-thakam.sosmartsolution.com/Requestforms"> <img
+                    <a href="https://eservice-thakam.sosmartsolution.com/Requestforms" target="_blank"> <img
                             src="/img/OneStopService/Banner-3.png" alt="" class="bg-ons-button"></a>
-                    <a href="https://thakam.trash.sosmartsolution.com/user/emergency/accident"> <img
+                    <a href="https://thakam.trash.sosmartsolution.com/user/emergency/accident" target="_blank"> <img
                             src="/img/OneStopService/Banner-4.png" alt="" class="bg-ons-button"></a>
                 </div>
 
             </div>
             <div class="ons-box-button-two">
-                <a href="https://thakam.trash.sosmartsolution.com/login"> <img src="/img/03/Member_0.png" alt=""
+                <a href="https://thakam.trash.sosmartsolution.com/login" target="_blank"> <img src="/img/03/Member_0.png" alt=""
                         class="bg-ons-button-member" style="float: right;"></a>
-                <a href="https://thakam.trash.sosmartsolution.com/register"> <img src="/img/03/General Public_0.png"
+                <a href="https://thakam.trash.sosmartsolution.com/register" target="_blank"> <img src="/img/03/General Public_0.png"
                         alt="" class="bg-ons-button-public"></a>
             </div>
         </div>
@@ -372,12 +372,12 @@
 
         <div class="public-body-one">
             <div class="button-public-service">
-                <a href="https://share.google/gqLI6okKQPTt1dDci" class="public-link">
+                <a href="https://share.google/gqLI6okKQPTt1dDci" class="public-link" target="_blank">
                     <img src="/img/publicservice/1.png" class="public-service-img-one">
                     <span style="margin-top: -30px;">เบี้ยยังชีพผู้สูงอายุ</span>
                     <span>Elderly allowance</span>
                 </a>
-                <a href="https://share.google/gqLI6okKQPTt1dDci" class="public-link">
+                <a href="https://share.google/gqLI6okKQPTt1dDci" class="public-link" target="_blank">
                     <img src="/img/publicservice/6.png" class="public-service-img-one">
                     <span style="margin-top: -30px;">เบี้ยยังชีพผู้พิการ</span>
                     <span>Disability living allowance</span>
@@ -730,7 +730,7 @@
                         class="button-here-text" alt=""></a>
                 <a href="/categories/menu/61"> <img src="/img/here/BannerText/Banner-Down-4-text.png"
                         class="button-here-text" alt=""></a>
-                <a href="https://eservice-thakam.sosmartsolution.com/FormeService/id/1"> <img src="/img/here/BannerText/Banner-Down-5-text.png"
+                <a href="https://eservice-thakam.sosmartsolution.com/FormeService/id/1" target="_blank"> <img src="/img/here/BannerText/Banner-Down-5-text.png"
                         class="button-here-text" alt=""></a>
                 <a href="/directory/menu/60"> <img src="/img/here/BannerText/Banner-Down-6-text.png"
                         class="button-here-text" alt=""></a>
@@ -1090,7 +1090,7 @@
                 <div id="mapone" class="tab-content-map active">
 
                     <div class="content-map">
-                        <a href="https://www.dla.go.th/land/officialDoc.do" class="no-underline">
+                        <a href="https://www.dla.go.th/land/officialDoc.do" class="no-underline" target="_blank">
                             <div class="item-map">
                                 <div class="box-one-announce">
                                     <div class="item-text">
@@ -1100,7 +1100,7 @@
 
                             </div>
                         </a>
-                        <a href="https://www.dla.go.th/index.do#information" class="no-underline">
+                        <a href="https://www.dla.go.th/index.do#information" class="no-underline" target="_blank">
                             <div class="item-map">
                                 <div class="item-text">
                                     {{-- กฎหมาย ระเบียบ และ มติ ก.กลาง --}}
@@ -1108,14 +1108,14 @@
                                 </div>
                             </div>
                         </a>
-                        <a href="https://www.dla.go.th/land/articles.do" class="no-underline">
+                        <a href="https://www.dla.go.th/land/articles.do" class="no-underline" target="_blank">
                             <div class="item-map">
                                 <div class="item-text">
                                     บทความน่าสนใจ
                                 </div>
                             </div>
                         </a>
-                        <a href="https://www.dla.go.th/index.do#e-book" class="no-underline">
+                        <a href="https://www.dla.go.th/index.do#e-book" class="no-underline" target="_blank">
                             <div class="item-map">
                                 <div class="item-text">
                                     {{-- พรบ. และประกาศเกี่ยวกับเทคโนโลยีสารสนเทศ --}}
@@ -1129,21 +1129,21 @@
 
                 <div id="maptwo" class="tab-content-map">
                     <div class="content-map">
-                        <a href="https://www.chacheongsaolocal.go.th/news/cate/2" class="no-underline">
+                        <a href="https://www.chacheongsaolocal.go.th/news/cate/2" class="no-underline" target="_blank">
                             <div class="item-map">
                                 <div class="item-text">
                                     ข่าวประชาสัมพันธ์ สถ.จ.
                                 </div>
                             </div>
                         </a>
-                        <a href="https://www.chacheongsaolocal.go.th/order" class="no-underline">
+                        <a href="https://www.chacheongsaolocal.go.th/order" class="no-underline" target="_blank">
                             <div class="item-map">
                                 <div class="item-text">
                                     หนังสือสั่งการจังหวัด
                                 </div>
                             </div>
                         </a>
-                        <a href="https://www.chacheongsaolocal.go.th/law" class="no-underline">
+                        <a href="https://www.chacheongsaolocal.go.th/law" class="no-underline" target="_blank">
                             <div class="item-map">
                                 <div class="item-text">
                                     {{-- ภาพกิจกรรม สถ.จ. --}}
@@ -1151,7 +1151,7 @@
                                 </div>
                             </div>
                         </a>
-                        <a href="https://www.chacheongsaolocal.go.th/contactus" class="no-underline">
+                        <a href="https://www.chacheongsaolocal.go.th/contactus" class="no-underline" target="_blank">
                             <div class="item-map">
                                 <div class="item-text">
                                     ติดต่อหน่วยงาน สถ.จ.
@@ -1177,35 +1177,35 @@
         <div class="banner-carousel" id="bannerCarousel">
             <button class="banner-arrow left" id="prevBtn"><img src="/img/13Footer/Next-Button.png"></button>
             <div class="banner-track" id="bannerTrack">
-                <div class="banner-item"><a href="https://e-service.doe.go.th/"><img src="/img/13Footer/Banner1.png"></a>
+                <div class="banner-item"><a href="https://e-service.doe.go.th/" target="_blank"><img src="/img/13Footer/Banner1.png"></a>
                 </div>
-                <div class="banner-item"><a href="https://www.admincourt.go.th/"><img
+                <div class="banner-item"><a href="https://www.admincourt.go.th/" target="_blank"><img
                             src="/img/13Footer/Banner2.png"></a></div>
-                <div class="banner-item"><a href="https://ndwc.disaster.go.th/ndwc"><img
+                <div class="banner-item"><a href="https://ndwc.disaster.go.th/ndwc" target="_blank"><img
                             src="/img/13Footer/Banner3.png"></a></div>
-                <div class="banner-item"><a href="https://www.dit.go.th/"><img src="/img/13Footer/Banner4.png"></a></div>
-                <div class="banner-item"><a href="https://www.baac.or.th/royal_page.php"><img
+                <div class="banner-item"><a href="https://www.dit.go.th/" target="_blank"><img src="/img/13Footer/Banner4.png"></a></div>
+                <div class="banner-item"><a href="https://www.baac.or.th/royal_page.php" target="_blank"><img
                             src="/img/13Footer/Banner5.png"></a></div>
-                <div class="banner-item"><a href="https://www.gsb.or.th/"><img src="/img/13Footer/Banner6.png"></a></div>
+                <div class="banner-item"><a href="https://www.gsb.or.th/" target="_blank"><img src="/img/13Footer/Banner6.png"></a></div>
                 <div class="banner-item"><a
-                        href="https://www.cgd.go.th/cs/internet/internet/%E0%B8%AB%E0%B8%99%E0%B9%89%E0%B8%B2%E0%B8%AB%E0%B8%A5%E0%B8%B1%E0%B8%812.html?page_locale=th_TH"><img
+                        href="https://www.cgd.go.th/cs/internet/internet/%E0%B8%AB%E0%B8%99%E0%B9%89%E0%B8%B2%E0%B8%AB%E0%B8%A5%E0%B8%B1%E0%B8%812.html?page_locale=th_TH" target="_blank"><img
                             src="/img/13Footer/Banner7.png"></a></div>
-                <div class="banner-item"><a href="https://www.prd.go.th/th/page/item/index/id/1"><img
+                <div class="banner-item"><a href="https://www.prd.go.th/th/page/item/index/id/1" target="_blank"><img
                             src="/img/13Footer/Banner8.png"></a></div>
-                <div class="banner-item"><a href="https://www.dla.go.th/index.do"><img
+                <div class="banner-item"><a href="https://www.dla.go.th/index.do" target="_blank"><img
                             src="/img/13Footer/Banner9.png"></a></div>
-                <div class="banner-item"><a href="https://www.rd.go.th/272.html"><img
+                <div class="banner-item"><a href="https://www.rd.go.th/272.html" target="_blank"><img
                             src="/img/13Footer/Banner10.png"></a></div>
-                <div class="banner-item"><a href="https://www.moc.go.th/th/page/item/index/id/1"><img
+                <div class="banner-item"><a href="https://www.moc.go.th/th/page/item/index/id/1" target="_blank"><img
                             src="/img/13Footer/Banner11.png"></a></div>
-                <div class="banner-item"><a href="https://moi.go.th/moi/"><img src="/img/13Footer/Banner12.png"></a>
+                <div class="banner-item"><a href="https://moi.go.th/moi/" target="_blank"><img src="/img/13Footer/Banner12.png"></a>
                 </div>
-                <div class="banner-item"><a href="https://www.audit.go.th/home"><img
+                <div class="banner-item"><a href="https://www.audit.go.th/home" target="_blank"><img
                             src="/img/13Footer/Banner13.png"></a></div>
-                <div class="banner-item"><a href="https://www.pr.moi.go.th/"><img src="/img/13Footer/Banner14.png"></a>
+                <div class="banner-item"><a href="https://www.pr.moi.go.th/" target="_blank"><img src="/img/13Footer/Banner14.png"></a>
                 </div>
-                <div class="banner-item"><a href="https://nacc.go.th/?"><img src="/img/13Footer/Banner15.png"></a></div>
-                <div class="banner-item"><a href="https://www.bb.go.th/"><img src="/img/13Footer/Banner16.png"></a></div>
+                <div class="banner-item"><a href="https://nacc.go.th/?" target="_blank"><img src="/img/13Footer/Banner15.png"></a></div>
+                <div class="banner-item"><a href="https://www.bb.go.th/" target="_blank"><img src="/img/13Footer/Banner16.png"></a></div>
 
             </div>
             <button class="banner-arrow right" id="nextBtn"><img src="/img/13Footer/Next-Button-2.png"></button>
