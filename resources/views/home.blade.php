@@ -172,9 +172,9 @@
             <div class="divider-line"></div>
             <div class="box-i"><a href="/directory/menu/58"><img src="/img/banner/Banner-1.png"
                         class="banner-top-img"></a></div>
-            <div class="box-i"><a href="/complaint/menu/41"><img src="/img/banner/Banner-2.png"
+            <div class="box-i"><a href="https://eservice-thakam.sosmartsolution.com/FormeService/id/1"><img src="/img/banner/Banner-2.png"
                         class="banner-top-img"></a></div>
-            <div class="box-i"><a href="/corruption/menu/42"><img src="/img/banner/Banner-3.png"
+            <div class="box-i"><a href="https://eservice-thakam.sosmartsolution.com/FormeService/id/3"><img src="/img/banner/Banner-3.png"
                         class="banner-top-img"></a></div>
             <div class="box-i"><a href="/directory/menu/71"><img src="/img/banner/Banner-4.png"
                         class="banner-top-img"></a></div>
@@ -730,7 +730,7 @@
                         class="button-here-text" alt=""></a>
                 <a href="/categories/menu/61"> <img src="/img/here/BannerText/Banner-Down-4-text.png"
                         class="button-here-text" alt=""></a>
-                <a href="/complaint/menu/41"> <img src="/img/here/BannerText/Banner-Down-5-text.png"
+                <a href="https://eservice-thakam.sosmartsolution.com/FormeService/id/1"> <img src="/img/here/BannerText/Banner-Down-5-text.png"
                         class="button-here-text" alt=""></a>
                 <a href="/directory/menu/60"> <img src="/img/here/BannerText/Banner-Down-6-text.png"
                         class="button-here-text" alt=""></a>

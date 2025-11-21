@@ -316,6 +316,19 @@
                 <div class="menu-item">กระดานสนทนา</div>
             </a>
 
+            {{-- <a href="/backend/articles/menu/83">
+                <div class="menu-item">การปฏิเสธความรับผิด</div>
+            </a>
+            <a href="/backend/articles/menu/84">
+                <div class="menu-item">นโยบายการคุ้มครองข้อมูลส่วนบุคคล</div>
+            </a>
+            <a href="/backend/articles/menu/85">
+                <div class="menu-item">นโยบายเว็บไซต์</div>
+            </a>
+            <a href="/backend/articles/menu/86">
+                <div class="menu-item">นโยบายการรักษาความมั่นคงปลอดภัยเว็บไซต์</div>
+            </a> --}}
+
 
 
         </div>

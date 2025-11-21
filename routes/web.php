@@ -254,6 +254,11 @@ Route::get('/elibrary/menu/{menu}', [ArticlesDataController::class, 'SelectElibr
 Route::get('/elibrary/menu/{menu}/id/{id}', [ArticlesDataController::class, 'SelectElibraryFrontID'])->name('elibrary.detail');
 
 
+Route::get('/Sitemap', [PublicDataController::class, 'showSitemap'])->name('sitemap');
+
+Route::post('/cookie/save', [HomeController::class, 'Cookiesave']);
+
+
 Route::get('/flipbook', function () {
 
     $pdf_files = [

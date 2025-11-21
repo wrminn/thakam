@@ -209,8 +209,10 @@
                         <a href="/directory/menu/39">เทศบัญญัติและคำสั่ง</a>
                         <a href="/directory/menu/40">กฎหมายอื่นๆที่เกี่ยวข้อง</a>
                         <a href="/directory/menu/76">แผนพัฒนาเศรษฐกิจและสังคมแห่งชาติ</a>
-                        <a href="https://www.dla.go.th/land/legalItemFon.do?searchCondition.typeLegalItem=2">พระราชบัญญัติและพระราชกฤษฎีกา</a>
-                        <a href="https://www.dla.go.th/land/legalItemFon.do?searchCondition.typeLegalItem=3">กฎหมาย ระเบียบ และประกาศกระทรวง</a>
+                        <a
+                            href="https://www.dla.go.th/land/legalItemFon.do?searchCondition.typeLegalItem=2">พระราชบัญญัติและพระราชกฤษฎีกา</a>
+                        <a href="https://www.dla.go.th/land/legalItemFon.do?searchCondition.typeLegalItem=3">กฎหมาย
+                            ระเบียบ และประกาศกระทรวง</a>
                     </div>
                 </div>
 
@@ -219,8 +221,10 @@
                     <div class="submenu">
                         {{-- <a href="/complaint/menu/41">รับเเจ้งเรื่องราวร้องเรียนร้องทุกข์ </a>
                         <a href="/corruption/menu/42">รับเเจ้งเรื่องราวร้องเรียนการทุจริตและประพฤติมิชอบ</a> --}}
-                        <a href="https://eservice-thakam.sosmartsolution.com/FormeService/id/1">รับเเจ้งเรื่องราวร้องเรียนร้องทุกข์ </a>
-                        <a href="https://eservice-thakam.sosmartsolution.com/FormeService/id/3">รับเเจ้งเรื่องราวร้องเรียนการทุจริตและประพฤติมิชอบ</a>
+                        <a href="https://eservice-thakam.sosmartsolution.com/FormeService/id/1">รับเเจ้งเรื่องราวร้องเรียนร้องทุกข์
+                        </a>
+                        <a
+                            href="https://eservice-thakam.sosmartsolution.com/FormeService/id/3">รับเเจ้งเรื่องราวร้องเรียนการทุจริตและประพฤติมิชอบ</a>
                         <a href="/satisfaction/menu/43">แบบสอบถามความพึงพอใจ</a>
                         <a href="/directory/menu/44">รายงานผลสำรวจความพึงพอใจ </a>
                         {{-- <a href="/categories/menu/45">คู่มือการทำงานของหน่วยงาน</a> --}}
@@ -229,11 +233,14 @@
                         <a href="/directory/menu/82">คู่มือสำหรับประชาชน</a>
                         <a href="https://eservice-thakam.sosmartsolution.com/Requestforms">ยื่นคำร้องออนไลน์
                             E-service</a>
+                        <a href="https://thakam.trash.sosmartsolution.com/user/request/health_hazard_license">ยื่นคำขออนุญาตออนไลน์
+                            (one stop service)</a>
                     </div>
                 </div>
 
             </nav>
         </section>
+
         <section class="slide-top">
             <img src="/img/ficslide.webp" alt="" class="box-img-slide-top">
             <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade position-relative">
@@ -444,8 +451,9 @@
                         <a href="/home">หน้าแรก</a>
                         <a href="/webboard/menu/75">กระดานกระทู้</a>
                         <a href="/contact/menu/74">ติดต่อ</a>
-                        <a href="#">แผนผังเว็บไซต์</a>
-                        <a href="/complaint/menu/41">รับเเจ้งเรื่องราวร้องเรียนร้องทุกข์</a>
+                        <a href="/Sitemap">แผนผังเว็บไซต์</a>
+                        <a
+                            href="https://eservice-thakam.sosmartsolution.com/FormeService/id/1">รับเเจ้งเรื่องราวร้องเรียนร้องทุกข์</a>
                     </div>
                 </div>
                 <div class="footer-ma">
@@ -457,13 +465,40 @@
                 </div>
             </div>
         </section>
+
         <section class="Copyright">
             <div class="footer-two">
                 <div class="tfone">การแสดงผลหน้าเว็บไซต์จะสมบูรณ์ที่สุด บนบราวเซอร์ Google Chrome & FireFox
                     ความละเอียดหน้าจอไม่ต่ำกว่า 1366x768 pixel และไม่เกิน 1600x1200 pixel</div>
                 <div class="tfone">Copyright @ บริษัท So Smart Solution สงวนสิทธิ์ 2025</div>
+                <div class="tfone">
+                    <a href="/articles/menu/83">
+                        <div class="menu-item">การปฏิเสธความรับผิด</div>
+                    </a>
+                    <a href="/articles/menu/84">
+                        <div class="menu-item">นโยบายการคุ้มครองข้อมูลส่วนบุคคล</div>
+                    </a>
+                    <a href="/articles/menu/85">
+                        <div class="menu-item">นโยบายเว็บไซต์</div>
+                    </a>
+                    <a href="/articles/menu/86">
+                        <div class="menu-item">นโยบายการรักษาความมั่นคงปลอดภัยเว็บไซต์</div>
+                    </a>
+                </div>
             </div>
         </section>
+
+
+        <div class="cookie-box" id="cookieBox">
+            <p>
+                เว็บไซต์นี้ใช้คุกกี้เพื่อให้ท่านได้รับประสบการณ์การใช้งานที่ดียิ่งขึ้น
+                <a href="/articles/menu/84" target="_blank">เรียนรู้เพิ่มเติม</a>
+            </p>
+            <form id="acceptCookieForm">
+                @csrf
+                <button type="submit">ยอมรับ</button>
+            </form>
+        </div>
 
     </div>
 
@@ -497,6 +532,7 @@
         }
     }
 </script>
+
 <script>
     document.addEventListener('DOMContentLoaded', function() {
         const carousel = document.querySelector('#carouselExampleSlidesOnly');
@@ -540,6 +576,53 @@
         });
     });
 </script>
+
+
+<script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+<script>
+    $(document).ready(function() {
+        const cookieBox = $('#cookieBox');
+
+        function getCookie(name) {
+            const value = `; ${document.cookie}`;
+            const parts = value.split(`; ${name}=`);
+            if (parts.length === 2) return parts.pop().split(';').shift();
+        }
+
+        // ซ่อนกล่องถ้ามี cookie
+        if (getCookie('cookieAccepted')) {
+            cookieBox.hide();
+        }
+
+        $('#acceptCookieForm').submit(function(e) {
+            e.preventDefault(); // ป้องกัน form submit ปกติ
+
+            const date = new Date();
+            date.setDate(date.getDate() + 1); // เพิ่ม 1 วัน
+            document.cookie = `cookieAccepted=true; expires=${date.toUTCString()}; path=/`;
+
+
+            // ดึง CSRF token จาก form
+            const token = $(this).find('input[name="_token"]').val();
+
+            // ส่ง AJAX POST
+            $.ajax({
+                url: "/cookie/save",
+                method: "POST",
+                data: {
+                    _token: token
+                },
+                success: function(res) {
+                    cookieBox.fadeOut();
+                },
+                error: function() {
+                    alert("เกิดข้อผิดพลาด กรุณาลองใหม่");
+                }
+            });
+        });
+    });
+</script>
+
 
 <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 

@@ -423,4 +423,15 @@ img.box-img-slide-top {
         width: 100%;
         margin: 5px 0;
     }
+
+    .tfone a {
+        color: #212565;
+        text-decoration: auto;
+    }
+
+    .tfone {
+        display: flex;
+        gap: 10px;
+    }
+
 }

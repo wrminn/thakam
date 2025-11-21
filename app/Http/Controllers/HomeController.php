@@ -180,6 +180,26 @@ class HomeController extends Controller
         return response()->json(['status' => 'success']);
     }
 
+    public function Cookiesave(Request $request)
+    {
+
+        $vote = $request->input('vote');
+
+        // บันทึกลง DB
+
+        $ip = request()->ip();
+        $userAgent = request()->header('User-Agent');
+        $today = now()->startOfDay();
+
+        DB::table('cookie_statistics')->insert([
+            'cookie_statistics_ip' => $ip,
+            'cookie_statistics_user_agent' => $userAgent,
+
+        ]);
+
+        return response()->json(['status' => 'success']);
+    }
+
     public function stats()
     {
         $now = Carbon::now();
