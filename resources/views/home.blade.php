@@ -238,7 +238,7 @@
 
     </section>
 
-    <section class="banner-box-one">
+    {{-- <section class="banner-box-one">
         <div class="banner-smartcity-body-one">
             <div class="smartcity-one">
                 <a href="https://asean.org/our-communities/economic-community/" class="" target="_blank">
@@ -309,7 +309,7 @@
             </div>
 
         </div>
-    </section>
+    </section> --}}
 
     <section class="banner-one-stop-service">
         <div class="box-one-stop-service">
@@ -675,7 +675,17 @@
     </section>
 
     <section class="box-here">
-        <img src="/img/here/1.png" alt="" class="box-here-img-text">
+        {{-- <img src="/img/here/1.png" alt="" clas
+        s="box-here-img-text"> --}}
+        <div class="title-news">
+                <div class="text-news">
+                    <div class="box-bg-title">
+                        <span class="title-news-top">ที่นี่เทศบาลตำบลท่าข้าม</span>
+                        {{-- <span class="title-news-button">เทศบาลตำบลท่าข้าม</span> --}}
+                    </div>
+
+                </div>
+            </div>
         <div class="box-slide-hrer">
             <div class="slide-img">
                 <div id="carouselExampleSlidesHere" class="carousel slide carousel-fade carousel-slide-here"
@@ -758,7 +768,7 @@
                 <div id="egp" class="tab-content active">
 
                     <div class="content-announce">
-
+{{-- 
                         @forelse($egp as $list)
                             <a href="{{ $list['link'] }}" class="no-underline">
                                 <div class="item">
@@ -795,7 +805,7 @@
                             </a>
                         @empty
                             <div class="">ไม่พบข้อมูล</div>
-                        @endforelse
+                        @endforelse --}}
                     </div>
                     <div class="box-all-announce">
                         <a href="http://" class="no-underline button-announce-all">ดูทั้งหมด</a>
@@ -1053,7 +1063,8 @@
         </div>
         <div class="map-two">
 
-            <iframe src="/img/AnimationMap/index.html" frameborder="0" style="width: 100%;"></iframe>
+            {{-- <iframe src="/img/AnimationMap/index.html" frameborder="0" style="width: 100%;"></iframe> --}}
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3879.9218015846136!2d100.99155047508533!3d13.478916086885109!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x311d382930e1b751%3A0xe3df05a76a79a6d0!2z4Liq4Liz4LiZ4Lix4LiB4LiH4Liy4LiZ4LmA4LiX4Lio4Lia4Liy4Lil4LiV4Liz4Lia4Lil4LiX4LmI4Liy4LiC4LmJ4Liy4Lih!5e0!3m2!1sth!2sth!4v1774801182506!5m2!1sth!2sth" width="1050" height="800" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
         <div class="map-three">
             <div class="text-map-three">

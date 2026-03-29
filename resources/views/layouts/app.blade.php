@@ -331,16 +331,14 @@
 
         <div class="br-top"></div>
 
-        <section class="animation-top">
-            {{-- <img src="https://www.w3schools.com/howto/img_snow_wide.jpg" class="d-block w-100" alt="..."
-                style="width: 1905px; height:650px"> --}}
+        {{-- <section class="animation-top">
+            <img src="https://www.w3schools.com/howto/img_snow_wide.jpg" class="d-block w-100" alt="..."
+                style="width: 1905px; height:650px">
             <video autoplay muted loop playsinline style="width: 100%;">
                 <source src="/img/Animation.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
-
-
-        </section>
+        </section> --}}
 
         <section class="vistion-top">
             <div class="search-bar-container">
@@ -419,9 +417,9 @@
             </div>
         </section>
 
-        <section class="box-view-two">
+        {{-- <section class="box-view-two">
             <div class="null-content"></div>
-        </section>
+        </section> --}}
 
         <section class="box-footer">
             <div class="footer-one">
