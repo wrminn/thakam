@@ -480,7 +480,7 @@
             <div class="footer-two">
                 <div class="tfone">การแสดงผลหน้าเว็บไซต์จะสมบูรณ์ที่สุด บนบราวเซอร์ Google Chrome & FireFox
                     ความละเอียดหน้าจอไม่ต่ำกว่า 1366x768 pixel และไม่เกิน 1600x1200 pixel</div>
-                <div class="tfone">Copyright @ บริษัท So Smart Solution สงวนสิทธิ์ 2025</div>
+                {{-- <div class="tfone">Copyright @ บริษัท So Smart Solution สงวนสิทธิ์ 2025</div> --}}
                 <div class="tfone">
                     <a href="/articles/menu/83">
                         <div class="menu-item">การปฏิเสธความรับผิด</div>
