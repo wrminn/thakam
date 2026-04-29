@@ -124,16 +124,16 @@
                     </div>
 
                     <div class="disability-box">
-                    <div id="toggleAccessibility" class="access-btn">
-                        <img src="/img/disability.png" width="30">
-                    </div>
-                    <div class="font-box">
+                        <div id="toggleAccessibility" class="access-btn">
+                            <img src="/img/disability.png" width="30">
+                        </div>
+                        <div class="font-box">
 
-                        <span class="font-small">ก-</span>
-                        <span class="font-default">ก</span>
-                        <span class="font-big">ก+</span>
+                            <span class="font-small">ก-</span>
+                            <span class="font-default">ก</span>
+                            <span class="font-big">ก+</span>
+                        </div>
                     </div>
-                </div>
                 </div>
             </div>
         </section>
@@ -260,7 +260,7 @@
 
                 <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade position-relative">
                     <div class="carousel-inner">
-                        @forelse($SlideTop as $key => $slide)
+                        {{-- @forelse($SlideTop as $key => $slide)
                             <div class="carousel-item {{ $key === 0 ? 'active' : '' }}">
                                 @php
                                     $extension = pathinfo($slide->slide_path, PATHINFO_EXTENSION);
@@ -269,8 +269,7 @@
                                 @if (in_array(strtolower($extension), ['mp4', 'webm', 'ogg']))
                                     <video class="d-block w-100" preload="auto" autoplay muted playsinline
                                         style="object-fit: cover; height: auto;">
-                                        {{-- <video class="d-block w-100" preload="auto" autoplay muted loop playsinline
-                                        style="object-fit: cover; height: 600px;"> --}}
+                                        <video class="d-block w-100" preload="auto" autoplay muted loop playsinline style="object-fit: cover; height: 600px;">
                                         <source src="{{ asset('storage/' . $slide->slide_path) }}"
                                             type="video/{{ $extension }}">
                                         เบราว์เซอร์ของคุณไม่รองรับการเล่นวิดีโอ
@@ -285,12 +284,17 @@
                                 <img src="https://www.w3schools.com/howto/img_snow_wide.jpg" class="d-block w-100"
                                     alt="..." style="width: 1905px; height:600px; object-fit: cover;">
                             </div>
-                        @endforelse
+                        @endforelse --}}
+                        <div class="carousel-item active">
+                            <img src="{{ asset('/img/personnel/0001.png') }}" class="d-block w-100"
+                                alt="slide 1" style="object-fit: cover; height: 580px;">
+
+                        </div>
                     </div>
                 </div>
 
                 {{-- Controls + Indicators (overlay) --}}
-                <div class="position-absolute bottom-0 start-0 end-0 d-flex justify-content-center align-items-center gap-3 mb-3"
+                {{-- <div class="position-absolute bottom-0 start-0 end-0 d-flex justify-content-center align-items-center gap-3 mb-3"
                     style="z-index: 10;height: 10px;">
 
                     <button class="carousel-control-prev position-static" type="button"
@@ -325,7 +329,7 @@
                         </svg>
                         <span class="visually-hidden">Next</span>
                     </button>
-                </div>
+                </div> --}}
             </div>
         </section>
 
@@ -343,11 +347,11 @@
         <section class="vistion-top">
             <div class="search-bar-container">
                 {{-- <div class="search-button vision">วิสัยทัศน์</div> --}}
-                <div class="vision"><img src="/img/vission/3.png" alt=""></div>
+                <div class="vision" style="z-index: 5;"><img src="/img/vission/3.png" alt=""></div>
                 <div class="search-button intercity-port">
                     <div class="scroll-text">ท่าข้ามเมืองน่าอยู่ พัฒนาสู่ EEC</div>
                 </div>
-                <div class="search-box-1">
+                <div class="search-box-1" style="z-index: 5;">
                     <div class="search-box-img">
                         <img src="/img/vission/2.png" alt="">
                     </div>

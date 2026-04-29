@@ -7,7 +7,7 @@
 }
 
 .header-section {
-    background-color: #00a79d;
+    background-color: #4a80d4;
     padding: 25px 30px;
     height: 230px;
 }
@@ -58,7 +58,7 @@
     display: flex;
     align-items: center;
     gap: 15px;
-    background: #00a79d;
+    background: #4a80d4;
     border-radius: 25px;
     color: #fff;
     font-size: 14px;
@@ -69,7 +69,7 @@
 .box-Language {
     display: inline-block;
     background-color: #ffffff;
-    color: #00a79d;
+    color: #4a80d4;
     padding: 0px 6px;
     border-radius: 20px;
     font-size: 14px;
@@ -86,7 +86,7 @@
 }
 
 svg.bi.bi-telephone-fill {
-    fill: #00a79d;
+    fill: #4a80d4;
 }
 
 .header-text-left {

@@ -3,11 +3,10 @@
 @section('content')
     <script src="{{ asset('bootstrap/js/bootstrap.min.js') }}"></script>
 
-    <section class="box-personnel">
-        <div class="title-personnel">คณะผู้บริหาร</div>
+    {{-- <section class="box-personnel"> --}}
+        {{-- <div class="title-personnel">คณะผู้บริหาร</div>
         <div class="personnel-box">
             <div class="personnel-box-p1">
-                {{-- <img src="/img/personnel/นายก.png"> --}}
                 <div id="carouselpersonnel" class="carousel slide carousel-fade position-relative" data-bs-ride="carousel"
                     data-bs-interval="3500">
                     <div class="carousel-inner">
@@ -32,7 +31,6 @@
                         <path fill-rule="evenodd"
                             d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z" />
                     </svg>
-                    {{-- <a href="tel:038573411" class="no-underline">038573411 ต่อ 111</a> --}}
                     <a href="tel:038573411" class="no-underline">038573411</a>
                 </div>
             </div>
@@ -44,7 +42,6 @@
                         <div class="person-box-background"></div>
                         <div class="personnel-box-detail-p2">
                             <div class="per-b-name-p2">นายสมประสงค์ สายสิณะวัฒน์</div>
-                            {{-- <div class="per-b-position-p2">รองนายกเทศมนตรีตำบลท่าข้าม 1</div> --}}
                             <div class="per-b-position-p2">รองนายกเทศมนตรีตำบลท่าข้าม </div>
                         </div>
                         <div class="per-b-tel-p2">
@@ -53,7 +50,6 @@
                                 <path fill-rule="evenodd"
                                     d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z" />
                             </svg>
-                            {{-- <a href="tel:038573411" class="no-underline">038573411 ต่อ 113</a> --}}
                             <a href="tel:038573411" class="no-underline">038573411</a>
                         </div>
                     </div>
@@ -62,7 +58,6 @@
                         <div class="person-box-background"></div>
                         <div class="personnel-box-detail-p2">
                             <div class="per-b-name-p2">นายสมศักดิ์ จรุญเลิศ</div>
-                            {{-- <div class="per-b-position-p2">รองนายกเทศมนตรีตำบลท่าข้าม 2</div> --}}
                             <div class="per-b-position-p2">รองนายกเทศมนตรีตำบลท่าข้าม </div>
                         </div>
                         <div class="per-b-tel-p2">
@@ -71,7 +66,6 @@
                                 <path fill-rule="evenodd"
                                     d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z" />
                             </svg>
-                            {{-- <a href="tel:038573411" class="no-underline">038573411 ต่อ 118</a> --}}
                             <a href="tel:038573411" class="no-underline">038573411</a>
                         </div>
                     </div>
@@ -88,7 +82,6 @@
                                 <path fill-rule="evenodd"
                                     d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z" />
                             </svg>
-                            {{-- <a href="tel:038573411" class="no-underline">038573411 ต่อ 114</a> --}}
                             <a href="tel:038573411" class="no-underline">038573411</a>
                         </div>
                     </div>
@@ -105,7 +98,6 @@
                                 <path fill-rule="evenodd"
                                     d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z" />
                             </svg>
-                            {{-- <a href="tel:038573411" class="no-underline">038573411 ต่อ 144</a> --}}
                             <a href="tel:038573411" class="no-underline">038573411</a>
                         </div>
                     </div>
@@ -116,7 +108,6 @@
                         <div class="person-box-background"></div>
                         <div class="personnel-box-detail-p2">
                             <div class="per-b-name-p2">นายพิชัย พันธุ์สุวรรณ</div>
-                            {{-- <div class="per-b-position-p2">ที่ปรึกษาพิเศษ 1</div> --}}
                             <div class="per-b-position-p2">ที่ปรึกษาพิเศษ </div>
                         </div>
                         <div class="per-b-tel-p2">
@@ -125,7 +116,6 @@
                                 <path fill-rule="evenodd"
                                     d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z" />
                             </svg>
-                            {{-- <a href="tel:038573411" class="no-underline">038573411 ต่อ 123</a> --}}
                             <a href="tel:038573411" class="no-underline">038573411</a>
                         </div>
                     </div>
@@ -134,7 +124,6 @@
                         <div class="person-box-background"></div>
                         <div class="personnel-box-detail-p2">
                             <div class="per-b-name-p2">นามานิตย์ ดีเอื้อ</div>
-                            {{-- <div class="per-b-position-p2">ที่ปรึกษาพิเศษ 2</div> --}}
                             <div class="per-b-position-p2">ที่ปรึกษาพิเศษ</div>
                         </div>
                         <div class="per-b-tel-p2">
@@ -143,7 +132,6 @@
                                 <path fill-rule="evenodd"
                                     d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z" />
                             </svg>
-                            {{-- <a href="tel:038573411" class="no-underline">038573411 ต่อ 123</a> --}}
                             <a href="tel:038573411" class="no-underline">038573411</a>
                         </div>
                     </div>
@@ -152,7 +140,6 @@
                         <div class="person-box-background"></div>
                         <div class="personnel-box-detail-p2">
                             <div class="per-b-name-p2">นางมณี จิตมาศฐาน</div>
-                            {{-- <div class="per-b-position-p2">ที่ปรึกษาพิเศษ 3</div> --}}
                             <div class="per-b-position-p2">ที่ปรึกษาพิเศษ</div>
                         </div>
                         <div class="per-b-tel-p2">
@@ -161,27 +148,32 @@
                                 <path fill-rule="evenodd"
                                     d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z" />
                             </svg>
-                            {{-- <a href="tel:038573411" class="no-underline">038573411 ต่อ 123</a> --}}
                             <a href="tel:038573411" class="no-underline">038573411</a>
                         </div>
                     </div>
                 </div>
             </div>
+        </div> --}}
+        <div class="banner-top-2">
+            <div class="divider-line-2"></div>
+            <div class="box-iio">
+                <a href="/directory/menu/58"><img src="/img/banner/001.png" class="banner-top-img-2"> </a>
+                </div>
+            <div class="box-iio">
+                <a href="https://eservice-thakam.sosmartsolution.com/FormeService/id/1" target="_blank"><img src="/img/banner/002.png"
+                        class="banner-top-img-2"></a>
+                    </div>
+            <div class="box-iio">
+                <a href="https://eservice-thakam.sosmartsolution.com/FormeService/id/3" target="_blank"><img src="/img/banner/003.png" class="banner-top-img-2"></a>
+            </div>
+            <div class="box-iio">
+                <a href="/directory/menu/71"><img src="/img/banner/004.png" class="banner-top-img-2"></a>
+            </div>
+            <div class="box-iio">
+                <a href="/articles/menu/72"><img src="/img/banner/005.png" class="banner-top-img-2"></a>
+                </div>
         </div>
-        <div class="banner-top">
-            <div class="divider-line"></div>
-            <div class="box-i"><a href="/directory/menu/58"><img src="/img/banner/Banner-1.png"
-                        class="banner-top-img"></a></div>
-            <div class="box-i"><a href="https://eservice-thakam.sosmartsolution.com/FormeService/id/1" target="_blank"><img src="/img/banner/Banner-2.png"
-                        class="banner-top-img"></a></div>
-            <div class="box-i"><a href="https://eservice-thakam.sosmartsolution.com/FormeService/id/3" target="_blank"><img src="/img/banner/Banner-3.png"
-                        class="banner-top-img"></a></div>
-            <div class="box-i"><a href="/directory/menu/71"><img src="/img/banner/Banner-4.png"
-                        class="banner-top-img"></a></div>
-            <div class="box-i"><a href="/articles/menu/72"><img src="/img/banner/Banner-5.png"
-                        class="banner-top-img"></a></div>
-        </div>
-    </section>
+    {{-- </section> --}}
 
     <section class="box-video">
         <div class="video-text">

@@ -1179,7 +1179,7 @@ img.button-here-text {
 .item-map {
     display: flex;
     padding: 10px 45px;
-    background: #b0dd74;
+    background: #059892;
     height: 55px;
     border-radius: 16px;
     flex-direction: column;
@@ -1207,12 +1207,12 @@ img.button-here-text {
     content: "";
     flex: 1;
     height: 1px;
-    background: #a0d657;
+    background: #059892;
     margin: 0 10px;
 }
 
 .box-all-map a {
-    background: #a0d657;
+    background: #059892;
     border: 1px solid #ccc;
     border-radius: 25px;
     padding: 6px 16px;
@@ -1240,7 +1240,7 @@ img.banner-map-img:hover {
 
 
 .box-view {
-    background: #8dc63f;
+    background: #058c8a;
     padding: 20px 0px 20px 70px;
     display: flex;
     align-items: center;

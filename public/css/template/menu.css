@@ -13,7 +13,7 @@
 
 .nav-pill {
     position: relative;
-    background: #8CC63E;
+    background: #058C8A;
     padding: 10px 38px;
     border-radius: 30px;
     border: 1px solid rgba(0, 0, 0, 0.08);
@@ -215,7 +215,7 @@ span.chip {
 
     .nav-pill {
         position: relative;
-        background: #8CC63E;
+        background: #058C8A;
         padding: 0.5vw 2vw;
         border-radius: 1.5vw;
         border: 0.05vw solid rgba(0, 0, 0, 0.08);
