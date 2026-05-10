@@ -644,7 +644,7 @@
     .ons-box-one {
         display: flex;
         flex-direction: column;
-        margin: 2.08vw 0 0 8.13vw;
+        margin: 15.08vw 0 0 8.13vw;
         font-size: 2.6vw;
         width: 730px;
     }
@@ -657,7 +657,7 @@
     }
 
     img.bg-ons-button {
-        width: 40%;
+        width: 60%;
     }
 
     .ons-box-button-two {
@@ -760,7 +760,7 @@
     }
 
     .title-activity-top {
-        font-size: clamp(2rem, 7.8vw, 150px);
+        font-size: clamp(2rem, 5.8vw, 120px);
         font-weight: 900;
         background: linear-gradient(182deg, #00565f, #019892);
         -webkit-background-clip: text;
@@ -909,7 +909,7 @@
     }
 
     .title-news-top {
-        font-size: clamp(2rem, 8vw, 100px);
+        font-size: clamp(2rem, 8vw, 85px);
         font-weight: 900;
         background: linear-gradient(182deg, #00565f, #019892);
         -webkit-background-clip: text;
@@ -924,10 +924,11 @@
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         text-align: center;
+        font-weight: 500;
     }
 
     .card-news {
-        width: clamp(280px, 40vw, 550px);
+        width: 100% !important;
         padding-top: 3rem;
         overflow: hidden;
     }
@@ -947,12 +948,12 @@
 
     .news-directory {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         flex-wrap: wrap;
         justify-content: space-around;
         max-width: 1600px;
         margin: 0 auto;
-        padding: 15px 120px;
+        padding: 15px 250px;
     }
 
     .card-news-body {
@@ -1071,8 +1072,10 @@
 
     .banner-service-one {
         display: flex;
-        justify-content: center;
         flex: 1;
+        padding: 80px 150px;
+        flex-direction: row;
+        justify-content: center;
     }
 
     .banner-service-two {
@@ -1502,11 +1505,14 @@
     }
 
     .content-map {
-        display: flex;
+        /* display: flex;
         flex-direction: column;
         gap: 15px;
         max-width: 1200px;
-        margin: 0 auto;
+        margin: 0 auto; */
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
     }
 
     .item-map {

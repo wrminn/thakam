@@ -56,7 +56,8 @@ body {
 }
 
 .box-video::before {
-    background-image: url("/img/background/Video-BG.webp");
+    /* background-image: url("/img/background/Video-BG.webp"); */
+    background: linear-gradient(180deg, #9cf3fb91, #ffffff);
 }
 
 .banner-box-one::before {
@@ -73,7 +74,7 @@ body {
 }
 
 .box-activity-relations::before {
-    background-image: url("/img/background/BG-activity.png");
+    /* background-image: url("/img/background/BG-activity.png"); */
     /* background-position: 0px -250px; */
 }
 
@@ -134,7 +135,7 @@ img.box-here-img-text {
 
 .box-here {
     /* min-height: 3000px; */
-    min-height: 2000px;
+    min-height: 1700px;
     margin-top: 50px;
 }
 
@@ -430,7 +431,7 @@ img.button-here:hover {
 
 img.bg-ons {
     width: 100%;
-    margin-top: 40px;
+    /* margin-top: 40px; */
 }
 
 .box-one-stop-service {
@@ -457,7 +458,7 @@ img.bg-ons {
 }
 
 img.bg-ons-button {
-    width: 45%;
+    width: 60%;
 }
 
 .ons-box-button-two {
@@ -569,7 +570,7 @@ img.public-service-img {
 }
 
 .title-activity-top {
-    font-size: 150px;
+    font-size: 100px;
     font-weight: 900;
     background: linear-gradient(182deg, #00565f, #019892);
     -webkit-background-clip: text;
@@ -692,7 +693,7 @@ a.no-underline.button-here-all {
 
 .news-directory {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     padding: 15px 250px;
     justify-content: space-around;
@@ -702,6 +703,15 @@ a.no-underline.button-here-all {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    /* box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1); */
+    transition: transform 0.3s ease;
 }
 
 .box-all-news {
@@ -908,7 +918,7 @@ img.button-here-text {
 
 /*ถึงนี่*/
 .announce-box {
-    margin-top: 350px;
+    margin-top: 50px;
     min-height: 1200px;
 }
 
@@ -1190,12 +1200,15 @@ img.button-here-text {
 }
 
 .content-map {
-    display: flex;
+    /* display: flex;
     justify-content: space-between;
     gap: 10px;
     overflow: hidden;
     flex-direction: column;
-    flex-wrap: nowrap;
+    flex-wrap: nowrap; */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
 }
 
 .item-map {
@@ -1789,84 +1802,13 @@ span.font-big {
     position: relative;
     width: 100%;
     max-width: 1400px;
-    /* margin: 80px auto; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* gap: 40px; */
-    gap: 0px;
-    flex-wrap: wrap;
-    padding: 80px 20px;
+    height: 1000px;
+    margin: auto;
     overflow: hidden;
-    background: #f7f7f7;
-    height: 900px;
+    /* background: #e8e4e4e0; */
 }
 
-/* วงกลมด้านหลัง */
-.banner-top-2::before {
-    content: "";
-    position: absolute;
-    width: 600px;
-    height: 600px;
-    border: 3px solid #e5e5e5;
-    border-radius: 50%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 0;
-}
-
-/* กล่องแต่ละอัน */
-.box-iio {
-    position: relative;
-    width: 220px;
-    height: 220px;
-    z-index: 2;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-/* รูป */
-.banner-top-img-2 {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    transition: all 0.3s ease;
-    filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.15));
-}
-
-.banner-top-img-2:hover {
-    transform: translateY(-8px) scale(1.03);
-}
-
-/* จัดตำแหน่งแบบในรูป */
-.box-iio:nth-child(2) {
-    /* transform: translateY(-140px); */
-    transform: translate(145px, 18px);
-}
-
-.box-iio:nth-child(3) {
-    /* transform: translateY(285px); */
-    transform: translate(-1px, 228px);
-}
-
-.box-iio:nth-child(4) {
-    /* transform: translateY(120px); */
-        transform: translate(0px, 317px);
-}
-
-.box-iio:nth-child(5) {
-    /* transform: translateY(160px); */
-    transform: translate(17px, 226px);
-}
-
-.box-iio:nth-child(6) {
-    /* transform: translateY(40px); */
-    transform: translate(-127px, 7px);
-}
-
-/* เส้นกลาง */
+/* วงกลมกลาง */
 .divider-line-2 {
     position: absolute;
     width: 350px;
@@ -1880,34 +1822,179 @@ span.font-big {
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 1;
-
 }
 
 /* ข้อความกลาง */
 .divider-line-2::before {
-    content: "STEPS";
+    content: "บริการ\Aประชาชน";
+    white-space: pre-line;
     position: absolute;
     top: 42%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 72px;
+    font-size: 42px;
     font-weight: 900;
     color: #07145f;
-    font-family: sans-serif;
     letter-spacing: 2px;
+    text-align: center;
 }
 
 .divider-line-2::after {
-    content: "INFOGRAPHIC";
+    content: "PUBLIC SERVICE";
     position: absolute;
-    top: 58%;
+    top: 65%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 28px;
-    letter-spacing: 6px;
+    font-size: 18px;
+    letter-spacing: 1px;
     color: #14b4e8;
     font-weight: 600;
     font-family: sans-serif;
+}
+
+/* item */
+.box-iio {
+    position: absolute;
+    width: 190px;
+    height: 190px;
+
+    top: 50%;
+    left: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    z-index: 2;
+    transform-origin: center center;
+}
+
+/* รูป */
+.banner-top-img-2 {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: 0.3s;
+    filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.15));
+}
+
+.banner-top-img-2:hover {
+    transform: scale(1.05);
+}
+
+/*
+========================================
+    วางเป็นวงกลม
+========================================
+    rotate = องศา
+    translateY = ระยะจากกลาง
+========================================
+*/
+
+/* 1 */
+.box-iio:nth-child(2) {
+    transform:
+        translate(-50%, -50%) rotate(25deg) translateY(-360px);
+}
+
+/* 2 */
+.box-iio:nth-child(3) {
+    transform:
+        translate(-50%, -50%) rotate(56deg) translateY(-360px);
+}
+
+/* 3 */
+.box-iio:nth-child(4) {
+    transform:
+        translate(-50%, -50%) rotate(91deg) translateY(-360px);
+}
+
+/* 4 */
+.box-iio:nth-child(5) {
+    transform:
+        translate(-50%, -50%) rotate(126deg) translateY(-360px);
+}
+
+/* 5 */
+.box-iio:nth-child(6) {
+    transform:
+        translate(-50%, -50%) rotate(161deg) translateY(-360px);
+}
+
+/* 6 */
+.box-iio:nth-child(7) {
+    transform:
+        translate(-50%, -50%) rotate(199deg) translateY(-360px);
+}
+
+/* 7 */
+.box-iio:nth-child(8) {
+    transform:
+        translate(-50%, -50%) rotate(235deg) translateY(-360px);
+}
+
+/* 8 */
+.box-iio:nth-child(9) {
+    transform:
+        translate(-50%, -50%) rotate(271deg) translateY(-360px);
+}
+
+/* 9 */
+.box-iio:nth-child(10) {
+    transform:
+        translate(-50%, -50%) rotate(307deg) translateY(-360px);
+}
+
+/* 10 */
+.box-iio:nth-child(11) {
+    transform:
+        translate(-50%, -50%) rotate(346deg) translateY(-360px);
+}
+
+/*
+========================================
+    หมุนรูปกลับให้ตรง
+========================================
+*/
+
+.box-iio:nth-child(2) img {
+    transform: rotate(-10deg);
+}
+
+.box-iio:nth-child(3) img {
+    transform: rotate(-56deg);
+}
+
+.box-iio:nth-child(4) img {
+    transform: rotate(-91deg);
+}
+
+.box-iio:nth-child(5) img {
+    transform: rotate(-126deg);
+}
+
+.box-iio:nth-child(6) img {
+    transform: rotate(-161deg);
+}
+
+.box-iio:nth-child(7) img {
+    transform: rotate(-199deg);
+}
+
+.box-iio:nth-child(8) img {
+    transform: rotate(-235deg);
+}
+
+.box-iio:nth-child(9) img {
+    transform: rotate(-271deg);
+}
+
+.box-iio:nth-child(10) img {
+    transform: rotate(-307deg);
+}
+
+.box-iio:nth-child(11) img {
+    transform: rotate(-339deg);
 }
 
 /* Responsive */
@@ -1966,5 +2053,37 @@ span.font-big {
     .divider-line-2::after {
         font-size: 14px;
         letter-spacing: 3px;
+    }
+}
+
+.button-topnayok {
+    position: absolute;
+    top: 50%;
+    left: 58%;
+    transform: translate(-50%, -50%);
+
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    z-index: 10;
+}
+
+.banner-top-img-topnayok {
+    width: 230px;
+    max-width: 100%;
+}
+
+.banner-top-img-topnayok:hover {
+    transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+    .button-topnayok {
+        flex-direction: column;
+        width: 80%;
+    }
+
+    .banner-top-img-topnayok {
+        width: 100%;
     }
 }

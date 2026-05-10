@@ -4,7 +4,7 @@
     <script src="{{ asset('bootstrap/js/bootstrap.min.js') }}"></script>
 
     {{-- <section class="box-personnel"> --}}
-        {{-- <div class="title-personnel">คณะผู้บริหาร</div>
+    {{-- <div class="title-personnel">คณะผู้บริหาร</div>
         <div class="personnel-box">
             <div class="personnel-box-p1">
                 <div id="carouselpersonnel" class="carousel slide carousel-fade position-relative" data-bs-ride="carousel"
@@ -154,25 +154,41 @@
                 </div>
             </div>
         </div> --}}
-        <div class="banner-top-2">
-            <div class="divider-line-2"></div>
-            <div class="box-iio">
-                <a href="/directory/menu/58"><img src="/img/banner/001.png" class="banner-top-img-2"> </a>
-                </div>
-            <div class="box-iio">
-                <a href="https://eservice-thakam.sosmartsolution.com/FormeService/id/1" target="_blank"><img src="/img/banner/002.png"
-                        class="banner-top-img-2"></a>
-                    </div>
-            <div class="box-iio">
-                <a href="https://eservice-thakam.sosmartsolution.com/FormeService/id/3" target="_blank"><img src="/img/banner/003.png" class="banner-top-img-2"></a>
-            </div>
-            <div class="box-iio">
-                <a href="/directory/menu/71"><img src="/img/banner/004.png" class="banner-top-img-2"></a>
-            </div>
-            <div class="box-iio">
-                <a href="/articles/menu/72"><img src="/img/banner/005.png" class="banner-top-img-2"></a>
-                </div>
+    <div class="banner-top-2">
+        <div class="divider-line-2"></div>
+        <div class="box-iio">
+            <a href="/directory/menu/81"><img src="/img/banner/0001.png" class="banner-top-img-2"> </a>
         </div>
+        <div class="box-iio">
+            <a href="https://eservice-thakam.sosmartsolution.com/FormeService/id/3" target="_blank"><img
+                    src="/img/banner/0002.png" class="banner-top-img-2"></a>
+        </div>
+        <div class="box-iio">
+            <a href="https://share.google/gqLI6okKQPTt1dDci" target="_blank"><img
+                    src="/img/banner/0003.png" class="banner-top-img-2"></a>
+        </div>
+        <div class="box-iio">
+            <a href="/satisfaction/menu/43"><img src="/img/banner/0004.png" class="banner-top-img-2"></a>
+        </div>
+        <div class="box-iio">
+            <a href="https://welfare.dla.go.th/webview/"><img src="/img/banner/0005.png" class="banner-top-img-2"></a>
+        </div>
+        <div class="box-iio">
+            <a href="/articles/menu/52"><img src="/img/banner/0006.png" class="banner-top-img-2"></a>
+        </div>
+        <div class="box-iio">
+            <a href="https://eservice-thakam.sosmartsolution.com/FormeService/id/1"><img src="/img/banner/0007.png" class="banner-top-img-2"></a>
+        </div>
+        <div class="box-iio">
+            <a href="/webboard/menu/75"><img src="/img/banner/0008.png" class="banner-top-img-2"></a>
+        </div>
+        <div class="box-iio">
+            <a href="/directory/menu/81"><img src="/img/banner/0009.png" class="banner-top-img-2"></a>
+        </div>
+        <div class="box-iio">
+            <a href="/directory/menu/46"><img src="/img/banner/0010.png" class="banner-top-img-2"></a>
+        </div>
+    </div>
     {{-- </section> --}}
 
     <section class="box-video">
@@ -307,33 +323,33 @@
         <div class="box-one-stop-service">
 
             <div class="ons-box-one">
-                <span style="font-size: 70px;"class="text-eser-one"><b>O</b>ne <b>S</b>top <b>S</b>ervice <img
+                {{-- <span style="font-size: 70px;"class="text-eser-one"><b>O</b>ne <b>S</b>top <b>S</b>ervice <img
                         src="/img/OneStopService/Ready.png" alt="" style="width:25%"
                         class="ons-button-Ready"></span>
                 <span style="font-size: 75px;margin-top: -29px;" class="text-eser-two"><b>ระบบยื่นคำร้องออนไลน์</b></span>
                 <span style="font-size: 33px;margin-top: -30px;" class="text-eser-three">Online Application Submission
-                    Service</span>
+                    Service</span> --}}
 
                 <div class="ons-box-button-one">
                     <a href="https://thakam.trash.sosmartsolution.com/user/waste_payment" target="_blank"> <img
-                            src="/img/OneStopService/Banner-1.png" alt="" class="bg-ons-button"></a>
-                    <a href="https://thakam.trash.sosmartsolution.com/user/request/health_hazard_license" target="_blank"> <img
-                            src="/img/OneStopService/Banner-2.png" alt="" class="bg-ons-button"></a>
+                            src="/img/OneStopService/oss-1.png" alt="" class="bg-ons-button"></a>
+                    <a href="https://thakam.trash.sosmartsolution.com/user/request/health_hazard_license" target="_blank">
+                        <img src="/img/OneStopService/oss-2.png" alt="" class="bg-ons-button"></a>
                     <a href="https://eservice-thakam.sosmartsolution.com/Requestforms" target="_blank"> <img
-                            src="/img/OneStopService/Banner-3.png" alt="" class="bg-ons-button"></a>
+                            src="/img/OneStopService/oss-3.png" alt="" class="bg-ons-button"></a>
                     <a href="https://thakam.trash.sosmartsolution.com/user/emergency/accident" target="_blank"> <img
-                            src="/img/OneStopService/Banner-4.png" alt="" class="bg-ons-button"></a>
+                            src="/img/OneStopService/oss-4.png" alt="" class="bg-ons-button"></a>
                 </div>
 
             </div>
             <div class="ons-box-button-two">
-                <a href="https://thakam.trash.sosmartsolution.com/login" target="_blank"> <img src="/img/03/Member_0.png" alt=""
-                        class="bg-ons-button-member" style="float: right;"></a>
-                <a href="https://thakam.trash.sosmartsolution.com/register" target="_blank"> <img src="/img/03/General Public_0.png"
-                        alt="" class="bg-ons-button-public"></a>
+                <a href="https://thakam.trash.sosmartsolution.com/login" target="_blank"> <img src="/img/03/Member_0.png"
+                        alt="" class="bg-ons-button-member" style="float: right;"></a>
+                <a href="https://thakam.trash.sosmartsolution.com/register" target="_blank"> <img
+                        src="/img/03/General Public_0.png" alt="" class="bg-ons-button-public"></a>
             </div>
         </div>
-        <img src="/img/OneStopService/OSS.png" alt="" class="bg-ons">
+        <img src="/img/OneStopService/oss.jpg" alt="" class="bg-ons">
         <div class="box-slide-menu">
 
             <div id="carouselExampleSlides" class="carousel slide carousel-fade" data-bs-ride="carousel"
@@ -356,7 +372,7 @@
         </div>
     </section>
 
-    <section class="box-public-service">
+    {{-- <section class="box-public-service">
         <div class="public-service">
             <span style="font-size: 35px;font-weight: 500;">PUBLIC SERVICE</span>
             <span style="font-size: 70px;font-weight: 800;">บริการประชาชน</span>
@@ -405,50 +421,7 @@
             </div>
 
         </div>
-        {{-- <div class="public-body">
-            <div class="button-public-service-top">
-                <a href="#" class="public-link-one sim-one">
-                    <img src="/img/publicservice/1.png" class="public-service-img">
-                    <span style="margin-top: -30px;">เบี้ยยังชีพผู้สูงอายุ</span>
-                    <span>Elderly allowance</span>
-                </a>
-                <a href="#" class="public-link-one sim-two">
-                    <img src="/img/publicservice/6.png" class="public-service-img">
-                    <span style="margin-top: -30px;">เบี้ยยังชีพผู้พิการ</span>
-                    <span>Disability living allowance</span>
-                </a>
-            </div>
-            <div class="button-public-service-center">
-                <a href="#" class="public-link-two sim-three">
-                    <img src="/img/publicservice/2.png" class="public-service-img">
-                    <span style="margin-top: -30px;">ถาม-ตอบ</span>
-                    <span>Q & A</span>
-                </a>
-                <a href="#" class="public-link-center sim-four">
-                    <img src="/img/publicservice/7.png" class="public-service-img">
-                    <span style="margin-top: -30px;">แบบสอบถามความพึงพอใจ</span>
-                    <span>Satisfaction Survey</span>
-                </a>
-                <a href="#" class="public-link-two sim-five">
-                    <img src="/img/publicservice/5.png" class="public-service-img">
-                    <span style="margin-top: -30px;">คู่มือประชาชน</span>
-                    <span>Public Guide</span>
-                </a>
-            </div>
-            <div class="button-public-service-button">
-                <a href="#" class="public-link-three sim-six">
-                    <img src="/img/publicservice/3.png" class="public-service-img">
-                    <span style="margin-top: -30px;">คู่มือปฏิบัติงาน</span>
-                    <span>Work Manual</span>
-                </a>
-                <a href="#" class="public-link-three sim-seven">
-                    <img src="/img/publicservice/4.png" class="public-service-img">
-                    <span style="margin-top: -30px;">ดาวน์โหลดแบบฟอร์ม</span>
-                    <span>Download from</span>
-                </a>
-            </div>
-        </div> --}}
-    </section>
+    </section> --}}
 
     <section class="box-activity-relations">
         <div class="box-activity">
@@ -539,24 +512,24 @@
 
                 </div>
             </div>
-            <div class="activity-directory">
+            <div class="news-directory">
 
                 @forelse($listMenu52 as $list)
-                    <div class="card-activity">
+                    <div class="card-news">
                         <a href="/directoryDetail/menu/51/id/{{ $list->texteditor_id }}" class="no-underline">
-                            <div class="card-activity-body">
+                            <div class="card-news-body">
 
-                                <div class="activity-img">
+                                <div class="news-img">
                                     <div class="view-count">
                                         👁️ เข้าชม {{ $list->texteditor_view ?? 0 }} ครั้ง
                                     </div>
 
                                     @if ($list->texteditor_topic_picture)
                                         <img src="{{ asset('storage/' . $list->texteditor_topic_picture) }}"
-                                            alt="topic picture" width="420" style="border-radius: 20px">
+                                            alt="topic picture" width="150" style="border-radius: 20px">
                                     @else
                                         <img src="{{ asset('img/representation.png') }}" alt="default logo"
-                                            width="420" style="border-radius: 30px">
+                                            width="150" style="border-radius: 30px">
                                     @endif
 
                                 </div>
@@ -580,22 +553,20 @@
                                     $month = $months[$date->month];
                                     $year = $date->year + 543;
                                 @endphp
-                                <div class="activity-date">{{ $day }} {{ $month }} {{ $year }}
+                                <div class="box-new-content">
+                                    <div class="news-date">{{ $day }} {{ $month }} {{ $year }}
+                                    </div>
+                                    <div class="news-title">
+                                        {{ \Illuminate\Support\Str::limit($list->texteditor_title, 50) }}</div>
+                                    <div class="news-detail">
+                                        {!! \Illuminate\Support\Str::limit(trim(strip_tags($list->texteditor_detail)), 100) !!}
+                                    </div>
                                 </div>
-                                {{-- <div class="activity-title">{{ $list->texteditor_title }}</div> --}}
-                                <div class="activity-title">
-                                    {{ \Illuminate\Support\Str::limit($list->texteditor_title, 50) }}</div>
-                                {{-- <div class="activity-detail">{{ trim(strip_tags($list->texteditor_detail)) }}</div> --}}
-                                <div class="activity-detail">
-                                    {!! \Illuminate\Support\Str::limit(trim(strip_tags($list->texteditor_detail)), 100) !!}
 
-
-                                </div>
 
                             </div>
                         </a>
-                        <a href="/directoryDetail/menu/51/id/{{ $list->texteditor_id }}"
-                            class="no-underline button-activity">อ่านเพิ่มเติม</a>
+
                     </div>
                 @empty
                     <div class="">ไม่พบข้อมูล</div>
@@ -670,14 +641,14 @@
         {{-- <img src="/img/here/1.png" alt="" clas
         s="box-here-img-text"> --}}
         <div class="title-news">
-                <div class="text-news">
-                    <div class="box-bg-title">
-                        <span class="title-news-top">ที่นี่เทศบาลตำบลท่าข้าม</span>
-                        {{-- <span class="title-news-button">เทศบาลตำบลท่าข้าม</span> --}}
-                    </div>
-
+            <div class="text-news">
+                <div class="box-bg-title">
+                    <span class="title-news-top">ที่นี่เทศบาลตำบลท่าข้าม</span>
+                    {{-- <span class="title-news-button">เทศบาลตำบลท่าข้าม</span> --}}
                 </div>
+
             </div>
+        </div>
         <div class="box-slide-hrer">
             <div class="slide-img">
                 <div id="carouselExampleSlidesHere" class="carousel slide carousel-fade carousel-slide-here"
@@ -718,9 +689,12 @@
             </div>
         </div>
         <div class="banner-service-one">
-            <a href="/directory/menu/65"> <img src="/img/here/Banner-1.png" class="button-here" alt=""></a>
-            <a href=""> <img src="/img/here/Banner-2.png" class="button-here" alt=""></a>
-            <a href="/directory/menu/66"> <img src="/img/here/Banner-3.png" class="button-here" alt=""></a>
+            <a href="/directory/menu/65" style="text-align: center;"> <img src="/img/here/S-1.jpg" class="button-here"
+                    alt="" style="width: 65%;"></a>
+            <a href="" style="text-align: center;"> <img src="/img/here/S-2.jpg" class="button-here"
+                    alt="" style="width: 65%;"></a>
+            <a href="/directory/menu/66" style="text-align: center;"> <img src="/img/here/S-3.jpg" class="button-here"
+                    alt="" style="width: 65%;"></a>
         </div>
         <div class="banner-service-two">
             <div class="card-here">
@@ -732,8 +706,8 @@
                         class="button-here-text" alt=""></a>
                 <a href="/categories/menu/61"> <img src="/img/here/BannerText/Banner-Down-4-text.png"
                         class="button-here-text" alt=""></a>
-                <a href="https://eservice-thakam.sosmartsolution.com/FormeService/id/1" target="_blank"> <img src="/img/here/BannerText/Banner-Down-5-text.png"
-                        class="button-here-text" alt=""></a>
+                <a href="https://eservice-thakam.sosmartsolution.com/FormeService/id/1" target="_blank"> <img
+                        src="/img/here/BannerText/Banner-Down-5-text.png" class="button-here-text" alt=""></a>
                 <a href="/directory/menu/60"> <img src="/img/here/BannerText/Banner-Down-6-text.png"
                         class="button-here-text" alt=""></a>
                 <a href="/categories/menu/64"> <img src="/img/here/BannerText/Banner-Down-7-text.png"
@@ -760,7 +734,7 @@
                 <div id="egp" class="tab-content active">
 
                     <div class="content-announce">
-{{-- 
+                        {{-- 
                         @forelse($egp as $list)
                             <a href="{{ $list['link'] }}" class="no-underline">
                                 <div class="item">
@@ -962,7 +936,7 @@
                             style="font-weight: 900;font-size: 200px;margin-top: -120px;">ข่าวสาร</span>
                     </div>
                     <div class="elibrary-img-one" style="margin-top: -50px;">
-                        <img src="/img/09elibrary/Line.png" alt="">
+                        <img src="/img/09elibrary/Line-001.png" alt="">
                     </div>
                 </div>
                 <div class="elibrary-two"><img src="/img/09elibrary/E-Library.png" alt="" style="width: 90%;">
@@ -1056,13 +1030,16 @@
         <div class="map-two">
 
             {{-- <iframe src="/img/AnimationMap/index.html" frameborder="0" style="width: 100%;"></iframe> --}}
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3879.9218015846136!2d100.99155047508533!3d13.478916086885109!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x311d382930e1b751%3A0xe3df05a76a79a6d0!2z4Liq4Liz4LiZ4Lix4LiB4LiH4Liy4LiZ4LmA4LiX4Lio4Lia4Liy4Lil4LiV4Liz4Lia4Lil4LiX4LmI4Liy4LiC4LmJ4Liy4Lih!5e0!3m2!1sth!2sth!4v1774801182506!5m2!1sth!2sth" width="1050" height="800" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3879.9218015846136!2d100.99155047508533!3d13.478916086885109!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x311d382930e1b751%3A0xe3df05a76a79a6d0!2z4Liq4Liz4LiZ4Lix4LiB4LiH4Liy4LiZ4LmA4LiX4Lio4Lia4Liy4Lil4LiV4Liz4Lia4Lil4LiX4LmI4Liy4LiC4LmJ4Liy4Lih!5e0!3m2!1sth!2sth!4v1774801182506!5m2!1sth!2sth"
+                width="1050" height="800" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
         <div class="map-three">
             <div class="text-map-three">
                 <div class="m-t-three">
                     <div class="t-m-one" style="text-align: center;">
-                        <img src="/img/12/1.png" alt="" width="200">
+                        <img src="/img/logo.png" alt="" width="200">
                     </div>
                     <div class="t-m-two">
                         <div class="text-m-two">
@@ -1103,6 +1080,14 @@
 
                             </div>
                         </a>
+                        <a href="https://www.chacheongsaolocal.go.th/news/cate/2" class="no-underline" target="_blank">
+                            <div class="item-map">
+                                <div class="item-text">
+                                    ข่าวประชาสัมพันธ์ สถ.จ.
+                                </div>
+                            </div>
+                        </a>
+
                         <a href="https://www.dla.go.th/index.do#information" class="no-underline" target="_blank">
                             <div class="item-map">
                                 <div class="item-text">
@@ -1111,6 +1096,14 @@
                                 </div>
                             </div>
                         </a>
+                        <a href="https://www.chacheongsaolocal.go.th/order" class="no-underline" target="_blank">
+                            <div class="item-map">
+                                <div class="item-text">
+                                    หนังสือสั่งการจังหวัด
+                                </div>
+                            </div>
+                        </a>
+
                         <a href="https://www.dla.go.th/land/articles.do" class="no-underline" target="_blank">
                             <div class="item-map">
                                 <div class="item-text">
@@ -1118,6 +1111,15 @@
                                 </div>
                             </div>
                         </a>
+                        <a href="https://www.chacheongsaolocal.go.th/law" class="no-underline" target="_blank">
+                            <div class="item-map">
+                                <div class="item-text">
+                                    {{-- ภาพกิจกรรม สถ.จ. --}}
+                                    กฎหมาย ระเบียบ และมติ กจจ./ก.ท.จ./ก.อบต.
+                                </div>
+                            </div>
+                        </a>
+
                         <a href="https://www.dla.go.th/index.do#e-book" class="no-underline" target="_blank">
                             <div class="item-map">
                                 <div class="item-text">
@@ -1126,11 +1128,19 @@
                                 </div>
                             </div>
                         </a>
+
+                        <a href="https://www.chacheongsaolocal.go.th/contactus" class="no-underline" target="_blank">
+                            <div class="item-map">
+                                <div class="item-text">
+                                    ติดต่อหน่วยงาน สถ.จ.
+                                </div>
+                            </div>
+                        </a>
                     </div>
 
                 </div>
 
-                <div id="maptwo" class="tab-content-map">
+                {{-- <div id="maptwo" class="tab-content-map ">
                     <div class="content-map">
                         <a href="https://www.chacheongsaolocal.go.th/news/cate/2" class="no-underline" target="_blank">
                             <div class="item-map">
@@ -1149,8 +1159,7 @@
                         <a href="https://www.chacheongsaolocal.go.th/law" class="no-underline" target="_blank">
                             <div class="item-map">
                                 <div class="item-text">
-                                    {{-- ภาพกิจกรรม สถ.จ. --}}
-                                    กฎหมาย ระเบียบ และมติ กจจ./ก.ท.จ./ก.อบต. 
+                                    กฎหมาย ระเบียบ และมติ กจจ./ก.ท.จ./ก.อบต.
                                 </div>
                             </div>
                         </a>
@@ -1162,7 +1171,7 @@
                             </div>
                         </a>
                     </div>
-                </div>
+                </div> --}}
 
             </div>
         </div>
@@ -1180,19 +1189,22 @@
         <div class="banner-carousel" id="bannerCarousel">
             <button class="banner-arrow left" id="prevBtn"><img src="/img/13Footer/Next-Button.png"></button>
             <div class="banner-track" id="bannerTrack">
-                <div class="banner-item"><a href="https://e-service.doe.go.th/" target="_blank"><img src="/img/13Footer/Banner1.png"></a>
+                <div class="banner-item"><a href="https://e-service.doe.go.th/" target="_blank"><img
+                            src="/img/13Footer/Banner1.png"></a>
                 </div>
                 <div class="banner-item"><a href="https://www.admincourt.go.th/" target="_blank"><img
                             src="/img/13Footer/Banner2.png"></a></div>
                 <div class="banner-item"><a href="https://ndwc.disaster.go.th/ndwc" target="_blank"><img
                             src="/img/13Footer/Banner3.png"></a></div>
-                <div class="banner-item"><a href="https://www.dit.go.th/" target="_blank"><img src="/img/13Footer/Banner4.png"></a></div>
+                <div class="banner-item"><a href="https://www.dit.go.th/" target="_blank"><img
+                            src="/img/13Footer/Banner4.png"></a></div>
                 <div class="banner-item"><a href="https://www.baac.or.th/royal_page.php" target="_blank"><img
                             src="/img/13Footer/Banner5.png"></a></div>
-                <div class="banner-item"><a href="https://www.gsb.or.th/" target="_blank"><img src="/img/13Footer/Banner6.png"></a></div>
+                <div class="banner-item"><a href="https://www.gsb.or.th/" target="_blank"><img
+                            src="/img/13Footer/Banner6.png"></a></div>
                 <div class="banner-item"><a
-                        href="https://www.cgd.go.th/cs/internet/internet/%E0%B8%AB%E0%B8%99%E0%B9%89%E0%B8%B2%E0%B8%AB%E0%B8%A5%E0%B8%B1%E0%B8%812.html?page_locale=th_TH" target="_blank"><img
-                            src="/img/13Footer/Banner7.png"></a></div>
+                        href="https://www.cgd.go.th/cs/internet/internet/%E0%B8%AB%E0%B8%99%E0%B9%89%E0%B8%B2%E0%B8%AB%E0%B8%A5%E0%B8%B1%E0%B8%812.html?page_locale=th_TH"
+                        target="_blank"><img src="/img/13Footer/Banner7.png"></a></div>
                 <div class="banner-item"><a href="https://www.prd.go.th/th/page/item/index/id/1" target="_blank"><img
                             src="/img/13Footer/Banner8.png"></a></div>
                 <div class="banner-item"><a href="https://www.dla.go.th/index.do" target="_blank"><img
@@ -1201,14 +1213,18 @@
                             src="/img/13Footer/Banner10.png"></a></div>
                 <div class="banner-item"><a href="https://www.moc.go.th/th/page/item/index/id/1" target="_blank"><img
                             src="/img/13Footer/Banner11.png"></a></div>
-                <div class="banner-item"><a href="https://moi.go.th/moi/" target="_blank"><img src="/img/13Footer/Banner12.png"></a>
+                <div class="banner-item"><a href="https://moi.go.th/moi/" target="_blank"><img
+                            src="/img/13Footer/Banner12.png"></a>
                 </div>
                 <div class="banner-item"><a href="https://www.audit.go.th/home" target="_blank"><img
                             src="/img/13Footer/Banner13.png"></a></div>
-                <div class="banner-item"><a href="https://www.pr.moi.go.th/" target="_blank"><img src="/img/13Footer/Banner14.png"></a>
+                <div class="banner-item"><a href="https://www.pr.moi.go.th/" target="_blank"><img
+                            src="/img/13Footer/Banner14.png"></a>
                 </div>
-                <div class="banner-item"><a href="https://nacc.go.th/?" target="_blank"><img src="/img/13Footer/Banner15.png"></a></div>
-                <div class="banner-item"><a href="https://www.bb.go.th/" target="_blank"><img src="/img/13Footer/Banner16.png"></a></div>
+                <div class="banner-item"><a href="https://nacc.go.th/?" target="_blank"><img
+                            src="/img/13Footer/Banner15.png"></a></div>
+                <div class="banner-item"><a href="https://www.bb.go.th/" target="_blank"><img
+                            src="/img/13Footer/Banner16.png"></a></div>
 
             </div>
             <button class="banner-arrow right" id="nextBtn"><img src="/img/13Footer/Next-Button-2.png"></button>
@@ -1233,28 +1249,28 @@
             event.target.classList.add('active');
         }
 
-        function openTabmap(button, tabId) {
-            // ซ่อน tab ของ .tab-content-map
-            document.querySelectorAll('.tab-content-map').forEach(tab => {
-                tab.classList.remove('active');
-            });
+        // function openTabmap(button, tabId) {
+        //     // ซ่อน tab ของ .tab-content-map
+        //     document.querySelectorAll('.tab-content-map').forEach(tab => {
+        //         tab.classList.remove('active');
+        //     });
 
-            // ลบ active ของปุ่มทั้งหมดใน .tab-buttons-map
-            document.querySelectorAll('.tab-buttons-map button').forEach(btn => {
-                btn.classList.remove('active');
-            });
+        //     // ลบ active ของปุ่มทั้งหมดใน .tab-buttons-map
+        //     document.querySelectorAll('.tab-buttons-map button').forEach(btn => {
+        //         btn.classList.remove('active');
+        //     });
 
-            // แสดง tab ที่เลือก
-            const target = document.getElementById(tabId);
-            if (target) {
-                target.classList.add('active');
-            }
+        //     // แสดง tab ที่เลือก
+        //     const target = document.getElementById(tabId);
+        //     if (target) {
+        //         target.classList.add('active');
+        //     }
 
-            // ใส่ active ให้ปุ่มที่กด
-            if (button) {
-                button.classList.add('active');
-            }
-        }
+        //     // ใส่ active ให้ปุ่มที่กด
+        //     if (button) {
+        //         button.classList.add('active');
+        //     }
+        // }
     </script>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>

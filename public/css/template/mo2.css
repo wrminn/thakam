@@ -1983,7 +1983,8 @@
 
     img.bg-ons {
         /* width: 100%; */
-        margin-top: 15px;
+        /* margin-top: 15px; */
+        margin-top: 150px;
         /* ปรับเป็น px */
     }
 

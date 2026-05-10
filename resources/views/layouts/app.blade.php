@@ -254,7 +254,7 @@
         </section>
 
         <section class="slide-top">
-            <img src="/img/ficslide.webp" alt="" class="box-img-slide-top">
+            {{-- <img src="/img/ficslide.webp" alt="" class="box-img-slide-top"> --}}
             <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade position-relative">
 
 
@@ -286,12 +286,26 @@
                             </div>
                         @endforelse --}}
                         <div class="carousel-item active">
-                            <img src="{{ asset('/img/personnel/0001.png') }}" class="d-block w-100"
-                                alt="slide 1" style="object-fit: cover; height: 580px;">
-
+                            <img src="{{ asset('/img/personnel/0004.png') }}" class="d-block w-100" alt="slide 1"
+                                style="object-fit: cover; height: auto;width:100% !important">
+                            {{-- <img src="{{ asset('/img/personnel/0004.png') }}" class="d-block w-100"
+                                alt="slide 1" style="object-fit: cover; height: 580px;width:100% !important"> --}}
+                        </div>
+                        <div class="button-topnayok">
+                            <div class="box-topnayok">
+                                <a href="/directory/menu/71"><img src="/img/personnel/สารจากนายก.png"
+                                        class="banner-top-img-topnayok">
+                                </a>
+                            </div>
+                            <div class="box-topnayok">
+                                <a href="/directory/menu/72"><img src="/img/personnel/เจตจำนงสุจริต.png"
+                                        class="banner-top-img-topnayok">
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
+
 
                 {{-- Controls + Indicators (overlay) --}}
                 {{-- <div class="position-absolute bottom-0 start-0 end-0 d-flex justify-content-center align-items-center gap-3 mb-3"
@@ -330,7 +344,10 @@
                         <span class="visually-hidden">Next</span>
                     </button>
                 </div> --}}
+
             </div>
+
+
         </section>
 
         <div class="br-top"></div>
@@ -433,11 +450,11 @@
                 <div class="footer-contact" style="width: 1000px;">
                     <p style="display: flex;flex-direction: column;">
                         <span class="ft-by-one" style="font-size: 50px;font-weight: 900;">เทศบาลตำบลท่าข้าม</span>
-                        <span class="ft-by-two" style="font-size: 24px;margin-top: -15px;">Thakam Subdistrict
+                        <span class="ft-by-two" style="font-size: 24px;margin-top: -15px;    font-weight: 700;">Thakam Subdistrict
                             Municipality</span>
-                        <span class="ft-by-three" style="font-size: 16px;">122 หมู่ที่ 3 ตำบลท่าข้าม
+                        <span class="ft-by-three" style="font-size: 16px;    font-weight: 500;">122 หมู่ที่ 3 ตำบลท่าข้าม
                             อำเภอบางปะกง</span>
-                        <span class="ft-by-three" style="font-size: 16px;">จังหวัดฉะเชิงเทรา 24130</span>
+                        <span class="ft-by-three" style="font-size: 16px;    font-weight: 500;">จังหวัดฉะเชิงเทรา 24130</span>
                     </p>
                     <div class="text-footer">
                         <div class="text-footer-one">
