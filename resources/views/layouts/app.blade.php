@@ -16,9 +16,9 @@
     <link rel="stylesheet" href="{{ asset('bootstrap/css/bootstrap.min.css') }}">
     <link rel="stylesheet" href="{{ asset('/css/template/layout.css') }}">
     <link rel="stylesheet" href="{{ asset('/css/template/menu.css') }}">
-    <link rel="stylesheet" href="{{ asset('/css/template/home.css') }}">
+    <link rel="stylesheet" href="{{ asset('/css/template/home.css') }}?v={{ filemtime(public_path('/css/template/home.css')) }}">
     <link rel="stylesheet" href="{{ asset('/css/template/book.css') }}">
-    <link rel="stylesheet" href="{{ asset('/css/template/mobile.css') }}">
+    <link rel="stylesheet" href="{{ asset('/css/template/mobile.css') }}?v={{ filemtime(public_path('/css/template/mobile.css')) }}">
     <link rel="stylesheet" href="{{ asset('/css/template/mo2.css') }}">
     <link rel="stylesheet" href="{{ asset('/css/template/mobs.css') }}">
     <link rel="stylesheet" href="{{ asset('/css/template/or.css') }}">
