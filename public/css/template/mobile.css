@@ -149,7 +149,7 @@
     }
 
     .regis-smartcity-box {
-        background: aliceblue;
+        background: #66b5f9;
         width: 410px;
         margin-top: 30px;
         margin-left: 4%;
@@ -561,17 +561,26 @@
     }
 
     .banner-smartcity-body-one {
-        display: flex;
+        /* display: flex;
         margin: 2.6vw 1.3vw 0 1.3vw;
         justify-content: space-between;
+        padding: 0 4%; */
+        display: flex;
+        margin: 2.6vw 1.3vw 0 1.3vw;
+        justify-content: space-evenly;
         padding: 0 4%;
     }
 
     .smartcity-one,
     .smartcity-three {
-        display: flex;
+        /* display: flex;
         flex-direction: column;
         align-content: center;
+        gap : 20px */
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        align-items: center;
     }
 
     img.banner-smartcity.no-underline {

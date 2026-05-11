@@ -164,8 +164,8 @@
                     src="/img/banner/0002.png" class="banner-top-img-2"></a>
         </div>
         <div class="box-iio">
-            <a href="https://share.google/gqLI6okKQPTt1dDci" target="_blank"><img
-                    src="/img/banner/0003.png" class="banner-top-img-2"></a>
+            <a href="https://share.google/gqLI6okKQPTt1dDci" target="_blank"><img src="/img/banner/0003.png"
+                    class="banner-top-img-2"></a>
         </div>
         <div class="box-iio">
             <a href="/satisfaction/menu/43"><img src="/img/banner/0004.png" class="banner-top-img-2"></a>
@@ -177,7 +177,8 @@
             <a href="/articles/menu/52"><img src="/img/banner/0006.png" class="banner-top-img-2"></a>
         </div>
         <div class="box-iio">
-            <a href="https://eservice-thakam.sosmartsolution.com/FormeService/id/1"><img src="/img/banner/0007.png" class="banner-top-img-2"></a>
+            <a href="https://eservice-thakam.sosmartsolution.com/FormeService/id/1"><img src="/img/banner/0007.png"
+                    class="banner-top-img-2"></a>
         </div>
         <div class="box-iio">
             <a href="/webboard/menu/75"><img src="/img/banner/0008.png" class="banner-top-img-2"></a>
@@ -246,22 +247,59 @@
 
     </section>
 
-    {{-- <section class="banner-box-one">
+    <section class="banner-box-one">
         <div class="banner-smartcity-body-one">
             <div class="smartcity-one">
-                <a href="https://asean.org/our-communities/economic-community/" class="" target="_blank">
-                    <img src="/img/SmartCity/Banner-1.png" class="banner-smartcity no-underline">
+                <a href="https://asean.org/our-communities/economic-community-1/" class="" target="_blank">
+                    <img src="/img/SmartCity/SMT-1.png" class="banner-smartcity no-underline">
                 </a>
                 <a href="https://thakam.go.th/directory/menu/7" class="" target="_blank">
-                    <img src="/img/SmartCity/Banner-2.png" class="banner-smartcity no-underline">
+                    <img src="/img/SmartCity/SMT-2.png" class="banner-smartcity no-underline">
                 </a>
-            </div>
-            <div class="smartcity-two">
+                <a href="https://infocenter.oic.go.th/%E0%B9%80%E0%B8%97%E0%B8%A8%E0%B8%9A%E0%B8%B2%E0%B8%A5%E0%B8%95%E0%B8%B3%E0%B8%9A%E0%B8%A5%E0%B8%97%E0%B9%88%E0%B8%B2%E0%B8%82%E0%B9%89%E0%B8%B2%E0%B8%A1%20%E0%B8%88%E0%B8%B1%E0%B8%87%E0%B8%AB%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%89%E0%B8%B0%E0%B9%80%E0%B8%8A%E0%B8%B4%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%A3%E0%B8%B2/index.php?gid=0&mid=1012" class="" target="_blank">
+                    <img src="/img/SmartCity/SMT-3.png" class="banner-smartcity no-underline">
+                </a>
+                <a href="https://sites.google.com/view/e-learning-thakam/%E0%B8%AB%E0%B8%99%E0%B8%B2%E0%B9%81%E0%B8%A3%E0%B8%81" class="" target="_blank">
+                    <img src="/img/SmartCity/SMT-4.png" class="banner-smartcity no-underline">
+                </a>
+                <a href="https://www.admincourt.go.th/admincourt/site/09illustration.html" class="" target="_blank">
+                    <img src="/img/SmartCity/SMT-5.png" class="banner-smartcity no-underline">
+                </a>
+                <a href="http://www.damrongdhama.moi.go.th/home/" class="" target="_blank">
+                    <img src="/img/SmartCity/SMT-6.png" class="banner-smartcity no-underline">
+                </a>
+                <a href="https://www.nacc.go.th/NACCPPWFC?" class="" target="_blank">
+                    <img src="/img/SmartCity/SMT-7.png" class="banner-smartcity no-underline">
+                </a>
+                <a href="https://pr.moi.go.th/citizenknowledge.htm" class="" target="_blank">
+                    <img src="/img/SmartCity/SMT-8.png" class="banner-smartcity no-underline">
+                </a>
+                <div class="regis-smartcity-box">
+                    <div class="three-text">
+                        <div> ระบบจองห้องประชุมและ</div>
+                        <div>เครื่องเสียงห้องประชุม</div>
+                    </div>
+                    <div class="regis-smartcity">
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSd6bQ5WfgSTI8lq8Xo4VfA3FZ1FKgIc-_lhF-YKuIPewfGItg/viewform"
+                            class="" target="_blank">
+                            <img src="/img/SmartCity/Banner4-2-1.png" class="banner-smartcity no-underline">
+                        </a>
+                        <a href="https://calendar.google.com/calendar/u/0/embed?src=7urnqsg4qsg6hki6c1666k5psg@group.calendar.google.com&ctz=Asia/Bangkok"
+                            class="" target="_blank">
+                            <img src="/img/SmartCity/Banner4-3-1.png" class="banner-smartcity no-underline">
+                        </a>
+                    </div>
+                </div>
                 <a href="https://www.enic8r.com/" target="_blank">
-                    <img src="/img/SmartCity/Banner-3.png" class="banner-smartcity no-underline">
+                    <img src="/img/SmartCity/smartcity.png" class="banner-smartcity no-underline">
                 </a>
             </div>
-            <div class="smartcity-three">
+            {{-- <div class="smartcity-two">
+                <a href="https://www.enic8r.com/" target="_blank">
+                    <img src="/img/SmartCity/smartcity.png" class="banner-smartcity no-underline">
+                </a>
+            </div> --}}
+            {{-- <div class="smartcity-three">
                 <div class="regis-smartcity-box">
                     <div class="three-text">
                         <div> ระบบจองห้องประชุมและ</div>
@@ -279,11 +317,17 @@
                     </div>
                 </div>
                 <a href="https://pr.moi.go.th/citizenknowledge.htm" class="" target="_blank">
-                    <img src="/img/SmartCity/Banner-5.png" class="banner-smartcity no-underline">
+                    <img src="/img/SmartCity/ข้อมูลข่าวสาร.png" class="banner-smartcity no-underline">
                 </a>
-            </div>
+                <a href="https://pr.moi.go.th/citizenknowledge.htm" class="" target="_blank">
+                    <img src="/img/SmartCity/ข้อมูลข่าวสาร.png" class="banner-smartcity no-underline">
+                </a>
+                <a href="https://pr.moi.go.th/citizenknowledge.htm" class="" target="_blank">
+                    <img src="/img/SmartCity/ข้อมูลข่าวสาร.png" class="banner-smartcity no-underline">
+                </a>
+            </div> --}}
         </div>
-        <div class="banner-smartcity-body-center">
+        {{-- <div class="banner-smartcity-body-center">
             <a href="https://sites.google.com/view/e-learning-thakam/%E0%B8%AB%E0%B8%99%E0%B8%B2%E0%B9%81%E0%B8%A3%E0%B8%81"
                 class="" target="_blank">
                 <img src="/img/SmartCity/Banner-10.png" class="banner-smartcity no-underline">
@@ -316,8 +360,8 @@
                 </div>
             </div>
 
-        </div>
-    </section> --}}
+        </div> --}}
+    </section>
 
     <section class="banner-one-stop-service">
         <div class="box-one-stop-service">
@@ -514,18 +558,24 @@
             </div>
             <div class="news-directory">
 
-                @forelse($listMenu52 as $list)
+                @forelse($listMenu52 as $list1)
+            <?php
+                // echo "<pre>";
+                //     print_r($listMenu52);
+                //     exit();
+            ?>
+                
                     <div class="card-news">
-                        <a href="/directoryDetail/menu/51/id/{{ $list->texteditor_id }}" class="no-underline">
+                        <a href="/directoryDetail/menu/52/id/{{ $list1->main_id }}" class="no-underline">
                             <div class="card-news-body">
 
                                 <div class="news-img">
-                                    <div class="view-count">
-                                        👁️ เข้าชม {{ $list->texteditor_view ?? 0 }} ครั้ง
+                                    <div class="view-count-new">
+                                        👁️ เข้าชม {{ $list1->texteditor_view ?? 0 }} ครั้ง
                                     </div>
 
-                                    @if ($list->texteditor_topic_picture)
-                                        <img src="{{ asset('storage/' . $list->texteditor_topic_picture) }}"
+                                    @if ($list1->texteditor_topic_picture)
+                                        <img src="{{ asset('storage/' . $list1->texteditor_topic_picture) }}"
                                             alt="topic picture" width="150" style="border-radius: 20px">
                                     @else
                                         <img src="{{ asset('img/representation.png') }}" alt="default logo"
@@ -534,7 +584,7 @@
 
                                 </div>
                                 @php
-                                    $date = \Carbon\Carbon::parse($list->texteditor_date_show);
+                                    $date = \Carbon\Carbon::parse($list1->texteditor_date_show);
                                     $months = [
                                         1 => 'มกราคม',
                                         2 => 'กุมภาพันธ์',
@@ -557,9 +607,9 @@
                                     <div class="news-date">{{ $day }} {{ $month }} {{ $year }}
                                     </div>
                                     <div class="news-title">
-                                        {{ \Illuminate\Support\Str::limit($list->texteditor_title, 50) }}</div>
+                                        {{ \Illuminate\Support\Str::limit($list1->texteditor_title, 50) }}</div>
                                     <div class="news-detail">
-                                        {!! \Illuminate\Support\Str::limit(trim(strip_tags($list->texteditor_detail)), 100) !!}
+                                        {!! \Illuminate\Support\Str::limit(trim(strip_tags($list1->texteditor_detail)), 100) !!}
                                     </div>
                                 </div>
 

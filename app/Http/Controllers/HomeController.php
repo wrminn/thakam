@@ -57,13 +57,30 @@ class HomeController extends Controller
             ->get();
 
 
-        $listMenu52 = $list = DB::table('texteditor')
+        // $listMenu52 = $list = DB::table('texteditor')
+        //     ->leftJoin('texteditor_detail', function ($join) {
+        //         $join->on('texteditor.texteditor_id', '=', 'texteditor_detail.texteditor_id')
+        //             ->where('texteditor_detail.texteditor_display', '=', 'A');
+        //     })
+        //     ->where('texteditor.texteditor_menu', 52)
+        //     ->where('texteditor.texteditor_display', '=', 'A')
+        //     ->orderBy('texteditor.texteditor_date_show', 'desc')
+        //     ->orderBy('texteditor.texteditor_id', 'desc')
+        //     ->limit(6)
+        //     ->get();
+
+        $listMenu52 = DB::table('texteditor')
             ->leftJoin('texteditor_detail', function ($join) {
                 $join->on('texteditor.texteditor_id', '=', 'texteditor_detail.texteditor_id')
-                    ->where('texteditor_detail.texteditor_display', '=', 'A');
+                    ->where('texteditor_detail.texteditor_display', 'A');
             })
             ->where('texteditor.texteditor_menu', 52)
-            ->where('texteditor.texteditor_display', '=', 'A')
+            ->where('texteditor.texteditor_display', 'A')
+            ->select(
+                'texteditor.texteditor_id as main_id',
+                'texteditor.*',
+                'texteditor_detail.*'
+            )
             ->orderBy('texteditor.texteditor_date_show', 'desc')
             ->orderBy('texteditor.texteditor_id', 'desc')
             ->limit(6)

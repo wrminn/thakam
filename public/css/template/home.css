@@ -61,11 +61,12 @@ body {
 }
 
 .banner-box-one::before {
-    background-image: url("/img/background/BG-banner-one.webp");
+    /* background-image: url("/img/background/BG-banner-one.webp"); */
+     background: linear-gradient(180deg, #9cf3fb91, #ffffff);
 }
 
 .banner-one-stop-service::before {
-    background-image: url("/img/background/BG-onestopservice.png");
+    /* background-image: url("/img/background/BG-onestopservice.png"); */
 }
 
 .box-public-service::before {
@@ -2086,4 +2087,18 @@ span.font-big {
     .banner-top-img-topnayok {
         width: 100%;
     }
+}
+.view-count-new {
+    top: 7px;
+    right: 80px;
+    background: rgb(241 232 232 / 60%);
+    color: #000;
+    font-size: 14px;
+    padding: 5px 10px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    backdrop-filter: blur(4px);
+    margin-bottom: 5px;
 }
