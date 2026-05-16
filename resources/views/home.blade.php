@@ -164,8 +164,10 @@
                     src="/img/banner/0002.png" class="banner-top-img-2"></a>
         </div>
         <div class="box-iio">
-            <a href="https://share.google/gqLI6okKQPTt1dDci" target="_blank"><img src="/img/banner/0003.png"
+            <a href="https://welfare.dla.go.th/webview/" target="_blank"><img src="/img/banner/0003.png"
                     class="banner-top-img-2"></a>
+            {{-- <a href="https://share.google/gqLI6okKQPTt1dDci" target="_blank"><img src="/img/banner/0003.png"
+                    class="banner-top-img-2"></a> --}}
         </div>
         <div class="box-iio">
             <a href="/satisfaction/menu/43"><img src="/img/banner/0004.png" class="banner-top-img-2"></a>
@@ -174,7 +176,7 @@
             <a href="https://welfare.dla.go.th/webview/"><img src="/img/banner/0005.png" class="banner-top-img-2"></a>
         </div>
         <div class="box-iio">
-            <a href="/articles/menu/52"><img src="/img/banner/0006.png" class="banner-top-img-2"></a>
+            <a href="/articles/menu/58"><img src="/img/banner/0006.png" class="banner-top-img-2"></a>
         </div>
         <div class="box-iio">
             <a href="https://eservice-thakam.sosmartsolution.com/FormeService/id/1"><img src="/img/banner/0007.png"
@@ -184,7 +186,7 @@
             <a href="/webboard/menu/75"><img src="/img/banner/0008.png" class="banner-top-img-2"></a>
         </div>
         <div class="box-iio">
-            <a href="/directory/menu/81"><img src="/img/banner/0009.png" class="banner-top-img-2"></a>
+            <a href="/directory/menu/82"><img src="/img/banner/0009.png" class="banner-top-img-2"></a>
         </div>
         <div class="box-iio">
             <a href="/directory/menu/46"><img src="/img/banner/0010.png" class="banner-top-img-2"></a>
@@ -241,8 +243,25 @@
                 </div>
             </div>
             <div class="slide-in-video">
-                <img src="/img/03/Popup.png" alt="">
+                {{-- <img src="/img/03/Popup.png" alt=""> --}}
+
+                <div id="carouselExampleSlides" class="carousel slide carousel-fade" data-bs-ride="carousel"
+                    data-bs-interval="2500">
+                    <!-- สไลด์ -->
+                    <div class="carousel-inner">
+                        @forelse($SlideMenu88 as $slide)
+                            <a href="/slideDetail/menu/80/id/{{ $slide->slide_id }}">
+                                <div class="carousel-item active">
+                                    <img src="{{ asset('storage/' . $slide->slide_path) }}" class="d-block slide-88"
+                                        alt="...">
+                                </div>
+                        </a @empty <div class="">ไม่พบข้อมูล
+                    </div>
+                    @endforelse
+                </div>
             </div>
+
+        </div>
         </div>
 
     </section>
@@ -256,13 +275,16 @@
                 <a href="https://thakam.go.th/directory/menu/7" class="" target="_blank">
                     <img src="/img/SmartCity/SMT-2.png" class="banner-smartcity no-underline">
                 </a>
-                <a href="https://infocenter.oic.go.th/%E0%B9%80%E0%B8%97%E0%B8%A8%E0%B8%9A%E0%B8%B2%E0%B8%A5%E0%B8%95%E0%B8%B3%E0%B8%9A%E0%B8%A5%E0%B8%97%E0%B9%88%E0%B8%B2%E0%B8%82%E0%B9%89%E0%B8%B2%E0%B8%A1%20%E0%B8%88%E0%B8%B1%E0%B8%87%E0%B8%AB%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%89%E0%B8%B0%E0%B9%80%E0%B8%8A%E0%B8%B4%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%A3%E0%B8%B2/index.php?gid=0&mid=1012" class="" target="_blank">
+                <a href="https://infocenter.oic.go.th/%E0%B9%80%E0%B8%97%E0%B8%A8%E0%B8%9A%E0%B8%B2%E0%B8%A5%E0%B8%95%E0%B8%B3%E0%B8%9A%E0%B8%A5%E0%B8%97%E0%B9%88%E0%B8%B2%E0%B8%82%E0%B9%89%E0%B8%B2%E0%B8%A1%20%E0%B8%88%E0%B8%B1%E0%B8%87%E0%B8%AB%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%89%E0%B8%B0%E0%B9%80%E0%B8%8A%E0%B8%B4%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%A3%E0%B8%B2/index.php?gid=0&mid=1012"
+                    class="" target="_blank">
                     <img src="/img/SmartCity/SMT-3.png" class="banner-smartcity no-underline">
                 </a>
-                <a href="https://sites.google.com/view/e-learning-thakam/%E0%B8%AB%E0%B8%99%E0%B8%B2%E0%B9%81%E0%B8%A3%E0%B8%81" class="" target="_blank">
+                <a href="https://sites.google.com/view/e-learning-thakam/%E0%B8%AB%E0%B8%99%E0%B8%B2%E0%B9%81%E0%B8%A3%E0%B8%81"
+                    class="" target="_blank">
                     <img src="/img/SmartCity/SMT-4.png" class="banner-smartcity no-underline">
                 </a>
-                <a href="https://www.admincourt.go.th/admincourt/site/09illustration.html" class="" target="_blank">
+                <a href="https://www.admincourt.go.th/admincourt/site/09illustration.html" class=""
+                    target="_blank">
                     <img src="/img/SmartCity/SMT-5.png" class="banner-smartcity no-underline">
                 </a>
                 <a href="http://www.damrongdhama.moi.go.th/home/" class="" target="_blank">
@@ -379,9 +401,9 @@
                             src="/img/OneStopService/oss-1.png" alt="" class="bg-ons-button"></a>
                     <a href="https://thakam.trash.sosmartsolution.com/user/request/health_hazard_license" target="_blank">
                         <img src="/img/OneStopService/oss-2.png" alt="" class="bg-ons-button"></a>
-                    <a href="https://eservice-thakam.sosmartsolution.com/Requestforms" target="_blank"> <img
-                            src="/img/OneStopService/oss-3.png" alt="" class="bg-ons-button"></a>
                     <a href="https://thakam.trash.sosmartsolution.com/user/emergency/accident" target="_blank"> <img
+                            src="/img/OneStopService/oss-3.png" alt="" class="bg-ons-button"></a>
+                    <a href="https://eservice-thakam.sosmartsolution.com/Requestforms" target="_blank"> <img
                             src="/img/OneStopService/oss-4.png" alt="" class="bg-ons-button"></a>
                 </div>
 
@@ -556,13 +578,13 @@
 
                 </div>
             </div>
-            <div class="news-directory">
+            {{-- <div class="news-directory">
 
                 @forelse($listMenu52 as $list1)
             <?php
-                // echo "<pre>";
-                //     print_r($listMenu52);
-                //     exit();
+            // echo "<pre>";
+            //     print_r($listMenu52);
+            //     exit();
             ?>
                 
                     <div class="card-news">
@@ -622,15 +644,15 @@
                     <div class="">ไม่พบข้อมูล</div>
                 @endforelse
 
-            </div>
-            {{-- <div class="news-directory">
+            </div> --}}
+            <div class="activity-directory">
 
                 @forelse($listMenu52 as $list)
-                    <div class="card-news">
+                    <div class="card-activity">
                         <a href="/directoryDetail/menu/52/id/{{ $list->texteditor_id }}" class="no-underline">
-                            <div class="card-news-body">
+                            <div class="card-new-body">
 
-                                <div class="news-img">
+                                <div class="activity-img">
                                     @if ($list->texteditor_topic_picture)
                                         <img src="{{ asset('storage/' . $list->texteditor_topic_picture) }}"
                                             alt="topic picture" width="150" height="150"
@@ -661,12 +683,13 @@
                                     $month = $months[$date->month];
                                     $year = $date->year + 543;
                                 @endphp
-                                <div class="box-news-id">
-                                    <div class="news-title"><b>{{ $list->texteditor_title }}</b></div>
-                                    <div class="news-detail">
+                                <div class="box-activity-id">
+                                    <div class="activity-title"><b>{{ $list->texteditor_title }}</b></div>
+                                    <div class="activity-detail">
                                         {!! \Illuminate\Support\Str::limit(trim(strip_tags($list->texteditor_detail)), 100) !!}
                                     </div>
-                                    <div class="news-date">{{ $day }} {{ $month }} {{ $year }}
+                                    <div class="activity-date">{{ $day }} {{ $month }}
+                                        {{ $year }}
                                     </div>
                                 </div>
                             </div>
@@ -676,7 +699,7 @@
                     <div class="">ไม่พบข้อมูล</div>
                 @endforelse
 
-            </div> --}}
+            </div>
             @if (!empty($activity))
                 <div class="box-all-news">
                     <a href="/directory/menu/52" class="no-underline button-news-all">ดูข่าวประชาสัมพันธ์ทั้งหมด</a>
@@ -784,8 +807,8 @@
                 <div id="egp" class="tab-content active">
 
                     <div class="content-announce">
-                        {{-- 
-                        @forelse($egp as $list)
+
+                        {{-- @forelse($egp as $list)
                             <a href="{{ $list['link'] }}" class="no-underline">
                                 <div class="item">
                                     <div class="box-one-announce">
@@ -813,7 +836,8 @@
                                         <div class="item-text">
                                             <div class="item-date">{{ $day }}
                                                 {{ $month }}{{ $year }}</div>
-                                            {{ $list['title'] }}
+                                            {{ \Illuminate\Support\Str::limit($list['title'], 70) }}
+
                                         </div>
                                     </div>
                                     <div class="tag-announce">ประกาศ E-GP</div>
@@ -822,6 +846,42 @@
                         @empty
                             <div class="">ไม่พบข้อมูล</div>
                         @endforelse --}}
+                         @forelse($egp as $list)
+                            <a href="{{ $list->link }}" class="no-underline">
+                                <div class="item">
+                                    <div class="box-one-announce">
+                                        @php
+                                            $date = \Carbon\Carbon::parse($list->pub_date);
+                                            $months = [
+                                                1 => 'ม.ค',
+                                                2 => 'ก.พ',
+                                                3 => 'มี.ค',
+                                                4 => 'เม.ย',
+                                                5 => 'พ.ค',
+                                                6 => 'มิ.ย',
+                                                7 => 'ก.ค',
+                                                8 => 'ส.ค',
+                                                9 => 'ก.ย',
+                                                10 => 'ต.ค',
+                                                11 => 'พ.ย',
+                                                12 => 'ธ.ค',
+                                            ];
+                                            $day = $date->day;
+                                            $month = $months[$date->month];
+                                            $year = $date->year + 543;
+                                        @endphp
+                                        <div class="item-icon">📄</div>
+                                        <div class="item-text">
+                                            <div class="item-date">{{ $day }}
+                                                {{ $month }}{{ $year }}</div>
+                                            {{ \Illuminate\Support\Str::limit($list->title, 70) }}
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        @empty
+                            <div class="">ไม่พบข้อมูล</div>
+                        @endforelse
                     </div>
                     <div class="box-all-announce">
                         <a href="http://" class="no-underline button-announce-all">ดูทั้งหมด</a>

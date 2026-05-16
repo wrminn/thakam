@@ -464,7 +464,8 @@
         flex-direction: row;
     }
 
-    .slide-in-video img {
+    .slide-in-video img,
+    .slide-in-video .slide-88 {
         /* width: 150px; */
         width: 180px;
     }
@@ -1907,7 +1908,8 @@
         flex-direction: row;
     }
 
-    .slide-in-video img {
+    .slide-in-video img,
+    .slide-in-video .slide-88 {
         /* width: 150px; */
         width: 180px;
     }

@@ -44,6 +44,13 @@ class HomeController extends Controller
             ->limit(3)
             ->get();
 
+        $SlideMenu88 = Slide::active()
+            ->where('slide_menu', 88)
+            ->where('slide_display', "A")
+            ->orderBy('slide_id', 'desc')
+            ->limit(1)
+            ->get();
+
         $activity = $list = DB::table('texteditor')
             ->leftJoin('texteditor_detail', function ($join) {
                 $join->on('texteditor.texteditor_id', '=', 'texteditor_detail.texteditor_id')
@@ -83,7 +90,7 @@ class HomeController extends Controller
             )
             ->orderBy('texteditor.texteditor_date_show', 'desc')
             ->orderBy('texteditor.texteditor_id', 'desc')
-            ->limit(6)
+            ->limit(8)
             ->get();
 
 
@@ -95,13 +102,11 @@ class HomeController extends Controller
             ->limit(6)
             ->get();
 
-        // $egp = DB::table('texteditor')
-        //     ->where('texteditor_menu', 8)
-        //     ->where('texteditor_display', "A")
-        //     ->orderBy('texteditor_date_show', 'desc')
-        //     ->orderBy('texteditor_id', 'desc')
-        //     ->limit(6)
-        //     ->get();
+        $egp = DB::table('egp_announcements')
+            ->where('deptsub_id', "524040624000001")
+            ->orderBy('pub_date', 'desc')
+            ->limit(6)
+            ->get();
 
         $listMenu48 = DB::table('texteditor')
             ->where('texteditor_menu', 48)
@@ -171,17 +176,17 @@ class HomeController extends Controller
             'total' => DB::table('visits')->count(),
         ];
 
-        try {
-            $egp = $this->getLatestEgp();
-        } catch (\Exception $e) {
-            $egp = $e->getMessage();
-        }
+        // try {
+        //     $egp = $this->getLatestEgp();
+        // } catch (\Exception $e) {
+        //     $egp = $e->getMessage();
+        // }
 
         // echo "<pre>";
         // print_r($egp);
         // exit();
 
-        return view('home', compact('video', 'SlideMenu70', 'activity', 'listMenu52', 'SlideMenu8', 'egp', 'listMenu48', 'listMenu49', 'listMenu50', 'Vote', 'stats', 'elibrary', 'egp'));
+        return view('home', compact('video', 'SlideMenu70', 'SlideMenu88','activity', 'listMenu52', 'SlideMenu8', 'egp', 'listMenu48', 'listMenu49', 'listMenu50', 'Vote', 'stats', 'elibrary', 'egp'));
     }
 
     public function save(Request $request)

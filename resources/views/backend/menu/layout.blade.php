@@ -211,6 +211,7 @@
                 <a href="/backend/directory/menu/46">ดาวน์โหลดแบบฟอร์ม</a>
                 <a href="/backend/directory/menu/81">คู่มือหรือแนวทางการปฏิบัติสําหรับเจ้าหน้าที่</a>
                 <a href="/backend/directory/menu/82">คู่มือสำหรับประชาชน</a>
+                <a href="/backend/directory/menu/87">คู่มือการใช้งานระบบ E-service</a>
                 {{-- <a href="/backend/eservice/menu/47">ยื่นคำร้องออนไลน์ E-service</a> --}}
 
             </div>
@@ -293,6 +294,9 @@
             </a>
             <a href="/backend/slide/menu/70">
                 <div class="menu-item">ป้ายประกาศ</div>
+            </a>
+            <a href="/backend/slide/menu/88">
+                <div class="menu-item">ป้ายประกาศ-TOP</div>
             </a>
             <a href="/backend/directory/menu/71">
                 <div class="menu-item">สารจากนายก</div>

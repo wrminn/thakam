@@ -243,10 +243,11 @@
                         <a href="/directory/menu/46">ดาวน์โหลดแบบฟอร์ม</a>
                         <a href="/directory/menu/81">คู่มือหรือแนวทางการปฏิบัติสําหรับเจ้าหน้าที่</a>
                         <a href="/directory/menu/82">คู่มือสำหรับประชาชน</a>
+                        <a href="/directory/menu/87">คู่มือการใช้งานระบบ E-service</a>
                         <a href="https://eservice-thakam.sosmartsolution.com/Requestforms"
                             target="_blank">ยื่นคำร้องออนไลน์ E-service</a>
-                        <a href="https://thakam.trash.sosmartsolution.com/" target="_blank">ยื่นคำขออนุญาตออนไลน์ (one
-                            stop service)</a>
+                        {{-- <a href="https://thakam.trash.sosmartsolution.com/" target="_blank">ยื่นคำขออนุญาตออนไลน์ (one
+                            stop service)</a> --}}
                     </div>
                 </div>
 
