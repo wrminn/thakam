@@ -434,7 +434,7 @@ class DirectoryBackendController extends Controller
             ->where('texteditor_category_id', $cateID)
             ->orderBy('texteditor_seq', 'asc')
             ->orderBy('texteditor_id', 'desc')
-            ->paginate(20);
+            ->paginate(300);
         // ->get();
         $startIndex = ($list->currentPage() - 1) * $list->perPage() + 1;
 

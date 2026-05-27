@@ -93,7 +93,7 @@
 
     <p><strong>เรื่อง</strong> <span class="dotted-line" style="width: 70%">&nbsp;&nbsp; {{ $list->field_4 }}
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
-    <p><strong>เรียน</strong> นายกเทศมนตรีเทศบาลตำบลบ้านโพธิ์</p>
+    <p><strong>เรียน</strong> นายกเทศมนตรีเทศบาลตำบลท่าข้าม</p>
 
     <p>
         ข้าพเจ้า <span class="dotted-line"
@@ -122,7 +122,7 @@
     </p>
 
     <p>
-        ขอยื่นคำร้องต่อนายกเทศมนตรีเทศบาลตำบลบ้านโพธิ์ ดังนี้<br>
+        ขอยื่นคำร้องต่อนายกเทศมนตรีเทศบาลตำบลท่าข้าม ดังนี้<br>
         <span class="dotted-line"
             style="width: 90%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ $list->field_13 }}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
     </p>

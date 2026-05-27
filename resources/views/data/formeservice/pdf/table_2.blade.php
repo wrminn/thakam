@@ -79,7 +79,7 @@
     </div>
     <div class="box_text" style="text-align: right;">
         <div style="margin-right: 10px; margin-top: 5px;">
-            เขียนที่ สำนักงานเทศบาลตำบลบ้านโพธิ์
+            เขียนที่ สำนักงานเทศบาลตำบลท่าข้าม
         </div>
         <div style="margin-right: 80px; margin-top: 5px;">
             <span>วันที่</span>
@@ -95,7 +95,7 @@
     </div>
 
     <p><strong>เรื่อง</strong> ขอความอนุเคราะห์สนับสนุนน้ำเพื่ออุปโภค-บริโภค <br>
-        <strong>เรียน</strong> นายกเทศมนตรีเทศบาลตำบลบ้านโพธิ์
+        <strong>เรียน</strong> นายกเทศมนตรีเทศบาลตำบลท่าข้าม
     </p>
 
     <p> ข้าพเจ้า <span class="dotted-line"

@@ -14,7 +14,7 @@
         <div class="form-wrapper">
             <img src="{{ asset('/storage/detailweb/logo.png') }}" alt="Logo" class="d-block mx-auto mb-3"
                 style="max-width: 150px;">
-            <h4 class="mb-4 text-center">เทศบาลตำบลบ้านโพธิ์</h4>
+            <h4 class="mb-4 text-center">เทศบาลตำบลท่าข้าม</h4>
             <div class="list-group">
                 @if ($list->isNotEmpty())
                     @foreach ($list as $item)

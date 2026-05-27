@@ -91,7 +91,7 @@
 
 
                     <div class="mb-3 mt-3">
-                        <label class="form-label">ขอยื่นคำร้องต่อนายกเทศมนตรีเทศบาลตำบลบ้านโพธิ์ ดังนี้</label>
+                        <label class="form-label">ขอยื่นคำร้องต่อนายกเทศมนตรีเทศบาลตำบลท่าข้าม ดังนี้</label>
                         <textarea class="form-control" name="field_13" rows="3"></textarea>
                     </div>
 
