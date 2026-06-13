@@ -23,12 +23,20 @@
             overflow-x: hidden;
         }
 
-        .royal-page {
+        /* .royal-page {
             position: relative;
             min-height: 100vh;
             overflow: hidden;
-            /* background:radial-gradient(circle at center,rgba(255, 255, 255, .08) 0%,rgba(22, 35, 51, 1) 55%); */
             background-image: url("/intro/BG.png");
+        } */
+         .royal-page {
+            position: relative;
+            height: 100vh;
+            width: 100vw;
+            overflow: hidden;
+            background: url('/intro/BG.png') center center/cover no-repeat;
+            background-size: cover;
+            background-position: center;
         }
 
         /* Spotlight */
@@ -313,7 +321,7 @@
             align-items: center;
             gap: 25px;
             flex-wrap: nowrap;
-            margin-top: 15px;
+            margin-top: -15px;
             transform: translateY(-20px);
         }
 
