@@ -120,9 +120,9 @@
                                     <div class="per-content">
                                         <img class="leader-img" src="{{ asset('storage/' . $item->personnel_path) }}"
                                             alt="Deputy" data-name="{{ $item->personnel_name }}"
-                                            data-role="{{ $item->personnel_position }}" />
+                                            data-role="{!! $item->personnel_position !!}" />
                                         <h3>{{ $item->personnel_name }}</h3>
-                                        <p>{{ $item->personnel_position }}</p>
+                                        <p>{!! $item->personnel_position !!}</p>
                                         <p>{{ $item->personnel_tel }}</p>
                                     </div>
                                 </div>
@@ -147,9 +147,9 @@
                                                         src="{{ asset('storage/' . $item->personnel_path) }}"
                                                         alt="{{ $item->personnel_name }}"
                                                         data-name="{{ $item->personnel_name }}"
-                                                        data-role="{{ $item->personnel_position }}" />
+                                                        data-role="{!! $item->personnel_position !!}" />
                                                     <h3>{{ $item->personnel_name }}</h3>
-                                                    <p>{{ $item->personnel_position }}</p>
+                                                    <p>{!! $item->personnel_position !!}</p>
                                                     <p>{{ $item->personnel_tel }}</p>
                                                 </div>
                                             </div>
