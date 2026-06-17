@@ -176,7 +176,7 @@
             <a href="https://welfare.dla.go.th/webview/"><img src="/img/banner/0005.png" class="banner-top-img-2"></a>
         </div>
         <div class="box-iio">
-            <a href="/articles/menu/58"><img src="/img/banner/0006.png" class="banner-top-img-2"></a>
+            <a href="/directory/menu/58"><img src="/img/banner/0006.png" class="banner-top-img-2"></a>
         </div>
         <div class="box-iio">
             <a href="https://eservice-thakam.sosmartsolution.com/FormeService/id/1"><img src="/img/banner/0007.png"
