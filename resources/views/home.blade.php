@@ -290,8 +290,11 @@
                 <a href="http://www.damrongdhama.moi.go.th/home/" class="" target="_blank">
                     <img src="/img/SmartCity/SMT-6.png" class="banner-smartcity no-underline">
                 </a>
-                <a href="https://www.nacc.go.th/NACCPPWFC?" class="" target="_blank">
-                    <img src="/img/SmartCity/SMT-7.png" class="banner-smartcity no-underline">
+                <a href="https://www.nacc.go.th/allcomplaint" class="" target="_blank">
+                    <img src="/img/SmartCity/SMT-7-1.png" class="banner-smartcity no-underline">
+                </a>
+                <a href="https://anonymous.pacc.go.th/" class="" target="_blank">
+                    <img src="/img/SmartCity/SMT-7-2.jpg" class="banner-smartcity no-underline">
                 </a>
                 <a href="https://pr.moi.go.th/citizenknowledge.htm" class="" target="_blank">
                     <img src="/img/SmartCity/SMT-8.png" class="banner-smartcity no-underline">
@@ -1331,7 +1334,7 @@
                 <div class="banner-item"><a href="https://www.pr.moi.go.th/" target="_blank"><img
                             src="/img/13Footer/Banner14.png"></a>
                 </div>
-                <div class="banner-item"><a href="https://nacc.go.th/?" target="_blank"><img
+                <div class="banner-item"><a href="https://www.nacc.go.th/allcomplaint" target="_blank"><img
                             src="/img/13Footer/Banner15.png"></a></div>
                 <div class="banner-item"><a href="https://www.bb.go.th/" target="_blank"><img
                             src="/img/13Footer/Banner16.png"></a></div>
