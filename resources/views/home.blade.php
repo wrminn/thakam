@@ -160,7 +160,7 @@
             <a href="/directory/menu/81"><img src="/img/banner/0001.png" class="banner-top-img-2"> </a>
         </div>
         <div class="box-iio">
-            <a href="https://eservice-thakam.sosmartsolution.com/FormeService/id/3" target="_blank"><img
+            <a href="https://eservices.thakam.go.th/FormeService/id/3" target="_blank"><img
                     src="/img/banner/0002.png" class="banner-top-img-2"></a>
         </div>
         <div class="box-iio">
@@ -179,7 +179,7 @@
             <a href="/directory/menu/58"><img src="/img/banner/0006.png" class="banner-top-img-2"></a>
         </div>
         <div class="box-iio">
-            <a href="https://eservice-thakam.sosmartsolution.com/FormeService/id/1"><img src="/img/banner/0007.png"
+            <a href="https://eservices.thakam.go.th/FormeService/id/1"><img src="/img/banner/0007.png"
                     class="banner-top-img-2"></a>
         </div>
         <div class="box-iio">
@@ -406,7 +406,7 @@
                         <img src="/img/OneStopService/oss-2.png" alt="" class="bg-ons-button"></a>
                     <a href="https://thakam.trash.sosmartsolution.com/user/emergency/accident" target="_blank"> <img
                             src="/img/OneStopService/oss-3.png" alt="" class="bg-ons-button"></a>
-                    <a href="https://eservice-thakam.sosmartsolution.com/Requestforms" target="_blank"> <img
+                    <a href="https://eservices.thakam.go.th/Requestforms" target="_blank"> <img
                             src="/img/OneStopService/oss-4.png" alt="" class="bg-ons-button"></a>
                 </div>
 
@@ -782,7 +782,7 @@
                         class="button-here-text" alt=""></a>
                 <a href="/categories/menu/61"> <img src="/img/here/BannerText/Banner-Down-4-text.png"
                         class="button-here-text" alt=""></a>
-                <a href="https://eservice-thakam.sosmartsolution.com/FormeService/id/1" target="_blank"> <img
+                <a href="https://eservices.thakam.go.th/FormeService/id/1" target="_blank"> <img
                         src="/img/here/BannerText/Banner-Down-5-text.png" class="button-here-text" alt=""></a>
                 <a href="/directory/menu/60"> <img src="/img/here/BannerText/Banner-Down-6-text.png"
                         class="button-here-text" alt=""></a>

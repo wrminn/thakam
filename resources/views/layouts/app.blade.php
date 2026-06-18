@@ -233,10 +233,10 @@
                     <div class="submenu">
                         {{-- <a href="/complaint/menu/41">รับเเจ้งเรื่องราวร้องเรียนร้องทุกข์ </a>
                         <a href="/corruption/menu/42">รับเเจ้งเรื่องราวร้องเรียนการทุจริตและประพฤติมิชอบ</a> --}}
-                        <a href="https://eservice-thakam.sosmartsolution.com/FormeService/id/1">รับเเจ้งเรื่องราวร้องเรียนร้องทุกข์
+                        <a href="https://eservices.thakam.go.th/FormeService/id/1">รับเเจ้งเรื่องราวร้องเรียนร้องทุกข์
                         </a>
                         <a
-                            href="https://eservice-thakam.sosmartsolution.com/FormeService/id/3">รับเเจ้งเรื่องราวร้องเรียนการทุจริตและประพฤติมิชอบ</a>
+                            href="https://eservices.thakam.go.th/FormeService/id/3">รับเเจ้งเรื่องราวร้องเรียนการทุจริตและประพฤติมิชอบ</a>
                         <a href="/satisfaction/menu/43">แบบสอบถามความพึงพอใจ</a>
                         <a href="/directory/menu/44">รายงานผลสำรวจความพึงพอใจ </a>
                         {{-- <a href="/categories/menu/45">คู่มือการทำงานของหน่วยงาน</a> --}}
@@ -244,7 +244,7 @@
                         <a href="/directory/menu/81">คู่มือหรือแนวทางการปฏิบัติสําหรับเจ้าหน้าที่</a>
                         <a href="/directory/menu/82">คู่มือสำหรับประชาชน</a>
                         <a href="/directory/menu/87">คู่มือการใช้งานระบบ E-service</a>
-                        <a href="https://eservice-thakam.sosmartsolution.com/Requestforms"
+                        <a href="https://eservices.thakam.go.th/Requestforms"
                             target="_blank">ยื่นคำร้องออนไลน์ E-service</a>
                         {{-- <a href="https://thakam.trash.sosmartsolution.com/" target="_blank">ยื่นคำขออนุญาตออนไลน์ (one
                             stop service)</a> --}}
@@ -484,7 +484,7 @@
                         <a href="/webboard/menu/75">กระดานกระทู้</a>
                         <a href="/contact/menu/74">ติดต่อ</a>
                         <a href="/Sitemap">แผนผังเว็บไซต์</a>
-                        <a href="https://eservice-thakam.sosmartsolution.com/FormeService/id/1"
+                        <a href="https://eservices.thakam.go.th/FormeService/id/1"
                             target="_blank">รับเเจ้งเรื่องราวร้องเรียนร้องทุกข์</a>
                     </div>
                 </div>
