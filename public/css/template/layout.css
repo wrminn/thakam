@@ -5,7 +5,22 @@
     box-sizing: border-box;
     font-family: 'Noto Sans Thai', sans-serif;
 }
-
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    background: url(/img/BY.png) no-repeat left top;
+    background-size: contain;
+    pointer-events: none;
+    z-index: 999;
+}
+html {
+    filter: grayscale(50%);
+    -webkit-filter: grayscale(50%);
+}
 .header-section {
     background-color: #4a80d4;
     padding: 25px 30px;
